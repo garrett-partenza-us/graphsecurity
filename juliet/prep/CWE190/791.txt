@@ -1,0 +1,20 @@
+
+    public void bad() throws Throwable {
+        short data;
+        if (privateReturnsTrue()) {
+            
+            data = Short.MAX_VALUE;
+        }
+        else {
+            
+            data = 0;
+        }
+
+        if (privateReturnsTrue()) {
+            if(data > 0) {
+                
+                short result = (short)(data * 2);
+                IO.writeLine("result: " + result);
+            }
+        }
+    }

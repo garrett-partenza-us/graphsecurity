@@ -1,0 +1,17 @@
+
+    public String goodG2B1Source(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+
+        if (CWE83_XSS_Attribute__Servlet_getParameter_Servlet_22a.goodG2B1PublicStatic) {
+            
+            data = null;
+        }
+        else {
+
+            
+            data = "foo";
+
+        }
+
+        return data;
+    }

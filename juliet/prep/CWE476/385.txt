@@ -1,0 +1,7 @@
+
+    private void badSink(int [] data ) throws Throwable {
+        if (badPrivate) {
+            
+            IO.writeLine("" + data.length);
+        }
+    }

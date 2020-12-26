@@ -1,0 +1,19 @@
+
+    public void bad() throws Throwable {
+        int data;
+        if (privateReturnsTrue()) {
+            
+            data = -1;
+        }
+        else {
+            
+            data = 0;
+        }
+
+        if (privateReturnsTrue()) {
+            
+            int array[] = { 0, 1, 2, 3, 4 };
+            
+            IO.writeLine(array[data]);
+        }
+    }

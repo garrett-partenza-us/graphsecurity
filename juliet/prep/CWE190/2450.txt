@@ -1,0 +1,14 @@
+
+    public void badSink(int data , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        if (CWE190_Integer_Overflow__int_getCookies_Servlet_multiply_22a.badPublicStatic) {
+            if(data > 0) {
+                
+                int result = (int)(data * 2);
+                IO.writeLine("result: " + result);
+            }
+        }
+        else {
+            
+            data = 0;
+        }
+    }

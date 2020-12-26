@@ -1,0 +1,13 @@
+
+    private void goodB2G() throws Throwable {
+        String data;
+
+        
+        PasswordAuthentication credentials = new PasswordAuthentication("user", "AP@ssw0rd".toCharArray());
+
+        
+        data = new String(credentials.getPassword());
+
+        dataGoodB2G = data;
+        goodB2GSink();
+    }

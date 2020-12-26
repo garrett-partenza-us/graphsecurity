@@ -1,0 +1,11 @@
+
+    public void goodG2BSink(int [] data ) throws Throwable {
+        if (CWE476_NULL_Pointer_Dereference__int_array_22a.goodG2BPublicStatic) {
+            
+            IO.writeLine("" + data.length);
+        }
+        else {
+            
+            data = null;
+        }
+    }

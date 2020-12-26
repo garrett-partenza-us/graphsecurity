@@ -1,0 +1,13 @@
+
+    public void bad() throws Throwable {
+        StringBuilder data;
+
+        
+        data = CWE690_NULL_Deref_From_Return__Class_Helper.getStringBuilderBad();
+
+        LinkedList<StringBuilder> dataLinkedList = new LinkedList<StringBuilder>();
+        dataLinkedList.add(0, data);
+        dataLinkedList.add(1, data);
+        dataLinkedList.add(2, data);
+        (new CWE690_NULL_Deref_From_Return__Class_StringBuilder_73b()).badSink(dataLinkedList  );
+    }

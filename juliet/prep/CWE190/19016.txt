@@ -1,0 +1,11 @@
+
+    public void badSink(CWE190_Integer_Overflow__int_getQueryString_Servlet_postinc_67a.Container dataContainer , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int data = dataContainer.containerOne;
+
+        
+        data++;
+        int result = (int)(data);
+
+        IO.writeLine("result: " + result);
+
+    }

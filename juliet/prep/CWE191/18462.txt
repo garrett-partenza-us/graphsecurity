@@ -1,0 +1,10 @@
+
+    public void badSink(CWE191_Integer_Underflow__int_database_sub_67a.Container dataContainer ) throws Throwable {
+        int data = dataContainer.containerOne;
+
+        
+        int result = (int)(data - 1);
+
+        IO.writeLine("result: " + result);
+
+    }

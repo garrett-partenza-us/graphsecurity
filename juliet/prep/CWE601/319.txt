@@ -1,0 +1,31 @@
+
+    public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data = null;
+
+        switch (6) {
+        case 6:
+            
+            data = request.getParameter("name");
+            break;
+        default:
+            
+            data = null;
+            break;
+        }
+
+        if (data != null) {
+            
+            URI uri;
+            try {
+                uri = new URI(data);
+            }
+            catch (URISyntaxException exceptURISyntax) {
+                response.getWriter().write("Invalid redirect URL");
+                return;
+            }
+            
+            response.sendRedirect(data);
+            return;
+        }
+
+    }

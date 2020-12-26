@@ -1,0 +1,11 @@
+
+    public void bad() throws Throwable {
+        String data;
+
+        
+        
+        data = System.getenv("ADD");
+
+        badPrivate = true;
+        badSink(data );
+    }

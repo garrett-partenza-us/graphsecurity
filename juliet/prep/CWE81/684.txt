@@ -1,0 +1,10 @@
+
+    public void goodG2BSink(HashMap<Integer,String> dataHashMap , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data = dataHashMap.get(2);
+
+        if (data != null) {
+            
+            response.sendError(404, "<br>bad() - Parameter name has value " + data);
+        }
+
+    }

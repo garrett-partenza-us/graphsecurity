@@ -1,0 +1,15 @@
+
+    public String goodG2B2Source(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+
+        if (CWE80_XSS__CWE182_Servlet_URLConnection_22a.goodG2B2PublicStatic) {
+            
+            data = "foo";
+        }
+        else {
+            
+            data = null;
+        }
+
+        return data;
+    }

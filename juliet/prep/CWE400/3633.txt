@@ -1,0 +1,8 @@
+
+    private void goodG2BSink() throws Throwable {
+        int count = countGoodG2B;
+
+        
+        Thread.sleep(count);
+
+    }

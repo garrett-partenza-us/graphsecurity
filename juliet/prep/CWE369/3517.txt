@@ -1,0 +1,16 @@
+
+    public void bad() throws Throwable {
+        int data;
+
+        while (true) {
+            
+            data = (new SecureRandom()).nextInt();
+            break;
+        }
+
+        while (true) {
+            
+            IO.writeLine("bad: 100/" + data + " = " + (100 / data) + "\n");
+            break;
+        }
+    }

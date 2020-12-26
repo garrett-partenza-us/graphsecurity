@@ -1,0 +1,68 @@
+
+    public void bad() throws Throwable {
+        String data;
+
+        data = ""; 
+
+ {
+            Properties properties = new Properties();
+            FileInputStream streamFileInput = null;
+
+            try {
+                streamFileInput = new FileInputStream("../common/config.properties");
+                properties.load(streamFileInput);
+
+                
+                data = properties.getProperty("data");
+            }
+            catch (IOException exceptIO) {
+                IO.logger.log(Level.WARNING, "Error with stream reading", exceptIO);
+            }
+            finally {
+                
+                try {
+                    if (streamFileInput != null) {
+                        streamFileInput.close();
+                    }
+                }
+                catch (IOException exceptIO) {
+                    IO.logger.log(Level.WARNING, "Error closing FileInputStream", exceptIO);
+                }
+            }
+        }
+
+        
+        ByteArrayOutputStream streamByteArrayOutput = null;
+        ObjectOutput outputObject = null;
+
+        try {
+            streamByteArrayOutput = new ByteArrayOutputStream() ;
+            outputObject = new ObjectOutputStream(streamByteArrayOutput) ;
+            outputObject.writeObject(data);
+            byte[] dataSerialized = streamByteArrayOutput.toByteArray();
+            (new CWE470_Unsafe_Reflection__PropertiesFile_75b()).badSink(dataSerialized  );
+        }
+        catch (IOException exceptIO) {
+            IO.logger.log(Level.WARNING, "IOException in serialization", exceptIO);
+        }
+        finally {
+            
+            try {
+                if (outputObject != null) {
+                    outputObject.close();
+                }
+            }
+            catch (IOException exceptIO) {
+                IO.logger.log(Level.WARNING, "Error closing ObjectOutputStream", exceptIO);
+            }
+
+            try {
+                if (streamByteArrayOutput != null) {
+                    streamByteArrayOutput.close();
+                }
+            }
+            catch (IOException exceptIO) {
+                IO.logger.log(Level.WARNING, "Error closing ByteArrayOutputStream", exceptIO);
+            }
+        }
+    }

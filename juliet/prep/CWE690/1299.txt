@@ -1,0 +1,13 @@
+
+    private void goodB2G(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+
+        
+        data = request.getParameter("CWE690");
+
+        Vector<String> dataVector = new Vector<String>(5);
+        dataVector.add(0, data);
+        dataVector.add(1, data);
+        dataVector.add(2, data);
+        (new CWE690_NULL_Deref_From_Return__getParameter_Servlet_trim_72b()).goodB2GSink(dataVector , request, response );
+    }

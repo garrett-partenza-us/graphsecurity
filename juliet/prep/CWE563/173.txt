@@ -1,0 +1,13 @@
+
+    private void goodB2G2() throws Throwable {
+        long data;
+
+        
+
+        data = 5L;
+
+        if (IO.STATIC_FINAL_FIVE == 5) {
+            
+            IO.writeLine("" + data);
+        }
+    }

@@ -1,0 +1,30 @@
+
+    private void goodB2G1() throws Throwable {
+        float data;
+        if (PRIVATE_STATIC_FINAL_TRUE) {
+            
+            SecureRandom secureRandom = new SecureRandom();
+            data = secureRandom.nextFloat();
+        }
+        else {
+            
+            data = 0.0f;
+        }
+
+        if (PRIVATE_STATIC_FINAL_FALSE) {
+            
+            IO.writeLine("Benign, fixed string");
+        }
+        else {
+
+            
+            if (Math.abs(data) > 0.000001) {
+                int result = (int)(100.0 / data);
+                IO.writeLine(result);
+            }
+            else {
+                IO.writeLine("This would result in a divide by zero");
+            }
+
+        }
+    }

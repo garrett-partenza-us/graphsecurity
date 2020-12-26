@@ -1,0 +1,10 @@
+
+    public void bad() throws Throwable {
+        int data;
+
+        
+        data = Integer.MIN_VALUE;
+
+        badPrivate = true;
+        badSink(data );
+    }

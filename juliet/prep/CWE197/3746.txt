@@ -1,0 +1,12 @@
+
+    private void goodG2B1() throws Throwable {
+        int data;
+
+        goodG2B1PublicStatic = false;
+        data = (new CWE197_Numeric_Truncation_Error__int_database_to_byte_22b()).goodG2B1Source();
+ {
+            
+            IO.writeLine((byte)data);
+        }
+
+    }

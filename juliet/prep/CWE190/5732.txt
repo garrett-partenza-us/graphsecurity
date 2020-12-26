@@ -1,0 +1,18 @@
+
+    private void goodB2G() throws Throwable {
+        int data;
+
+        
+        data = Integer.MAX_VALUE;
+
+        
+        
+        if ((data != Integer.MIN_VALUE) && (data != Long.MIN_VALUE) && (Math.abs(data) <= (long)Math.sqrt(Integer.MAX_VALUE))) {
+            int result = (int)(data * data);
+            IO.writeLine("result: " + result);
+        }
+        else {
+            IO.writeLine("data value is too large to perform squaring.");
+        }
+
+    }

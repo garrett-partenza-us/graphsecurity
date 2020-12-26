@@ -1,0 +1,34 @@
+
+    private void goodB2G1() throws Throwable {
+        int data;
+
+        switch (6) {
+        case 6:
+            
+            data = Integer.MIN_VALUE;
+            break;
+        default:
+            
+            data = 0;
+            break;
+        }
+
+        switch (8) {
+        case 7:
+            
+            IO.writeLine("Benign, fixed string");
+            break;
+        default:
+            if(data < 0) {
+                
+                if (data > (Integer.MIN_VALUE/2)) {
+                    int result = (int)(data * 2);
+                    IO.writeLine("result: " + result);
+                }
+                else {
+                    IO.writeLine("data value is too small to perform multiplication.");
+                }
+            }
+            break;
+        }
+    }

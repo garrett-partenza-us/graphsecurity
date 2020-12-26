@@ -1,0 +1,11 @@
+
+    public void badSink(Integer data ) throws Throwable {
+        if (CWE476_NULL_Pointer_Dereference__Integer_22a.badPublicStatic) {
+            
+            IO.writeLine("" + data.toString());
+        }
+        else {
+            
+            data = null;
+        }
+    }

@@ -1,0 +1,19 @@
+
+    private void goodB2G(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int data;
+
+        data = Integer.MIN_VALUE; 
+
+ {
+            String stringNumber = request.getParameter("name");
+
+            try {
+                data = Integer.parseInt(stringNumber.trim());
+            }
+            catch(NumberFormatException exceptNumberFormat) {
+                IO.logger.log(Level.WARNING, "Number format exception reading data from parameter 'name'", exceptNumberFormat);
+            }
+        }
+
+        (new CWE191_Integer_Underflow__int_getParameter_Servlet_predec_71b()).goodB2GSink((Object)data , request, response );
+    }

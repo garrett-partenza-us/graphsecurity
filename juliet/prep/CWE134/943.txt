@@ -1,0 +1,26 @@
+
+    private void goodB2G1() throws Throwable {
+        String data;
+        if (IO.STATIC_FINAL_TRUE) {
+            
+            
+            data = System.getProperty("user.home");
+        }
+        else {
+            
+            data = null;
+        }
+
+        if (IO.STATIC_FINAL_FALSE) {
+            
+            IO.writeLine("Benign, fixed string");
+        }
+        else {
+
+            if (data != null) {
+                
+                System.out.format("%s%n", data);
+            }
+
+        }
+    }

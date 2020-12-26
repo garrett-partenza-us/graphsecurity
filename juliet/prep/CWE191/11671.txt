@@ -1,0 +1,11 @@
+
+    public void badSink(byte dataArray[] ) throws Throwable {
+        byte data = dataArray[2];
+
+        
+        data--;
+        byte result = (byte)(data);
+
+        IO.writeLine("result: " + result);
+
+    }

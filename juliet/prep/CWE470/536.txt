@@ -1,0 +1,11 @@
+
+    public void badSink() throws Throwable {
+        String data = CWE470_Unsafe_Reflection__connect_tcp_68a.data;
+
+        
+        Class<?> tempClass = Class.forName(data);
+        Object tempClassObject = tempClass.newInstance();
+
+        IO.writeLine(tempClassObject.toString()); 
+
+    }

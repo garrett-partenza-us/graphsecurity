@@ -1,0 +1,58 @@
+
+    private void goodB2G2() throws Throwable {
+        int data;
+        if (true) {
+            data = Integer.MIN_VALUE; 
+ {
+                Properties properties = new Properties();
+                FileInputStream streamFileInput = null;
+                try {
+                    streamFileInput = new FileInputStream("../common/config.properties");
+                    properties.load(streamFileInput);
+                    
+                    String stringNumber = properties.getProperty("data");
+                    if (stringNumber != null) {
+                        try {
+                            data = Integer.parseInt(stringNumber.trim());
+                        }
+                        catch(NumberFormatException exceptNumberFormat) {
+                            IO.logger.log(Level.WARNING, "Number format exception parsing data from string", exceptNumberFormat);
+                        }
+                    }
+                }
+                catch (IOException exceptIO) {
+                    IO.logger.log(Level.WARNING, "Error with stream reading", exceptIO);
+                }
+                finally {
+                    
+                    try {
+                        if (streamFileInput != null) {
+                            streamFileInput.close();
+                        }
+                    }
+                    catch (IOException exceptIO) {
+                        IO.logger.log(Level.WARNING, "Error closing FileInputStream", exceptIO);
+                    }
+                }
+            }
+        }
+        else {
+            
+            data = 0;
+        }
+
+        if (true) {
+            
+            int array[] = null;
+            
+            if (data > 0) {
+                array = new int[data];
+            }
+            else {
+                IO.writeLine("Array size is negative");
+            }
+            
+            array[0] = 5;
+            IO.writeLine(array[0]);
+        }
+    }

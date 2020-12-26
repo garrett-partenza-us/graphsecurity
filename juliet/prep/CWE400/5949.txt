@@ -1,0 +1,13 @@
+
+    private void goodB2GSink(int count , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+
+        int i = 0;
+
+        
+        if (count > 0 && count <= 20) {
+            for (i = 0; i < count; i++) {
+                IO.writeLine("Hello");
+            }
+        }
+
+    }

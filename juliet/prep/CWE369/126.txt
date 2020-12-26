@@ -1,0 +1,9 @@
+
+    private void goodB2G2() throws Throwable {
+        float data;
+
+        data = 0.0f; 
+
+        goodB2G2Private = true;
+        goodB2G2Sink(data );
+    }

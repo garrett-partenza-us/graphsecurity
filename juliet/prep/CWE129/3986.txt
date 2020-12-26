@@ -1,0 +1,4 @@
+
+    public void badSink(int data ) throws Throwable {
+        (new CWE129_Improper_Validation_of_Array_Index__File_array_write_no_check_54d()).badSink(data );
+    }

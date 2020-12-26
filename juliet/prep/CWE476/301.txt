@@ -1,0 +1,9 @@
+
+    private void goodG2B() throws Throwable {
+        int [] data;
+
+        
+        data = new int[5];
+
+        (new CWE476_NULL_Pointer_Dereference__int_array_51b()).goodG2BSink(data  );
+    }

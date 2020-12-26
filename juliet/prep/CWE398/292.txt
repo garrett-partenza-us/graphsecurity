@@ -1,0 +1,13 @@
+
+    private void good2() throws Throwable {
+        switch (7) {
+        case 7:
+            
+            IO.writeLine("Hello from good()");
+            break;
+        default:
+            
+            IO.writeLine("Benign, fixed string");
+            break;
+        }
+    }

@@ -1,0 +1,17 @@
+
+    private void goodB2GSink(String password ) throws Throwable {
+
+        if (password != null) {
+            KerberosPrincipal principal = new KerberosPrincipal("test");
+ {
+                Cipher aesCipher = Cipher.getInstance("AES");
+                
+                SecretKeySpec secretKeySpec = new SecretKeySpec("ABCDEFGHABCDEFGH".getBytes("UTF-8"), "AES");
+                aesCipher.init(Cipher.DECRYPT_MODE, secretKeySpec);
+                password = new String(aesCipher.doFinal(password.getBytes("UTF-8")), "UTF-8");
+            }
+            KerberosKey key = new KerberosKey(principal, password.toCharArray(), null);
+            IO.writeLine(key.toString());
+        }
+
+    }

@@ -1,0 +1,19 @@
+
+    public void bad() throws Throwable {
+        short data;
+        if (IO.STATIC_FINAL_TRUE) {
+            
+            data = Short.MIN_VALUE;
+        }
+        else {
+            
+            data = 0;
+        }
+
+        if (IO.STATIC_FINAL_TRUE) {
+            
+            data--;
+            short result = (short)(data);
+            IO.writeLine("result: " + result);
+        }
+    }

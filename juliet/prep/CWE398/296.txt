@@ -1,0 +1,15 @@
+
+    public void bad() throws Throwable {
+        if (IO.staticReturnsTrue()) {
+            int x = (new SecureRandom()).nextInt();
+            switch (x) {
+                
+            case 0:
+                break;
+            default:
+                IO.writeLine("Inside the default statement");
+                break;
+            }
+            IO.writeLine("Hello from bad()");
+        }
+    }

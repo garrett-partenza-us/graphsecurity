@@ -1,0 +1,10 @@
+
+    public void bad() throws Throwable {
+        if (PRIVATE_STATIC_FINAL_TRUE) {
+            int intOne = 1;
+            IO.writeLine(intOne);
+            
+            intOne = intOne;
+            IO.writeLine(intOne);
+        }
+    }

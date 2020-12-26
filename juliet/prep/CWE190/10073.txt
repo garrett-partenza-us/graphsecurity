@@ -1,0 +1,10 @@
+
+    public void goodG2BSink(CWE190_Integer_Overflow__short_console_readLine_add_67a.Container dataContainer ) throws Throwable {
+        short data = dataContainer.containerOne;
+
+        
+        short result = (short)(data + 1);
+
+        IO.writeLine("result: " + result);
+
+    }

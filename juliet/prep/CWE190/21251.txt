@@ -1,0 +1,18 @@
+
+    public void bad() throws Throwable {
+        short data;
+        if (privateTrue) {
+            
+            data = Short.MAX_VALUE;
+        }
+        else {
+            
+            data = 0;
+        }
+
+        if (privateTrue) {
+            
+            short result = (short)(++data);
+            IO.writeLine("result: " + result);
+        }
+    }

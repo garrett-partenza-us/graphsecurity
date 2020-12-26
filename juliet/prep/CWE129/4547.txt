@@ -1,0 +1,35 @@
+
+    private void goodB2G2() throws Throwable {
+        int data;
+        if (privateTrue) {
+            data = Integer.MIN_VALUE; 
+            
+ {
+                String stringNumber = System.getenv("ADD");
+                if (stringNumber != null) {
+                    try {
+                        data = Integer.parseInt(stringNumber.trim());
+                    }
+                    catch(NumberFormatException exceptNumberFormat) {
+                        IO.logger.log(Level.WARNING, "Number format exception parsing data from string", exceptNumberFormat);
+                    }
+                }
+            }
+        }
+        else {
+            
+            data = 0;
+        }
+
+        if (privateTrue) {
+            
+            int array[] = { 0, 1, 2, 3, 4 };
+            
+            if (data >= 0 && data < array.length) {
+                array[data] = 42;
+            }
+            else {
+                IO.writeLine("Array index out of bounds");
+            }
+        }
+    }

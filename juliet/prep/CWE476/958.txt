@@ -1,0 +1,16 @@
+
+    public void bad() throws Throwable {
+        String data;
+
+        while (true) {
+            
+            data = null;
+            break;
+        }
+
+        while (true) {
+            
+            IO.writeLine("" + data.length());
+            break;
+        }
+    }

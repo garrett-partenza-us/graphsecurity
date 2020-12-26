@@ -1,0 +1,8 @@
+
+    public void bad() throws Throwable {
+
+        
+        data = "7e5tc4s3";
+
+        (new CWE259_Hard_Coded_Password__passwordAuth_68b()).badSink();
+    }

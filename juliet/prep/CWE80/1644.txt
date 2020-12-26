@@ -1,0 +1,10 @@
+
+    public void badSink(Object dataObject , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data = (String)dataObject;
+
+        if (data != null) {
+            
+            response.getWriter().println("<br>bad(): data = " + data);
+        }
+
+    }

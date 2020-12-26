@@ -1,0 +1,15 @@
+
+    private short goodG2B2_source() throws Throwable {
+        short data = 0;
+
+        if (goodG2B2_private) {
+            
+            data = 2;
+        }
+        else {
+            
+            data = 0;
+        }
+
+        return data;
+    }

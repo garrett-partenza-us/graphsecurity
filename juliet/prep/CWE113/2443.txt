@@ -1,0 +1,11 @@
+
+    public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+
+        
+        
+        data = System.getProperty("user.home");
+
+        CWE113_HTTP_Response_Splitting__Property_addCookieServlet_81_base baseObject = new CWE113_HTTP_Response_Splitting__Property_addCookieServlet_81_bad();
+        baseObject.action(data , request, response);
+    }

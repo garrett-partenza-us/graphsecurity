@@ -1,0 +1,10 @@
+
+    private void goodB2G2() throws Throwable {
+        StringBuilder data = null;
+
+        
+        data = CWE690_NULL_Deref_From_Return__Class_Helper.getStringBuilderBad();
+
+        goodB2G2PublicStatic = true;
+        (new CWE690_NULL_Deref_From_Return__Class_StringBuilder_22b()).goodB2G2Sink(data );
+    }

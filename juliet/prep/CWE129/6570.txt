@@ -1,0 +1,18 @@
+
+    private void badSink(int data , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+
+        int array[] = null;
+
+        
+        if (data >= 0) {
+            array = new int[data];
+        }
+        else {
+            IO.writeLine("Array size is negative");
+        }
+
+        
+        array[0] = 5;
+        IO.writeLine(array[0]);
+
+    }

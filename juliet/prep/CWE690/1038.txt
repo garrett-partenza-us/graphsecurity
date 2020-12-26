@@ -1,0 +1,10 @@
+
+    private void goodB2GSink() throws Throwable {
+        String data = dataGoodB2G;
+
+        
+        if("CWE690".equals(data)) {
+            IO.writeLine("data is CWE690");
+        }
+
+    }

@@ -1,0 +1,20 @@
+
+    public void bad() throws Throwable {
+        String data;
+        if (IO.staticFive==5) {
+            
+            
+            data = System.getenv("ADD");
+        }
+        else {
+            
+            data = null;
+        }
+
+        if (IO.staticFive==5) {
+            if (data != null) {
+                
+                System.out.printf(data);
+            }
+        }
+    }

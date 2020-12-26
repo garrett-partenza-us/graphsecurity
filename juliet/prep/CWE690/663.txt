@@ -1,0 +1,10 @@
+
+    public void badSink(CWE690_NULL_Deref_From_Return__Class_StringBuilder_67a.Container dataContainer ) throws Throwable {
+        StringBuilder data = dataContainer.containerOne;
+
+        
+        String stringTrimmed = data.toString().trim();
+
+        IO.writeLine(stringTrimmed);
+
+    }

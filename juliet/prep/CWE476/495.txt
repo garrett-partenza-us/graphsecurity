@@ -1,0 +1,9 @@
+
+    private StringBuilder badSource() throws Throwable {
+        StringBuilder data;
+
+        
+        data = null;
+
+        return data;
+    }

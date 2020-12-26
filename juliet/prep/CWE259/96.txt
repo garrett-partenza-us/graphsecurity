@@ -1,0 +1,33 @@
+
+    private void goodG2B() throws Throwable {
+        String dataCopy; {
+            String data;
+
+            data = ""; 
+
+            
+            try {
+                InputStreamReader readerInputStream = new InputStreamReader(System.in, "UTF-8");
+                BufferedReader readerBuffered = new BufferedReader(readerInputStream);
+
+                
+                data = readerBuffered.readLine();
+            }
+            catch (IOException exceptIO) {
+                IO.logger.log(Level.WARNING, "Error with stream reading", exceptIO);
+            }
+
+            
+
+            dataCopy = data;
+        } {
+            String data = dataCopy;
+
+            if (data != null) {
+                
+                PasswordAuthentication credentials = new PasswordAuthentication("user", data.toCharArray());
+                IO.writeLine(credentials.toString());
+            }
+
+        }
+    }

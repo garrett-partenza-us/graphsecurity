@@ -1,0 +1,11 @@
+
+    public void badSink(HashMap<Integer,String> dataHashMap , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data = dataHashMap.get(2);
+
+        if (data != null) {
+            Cookie cookieSink = new Cookie("lang", data);
+            
+            response.addCookie(cookieSink);
+        }
+
+    }

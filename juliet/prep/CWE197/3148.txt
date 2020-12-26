@@ -1,0 +1,10 @@
+
+    public void bad() throws Throwable {
+        int data;
+
+        
+        data = Short.MAX_VALUE + 5;
+
+        dataBad = data;
+        badSink();
+    }

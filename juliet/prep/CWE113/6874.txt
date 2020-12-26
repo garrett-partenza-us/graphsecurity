@@ -1,0 +1,10 @@
+
+    private void goodB2G(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+
+        
+        
+        data = System.getenv("ADD");
+
+        (new CWE113_HTTP_Response_Splitting__Environment_addHeaderServlet_52b()).goodB2GSink(data , request, response);
+    }

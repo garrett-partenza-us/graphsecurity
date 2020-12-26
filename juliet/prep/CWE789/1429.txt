@@ -1,0 +1,8 @@
+
+    public void badSink(HashMap<Integer,Integer> dataHashMap , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int data = dataHashMap.get(2);
+
+        
+        HashMap intHashMap = new HashMap(data);
+
+    }

@@ -1,0 +1,30 @@
+
+    private void goodB2G2() throws Throwable {
+        int count;
+        if (privateFive==5) {
+            count = Integer.MIN_VALUE; 
+            
+ {
+                String stringNumber = System.getenv("ADD");
+                if (stringNumber != null) {
+                    try {
+                        count = Integer.parseInt(stringNumber.trim());
+                    }
+                    catch(NumberFormatException exceptNumberFormat) {
+                        IO.logger.log(Level.WARNING, "Number format exception parsing count from string", exceptNumberFormat);
+                    }
+                }
+            }
+        }
+        else {
+            
+            count = 0;
+        }
+
+        if (privateFive==5) {
+            
+            if (count > 0 && count <= 2000) {
+                Thread.sleep(count);
+            }
+        }
+    }

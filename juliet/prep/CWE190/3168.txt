@@ -1,0 +1,11 @@
+
+    public void goodG2BSink(CWE190_Integer_Overflow__int_File_multiply_67a.Container dataContainer ) throws Throwable {
+        int data = dataContainer.containerOne;
+
+        if(data > 0) {
+            
+            int result = (int)(data * 2);
+            IO.writeLine("result: " + result);
+        }
+
+    }

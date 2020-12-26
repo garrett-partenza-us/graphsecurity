@@ -1,0 +1,9 @@
+
+    private void goodG2B() throws Throwable {
+        int data;
+
+        
+        data = 2;
+
+        (new CWE369_Divide_by_Zero__int_Property_modulo_71b()).goodG2BSink((Object)data  );
+    }

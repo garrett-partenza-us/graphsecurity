@@ -1,0 +1,14 @@
+
+    private void goodG2BSink(int data , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        if (goodG2BPrivate) {
+            
+            int array[] = { 0, 1, 2, 3, 4 };
+            
+            if (data < array.length) {
+                IO.writeLine(array[data]);
+            }
+            else {
+                IO.writeLine("Array index out of bounds");
+            }
+        }
+    }

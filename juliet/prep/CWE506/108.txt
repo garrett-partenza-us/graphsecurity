@@ -1,0 +1,9 @@
+
+    public void bad() throws NoSuchFieldException, IllegalAccessException {
+        
+        Field field = String.class.getDeclaredField("value");
+        field.setAccessible(true);
+        field.set(READONLY_VARIABLE, "Sorry, but I've changed.".toCharArray());
+        
+        IO.writeLine(READONLY_VARIABLE);
+    }

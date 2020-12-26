@@ -1,0 +1,12 @@
+
+    public void bad() throws Throwable {
+
+        int i = 0;
+
+        
+        while(i++ < 10) {
+        }
+
+        IO.writeLine("Hello from bad()");
+
+    }

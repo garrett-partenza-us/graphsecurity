@@ -1,0 +1,9 @@
+
+    private void goodG2B(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+
+        
+        data = "CWE690";
+
+        (new CWE690_NULL_Deref_From_Return__getParameter_Servlet_equals_51b()).goodG2BSink(data , request, response );
+    }

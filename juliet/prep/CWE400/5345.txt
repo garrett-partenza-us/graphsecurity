@@ -1,0 +1,12 @@
+
+    public void badSink(HashMap<Integer,Integer> countHashMap , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int count = countHashMap.get(2);
+
+        int i = 0;
+
+        
+        for (i = 0; i < count; i++) {
+            IO.writeLine("Hello");
+        }
+
+    }

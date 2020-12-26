@@ -1,0 +1,18 @@
+
+    public void badSink(int data ) throws Throwable {
+        if (CWE129_Improper_Validation_of_Array_Index__PropertiesFile_array_read_check_min_22a.badPublicStatic) {
+            
+            int array[] = { 0, 1, 2, 3, 4 };
+            
+            if (data >= 0) {
+                IO.writeLine(array[data]);
+            }
+            else {
+                IO.writeLine("Array index out of bounds");
+            }
+        }
+        else {
+            
+            data = 0;
+        }
+    }

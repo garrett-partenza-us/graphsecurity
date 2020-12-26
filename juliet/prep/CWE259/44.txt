@@ -1,0 +1,14 @@
+
+    public String badSource() throws Throwable {
+        String data;
+
+        if (CWE259_Hard_Coded_Password__kerberosKey_22a.badPublicStatic) {
+            
+            data = "7e5tc4s3";
+        }
+        else {
+            
+            data = null;
+        }
+        return data;
+    }

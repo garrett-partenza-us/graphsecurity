@@ -1,0 +1,19 @@
+
+    public void bad() throws Throwable {
+        int data;
+        if (true) {
+            
+            data = 100;
+        }
+        else {
+            
+            data = 0;
+        }
+
+        if (true) {
+            
+            int array[] = { 0, 1, 2, 3, 4 };
+            
+            IO.writeLine(array[data]);
+        }
+    }

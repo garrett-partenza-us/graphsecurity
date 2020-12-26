@@ -1,0 +1,9 @@
+
+    public StringBuilder goodG2BSource() throws Throwable {
+        StringBuilder data;
+
+        
+        data = new StringBuilder();
+
+        return data;
+    }

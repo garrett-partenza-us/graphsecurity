@@ -1,0 +1,9 @@
+
+    public void bad() throws Throwable {
+        int data = 0;
+
+        data = 0; 
+
+        badPublicStatic = true;
+        (new CWE369_Divide_by_Zero__int_zero_divide_22b()).badSink(data );
+    }

@@ -1,0 +1,10 @@
+
+    private void goodB2GSink(String data , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+
+        
+        if (data != null) {
+            String stringTrimmed = data.trim();
+            IO.writeLine(stringTrimmed);
+        }
+
+    }

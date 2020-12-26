@@ -1,0 +1,4 @@
+
+    public void badSink(int data ) throws Throwable {
+        (new CWE190_Integer_Overflow__int_PropertiesFile_preinc_54d()).badSink(data );
+    }

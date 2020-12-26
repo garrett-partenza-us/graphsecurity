@@ -1,0 +1,40 @@
+
+    private void goodB2G1() throws Throwable {
+        int data;
+        if (IO.STATIC_FINAL_TRUE) {
+            data = Integer.MIN_VALUE; 
+            
+ {
+                String stringNumber = System.getProperty("user.home");
+                try {
+                    data = Integer.parseInt(stringNumber.trim());
+                }
+                catch(NumberFormatException exceptNumberFormat) {
+                    IO.logger.log(Level.WARNING, "Number format exception parsing data from string", exceptNumberFormat);
+                }
+            }
+        }
+        else {
+            
+            data = 0;
+        }
+
+        if (IO.STATIC_FINAL_FALSE) {
+            
+            IO.writeLine("Benign, fixed string");
+        }
+        else {
+
+            if(data < 0) {
+                
+                if (data > (Integer.MIN_VALUE/2)) {
+                    int result = (int)(data * 2);
+                    IO.writeLine("result: " + result);
+                }
+                else {
+                    IO.writeLine("data value is too small to perform multiplication.");
+                }
+            }
+
+        }
+    }

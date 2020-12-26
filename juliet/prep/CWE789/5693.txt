@@ -1,0 +1,8 @@
+
+    public void goodG2BSink(CWE789_Uncontrolled_Mem_Alloc__Environment_ArrayList_67a.Container dataContainer ) throws Throwable {
+        int data = dataContainer.containerOne;
+
+        
+        ArrayList intArrayList = new ArrayList(data);
+
+    }

@@ -1,0 +1,16 @@
+
+    private void goodB2G(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+
+        data = ""; 
+
+ {
+            Cookie cookieSources[] = request.getCookies();
+            if (cookieSources != null) {
+                
+                data = cookieSources[0].getValue();
+            }
+        }
+
+        (new CWE89_SQL_Injection__getCookies_Servlet_executeQuery_51b()).goodB2GSink(data , request, response );
+    }

@@ -1,0 +1,16 @@
+
+    public void goodB2G2Sink(int count ) throws Throwable {
+        if (CWE400_Resource_Exhaustion__PropertiesFile_for_loop_22a.goodB2G2PublicStatic) {
+            int i = 0;
+            
+            if (count > 0 && count <= 20) {
+                for (i = 0; i < count; i++) {
+                    IO.writeLine("Hello");
+                }
+            }
+        }
+        else {
+            
+            count = 0;
+        }
+    }

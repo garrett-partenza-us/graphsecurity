@@ -1,0 +1,9 @@
+
+    public short badSource() throws Throwable {
+        short data;
+
+        
+        data = (short)((new SecureRandom()).nextInt(Short.MAX_VALUE + 1));
+
+        return data;
+    }

@@ -1,0 +1,18 @@
+
+    public void bad() throws Throwable {
+        int data;
+
+        while (true) {
+            
+            data = (new SecureRandom()).nextInt();
+            break;
+        }
+
+        while (true) {
+            
+            data--;
+            int result = (int)(data);
+            IO.writeLine("result: " + result);
+            break;
+        }
+    }

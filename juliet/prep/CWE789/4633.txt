@@ -1,0 +1,7 @@
+
+    private void goodG2BSink(int data ) throws Throwable {
+
+        
+        ArrayList intArrayList = new ArrayList(data);
+
+    }

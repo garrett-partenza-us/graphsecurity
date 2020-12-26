@@ -1,0 +1,10 @@
+
+    public void bad() throws Throwable {
+        String data;
+
+        
+        
+        data = System.getenv("ADD");
+
+        (new CWE89_SQL_Injection__Environment_executeBatch_53b()).badSink(data );
+    }

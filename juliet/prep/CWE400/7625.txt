@@ -1,0 +1,4 @@
+
+    public void goodG2BSink(int count , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        (new CWE400_Resource_Exhaustion__getQueryString_Servlet_write_53c()).goodG2BSink(count , request, response);
+    }

@@ -1,0 +1,11 @@
+
+    private void goodG2B() throws Throwable {
+        byte data;
+
+        
+        data = 2;
+
+        byte[] dataArray = new byte[5];
+        dataArray[2] = data;
+        (new CWE190_Integer_Overflow__byte_max_multiply_66b()).goodG2BSink(dataArray  );
+    }

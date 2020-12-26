@@ -1,0 +1,22 @@
+
+    private void goodB2G() throws Throwable {
+        Integer dataCopy; {
+            Integer data;
+
+            
+            data = null;
+
+            dataCopy = data;
+        } {
+            Integer data = dataCopy;
+
+            
+            if (data != null) {
+                IO.writeLine("" + data.toString());
+            }
+            else {
+                IO.writeLine("data is null");
+            }
+
+        }
+    }

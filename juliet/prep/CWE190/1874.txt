@@ -1,0 +1,11 @@
+
+    public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int data = badSource(request, response);
+
+        if(data > 0) {
+            
+            int result = (int)(data * 2);
+            IO.writeLine("result: " + result);
+        }
+
+    }

@@ -1,0 +1,9 @@
+
+    public void bad() throws Throwable {
+        short data = (new CWE197_Numeric_Truncation_Error__short_URLConnection_61b()).badSource();
+ {
+            
+            IO.writeLine((byte)data);
+        }
+
+    }

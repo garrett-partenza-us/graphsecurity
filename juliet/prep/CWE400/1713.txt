@@ -1,0 +1,46 @@
+
+    public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        if (IO.STATIC_FINAL_TRUE) {
+            
+            if (request.getContentType() == null || !request.getContentType().contains("multipart/form-data")) {
+                return;
+            }
+            FileOutputStream streamFileOutput = null;
+            InputStream streamInput = null;
+            try {
+                streamFileOutput = new FileOutputStream("output_bad.dat");
+                streamInput = request.getInputStream();
+                for (;;) {
+                    byte[] inputBytes = new byte[1024];
+                    int bytesRead = streamInput.read(inputBytes); 
+                    if (bytesRead == -1) {
+                        break;
+                    }
+                    streamFileOutput.write(inputBytes);
+                }
+            }
+            catch (IOException exceptIO) {
+                IO.logger.log(Level.WARNING, "Error!", exceptIO);
+            }
+            finally {
+                try {
+                    if (streamInput != null) {
+                        streamInput.close();
+                    }
+                }
+                catch (IOException exceptIO) {
+                    IO.logger.log(Level.WARNING, "Error closing InputStream", exceptIO);
+                }
+
+                try {
+                    if (streamFileOutput != null) {
+                        streamFileOutput.close();
+                    }
+                }
+                catch (IOException exceptIO) {
+                    IO.logger.log(Level.WARNING, "Error closing FileOutputStream", exceptIO);
+                }
+            }
+            response.getWriter().write("Uploaded file!");
+        }
+    }

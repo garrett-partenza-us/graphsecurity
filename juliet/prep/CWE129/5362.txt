@@ -1,0 +1,33 @@
+
+    private void goodB2G1() throws Throwable {
+        int data;
+
+        switch (6) {
+        case 6:
+            
+            data = 100;
+            break;
+        default:
+            
+            data = 0;
+            break;
+        }
+
+        switch (8) {
+        case 7:
+            
+            IO.writeLine("Benign, fixed string");
+            break;
+        default:
+            
+            int array[] = { 0, 1, 2, 3, 4 };
+            
+            if (data >= 0 && data < array.length) {
+                IO.writeLine(array[data]);
+            }
+            else {
+                IO.writeLine("Array index out of bounds");
+            }
+            break;
+        }
+    }

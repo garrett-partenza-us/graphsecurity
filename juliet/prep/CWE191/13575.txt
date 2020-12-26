@@ -1,0 +1,19 @@
+
+    public void bad() throws Throwable {
+        short data;
+        if (IO.STATIC_FINAL_FIVE==5) {
+            
+            data = Short.MIN_VALUE;
+        }
+        else {
+            
+            data = 0;
+        }
+
+        if (IO.STATIC_FINAL_FIVE==5) {
+            
+            data--;
+            short result = (short)(data);
+            IO.writeLine("result: " + result);
+        }
+    }

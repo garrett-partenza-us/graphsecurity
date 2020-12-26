@@ -1,0 +1,12 @@
+
+    public void bad() throws Throwable {
+        float data;
+
+        
+        SecureRandom secureRandom = new SecureRandom();
+        data = secureRandom.nextFloat();
+
+        Container dataContainer = new Container();
+        dataContainer.containerOne = data;
+        (new CWE369_Divide_by_Zero__float_random_modulo_67b()).badSink(dataContainer  );
+    }

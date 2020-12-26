@@ -1,0 +1,18 @@
+
+    public void bad() throws Throwable {
+        String data;
+        if (privateFive==5) {
+            
+            data = System.getProperty("CWE690");
+        }
+        else {
+            
+            data = null;
+        }
+
+        if (privateFive==5) {
+            
+            String stringTrimmed = data.trim();
+            IO.writeLine(stringTrimmed);
+        }
+    }

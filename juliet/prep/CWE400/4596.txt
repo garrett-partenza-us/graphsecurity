@@ -1,0 +1,8 @@
+
+    public void badSink() throws Throwable {
+        int count = CWE400_Resource_Exhaustion__sleep_URLConnection_68a.count;
+
+        
+        Thread.sleep(count);
+
+    }

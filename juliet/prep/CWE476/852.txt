@@ -1,0 +1,8 @@
+
+    public void badSink(Vector<int []> dataVector ) throws Throwable {
+        int [] data = dataVector.remove(2);
+
+        
+        IO.writeLine("" + data.length);
+
+    }

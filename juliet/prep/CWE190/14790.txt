@@ -1,0 +1,11 @@
+
+    public void bad() throws Throwable {
+        byte data = badSource();
+
+        
+        data++;
+        byte result = (byte)(data);
+
+        IO.writeLine("result: " + result);
+
+    }

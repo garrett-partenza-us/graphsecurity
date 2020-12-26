@@ -1,0 +1,24 @@
+
+    private void goodB2G2() throws Throwable {
+        long data;
+        if (privateReturnsTrue()) {
+            
+            data = (new java.security.SecureRandom()).nextLong();
+        }
+        else {
+            
+            data = 0L;
+        }
+
+        if (privateReturnsTrue()) {
+            
+            if (data > Long.MIN_VALUE) {
+                data--;
+                long result = (long)(data);
+                IO.writeLine("result: " + result);
+            }
+            else {
+                IO.writeLine("data value is too small to decrement.");
+            }
+        }
+    }

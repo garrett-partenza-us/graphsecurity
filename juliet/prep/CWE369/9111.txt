@@ -1,0 +1,9 @@
+
+    private void goodG2BSink() throws Throwable {
+        float data = dataGoodG2B;
+
+        
+        int result = (int)(100.0 / data);
+        IO.writeLine(result);
+
+    }

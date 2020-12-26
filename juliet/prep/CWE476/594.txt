@@ -1,0 +1,9 @@
+
+    public Integer goodG2BSource() throws Throwable {
+        Integer data;
+
+        
+        data = Integer.valueOf(5);
+
+        return data;
+    }

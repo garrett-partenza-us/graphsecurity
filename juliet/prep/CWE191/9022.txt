@@ -1,0 +1,23 @@
+
+    private void goodB2G() throws Throwable {
+        long dataCopy; {
+            long data;
+
+            
+            data = Long.MIN_VALUE;
+
+            dataCopy = data;
+        } {
+            long data = dataCopy;
+
+            
+            if (data > Long.MIN_VALUE) {
+                long result = (long)(data - 1);
+                IO.writeLine("result: " + result);
+            }
+            else {
+                IO.writeLine("data value is too small to perform subtraction.");
+            }
+
+        }
+    }

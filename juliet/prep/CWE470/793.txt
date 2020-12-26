@@ -1,0 +1,21 @@
+
+    public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+        if (IO.staticReturnsTrueOrFalse()) {
+            
+            data = request.getParameter("name");
+        }
+        else {
+
+            
+            data = "Testing.test";
+
+        }
+
+        
+        Class<?> tempClass = Class.forName(data);
+        Object tempClassObject = tempClass.newInstance();
+
+        IO.writeLine(tempClassObject.toString()); 
+
+    }

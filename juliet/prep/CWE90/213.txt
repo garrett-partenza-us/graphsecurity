@@ -1,0 +1,4 @@
+
+    public void goodG2BSink(String data ) throws Throwable {
+        (new CWE90_LDAP_Injection__console_readLine_52c()).goodG2BSink(data );
+    }

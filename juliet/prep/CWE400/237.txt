@@ -1,0 +1,8 @@
+
+    public void bad() throws Throwable {
+
+        
+        count = (new SecureRandom()).nextInt();
+
+        (new CWE400_Resource_Exhaustion__random_for_loop_68b()).badSink();
+    }

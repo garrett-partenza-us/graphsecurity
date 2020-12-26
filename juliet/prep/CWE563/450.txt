@@ -1,0 +1,13 @@
+
+    public void bad() throws Throwable {
+        StringBuilder data;
+
+        
+        ; 
+
+        for (int j = 0; j < 1; j++) {
+            
+            
+            ; 
+        }
+    }

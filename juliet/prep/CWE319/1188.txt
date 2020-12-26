@@ -1,0 +1,11 @@
+
+    private void badSink(String password ) throws Throwable {
+        if (badPrivate) {
+            if (password != null) {
+                KerberosPrincipal principal = new KerberosPrincipal("test");
+                
+                KerberosKey key = new KerberosKey(principal, password.toCharArray(), null);
+                IO.writeLine(key.toString());
+            }
+        }
+    }

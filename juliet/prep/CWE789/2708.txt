@@ -1,0 +1,16 @@
+
+    public void bad() throws Throwable {
+        int data;
+        if (privateTrue) {
+            
+            data = (new SecureRandom()).nextInt();
+        }
+        else {
+            
+            data = 0;
+        }
+
+        
+        HashSet intHashSet = new HashSet(data);
+
+    }

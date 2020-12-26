@@ -1,0 +1,19 @@
+
+    public void goodB2G1Sink(short data ) throws Throwable {
+        if (CWE190_Integer_Overflow__short_rand_add_22a.goodB2G1PublicStatic) {
+            
+            data = 0;
+        }
+        else {
+
+            
+            if (data < Short.MAX_VALUE) {
+                short result = (short)(data + 1);
+                IO.writeLine("result: " + result);
+            }
+            else {
+                IO.writeLine("data value is too large to perform addition.");
+            }
+
+        }
+    }

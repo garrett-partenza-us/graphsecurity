@@ -1,0 +1,62 @@
+
+    public void bad() throws Throwable {
+        String data;
+
+        data = ""; 
+
+ {
+            Connection connection = null;
+            PreparedStatement preparedStatement = null;
+            ResultSet resultSet = null;
+
+            try {
+                
+                connection = IO.getDBConnection();
+
+                
+                preparedStatement = connection.prepareStatement("select name from users where id=0");
+                resultSet = preparedStatement.executeQuery();
+
+                
+                data = resultSet.getString(1);
+            }
+            catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, "Error with SQL statement", exceptSql);
+            }
+            finally {
+                
+                try {
+                    if (resultSet != null) {
+                        resultSet.close();
+                    }
+                }
+                catch (SQLException exceptSql) {
+                    IO.logger.log(Level.WARNING, "Error closing ResultSet", exceptSql);
+                }
+
+                try {
+                    if (preparedStatement != null) {
+                        preparedStatement.close();
+                    }
+                }
+                catch (SQLException exceptSql) {
+                    IO.logger.log(Level.WARNING, "Error closing PreparedStatement", exceptSql);
+                }
+
+                try {
+                    if (connection != null) {
+                        connection.close();
+                    }
+                }
+                catch (SQLException exceptSql) {
+                    IO.logger.log(Level.WARNING, "Error closing Connection", exceptSql);
+                }
+            }
+        }
+
+        LinkedList<String> dataLinkedList = new LinkedList<String>();
+        dataLinkedList.add(0, data);
+        dataLinkedList.add(1, data);
+        dataLinkedList.add(2, data);
+        (new CWE15_External_Control_of_System_or_Configuration_Setting__database_73b()).badSink(dataLinkedList  );
+    }

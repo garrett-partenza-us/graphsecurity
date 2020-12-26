@@ -1,0 +1,16 @@
+
+    private String bad_source() throws Throwable {
+        String data;
+
+        if (badPrivate) {
+            
+            
+            data = System.getProperty("user.home");
+        }
+        else {
+            
+            data = null;
+        }
+
+        return data;
+    }

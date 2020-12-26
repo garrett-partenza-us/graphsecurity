@@ -1,0 +1,4 @@
+
+    public void badSink(String data ) throws Throwable {
+        (new CWE606_Unchecked_Loop_Condition__Property_54c()).badSink(data );
+    }

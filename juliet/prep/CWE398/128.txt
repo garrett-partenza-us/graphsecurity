@@ -1,0 +1,7 @@
+
+    public void bad() throws Throwable {
+        if (privateFive == 5) {
+            ; 
+            IO.writeLine("Hello from bad()");
+        }
+    }

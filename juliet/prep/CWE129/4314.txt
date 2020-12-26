@@ -1,0 +1,16 @@
+
+    public void badSink(CWE129_Improper_Validation_of_Array_Index__getCookies_Servlet_array_read_check_min_67a.Container dataContainer , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int data = dataContainer.containerOne;
+
+        
+        int array[] = { 0, 1, 2, 3, 4 };
+
+        
+        if (data >= 0) {
+            IO.writeLine(array[data]);
+        }
+        else {
+            IO.writeLine("Array index out of bounds");
+        }
+
+    }

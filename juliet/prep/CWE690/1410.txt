@@ -1,0 +1,11 @@
+
+    public void goodB2GSink(Object dataObject ) throws Throwable {
+        StringBuilder data = (StringBuilder)dataObject;
+
+        
+        if (data != null) {
+            String stringTrimmed = data.toString().trim();
+            IO.writeLine(stringTrimmed);
+        }
+
+    }

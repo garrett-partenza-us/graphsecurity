@@ -1,0 +1,4 @@
+
+    public void badSink(String data , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        (new CWE113_HTTP_Response_Splitting__console_readLine_addHeaderServlet_52c()).badSink(data , request, response);
+    }

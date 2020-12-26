@@ -1,0 +1,11 @@
+
+    private void goodG2BSink(int count , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+
+        int i = 0;
+
+        
+        for (i = 0; i < count; i++) {
+            IO.writeLine("Hello");
+        }
+
+    }

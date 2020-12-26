@@ -1,0 +1,9 @@
+
+    public void bad() throws Throwable {
+        int data;
+
+        data = 0; 
+
+        CWE369_Divide_by_Zero__int_zero_divide_81_base baseObject = new CWE369_Divide_by_Zero__int_zero_divide_81_bad();
+        baseObject.action(data );
+    }

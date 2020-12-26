@@ -1,0 +1,13 @@
+
+    public void badSink(String data ) throws Throwable {
+        if (CWE134_Uncontrolled_Format_String__PropertiesFile_printf_22a.badPublicStatic) {
+            if (data != null) {
+                
+                System.out.printf(data);
+            }
+        }
+        else {
+            
+            data = null;
+        }
+    }

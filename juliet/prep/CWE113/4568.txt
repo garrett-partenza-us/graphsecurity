@@ -1,0 +1,21 @@
+
+    public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+
+        data = ""; 
+
+ {
+            Cookie cookieSources[] = request.getCookies();
+            if (cookieSources != null) {
+                
+                data = cookieSources[0].getValue();
+            }
+        }
+
+        if (data != null) {
+            Cookie cookieSink = new Cookie("lang", data);
+            
+            response.addCookie(cookieSink);
+        }
+
+    }

@@ -1,0 +1,11 @@
+
+    private void goodG2B(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int data = goodG2BSource(request, response);
+
+        
+        int array[] = { 0, 1, 2, 3, 4 };
+
+        
+        IO.writeLine(array[data]);
+
+    }

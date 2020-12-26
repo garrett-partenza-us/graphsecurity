@@ -1,0 +1,9 @@
+
+    private void goodG2B(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+
+        
+        data = "foo";
+
+        (new CWE83_XSS_Attribute__Servlet_URLConnection_52b()).goodG2BSink(data , request, response);
+    }

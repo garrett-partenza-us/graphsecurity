@@ -1,0 +1,21 @@
+
+    private void goodG2B1(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+        if (IO.staticFalse) {
+            
+            data = null;
+        }
+        else {
+
+            
+            data = "foo";
+
+        }
+
+        if (IO.staticTrue) {
+            if (data != null) {
+                
+                response.setHeader("Location", "/author.jsp?lang=" + data);
+            }
+        }
+    }

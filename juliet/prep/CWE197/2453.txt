@@ -1,0 +1,9 @@
+
+    public void badSink() throws Throwable {
+        int data = CWE197_Numeric_Truncation_Error__int_large_to_byte_68a.data;
+ {
+            
+            IO.writeLine((byte)data);
+        }
+
+    }

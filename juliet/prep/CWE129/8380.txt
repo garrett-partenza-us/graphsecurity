@@ -1,0 +1,25 @@
+
+    private void goodB2G1Sink(int data ) throws Throwable {
+        if (goodB2G1Private) {
+            
+            IO.writeLine("Benign, fixed string");
+        }
+        else {
+
+            
+            int array[] = null;
+
+            
+            if (data > 0) {
+                array = new int[data];
+            }
+            else {
+                IO.writeLine("Array size is negative");
+            }
+
+            
+            array[0] = 5;
+            IO.writeLine(array[0]);
+
+        }
+    }

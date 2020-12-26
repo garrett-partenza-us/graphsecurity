@@ -1,0 +1,13 @@
+
+    public void badSink() throws Throwable {
+        int data = CWE129_Improper_Validation_of_Array_Index__random_array_write_no_check_68a.data;
+
+        
+        int array[] = { 0, 1, 2, 3, 4 };
+
+        
+        array[data] = 42;
+
+        
+
+    }

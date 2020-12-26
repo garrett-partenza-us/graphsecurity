@@ -1,0 +1,12 @@
+
+    public void badSink(int data ) throws Throwable {
+        if (CWE190_Integer_Overflow__int_Environment_preinc_22a.badPublicStatic) {
+            
+            int result = (int)(++data);
+            IO.writeLine("result: " + result);
+        }
+        else {
+            
+            data = 0;
+        }
+    }

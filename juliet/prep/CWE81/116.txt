@@ -1,0 +1,24 @@
+
+    public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+        if (IO.staticReturnsTrue()) {
+            data = ""; 
+ {
+                Cookie cookieSources[] = request.getCookies();
+                if (cookieSources != null) {
+                    
+                    data = cookieSources[0].getValue();
+                }
+            }
+        }
+        else {
+            
+            data = null;
+        }
+
+        if (data != null) {
+            
+            response.sendError(404, "<br>bad() - Parameter name has value " + data);
+        }
+
+    }

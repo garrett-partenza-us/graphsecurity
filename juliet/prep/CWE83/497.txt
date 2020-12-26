@@ -1,0 +1,11 @@
+
+    private void goodG2B(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+
+        
+        data = "foo";
+
+        Container dataContainer = new Container();
+        dataContainer.containerOne = data;
+        (new CWE83_XSS_Attribute__Servlet_PropertiesFile_67b()).goodG2BSink(dataContainer , request, response );
+    }

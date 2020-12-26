@@ -1,0 +1,7 @@
+
+    public void badSink(int data ) throws Throwable {
+
+        
+        HashMap intHashMap = new HashMap(data);
+
+    }

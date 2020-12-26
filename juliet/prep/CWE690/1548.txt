@@ -1,0 +1,25 @@
+
+    private void goodB2G1() throws Throwable {
+        String data;
+        if (privateReturnsTrue()) {
+            
+            data = System.getProperty("CWE690");
+        }
+        else {
+            
+            data = null;
+        }
+
+        if (privateReturnsFalse()) {
+            
+            IO.writeLine("Benign, fixed string");
+        }
+        else {
+
+            
+            if("CWE690".equals(data)) {
+                IO.writeLine("data is CWE690");
+            }
+
+        }
+    }

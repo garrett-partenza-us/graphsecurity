@@ -1,0 +1,11 @@
+
+    public void goodB2GSink(LinkedList<String> dataLinkedList , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data = dataLinkedList.remove(2);
+
+        if (data != null) {
+            Cookie cookieSink = new Cookie("lang", URLEncoder.encode(data, "UTF-8"));
+            
+            response.addCookie(cookieSink);
+        }
+
+    }

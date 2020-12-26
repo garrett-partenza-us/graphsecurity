@@ -1,0 +1,9 @@
+
+    private void goodB2G() throws Throwable {
+        byte data;
+
+        
+        data = Byte.MAX_VALUE;
+
+        goodB2GSink(data  );
+    }

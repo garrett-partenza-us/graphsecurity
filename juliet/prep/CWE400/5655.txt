@@ -1,0 +1,12 @@
+
+    public void bad() throws Throwable {
+        int count = (new CWE400_Resource_Exhaustion__connect_tcp_for_loop_61b()).badSource();
+
+        int i = 0;
+
+        
+        for (i = 0; i < count; i++) {
+            IO.writeLine("Hello");
+        }
+
+    }

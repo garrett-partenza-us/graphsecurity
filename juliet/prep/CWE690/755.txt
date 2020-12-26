@@ -1,0 +1,9 @@
+
+    public String badSource() throws Throwable {
+        String data;
+
+        
+        data = System.getProperty("CWE690");
+
+        return data;
+    }

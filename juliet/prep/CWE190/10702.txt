@@ -1,0 +1,14 @@
+
+    private void goodB2G2Sink(long data ) throws Throwable {
+        if (goodB2G2Private) {
+            
+            
+            if ((data != Integer.MIN_VALUE) && (data != Long.MIN_VALUE) && (Math.abs(data) <= (long)Math.sqrt(Long.MAX_VALUE))) {
+                long result = (long)(data * data);
+                IO.writeLine("result: " + result);
+            }
+            else {
+                IO.writeLine("data value is too large to perform squaring.");
+            }
+        }
+    }

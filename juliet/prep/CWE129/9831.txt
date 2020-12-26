@@ -1,0 +1,33 @@
+
+    public void bad() throws Throwable {
+        int data;
+        if (true) {
+            data = Integer.MIN_VALUE; 
+            
+ {
+                String stringNumber = System.getProperty("user.home");
+                try {
+                    data = Integer.parseInt(stringNumber.trim());
+                }
+                catch(NumberFormatException exceptNumberFormat) {
+                    IO.logger.log(Level.WARNING, "Number format exception parsing data from string", exceptNumberFormat);
+                }
+            }
+        }
+        else {
+            
+            data = 0;
+        }
+
+        if (true) {
+            
+            int array[] = { 0, 1, 2, 3, 4 };
+            
+            if (data >= 0) {
+                IO.writeLine(array[data]);
+            }
+            else {
+                IO.writeLine("Array index out of bounds");
+            }
+        }
+    }

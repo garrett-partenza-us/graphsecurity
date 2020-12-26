@@ -1,0 +1,14 @@
+
+    public void goodB2GSink(CWE190_Integer_Overflow__int_getCookies_Servlet_add_67a.Container dataContainer , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int data = dataContainer.containerOne;
+
+        
+        if (data < Integer.MAX_VALUE) {
+            int result = (int)(data + 1);
+            IO.writeLine("result: " + result);
+        }
+        else {
+            IO.writeLine("data value is too large to perform addition.");
+        }
+
+    }

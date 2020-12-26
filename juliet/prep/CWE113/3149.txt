@@ -1,0 +1,20 @@
+
+    private void goodB2G2(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+        if (IO.STATIC_FINAL_FIVE==5) {
+            
+            data = request.getParameter("name");
+        }
+        else {
+            
+            data = null;
+        }
+
+        if (IO.STATIC_FINAL_FIVE==5) {
+            if (data != null) {
+                
+                data = URLEncoder.encode(data, "UTF-8");
+                response.setHeader("Location", "/author.jsp?lang=" + data);
+            }
+        }
+    }

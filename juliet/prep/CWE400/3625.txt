@@ -1,0 +1,27 @@
+
+    public void bad() throws Throwable {
+        int count;
+        if(IO.staticReturnsTrueOrFalse()) {
+            
+            count = (new SecureRandom()).nextInt();
+        }
+        else {
+
+            
+            count = 2;
+
+        }
+
+        if(IO.staticReturnsTrueOrFalse()) {
+            
+            Thread.sleep(count);
+        }
+        else {
+
+            
+            if (count > 0 && count <= 2000) {
+                Thread.sleep(count);
+            }
+
+        }
+    }

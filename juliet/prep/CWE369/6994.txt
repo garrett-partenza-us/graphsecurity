@@ -1,0 +1,11 @@
+
+    private void goodG2B() throws Throwable {
+        int data;
+
+        
+        data = 2;
+
+        int[] dataArray = new int[5];
+        dataArray[2] = data;
+        (new CWE369_Divide_by_Zero__int_zero_modulo_66b()).goodG2BSink(dataArray  );
+    }

@@ -1,0 +1,10 @@
+
+    public void bad() throws Throwable {
+        String data;
+
+        
+        
+        data = System.getenv("ADD");
+
+        (new CWE606_Unchecked_Loop_Condition__Environment_51b()).badSink(data  );
+    }

@@ -1,0 +1,8 @@
+
+    public void badSink(CWE789_Uncontrolled_Mem_Alloc__getParameter_Servlet_HashMap_67a.Container dataContainer , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int data = dataContainer.containerOne;
+
+        
+        HashMap intHashMap = new HashMap(data);
+
+    }

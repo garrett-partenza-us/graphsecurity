@@ -1,0 +1,19 @@
+
+    private void goodG2B2(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+        if (IO.STATIC_FINAL_FIVE==5) {
+            
+            data = "foo";
+        }
+        else {
+            
+            data = null;
+        }
+
+        if (IO.STATIC_FINAL_FIVE==5) {
+            
+            if (data != null) {
+                response.addHeader("Location", "/author.jsp?lang=" + data);
+            }
+        }
+    }

@@ -1,0 +1,6 @@
+
+    public void bad() {
+        
+        intBad = 10;
+        IO.writeLine("" + intBad);
+    }

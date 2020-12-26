@@ -1,0 +1,37 @@
+
+    private void goodB2G() throws Throwable {
+        long data;
+        if(IO.staticReturnsTrueOrFalse()) {
+            
+            data = (new java.security.SecureRandom()).nextLong();
+        }
+        else {
+
+            
+            data = (new java.security.SecureRandom()).nextLong();
+
+        }
+
+        if(IO.staticReturnsTrueOrFalse()) {
+            
+            if (data < Long.MAX_VALUE) {
+                long result = (long)(data + 1);
+                IO.writeLine("result: " + result);
+            }
+            else {
+                IO.writeLine("data value is too large to perform addition.");
+            }
+        }
+        else {
+
+            
+            if (data < Long.MAX_VALUE) {
+                long result = (long)(data + 1);
+                IO.writeLine("result: " + result);
+            }
+            else {
+                IO.writeLine("data value is too large to perform addition.");
+            }
+
+        }
+    }

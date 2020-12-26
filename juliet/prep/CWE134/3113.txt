@@ -1,0 +1,10 @@
+
+    public void goodG2BSink() throws Throwable {
+        String data = CWE134_Uncontrolled_Format_String__Property_format_68a.data;
+
+        if (data != null) {
+            
+            System.out.format(data);
+        }
+
+    }

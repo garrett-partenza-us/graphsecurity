@@ -1,0 +1,10 @@
+
+    public void bad() throws Throwable {
+        long data;
+
+        
+        data = Long.MIN_VALUE;
+
+        badPrivate = true;
+        badSink(data );
+    }

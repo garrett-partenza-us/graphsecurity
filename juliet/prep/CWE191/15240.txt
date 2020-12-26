@@ -1,0 +1,11 @@
+
+    private void goodG2B() throws Throwable {
+        short data = goodG2BSource();
+
+        
+        data--;
+        short result = (short)(data);
+
+        IO.writeLine("result: " + result);
+
+    }

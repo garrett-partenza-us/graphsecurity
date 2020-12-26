@@ -1,0 +1,9 @@
+
+    private void goodG2B(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int count;
+
+        
+        count = 2;
+
+        (new CWE400_Resource_Exhaustion__getQueryString_Servlet_for_loop_54b()).goodG2BSink(count , request, response);
+    }

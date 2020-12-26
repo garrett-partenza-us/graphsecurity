@@ -1,0 +1,13 @@
+
+    public void bad() throws Throwable {
+        StringBuilder data;
+
+        
+
+        data = new StringBuilder("Good");
+
+        
+        
+        ; 
+
+    }

@@ -1,0 +1,4 @@
+
+    public void goodG2BSink(int data ) throws Throwable {
+        (new CWE369_Divide_by_Zero__int_Environment_modulo_54d()).goodG2BSink(data );
+    }

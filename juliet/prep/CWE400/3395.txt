@@ -1,0 +1,10 @@
+
+    public void goodB2GSink(Vector<Integer> countVector ) throws Throwable {
+        int count = countVector.remove(2);
+
+        
+        if (count > 0 && count <= 2000) {
+            Thread.sleep(count);
+        }
+
+    }

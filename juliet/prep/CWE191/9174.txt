@@ -1,0 +1,9 @@
+
+    public void badSink(long data ) throws Throwable {
+
+        
+        long result = (long)(data - 1);
+
+        IO.writeLine("result: " + result);
+
+    }

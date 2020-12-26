@@ -1,0 +1,11 @@
+
+    public void bad() throws Throwable {
+        String data;
+
+        
+        
+        data = System.getProperty("user.home");
+
+        CWE89_SQL_Injection__Property_executeBatch_81_base baseObject = new CWE89_SQL_Injection__Property_executeBatch_81_bad();
+        baseObject.action(data );
+    }

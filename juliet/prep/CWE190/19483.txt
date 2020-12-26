@@ -1,0 +1,11 @@
+
+    private void goodG2B() throws Throwable {
+        long data = (new CWE190_Integer_Overflow__long_max_postinc_61b()).goodG2BSource();
+
+        
+        data++;
+        long result = (long)(data);
+
+        IO.writeLine("result: " + result);
+
+    }

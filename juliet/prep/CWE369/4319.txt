@@ -1,0 +1,7 @@
+
+    private void goodG2BSink(int data , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        if (goodG2BPrivate) {
+            
+            IO.writeLine("bad: 100/" + data + " = " + (100 / data) + "\n");
+        }
+    }

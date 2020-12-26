@@ -1,0 +1,11 @@
+
+    private void goodG2B() throws Throwable {
+        String data;
+
+        
+        data = "5";
+
+        String[] dataArray = new String[5];
+        dataArray[2] = data;
+        (new CWE606_Unchecked_Loop_Condition__connect_tcp_66b()).goodG2BSink(dataArray  );
+    }

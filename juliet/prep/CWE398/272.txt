@@ -1,0 +1,16 @@
+
+    public void bad() throws Throwable {
+        switch (7) {
+        case 7:
+            int i = 0;
+            
+            while(i++ < 10) {
+            }
+            IO.writeLine("Hello from bad()");
+            break;
+        default:
+            
+            IO.writeLine("Benign, fixed string");
+            break;
+        }
+    }

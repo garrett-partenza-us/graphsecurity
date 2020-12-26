@@ -1,0 +1,16 @@
+
+    public void bad() throws Throwable {
+        long data;
+
+        
+
+        data = 5L;
+
+        while (true) {
+            
+            
+            ; 
+            break;
+        }
+
+    }

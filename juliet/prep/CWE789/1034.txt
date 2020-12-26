@@ -1,0 +1,17 @@
+
+    private int goodG2B1_source(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int data = 0;
+
+        if (goodG2B1_private) {
+            
+            data = 0;
+        }
+        else {
+
+            
+            data = 2;
+
+        }
+
+        return data;
+    }

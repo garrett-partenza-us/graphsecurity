@@ -1,0 +1,10 @@
+
+    public void bad() throws Throwable {
+        int data = (new CWE191_Integer_Underflow__int_random_predec_61b()).badSource();
+
+        
+        int result = (int)(--data);
+
+        IO.writeLine("result: " + result);
+
+    }

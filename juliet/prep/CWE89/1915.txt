@@ -1,0 +1,17 @@
+
+    private void goodB2G2(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+
+        data = ""; 
+
+ {
+            Cookie cookieSources[] = request.getCookies();
+            if (cookieSources != null) {
+                
+                data = cookieSources[0].getValue();
+            }
+        }
+
+        goodB2G2Private = true;
+        goodB2G2Sink(data , request, response);
+    }

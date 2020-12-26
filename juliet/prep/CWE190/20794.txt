@@ -1,0 +1,67 @@
+
+    private void goodB2G1() throws Throwable {
+        long data;
+        if (privateReturnsTrue()) {
+            
+            data = -1;
+            
+            BufferedReader readerBuffered = null;
+            InputStreamReader readerInputStream = null;
+            try {
+                readerInputStream = new InputStreamReader(System.in, "UTF-8");
+                readerBuffered = new BufferedReader(readerInputStream);
+                String stringNumber = readerBuffered.readLine();
+                if (stringNumber != null) {
+                    data = Long.parseLong(stringNumber.trim());
+                }
+            }
+            catch (IOException exceptIO) {
+                IO.logger.log(Level.WARNING, "Error with stream reading", exceptIO);
+            }
+            catch (NumberFormatException exceptNumberFormat) {
+                IO.logger.log(Level.WARNING, "Error with number parsing", exceptNumberFormat);
+            }
+            finally {
+                
+                try {
+                    if (readerBuffered != null) {
+                        readerBuffered.close();
+                    }
+                }
+                catch (IOException exceptIO) {
+                    IO.logger.log(Level.WARNING, "Error closing BufferedReader", exceptIO);
+                }
+                finally {
+                    try {
+                        if (readerInputStream != null) {
+                            readerInputStream.close();
+                        }
+                    }
+                    catch (IOException exceptIO) {
+                        IO.logger.log(Level.WARNING, "Error closing InputStreamReader", exceptIO);
+                    }
+                }
+            }
+        }
+        else {
+            
+            data = 0L;
+        }
+
+        if (privateReturnsFalse()) {
+            
+            IO.writeLine("Benign, fixed string");
+        }
+        else {
+
+            
+            if (data < Long.MAX_VALUE) {
+                long result = (long)(++data);
+                IO.writeLine("result: " + result);
+            }
+            else {
+                IO.writeLine("data value is too large to increment.");
+            }
+
+        }
+    }

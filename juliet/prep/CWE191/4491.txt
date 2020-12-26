@@ -1,0 +1,11 @@
+
+    public void bad() throws Throwable {
+        byte data;
+
+        
+        data = Byte.MIN_VALUE;
+
+        Container dataContainer = new Container();
+        dataContainer.containerOne = data;
+        (new CWE191_Integer_Underflow__byte_min_predec_67b()).badSink(dataContainer  );
+    }

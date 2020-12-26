@@ -1,0 +1,16 @@
+
+    public void goodG2BSink(CWE129_Improper_Validation_of_Array_Index__random_array_read_check_max_67a.Container dataContainer ) throws Throwable {
+        int data = dataContainer.containerOne;
+
+        
+        int array[] = { 0, 1, 2, 3, 4 };
+
+        
+        if (data < array.length) {
+            IO.writeLine(array[data]);
+        }
+        else {
+            IO.writeLine("Array index out of bounds");
+        }
+
+    }

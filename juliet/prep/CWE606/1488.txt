@@ -1,0 +1,10 @@
+
+    private void goodB2G() throws Throwable {
+        String data;
+
+        
+        
+        data = System.getenv("ADD");
+
+        (new CWE606_Unchecked_Loop_Condition__Environment_71b()).goodB2GSink((Object)data  );
+    }

@@ -1,0 +1,17 @@
+
+    private void good1() throws Throwable {
+        if (IO.staticFive != 5) {
+            
+            IO.writeLine("Benign, fixed string");
+        }
+        else {
+
+            
+            for (int i = 0; i < 10; i++) {
+                IO.writeLine("Inside the for statement");
+            }
+
+            IO.writeLine("Hello from good()");
+
+        }
+    }

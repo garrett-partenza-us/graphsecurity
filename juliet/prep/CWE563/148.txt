@@ -1,0 +1,18 @@
+
+    public void bad() throws Throwable {
+        String data;
+        if (privateReturnsTrue()) {
+            
+            data = "Good";
+        }
+        else {
+            
+            data = null;
+        }
+
+        if (privateReturnsTrue()) {
+            
+            data = "Reinitialize";
+            IO.writeLine(data);
+        }
+    }

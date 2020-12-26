@@ -1,0 +1,14 @@
+
+    private void goodG2B() throws Throwable {
+        String data;
+
+        
+        data = "Testing.test";
+
+        
+        Class<?> tempClass = Class.forName(data);
+        Object tempClassObject = tempClass.newInstance();
+
+        IO.writeLine(tempClassObject.toString()); 
+
+    }

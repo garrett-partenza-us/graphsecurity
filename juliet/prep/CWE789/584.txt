@@ -1,0 +1,9 @@
+
+    private void goodG2B(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int data;
+
+        
+        data = 2;
+
+        (new CWE789_Uncontrolled_Mem_Alloc__getCookies_Servlet_HashMap_52b()).goodG2BSink(data , request, response);
+    }

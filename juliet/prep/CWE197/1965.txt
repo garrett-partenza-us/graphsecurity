@@ -1,0 +1,9 @@
+
+    public void bad() throws Throwable {
+        int data = badSource();
+ {
+            
+            IO.writeLine((short)data);
+        }
+
+    }

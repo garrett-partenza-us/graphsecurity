@@ -1,0 +1,31 @@
+
+    private void goodB2G1() throws Throwable {
+        int data;
+        if (IO.STATIC_FINAL_TRUE) {
+            
+            data = (new SecureRandom()).nextInt();
+        }
+        else {
+            
+            data = 0;
+        }
+
+        if (IO.STATIC_FINAL_FALSE) {
+            
+            IO.writeLine("Benign, fixed string");
+        }
+        else {
+
+            if(data > 0) {
+                
+                if (data < (Integer.MAX_VALUE/2)) {
+                    int result = (int)(data * 2);
+                    IO.writeLine("result: " + result);
+                }
+                else {
+                    IO.writeLine("data value is too large to perform multiplication.");
+                }
+            }
+
+        }
+    }

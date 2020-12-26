@@ -1,0 +1,37 @@
+
+    public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+        if(IO.staticReturnsTrueOrFalse()) {
+            data = ""; 
+ {
+                Cookie cookieSources[] = request.getCookies();
+                if (cookieSources != null) {
+                    
+                    data = cookieSources[0].getValue();
+                }
+            }
+        }
+        else {
+
+            
+            data = "foo";
+
+        }
+
+        if(IO.staticReturnsTrueOrFalse()) {
+            if (data != null) {
+                Cookie cookieSink = new Cookie("lang", data);
+                
+                response.addCookie(cookieSink);
+            }
+        }
+        else {
+
+            if (data != null) {
+                Cookie cookieSink = new Cookie("lang", URLEncoder.encode(data, "UTF-8"));
+                
+                response.addCookie(cookieSink);
+            }
+
+        }
+    }

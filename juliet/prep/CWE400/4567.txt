@@ -1,0 +1,11 @@
+
+    public void bad() throws Throwable {
+        int count;
+
+        
+        count = (new SecureRandom()).nextInt();
+
+        
+        Thread.sleep(count);
+
+    }

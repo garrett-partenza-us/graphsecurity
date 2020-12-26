@@ -1,0 +1,11 @@
+
+    public void bad() throws Throwable {
+        if (true) { {
+                String myString = null;
+                
+                if ((myString != null) & (myString.length() > 0)) {
+                    IO.writeLine("The string length is greater than 0");
+                }
+            }
+        }
+    }

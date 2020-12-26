@@ -1,0 +1,19 @@
+
+    public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+        if (IO.STATIC_FINAL_TRUE) {
+            
+            data = request.getParameter("name");
+        }
+        else {
+            
+            data = null;
+        }
+
+        if (IO.STATIC_FINAL_TRUE) {
+            
+            if (data != null) {
+                response.addHeader("Location", "/author.jsp?lang=" + data);
+            }
+        }
+    }

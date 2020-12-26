@@ -1,0 +1,8 @@
+
+    public void badSink(CWE476_NULL_Pointer_Dereference__StringBuilder_67a.Container dataContainer ) throws Throwable {
+        StringBuilder data = dataContainer.containerOne;
+
+        
+        IO.writeLine("" + data.length());
+
+    }

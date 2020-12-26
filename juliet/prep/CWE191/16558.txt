@@ -1,0 +1,9 @@
+
+    public void bad() throws Throwable {
+        byte data;
+
+        
+        data = Byte.MIN_VALUE;
+
+        (new CWE191_Integer_Underflow__byte_min_multiply_71b()).badSink((Object)data  );
+    }

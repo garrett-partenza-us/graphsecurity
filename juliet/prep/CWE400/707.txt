@@ -1,0 +1,8 @@
+
+    public void goodG2BSink() throws Throwable {
+        int count = CWE400_Resource_Exhaustion__sleep_console_readLine_68a.count;
+
+        
+        Thread.sleep(count);
+
+    }

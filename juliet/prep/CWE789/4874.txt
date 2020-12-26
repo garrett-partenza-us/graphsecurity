@@ -1,0 +1,4 @@
+
+    public void goodG2BSink(int data ) throws Throwable {
+        (new CWE789_Uncontrolled_Mem_Alloc__connect_tcp_ArrayList_54d()).goodG2BSink(data );
+    }

@@ -1,0 +1,18 @@
+
+    private void goodB2G(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+
+        data = ""; 
+
+ {
+            Cookie cookieSources[] = request.getCookies();
+            if (cookieSources != null) {
+                
+                data = cookieSources[0].getValue();
+            }
+        }
+
+        Container dataContainer = new Container();
+        dataContainer.containerOne = data;
+        (new CWE113_HTTP_Response_Splitting__getCookies_Servlet_setHeaderServlet_67b()).goodB2GSink(dataContainer , request, response );
+    }

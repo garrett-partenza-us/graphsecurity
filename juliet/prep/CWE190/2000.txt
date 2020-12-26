@@ -1,0 +1,20 @@
+
+    public void bad() throws Throwable {
+
+        data = Integer.MIN_VALUE; 
+
+        
+ {
+            String stringNumber = System.getenv("ADD");
+            if (stringNumber != null) {
+                try {
+                    data = Integer.parseInt(stringNumber.trim());
+                }
+                catch(NumberFormatException exceptNumberFormat) {
+                    IO.logger.log(Level.WARNING, "Number format exception parsing data from string", exceptNumberFormat);
+                }
+            }
+        }
+
+        (new CWE190_Integer_Overflow__int_Environment_multiply_68b()).badSink();
+    }

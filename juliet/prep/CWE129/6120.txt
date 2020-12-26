@@ -1,0 +1,21 @@
+
+    public void goodB2G1Sink(int data ) throws Throwable {
+        if (CWE129_Improper_Validation_of_Array_Index__listen_tcp_array_read_no_check_22a.goodB2G1PublicStatic) {
+            
+            data = 0;
+        }
+        else {
+
+            
+            int array[] = { 0, 1, 2, 3, 4 };
+
+            
+            if (data >= 0 && data < array.length) {
+                IO.writeLine(array[data]);
+            }
+            else {
+                IO.writeLine("Array index out of bounds");
+            }
+
+        }
+    }

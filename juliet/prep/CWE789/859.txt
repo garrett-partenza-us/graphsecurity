@@ -1,0 +1,10 @@
+
+    public void bad() throws Throwable {
+        int data;
+
+        
+        data = Integer.MAX_VALUE;
+
+        CWE789_Uncontrolled_Mem_Alloc__max_value_HashMap_81_base baseObject = new CWE789_Uncontrolled_Mem_Alloc__max_value_HashMap_81_bad();
+        baseObject.action(data );
+    }

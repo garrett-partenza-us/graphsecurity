@@ -1,0 +1,4 @@
+
+    public void goodG2BSink(String data ) throws Throwable {
+        (new CWE606_Unchecked_Loop_Condition__Property_54d()).goodG2BSink(data );
+    }

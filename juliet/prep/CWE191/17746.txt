@@ -1,0 +1,10 @@
+
+    public void goodG2BSink() throws Throwable {
+        byte data = CWE191_Integer_Underflow__byte_min_sub_68a.data;
+
+        
+        byte result = (byte)(data - 1);
+
+        IO.writeLine("result: " + result);
+
+    }

@@ -1,0 +1,19 @@
+
+    private void goodG2B2(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+        if (5 == 5) {
+            
+            data = "Testing.test";
+        }
+        else {
+            
+            data = null;
+        }
+
+        
+        Class<?> tempClass = Class.forName(data);
+        Object tempClassObject = tempClass.newInstance();
+
+        IO.writeLine(tempClassObject.toString()); 
+
+    }

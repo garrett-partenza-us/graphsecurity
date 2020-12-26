@@ -1,0 +1,19 @@
+
+    public void badSink(CWE78_OS_Command_Injection__Environment_67a.Container dataContainer ) throws Throwable {
+        String data = dataContainer.containerOne;
+
+        String osCommand;
+        if(System.getProperty("os.name").toLowerCase().indexOf("win") >= 0) {
+            
+            osCommand = "c:\\WINDOWS\\SYSTEM32\\cmd.exe /c dir ";
+        }
+        else {
+            
+            osCommand = "/bin/ls ";
+        }
+
+        
+        Process process = Runtime.getRuntime().exec(osCommand + data);
+        process.waitFor();
+
+    }

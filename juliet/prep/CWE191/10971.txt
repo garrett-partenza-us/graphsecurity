@@ -1,0 +1,36 @@
+
+    public void bad() throws Throwable {
+        short data;
+        if(IO.staticReturnsTrueOrFalse()) {
+            
+            data = (short)((new java.security.SecureRandom()).nextInt(1+Short.MAX_VALUE-Short.MIN_VALUE)+Short.MIN_VALUE);
+        }
+        else {
+
+            
+            data = 2;
+
+        }
+
+        if(IO.staticReturnsTrueOrFalse()) {
+            if(data < 0) {
+                
+                short result = (short)(data * 2);
+                IO.writeLine("result: " + result);
+            }
+        }
+        else {
+
+            if(data < 0) {
+                
+                if (data > (Short.MIN_VALUE/2)) {
+                    short result = (short)(data * 2);
+                    IO.writeLine("result: " + result);
+                }
+                else {
+                    IO.writeLine("data value is too small to perform multiplication.");
+                }
+            }
+
+        }
+    }

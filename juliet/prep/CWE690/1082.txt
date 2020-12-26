@@ -1,0 +1,18 @@
+
+    public void bad() throws Throwable {
+        String data;
+        if (IO.STATIC_FINAL_FIVE==5) {
+            
+            data = CWE690_NULL_Deref_From_Return__Class_Helper.getStringBad();
+        }
+        else {
+            
+            data = null;
+        }
+
+        if (IO.STATIC_FINAL_FIVE==5) {
+            
+            String stringTrimmed = data.trim();
+            IO.writeLine(stringTrimmed);
+        }
+    }

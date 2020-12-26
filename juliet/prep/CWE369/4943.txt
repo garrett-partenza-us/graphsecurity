@@ -1,0 +1,8 @@
+
+    public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int data = (new CWE369_Divide_by_Zero__int_getParameter_Servlet_divide_61b()).badSource(request, response);
+
+        
+        IO.writeLine("bad: 100/" + data + " = " + (100 / data) + "\n");
+
+    }

@@ -1,0 +1,23 @@
+
+    public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+
+        data = ""; 
+
+ {
+            StringTokenizer tokenizer = new StringTokenizer(request.getQueryString(), "&");
+            while (tokenizer.hasMoreTokens()) {
+                String token = tokenizer.nextToken(); 
+                if(token.startsWith("id=")) {
+                    data = token.substring(3); 
+                    break; 
+                }
+            }
+        }
+
+        HashMap<Integer,String> dataHashMap = new HashMap<Integer,String>();
+        dataHashMap.put(0, data);
+        dataHashMap.put(1, data);
+        dataHashMap.put(2, data);
+        (new CWE470_Unsafe_Reflection__getQueryString_Servlet_74b()).badSink(dataHashMap , request, response );
+    }

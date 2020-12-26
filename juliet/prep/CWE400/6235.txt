@@ -1,0 +1,67 @@
+
+    private void goodB2G(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int count;
+
+        count = Integer.MIN_VALUE; 
+
+ {
+            StringTokenizer tokenizer = new StringTokenizer(request.getQueryString(), "&");
+
+            while (tokenizer.hasMoreTokens()) {
+                String token = tokenizer.nextToken(); 
+                if(token.startsWith("id=")) {
+                    try {
+                        count = Integer.parseInt(token.substring(3)); 
+                    }
+                    catch(NumberFormatException exceptNumberFormat) {
+                        IO.logger.log(Level.WARNING, "Number format exception reading id from query string", exceptNumberFormat);
+                    }
+                    break; 
+                }
+            }
+        }
+
+        for (int k = 0; k < 1; k++) {
+            
+            if (count > 0 && count <= 20) {
+                File file = new File("goodSink.txt");
+                FileOutputStream streamFileOutput = new FileOutputStream(file);
+                OutputStreamWriter writerOutputStream = new OutputStreamWriter(streamFileOutput, "UTF-8");
+                BufferedWriter writerBuffered = new BufferedWriter(writerOutputStream);
+                int i;
+                for (i = 0; i < count; i++) {
+                    try {
+                        writerBuffered.write("Hello");
+                    }
+                    catch (IOException exceptIO) {
+                        IO.logger.log(Level.WARNING, "Error with stream writing", exceptIO);
+                    }
+                }
+                
+                try {
+                    if (writerBuffered != null) {
+                        writerBuffered.close();
+                    }
+                }
+                catch (IOException exceptIO) {
+                    IO.logger.log(Level.WARNING, "Error closing BufferedWriter", exceptIO);
+                }
+                try {
+                    if (writerOutputStream != null) {
+                        writerOutputStream.close();
+                    }
+                }
+                catch (IOException exceptIO) {
+                    IO.logger.log(Level.WARNING, "Error closing OutputStreamWriter", exceptIO);
+                }
+                try {
+                    if (streamFileOutput != null) {
+                        streamFileOutput.close();
+                    }
+                }
+                catch (IOException exceptIO) {
+                    IO.logger.log(Level.WARNING, "Error closing FileOutputStream", exceptIO);
+                }
+            }
+        }
+    }

@@ -1,0 +1,9 @@
+
+    private short badSource() throws Throwable {
+        short data;
+
+        
+        data = (short)((new java.security.SecureRandom()).nextInt(1+Short.MAX_VALUE-Short.MIN_VALUE)+Short.MIN_VALUE);
+
+        return data;
+    }

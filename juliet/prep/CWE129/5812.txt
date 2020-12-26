@@ -1,0 +1,21 @@
+
+    public void goodB2G2Sink(int data ) throws Throwable {
+        if (CWE129_Improper_Validation_of_Array_Index__large_fixed_array_size_22a.goodB2G2PublicStatic) {
+            
+            int array[] = null;
+            
+            if (data > 0) {
+                array = new int[data];
+            }
+            else {
+                IO.writeLine("Array size is negative");
+            }
+            
+            array[0] = 5;
+            IO.writeLine(array[0]);
+        }
+        else {
+            
+            data = 0;
+        }
+    }

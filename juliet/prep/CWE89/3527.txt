@@ -1,0 +1,4 @@
+
+    public void goodG2BSink(String data , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        (new CWE89_SQL_Injection__getQueryString_Servlet_executeBatch_53d()).goodG2BSink(data , request, response);
+    }

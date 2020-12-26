@@ -1,0 +1,20 @@
+
+    public void bad() throws Throwable {
+        int data;
+        if (privateReturnsTrue()) {
+            
+            data = 100;
+        }
+        else {
+            
+            data = 0;
+        }
+
+        if (privateReturnsTrue()) {
+            
+            int array[] = { 0, 1, 2, 3, 4 };
+            
+            array[data] = 42;
+            
+        }
+    }

@@ -1,0 +1,11 @@
+
+    public void goodB2GSink(HashMap<Integer,String> dataHashMap , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data = dataHashMap.get(2);
+
+        
+        if (data != null) {
+            String stringTrimmed = data.trim();
+            IO.writeLine(stringTrimmed);
+        }
+
+    }

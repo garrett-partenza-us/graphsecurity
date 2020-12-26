@@ -1,0 +1,4 @@
+
+    public void badSink(String data , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        (new CWE81_XSS_Error_Message__Servlet_database_52c()).badSink(data , request, response);
+    }

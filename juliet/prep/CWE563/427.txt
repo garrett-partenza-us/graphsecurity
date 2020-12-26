@@ -1,0 +1,13 @@
+
+    public void bad() throws Throwable {
+        long data;
+
+        
+        ; 
+
+        if (PRIVATE_STATIC_FINAL_TRUE) {
+            
+            
+            ; 
+        }
+    }

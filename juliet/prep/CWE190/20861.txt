@@ -1,0 +1,10 @@
+
+    public void bad() throws Throwable {
+        long data;
+
+        
+        data = (new java.security.SecureRandom()).nextLong();
+
+        badPrivate = true;
+        badSink(data );
+    }

@@ -1,0 +1,4 @@
+
+    public void goodB2GSink(byte data ) throws Throwable {
+        (new CWE191_Integer_Underflow__byte_rand_sub_53d()).goodB2GSink(data );
+    }

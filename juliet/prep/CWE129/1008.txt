@@ -1,0 +1,9 @@
+
+    private void goodB2G() throws Throwable {
+        int data;
+
+        
+        data = (new SecureRandom()).nextInt();
+
+        (new CWE129_Improper_Validation_of_Array_Index__random_array_size_53b()).goodB2GSink(data );
+    }

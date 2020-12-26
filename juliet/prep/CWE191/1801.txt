@@ -1,0 +1,10 @@
+
+    private void goodB2G1() throws Throwable {
+        long data = 0L;
+
+        
+        data = Long.MIN_VALUE;
+
+        goodB2G1PublicStatic = false;
+        (new CWE191_Integer_Underflow__long_min_predec_22b()).goodB2G1Sink(data );
+    }

@@ -1,0 +1,10 @@
+
+    private void goodG2B() throws Throwable {
+        int count = 0;
+
+        
+        count = 2;
+
+        goodG2BPublicStatic = true;
+        (new CWE400_Resource_Exhaustion__random_write_22b()).goodG2BSink(count );
+    }

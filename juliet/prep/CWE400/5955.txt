@@ -1,0 +1,20 @@
+
+    public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int count;
+
+        count = Integer.MIN_VALUE; 
+
+ {
+            String stringNumber = request.getParameter("name");
+
+            try {
+                count = Integer.parseInt(stringNumber.trim());
+            }
+            catch(NumberFormatException exceptNumberFormat) {
+                IO.logger.log(Level.WARNING, "Number format exception reading count from parameter 'name'", exceptNumberFormat);
+            }
+        }
+
+        countBad = count;
+        badSink(request, response);
+    }

@@ -1,0 +1,4 @@
+
+    public void badSink(int count ) throws Throwable {
+        (new CWE400_Resource_Exhaustion__Property_write_54c()).badSink(count );
+    }

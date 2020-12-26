@@ -1,0 +1,19 @@
+
+    private void goodB2G2() throws Throwable {
+        int count;
+        if (IO.staticReturnsTrue()) {
+            
+            count = (new SecureRandom()).nextInt();
+        }
+        else {
+            
+            count = 0;
+        }
+
+        if (IO.staticReturnsTrue()) {
+            
+            if (count > 0 && count <= 2000) {
+                Thread.sleep(count);
+            }
+        }
+    }

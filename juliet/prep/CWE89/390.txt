@@ -1,0 +1,4 @@
+
+    public void badSink(String data ) throws Throwable {
+        (new CWE89_SQL_Injection__File_prepareStatement_53c()).badSink(data );
+    }

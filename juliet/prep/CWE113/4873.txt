@@ -1,0 +1,10 @@
+
+    public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+
+        
+        
+        data = System.getenv("ADD");
+
+        (new CWE113_HTTP_Response_Splitting__Environment_setHeaderServlet_71b()).badSink((Object)data , request, response );
+    }

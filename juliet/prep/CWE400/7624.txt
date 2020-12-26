@@ -1,0 +1,4 @@
+
+    public void badSink(int count , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        (new CWE400_Resource_Exhaustion__getQueryString_Servlet_write_53c()).badSink(count , request, response);
+    }

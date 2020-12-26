@@ -1,0 +1,8 @@
+
+    public void bad() throws Throwable {
+        int data = (new CWE789_Uncontrolled_Mem_Alloc__URLConnection_ArrayList_61b()).badSource();
+
+        
+        ArrayList intArrayList = new ArrayList(data);
+
+    }

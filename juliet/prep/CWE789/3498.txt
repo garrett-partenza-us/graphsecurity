@@ -1,0 +1,7 @@
+
+    public void badSink(int data ) throws Throwable {
+
+        
+        HashSet intHashSet = new HashSet(data);
+
+    }

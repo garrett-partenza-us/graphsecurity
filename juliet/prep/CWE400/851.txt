@@ -1,0 +1,11 @@
+
+    private void goodG2B() throws Throwable {
+        int count;
+
+        
+        count = 2;
+
+        
+        Thread.sleep(count);
+
+    }

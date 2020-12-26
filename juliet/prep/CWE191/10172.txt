@@ -1,0 +1,19 @@
+
+    public void bad() throws Throwable {
+        long data;
+
+        while (true) {
+            
+            data = (new java.security.SecureRandom()).nextLong();
+            break;
+        }
+
+        while (true) {
+            if(data < 0) {
+                
+                long result = (long)(data * 2);
+                IO.writeLine("result: " + result);
+            }
+            break;
+        }
+    }

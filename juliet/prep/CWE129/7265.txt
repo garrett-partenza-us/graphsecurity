@@ -1,0 +1,20 @@
+
+    private void goodB2G(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int data;
+
+        data = Integer.MIN_VALUE; 
+
+ {
+            String stringNumber = request.getParameter("name");
+
+            try {
+                data = Integer.parseInt(stringNumber.trim());
+            }
+            catch(NumberFormatException exceptNumberFormat) {
+                IO.logger.log(Level.WARNING, "Number format exception reading data from parameter 'name'", exceptNumberFormat);
+            }
+        }
+
+        CWE129_Improper_Validation_of_Array_Index__getParameter_Servlet_array_write_no_check_81_base baseObject = new CWE129_Improper_Validation_of_Array_Index__getParameter_Servlet_array_write_no_check_81_goodB2G();
+        baseObject.action(data , request, response);
+    }

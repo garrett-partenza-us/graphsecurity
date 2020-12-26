@@ -1,0 +1,10 @@
+
+    public void badSink(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data = CWE113_HTTP_Response_Splitting__getParameter_Servlet_setHeaderServlet_68a.data;
+
+        if (data != null) {
+            
+            response.setHeader("Location", "/author.jsp?lang=" + data);
+        }
+
+    }

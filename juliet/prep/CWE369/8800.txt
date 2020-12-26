@@ -1,0 +1,4 @@
+
+    public void goodB2GSink(float data ) throws Throwable {
+        (new CWE369_Divide_by_Zero__float_console_readLine_modulo_54d()).goodB2GSink(data );
+    }

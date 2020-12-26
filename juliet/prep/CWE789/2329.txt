@@ -1,0 +1,8 @@
+
+    public void bad() throws Throwable {
+        int data = (new CWE789_Uncontrolled_Mem_Alloc__random_HashMap_61b()).badSource();
+
+        
+        HashMap intHashMap = new HashMap(data);
+
+    }

@@ -1,0 +1,26 @@
+
+    private int bad_source() throws Throwable {
+        int data;
+
+        if (badPrivate) {
+            data = Integer.MIN_VALUE; 
+            
+ {
+                String stringNumber = System.getenv("ADD");
+                if (stringNumber != null) {
+                    try {
+                        data = Integer.parseInt(stringNumber.trim());
+                    }
+                    catch(NumberFormatException exceptNumberFormat) {
+                        IO.logger.log(Level.WARNING, "Number format exception parsing data from string", exceptNumberFormat);
+                    }
+                }
+            }
+        }
+        else {
+            
+            data = 0;
+        }
+
+        return data;
+    }

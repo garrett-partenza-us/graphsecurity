@@ -1,0 +1,12 @@
+
+    public void badSink(HashMap<Integer,String> passwordHashMap ) throws Throwable {
+        String password = passwordHashMap.get(2);
+
+        if (password != null) {
+            KerberosPrincipal principal = new KerberosPrincipal("test");
+            
+            KerberosKey key = new KerberosKey(principal, password.toCharArray(), null);
+            IO.writeLine(key.toString());
+        }
+
+    }

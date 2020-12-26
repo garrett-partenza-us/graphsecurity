@@ -1,0 +1,10 @@
+
+    private void goodG2B() throws Throwable {
+        short data;
+
+        
+        data = 2;
+
+        CWE191_Integer_Underflow__short_console_readLine_predec_81_base baseObject = new CWE191_Integer_Underflow__short_console_readLine_predec_81_goodG2B();
+        baseObject.action(data );
+    }

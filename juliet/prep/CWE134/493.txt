@@ -1,0 +1,10 @@
+
+    public void badSink() throws Throwable {
+        String data = CWE134_Uncontrolled_Format_String__PropertiesFile_format_68a.data;
+
+        if (data != null) {
+            
+            System.out.format(data);
+        }
+
+    }

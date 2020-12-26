@@ -1,0 +1,17 @@
+
+    private void goodB2G() throws Throwable {
+        String password = goodB2GSource();
+
+        if (password != null) {
+ {
+                Cipher aesCipher = Cipher.getInstance("AES");
+                
+                SecretKeySpec secretKeySpec = new SecretKeySpec("ABCDEFGHABCDEFGH".getBytes("UTF-8"), "AES");
+                aesCipher.init(Cipher.DECRYPT_MODE, secretKeySpec);
+                password = new String(aesCipher.doFinal(password.getBytes("UTF-8")), "UTF-8");
+            }
+            PasswordAuthentication credentials = new PasswordAuthentication("user", password.toCharArray());
+            IO.writeLine(credentials.toString());
+        }
+
+    }

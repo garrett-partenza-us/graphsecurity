@@ -1,0 +1,20 @@
+
+    public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+
+        data = ""; 
+
+ {
+            Cookie cookieSources[] = request.getCookies();
+            if (cookieSources != null) {
+                
+                data = cookieSources[0].getValue();
+            }
+        }
+
+        HashMap<Integer,String> dataHashMap = new HashMap<Integer,String>();
+        dataHashMap.put(0, data);
+        dataHashMap.put(1, data);
+        dataHashMap.put(2, data);
+        (new CWE113_HTTP_Response_Splitting__getCookies_Servlet_addCookieServlet_74b()).badSink(dataHashMap , request, response );
+    }

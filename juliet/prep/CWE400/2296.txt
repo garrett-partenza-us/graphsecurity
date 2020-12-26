@@ -1,0 +1,21 @@
+
+    public void bad() throws Throwable {
+        int countCopy; {
+            int count;
+
+            
+            count = Integer.MAX_VALUE;
+
+            countCopy = count;
+        } {
+            int count = countCopy;
+
+            int i = 0;
+
+            
+            for (i = 0; i < count; i++) {
+                IO.writeLine("Hello");
+            }
+
+        }
+    }

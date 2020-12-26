@@ -1,0 +1,26 @@
+
+    private void goodG2B1() throws Throwable {
+        int count;
+
+        switch (5) {
+        case 6:
+            
+            count = 0;
+            break;
+        default:
+            
+            count = 2;
+            break;
+        }
+
+        switch (7) {
+        case 7:
+            
+            Thread.sleep(count);
+            break;
+        default:
+            
+            IO.writeLine("Benign, fixed string");
+            break;
+        }
+    }

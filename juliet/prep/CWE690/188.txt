@@ -1,0 +1,9 @@
+
+    public void badSink(String data ) throws Throwable {
+
+        
+        String stringTrimmed = data.trim();
+
+        IO.writeLine(stringTrimmed);
+
+    }

@@ -1,0 +1,16 @@
+
+    private void goodB2G() throws Throwable {
+        int [] data;
+
+        
+        data = null;
+
+        
+        if (data != null) {
+            IO.writeLine("" + data.length);
+        }
+        else {
+            IO.writeLine("data is null");
+        }
+
+    }

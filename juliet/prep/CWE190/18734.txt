@@ -1,0 +1,9 @@
+
+    private long goodG2BSource() throws Throwable {
+        long data;
+
+        
+        data = 2;
+
+        return data;
+    }

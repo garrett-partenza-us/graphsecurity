@@ -1,0 +1,16 @@
+
+    public void bad() throws Throwable {
+        float data;
+
+        
+
+        
+        SecureRandom secureRandom = new SecureRandom();
+        data = secureRandom.nextFloat();
+
+        for (int j = 0; j < 1; j++) {
+            
+            int result = (int)(100.0 / data);
+            IO.writeLine(result);
+        }
+    }

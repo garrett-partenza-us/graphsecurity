@@ -1,0 +1,15 @@
+
+    private void goodB2G2Sink(int data , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        if (goodB2G2Private) {
+            if(data < 0) {
+                
+                if (data > (Integer.MIN_VALUE/2)) {
+                    int result = (int)(data * 2);
+                    IO.writeLine("result: " + result);
+                }
+                else {
+                    IO.writeLine("data value is too small to perform multiplication.");
+                }
+            }
+        }
+    }

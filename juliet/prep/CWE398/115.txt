@@ -1,0 +1,18 @@
+
+    public void bad() throws Throwable {
+        if (IO.staticReturnsTrueOrFalse()) {
+ {
+            }
+            IO.writeLine("Hello from bad()");
+        }
+        else {
+
+ {
+                String sentence = "Inside the block"; 
+                IO.writeLine(sentence);
+            }
+
+            IO.writeLine("Hello from good()");
+
+        }
+    }

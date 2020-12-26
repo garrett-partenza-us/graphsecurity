@@ -1,0 +1,14 @@
+
+    public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+
+        badPublicStatic = true;
+        data = (new CWE470_Unsafe_Reflection__getCookies_Servlet_22b()).badSource(request, response);
+
+        
+        Class<?> tempClass = Class.forName(data);
+        Object tempClassObject = tempClass.newInstance();
+
+        IO.writeLine(tempClassObject.toString()); 
+
+    }

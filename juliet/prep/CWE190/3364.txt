@@ -1,0 +1,15 @@
+
+    public void goodB2GSink(int data , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+
+        if(data > 0) {
+            
+            if (data < (Integer.MAX_VALUE/2)) {
+                int result = (int)(data * 2);
+                IO.writeLine("result: " + result);
+            }
+            else {
+                IO.writeLine("data value is too large to perform multiplication.");
+            }
+        }
+
+    }

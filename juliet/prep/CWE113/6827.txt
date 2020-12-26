@@ -1,0 +1,21 @@
+
+    private void goodB2G2(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+        if (privateReturnsTrue()) {
+            
+            
+            data = System.getenv("ADD");
+        }
+        else {
+            
+            data = null;
+        }
+
+        if (privateReturnsTrue()) {
+            if (data != null) {
+                
+                data = URLEncoder.encode(data, "UTF-8");
+                response.setHeader("Location", "/author.jsp?lang=" + data);
+            }
+        }
+    }

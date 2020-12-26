@@ -1,0 +1,11 @@
+
+    public void bad() throws Throwable {
+        String data;
+
+        
+        
+        data = System.getProperty("user.home");
+
+        CWE23_Relative_Path_Traversal__Property_81_base baseObject = new CWE23_Relative_Path_Traversal__Property_81_bad();
+        baseObject.action(data );
+    }

@@ -1,0 +1,35 @@
+
+    public void bad() throws Throwable {
+        int data;
+
+        
+
+        data = Integer.MIN_VALUE; 
+
+        
+ {
+            String stringNumber = System.getenv("ADD");
+            if (stringNumber != null) {
+                try {
+                    data = Integer.parseInt(stringNumber.trim());
+                }
+                catch(NumberFormatException exceptNumberFormat) {
+                    IO.logger.log(Level.WARNING, "Number format exception parsing data from string", exceptNumberFormat);
+                }
+            }
+        }
+
+        for (int j = 0; j < 1; j++) {
+            int array[] = null;
+            
+            if (data >= 0) {
+                array = new int[data];
+            }
+            else {
+                IO.writeLine("Array size is negative");
+            }
+            
+            array[0] = 5;
+            IO.writeLine(array[0]);
+        }
+    }

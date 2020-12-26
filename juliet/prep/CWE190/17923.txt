@@ -1,0 +1,20 @@
+
+    public void bad() throws Throwable {
+        long dataCopy; {
+            long data;
+
+            
+            data = (new java.security.SecureRandom()).nextLong();
+
+            dataCopy = data;
+        } {
+            long data = dataCopy;
+
+            
+            data++;
+            long result = (long)(data);
+
+            IO.writeLine("result: " + result);
+
+        }
+    }

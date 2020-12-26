@@ -1,0 +1,14 @@
+
+    private void goodB2G() throws Throwable {
+        String data;
+
+        
+        
+        data = System.getenv("ADD");
+
+        if (data != null) {
+            
+            System.out.printf("%s%n", data);
+        }
+
+    }

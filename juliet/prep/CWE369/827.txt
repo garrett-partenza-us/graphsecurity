@@ -1,0 +1,4 @@
+
+    public void badSink(int data ) throws Throwable {
+        (new CWE369_Divide_by_Zero__int_database_modulo_54e()).badSink(data );
+    }

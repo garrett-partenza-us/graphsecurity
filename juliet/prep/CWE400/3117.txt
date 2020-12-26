@@ -1,0 +1,19 @@
+
+    public void bad() throws Throwable {
+        int count;
+
+        while (true) {
+            
+            count = (new SecureRandom()).nextInt();
+            break;
+        }
+
+        while (true) {
+            int i = 0;
+            
+            for (i = 0; i < count; i++) {
+                IO.writeLine("Hello");
+            }
+            break;
+        }
+    }

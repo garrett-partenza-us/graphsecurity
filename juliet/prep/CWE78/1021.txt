@@ -1,0 +1,15 @@
+
+    public String badSource() throws Throwable {
+        String data;
+
+        if (CWE78_OS_Command_Injection__Environment_22a.badPublicStatic) {
+            
+            
+            data = System.getenv("ADD");
+        }
+        else {
+            
+            data = null;
+        }
+        return data;
+    }

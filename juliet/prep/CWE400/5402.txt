@@ -1,0 +1,19 @@
+
+    private void goodB2G1Sink(int count , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        if (goodB2G1Private) {
+            
+            IO.writeLine("Benign, fixed string");
+        }
+        else {
+
+            int i = 0;
+
+            
+            if (count > 0 && count <= 20) {
+                for (i = 0; i < count; i++) {
+                    IO.writeLine("Hello");
+                }
+            }
+
+        }
+    }

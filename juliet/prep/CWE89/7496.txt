@@ -1,0 +1,10 @@
+
+    public String goodB2GSource() throws Throwable {
+        String data;
+
+        
+        
+        data = System.getProperty("user.home");
+
+        return data;
+    }

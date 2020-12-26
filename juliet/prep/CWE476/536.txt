@@ -1,0 +1,13 @@
+
+    public void goodB2GSink(CWE476_NULL_Pointer_Dereference__String_67a.Container dataContainer ) throws Throwable {
+        String data = dataContainer.containerOne;
+
+        
+        if (data != null) {
+            IO.writeLine("" + data.length());
+        }
+        else {
+            IO.writeLine("data is null");
+        }
+
+    }

@@ -1,0 +1,4 @@
+
+    public void badSink(String data , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        (new CWE113_HTTP_Response_Splitting__getQueryString_Servlet_addCookieServlet_54d()).badSink(data , request, response);
+    }

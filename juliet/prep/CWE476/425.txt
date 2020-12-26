@@ -1,0 +1,8 @@
+
+    public void badSink(HashMap<Integer,Integer> dataHashMap ) throws Throwable {
+        Integer data = dataHashMap.get(2);
+
+        
+        IO.writeLine("" + data.toString());
+
+    }

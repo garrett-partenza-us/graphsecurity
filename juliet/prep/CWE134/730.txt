@@ -1,0 +1,48 @@
+
+    private void goodB2G1() throws Throwable {
+        String data;
+        if (IO.STATIC_FINAL_FIVE==5) {
+            data = ""; 
+ {
+                Properties properties = new Properties();
+                FileInputStream streamFileInput = null;
+                try {
+                    streamFileInput = new FileInputStream("../common/config.properties");
+                    properties.load(streamFileInput);
+                    
+                    data = properties.getProperty("data");
+                }
+                catch (IOException exceptIO) {
+                    IO.logger.log(Level.WARNING, "Error with stream reading", exceptIO);
+                }
+                finally {
+                    
+                    try {
+                        if (streamFileInput != null) {
+                            streamFileInput.close();
+                        }
+                    }
+                    catch (IOException exceptIO) {
+                        IO.logger.log(Level.WARNING, "Error closing FileInputStream", exceptIO);
+                    }
+                }
+            }
+        }
+        else {
+            
+            data = null;
+        }
+
+        if (IO.STATIC_FINAL_FIVE!=5) {
+            
+            IO.writeLine("Benign, fixed string");
+        }
+        else {
+
+            if (data != null) {
+                
+                System.out.printf("%s%n", data);
+            }
+
+        }
+    }

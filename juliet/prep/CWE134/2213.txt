@@ -1,0 +1,10 @@
+
+    public void goodB2GSink(Vector<String> dataVector ) throws Throwable {
+        String data = dataVector.remove(2);
+
+        if (data != null) {
+            
+            System.out.format("%s%n", data);
+        }
+
+    }

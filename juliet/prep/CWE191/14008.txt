@@ -1,0 +1,11 @@
+
+    public void badSink(Vector<Long> dataVector ) throws Throwable {
+        long data = dataVector.remove(2);
+
+        
+        data--;
+        long result = (long)(data);
+
+        IO.writeLine("result: " + result);
+
+    }

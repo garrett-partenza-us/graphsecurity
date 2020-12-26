@@ -1,0 +1,23 @@
+
+    private void goodB2G2() throws Throwable {
+        long data;
+        if (IO.staticReturnsTrue()) {
+            
+            data = Long.MIN_VALUE;
+        }
+        else {
+            
+            data = 0L;
+        }
+
+        if (IO.staticReturnsTrue()) {
+            
+            if (data > Long.MIN_VALUE) {
+                long result = (long)(data - 1);
+                IO.writeLine("result: " + result);
+            }
+            else {
+                IO.writeLine("data value is too small to perform subtraction.");
+            }
+        }
+    }

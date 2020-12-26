@@ -1,0 +1,20 @@
+
+    public void bad() throws Throwable {
+        int data;
+        if (privateFive==5) {
+            
+            data = (new SecureRandom()).nextInt();
+        }
+        else {
+            
+            data = 0;
+        }
+
+        if (privateFive==5) {
+            
+            int array[] = { 0, 1, 2, 3, 4 };
+            
+            array[data] = 42;
+            
+        }
+    }

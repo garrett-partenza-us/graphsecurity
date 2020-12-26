@@ -1,0 +1,8 @@
+
+    public void bad() throws Throwable {
+        int count = badSource();
+
+        
+        Thread.sleep(count);
+
+    }

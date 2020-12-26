@@ -1,0 +1,23 @@
+
+    private void goodB2G2() throws Throwable {
+        short data;
+        if (5==5) {
+            
+            data = Short.MAX_VALUE;
+        }
+        else {
+            
+            data = 0;
+        }
+
+        if (5==5) {
+            
+            if (data < Short.MAX_VALUE) {
+                short result = (short)(++data);
+                IO.writeLine("result: " + result);
+            }
+            else {
+                IO.writeLine("data value is too large to increment.");
+            }
+        }
+    }

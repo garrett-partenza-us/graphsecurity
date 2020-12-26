@@ -1,0 +1,35 @@
+
+    public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int data;
+
+        switch (6) {
+        case 6:
+            data = Integer.MIN_VALUE; 
+ {
+                String stringNumber = request.getParameter("name");
+                try {
+                    data = Integer.parseInt(stringNumber.trim());
+                }
+                catch(NumberFormatException exceptNumberFormat) {
+                    IO.logger.log(Level.WARNING, "Number format exception reading data from parameter 'name'", exceptNumberFormat);
+                }
+            }
+            break;
+        default:
+            
+            data = 0;
+            break;
+        }
+
+        switch (7) {
+        case 7:
+            
+            int result = (int)(--data);
+            IO.writeLine("result: " + result);
+            break;
+        default:
+            
+            IO.writeLine("Benign, fixed string");
+            break;
+        }
+    }

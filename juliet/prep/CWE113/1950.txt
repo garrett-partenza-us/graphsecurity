@@ -1,0 +1,35 @@
+
+    private void goodB2G1(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+        if (privateFive==5) {
+            data = ""; 
+ {
+                StringTokenizer tokenizer = new StringTokenizer(request.getQueryString(), "&");
+                while (tokenizer.hasMoreTokens()) {
+                    String token = tokenizer.nextToken(); 
+                    if(token.startsWith("id=")) {
+                        data = token.substring(3); 
+                        break; 
+                    }
+                }
+            }
+        }
+        else {
+            
+            data = null;
+        }
+
+        if (privateFive!=5) {
+            
+            IO.writeLine("Benign, fixed string");
+        }
+        else {
+
+            if (data != null) {
+                Cookie cookieSink = new Cookie("lang", URLEncoder.encode(data, "UTF-8"));
+                
+                response.addCookie(cookieSink);
+            }
+
+        }
+    }

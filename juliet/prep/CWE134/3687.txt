@@ -1,0 +1,19 @@
+
+    public void bad() throws Throwable {
+        String data;
+
+        while (true) {
+            
+            
+            data = System.getenv("ADD");
+            break;
+        }
+
+        while (true) {
+            if (data != null) {
+                
+                System.out.printf(data);
+            }
+            break;
+        }
+    }

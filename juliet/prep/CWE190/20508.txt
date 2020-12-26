@@ -1,0 +1,14 @@
+
+    public void goodB2GSink(CWE190_Integer_Overflow__long_rand_preinc_67a.Container dataContainer ) throws Throwable {
+        long data = dataContainer.containerOne;
+
+        
+        if (data < Long.MAX_VALUE) {
+            long result = (long)(++data);
+            IO.writeLine("result: " + result);
+        }
+        else {
+            IO.writeLine("data value is too large to increment.");
+        }
+
+    }

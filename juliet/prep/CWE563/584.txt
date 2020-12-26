@@ -1,0 +1,25 @@
+
+    private void goodB2G1() throws Throwable {
+        StringBuilder data;
+
+        if (privateTrue) {
+            
+            data = new StringBuilder("Good");
+        }
+        else {
+            
+            data = null;
+        }
+
+        if (privateFalse) {
+            
+            IO.writeLine("Benign, fixed string");
+        }
+        else {
+
+            
+
+            IO.writeLine(data.toString());
+
+        }
+    }

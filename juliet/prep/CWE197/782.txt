@@ -1,0 +1,10 @@
+
+    public void bad() throws Throwable {
+        int data;
+
+        
+        data = (new SecureRandom()).nextInt();
+
+        CWE197_Numeric_Truncation_Error__int_random_to_byte_81_base baseObject = new CWE197_Numeric_Truncation_Error__int_random_to_byte_81_bad();
+        baseObject.action(data );
+    }

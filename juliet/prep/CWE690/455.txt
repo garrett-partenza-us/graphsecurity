@@ -1,0 +1,9 @@
+
+    public String badSource(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+
+        
+        data = request.getParameter("CWE690");
+
+        return data;
+    }

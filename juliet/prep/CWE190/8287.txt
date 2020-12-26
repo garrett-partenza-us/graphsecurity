@@ -1,0 +1,12 @@
+
+    public void badSink(long data ) throws Throwable {
+        if (CWE190_Integer_Overflow__long_rand_add_22a.badPublicStatic) {
+            
+            long result = (long)(data + 1);
+            IO.writeLine("result: " + result);
+        }
+        else {
+            
+            data = 0L;
+        }
+    }

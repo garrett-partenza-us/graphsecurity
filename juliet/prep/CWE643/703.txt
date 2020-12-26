@@ -1,0 +1,4 @@
+
+    public void badSink(String data ) throws Throwable {
+        (new CWE643_Xpath_Injection__File_54c()).badSink(data );
+    }

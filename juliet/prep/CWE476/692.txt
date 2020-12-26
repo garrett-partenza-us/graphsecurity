@@ -1,0 +1,9 @@
+
+    private int [] goodG2BSource() throws Throwable {
+        int [] data;
+
+        
+        data = new int[5];
+
+        return data;
+    }

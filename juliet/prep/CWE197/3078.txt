@@ -1,0 +1,4 @@
+
+    public void badSink(int data ) throws Throwable {
+        (new CWE197_Numeric_Truncation_Error__int_listen_tcp_to_short_54e()).badSink(data );
+    }

@@ -1,0 +1,19 @@
+
+    private void goodG2B() throws Throwable {
+        String dataCopy; {
+            String data;
+
+            
+            data = "CWE690";
+
+            dataCopy = data;
+        } {
+            String data = dataCopy;
+
+            
+            String stringTrimmed = data.trim();
+
+            IO.writeLine(stringTrimmed);
+
+        }
+    }

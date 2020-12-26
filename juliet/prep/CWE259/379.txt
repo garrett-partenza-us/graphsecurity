@@ -1,0 +1,15 @@
+
+    public void bad() throws Throwable {
+        String data;
+
+        badPublicStatic = true;
+        data = (new CWE259_Hard_Coded_Password__kerberosKey_22b()).badSource();
+
+        if (data != null) {
+            KerberosPrincipal principal = new KerberosPrincipal("test");
+            
+            KerberosKey key = new KerberosKey(principal, data.toCharArray(), null);
+            IO.writeLine(key.toString());
+        }
+
+    }

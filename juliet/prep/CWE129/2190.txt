@@ -1,0 +1,38 @@
+
+    private void goodB2G2() throws Throwable {
+        int data;
+        if (IO.staticFive==5) {
+            data = Integer.MIN_VALUE; 
+            
+ {
+                String stringNumber = System.getenv("ADD");
+                if (stringNumber != null) {
+                    try {
+                        data = Integer.parseInt(stringNumber.trim());
+                    }
+                    catch(NumberFormatException exceptNumberFormat) {
+                        IO.logger.log(Level.WARNING, "Number format exception parsing data from string", exceptNumberFormat);
+                    }
+                }
+            }
+        }
+        else {
+            
+            data = 0;
+        }
+
+        if (IO.staticFive==5) {
+            
+            int array[] = null;
+            
+            if (data > 0) {
+                array = new int[data];
+            }
+            else {
+                IO.writeLine("Array size is negative");
+            }
+            
+            array[0] = 5;
+            IO.writeLine(array[0]);
+        }
+    }

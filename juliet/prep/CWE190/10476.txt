@@ -1,0 +1,13 @@
+
+    public void bad() throws Throwable {
+        long data;
+
+        
+        data = (new java.security.SecureRandom()).nextLong();
+
+        
+        long result = (long)(data + 1);
+
+        IO.writeLine("result: " + result);
+
+    }

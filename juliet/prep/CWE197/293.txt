@@ -1,0 +1,9 @@
+
+    private short badSource() throws Throwable {
+        short data;
+
+        
+        data = Byte.MAX_VALUE + 5;
+
+        return data;
+    }

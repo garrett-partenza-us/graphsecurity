@@ -1,0 +1,4 @@
+
+    public void goodG2BSink(int count ) throws Throwable {
+        (new CWE400_Resource_Exhaustion__max_value_write_54c()).goodG2BSink(count );
+    }

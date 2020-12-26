@@ -1,0 +1,16 @@
+
+    public void badSink() throws Throwable {
+        int data = CWE129_Improper_Validation_of_Array_Index__console_readLine_array_read_check_max_68a.data;
+
+        
+        int array[] = { 0, 1, 2, 3, 4 };
+
+        
+        if (data < array.length) {
+            IO.writeLine(array[data]);
+        }
+        else {
+            IO.writeLine("Array index out of bounds");
+        }
+
+    }

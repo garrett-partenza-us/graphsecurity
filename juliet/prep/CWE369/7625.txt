@@ -1,0 +1,9 @@
+
+    private void goodG2B() throws Throwable {
+        float data;
+
+        
+        data = 2.0f;
+
+        (new CWE369_Divide_by_Zero__float_listen_tcp_divide_71b()).goodG2BSink((Object)data  );
+    }

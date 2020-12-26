@@ -1,0 +1,13 @@
+
+    private void goodB2GSink() throws Throwable {
+        StringBuilder data = dataGoodB2G;
+
+        
+        if (data != null) {
+            IO.writeLine("" + data.length());
+        }
+        else {
+            IO.writeLine("data is null");
+        }
+
+    }

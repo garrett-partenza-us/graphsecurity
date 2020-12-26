@@ -1,0 +1,10 @@
+
+    public void goodG2BSink(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data = CWE81_XSS_Error_Message__Servlet_getParameter_Servlet_68a.data;
+
+        if (data != null) {
+            
+            response.sendError(404, "<br>bad() - Parameter name has value " + data);
+        }
+
+    }

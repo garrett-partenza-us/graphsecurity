@@ -1,0 +1,12 @@
+
+    public void badSink(int countArray[] ) throws Throwable {
+        int count = countArray[2];
+
+        int i = 0;
+
+        
+        for (i = 0; i < count; i++) {
+            IO.writeLine("Hello");
+        }
+
+    }

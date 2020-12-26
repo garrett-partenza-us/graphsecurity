@@ -1,0 +1,19 @@
+
+    public void bad() throws Throwable {
+        byte data;
+        if (IO.STATIC_FINAL_FIVE==5) {
+            
+            data = Byte.MAX_VALUE;
+        }
+        else {
+            
+            data = 0;
+        }
+
+        if (IO.STATIC_FINAL_FIVE==5) {
+            
+            data++;
+            byte result = (byte)(data);
+            IO.writeLine("result: " + result);
+        }
+    }

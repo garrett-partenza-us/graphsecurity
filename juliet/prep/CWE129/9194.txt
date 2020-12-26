@@ -1,0 +1,13 @@
+
+    public void badSink(int data ) throws Throwable {
+        if (CWE129_Improper_Validation_of_Array_Index__PropertiesFile_array_read_no_check_22a.badPublicStatic) {
+            
+            int array[] = { 0, 1, 2, 3, 4 };
+            
+            IO.writeLine(array[data]);
+        }
+        else {
+            
+            data = 0;
+        }
+    }

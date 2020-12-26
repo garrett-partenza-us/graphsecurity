@@ -1,0 +1,11 @@
+
+    public void badSink() throws Throwable {
+        String data = CWE259_Hard_Coded_Password__passwordAuth_68a.data;
+
+        if (data != null) {
+            
+            PasswordAuthentication credentials = new PasswordAuthentication("user", data.toCharArray());
+            IO.writeLine(credentials.toString());
+        }
+
+    }

@@ -1,0 +1,11 @@
+
+    public void bad() throws Throwable {
+        int data;
+
+        
+        data = Integer.MAX_VALUE;
+
+        
+        HashMap intHashMap = new HashMap(data);
+
+    }

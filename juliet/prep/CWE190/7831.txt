@@ -1,0 +1,14 @@
+
+    public void goodG2BSink(int data ) throws Throwable {
+        if (CWE190_Integer_Overflow__int_random_multiply_22a.goodG2BPublicStatic) {
+            if(data > 0) {
+                
+                int result = (int)(data * 2);
+                IO.writeLine("result: " + result);
+            }
+        }
+        else {
+            
+            data = 0;
+        }
+    }

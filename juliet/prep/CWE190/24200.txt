@@ -1,0 +1,27 @@
+
+    public void bad() throws Throwable {
+        int data;
+        if (IO.staticReturnsTrue()) {
+            data = Integer.MIN_VALUE; 
+            
+ {
+                String stringNumber = System.getProperty("user.home");
+                try {
+                    data = Integer.parseInt(stringNumber.trim());
+                }
+                catch(NumberFormatException exceptNumberFormat) {
+                    IO.logger.log(Level.WARNING, "Number format exception parsing data from string", exceptNumberFormat);
+                }
+            }
+        }
+        else {
+            
+            data = 0;
+        }
+
+        if(IO.staticReturnsTrue()) {
+            
+            int result = (int)(++data);
+            IO.writeLine("result: " + result);
+        }
+    }

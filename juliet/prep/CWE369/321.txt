@@ -1,0 +1,11 @@
+
+    private void goodB2G() throws Throwable {
+        float data;
+
+        
+        SecureRandom secureRandom = new SecureRandom();
+        data = secureRandom.nextFloat();
+
+        CWE369_Divide_by_Zero__float_random_divide_81_base baseObject = new CWE369_Divide_by_Zero__float_random_divide_81_goodB2G();
+        baseObject.action(data );
+    }

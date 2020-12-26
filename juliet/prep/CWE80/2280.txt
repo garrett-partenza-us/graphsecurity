@@ -1,0 +1,10 @@
+
+    public void badSink(CWE80_XSS__Servlet_getParameter_Servlet_67a.Container dataContainer , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data = dataContainer.containerOne;
+
+        if (data != null) {
+            
+            response.getWriter().println("<br>bad(): data = " + data);
+        }
+
+    }

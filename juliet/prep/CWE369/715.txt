@@ -1,0 +1,8 @@
+
+    private void goodB2G() throws Throwable {
+        float data;
+
+        data = 0.0f; 
+
+        goodB2GSink(data  );
+    }

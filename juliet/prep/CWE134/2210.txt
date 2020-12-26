@@ -1,0 +1,15 @@
+
+    private void goodB2G() throws Throwable {
+        String data;
+
+        
+        
+        data = System.getProperty("user.home");
+
+        for (int k = 0; k < 1; k++) {
+            if (data != null) {
+                
+                System.out.printf("%s%n", data);
+            }
+        }
+    }

@@ -1,0 +1,9 @@
+
+    private void goodG2B(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+
+        
+        data = "5";
+
+        (new CWE606_Unchecked_Loop_Condition__getCookies_Servlet_52b()).goodG2BSink(data , request, response);
+    }

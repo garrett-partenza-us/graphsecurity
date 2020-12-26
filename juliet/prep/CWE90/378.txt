@@ -1,0 +1,9 @@
+
+    public void bad() throws Throwable {
+
+        
+        
+        data = System.getenv("ADD");
+
+        (new CWE90_LDAP_Injection__Environment_68b()).badSink();
+    }

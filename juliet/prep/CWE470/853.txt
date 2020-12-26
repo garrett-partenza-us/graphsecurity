@@ -1,0 +1,4 @@
+
+    public void badSink(String data ) throws Throwable {
+        (new CWE470_Unsafe_Reflection__Environment_54e()).badSink(data );
+    }

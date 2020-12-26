@@ -1,0 +1,8 @@
+
+    public void bad() throws Throwable {
+
+        
+        data = (new SecureRandom()).nextInt();
+
+        (new CWE191_Integer_Underflow__int_random_postdec_68b()).badSink();
+    }

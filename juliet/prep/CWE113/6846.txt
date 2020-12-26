@@ -1,0 +1,11 @@
+
+    private void goodB2G(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data = (new CWE113_HTTP_Response_Splitting__database_setHeaderServlet_61b()).goodB2GSource(request, response);
+
+        if (data != null) {
+            
+            data = URLEncoder.encode(data, "UTF-8");
+            response.setHeader("Location", "/author.jsp?lang=" + data);
+        }
+
+    }

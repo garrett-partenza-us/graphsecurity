@@ -1,0 +1,33 @@
+
+    private void goodB2G1() throws Throwable {
+        short data;
+
+        switch (6) {
+        case 6:
+            
+            data = Short.MAX_VALUE;
+            break;
+        default:
+            
+            data = 0;
+            break;
+        }
+
+        switch (8) {
+        case 7:
+            
+            IO.writeLine("Benign, fixed string");
+            break;
+        default:
+            
+            if (data < Short.MAX_VALUE) {
+                data++;
+                short result = (short)(data);
+                IO.writeLine("result: " + result);
+            }
+            else {
+                IO.writeLine("data value is too large to increment.");
+            }
+            break;
+        }
+    }

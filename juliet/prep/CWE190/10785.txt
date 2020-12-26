@@ -1,0 +1,10 @@
+
+    public void bad() throws Throwable {
+        long data = (new CWE190_Integer_Overflow__long_max_add_61b()).badSource();
+
+        
+        long result = (long)(data + 1);
+
+        IO.writeLine("result: " + result);
+
+    }

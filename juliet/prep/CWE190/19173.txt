@@ -1,0 +1,19 @@
+
+    public void bad() throws Throwable {
+        short data;
+        if (PRIVATE_STATIC_FINAL_TRUE) {
+            
+            data = Short.MAX_VALUE;
+        }
+        else {
+            
+            data = 0;
+        }
+
+        if (PRIVATE_STATIC_FINAL_TRUE) {
+            
+            data++;
+            short result = (short)(data);
+            IO.writeLine("result: " + result);
+        }
+    }

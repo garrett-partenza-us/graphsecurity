@@ -1,0 +1,10 @@
+
+    private void goodB2G() throws Throwable {
+        String data = (new CWE134_Uncontrolled_Format_String__File_printf_61b()).goodB2GSource();
+
+        if (data != null) {
+            
+            System.out.printf("%s%n", data);
+        }
+
+    }

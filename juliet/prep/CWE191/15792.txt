@@ -1,0 +1,19 @@
+
+    private void goodB2G() throws Throwable {
+        int data;
+
+        
+        data = (new SecureRandom()).nextInt();
+
+        for (int k = 0; k < 1; k++) {
+            
+            if (data > Integer.MIN_VALUE) {
+                data--;
+                int result = (int)(data);
+                IO.writeLine("result: " + result);
+            }
+            else {
+                IO.writeLine("data value is too small to decrement.");
+            }
+        }
+    }

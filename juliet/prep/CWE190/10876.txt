@@ -1,0 +1,11 @@
+
+    public void badSink() throws Throwable {
+        long data = CWE190_Integer_Overflow__long_max_multiply_68a.data;
+
+        if(data > 0) {
+            
+            long result = (long)(data * 2);
+            IO.writeLine("result: " + result);
+        }
+
+    }

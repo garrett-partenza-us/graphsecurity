@@ -1,0 +1,26 @@
+
+    private void goodB2G1() throws Throwable {
+        String data;
+        if (privateFive==5) {
+            
+            
+            data = System.getenv("ADD");
+        }
+        else {
+            
+            data = null;
+        }
+
+        if (privateFive!=5) {
+            
+            IO.writeLine("Benign, fixed string");
+        }
+        else {
+
+            if (data != null) {
+                
+                System.out.printf("%s%n", data);
+            }
+
+        }
+    }

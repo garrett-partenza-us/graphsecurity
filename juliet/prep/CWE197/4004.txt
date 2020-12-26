@@ -1,0 +1,14 @@
+
+    public int badSource() throws Throwable {
+        int data;
+
+        if (CWE197_Numeric_Truncation_Error__int_large_to_byte_22a.badPublicStatic) {
+            
+            data = Short.MAX_VALUE + 5;
+        }
+        else {
+            
+            data = 0;
+        }
+        return data;
+    }

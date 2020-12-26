@@ -1,0 +1,4 @@
+
+    public void badSink(String data ) throws Throwable {
+        (new CWE259_Hard_Coded_Password__passwordAuth_54d()).badSink(data );
+    }

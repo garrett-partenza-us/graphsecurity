@@ -1,0 +1,9 @@
+
+    private void goodB2G() throws Throwable {
+        StringBuilder data;
+
+        
+        data = null;
+
+        goodB2GSink(data  );
+    }

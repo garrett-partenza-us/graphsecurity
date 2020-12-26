@@ -1,0 +1,19 @@
+
+    public void bad() throws Throwable {
+        int data;
+
+        data = Integer.MIN_VALUE; 
+
+        
+ {
+            String stringNumber = System.getProperty("user.home");
+            try {
+                data = Integer.parseInt(stringNumber.trim());
+            }
+            catch(NumberFormatException exceptNumberFormat) {
+                IO.logger.log(Level.WARNING, "Number format exception parsing data from string", exceptNumberFormat);
+            }
+        }
+
+        (new CWE197_Numeric_Truncation_Error__int_Property_to_byte_53b()).badSink(data );
+    }

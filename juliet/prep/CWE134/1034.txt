@@ -1,0 +1,10 @@
+
+    private void goodB2G() throws Throwable {
+        String data = (new CWE134_Uncontrolled_Format_String__console_readLine_format_61b()).goodB2GSource();
+
+        if (data != null) {
+            
+            System.out.format("%s%n", data);
+        }
+
+    }

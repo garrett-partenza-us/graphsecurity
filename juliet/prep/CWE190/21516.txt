@@ -1,0 +1,17 @@
+
+    public void bad() throws Throwable {
+        long data;
+
+        while (true) {
+            
+            data = (new java.security.SecureRandom()).nextLong();
+            break;
+        }
+
+        while (true) {
+            
+            long result = (long)(++data);
+            IO.writeLine("result: " + result);
+            break;
+        }
+    }

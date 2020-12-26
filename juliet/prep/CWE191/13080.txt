@@ -1,0 +1,11 @@
+
+    public void goodG2BSink(int dataArray[] , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int data = dataArray[2];
+
+        
+        data--;
+        int result = (int)(data);
+
+        IO.writeLine("result: " + result);
+
+    }

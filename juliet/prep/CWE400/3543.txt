@@ -1,0 +1,12 @@
+
+    private void goodG2BSink() throws Throwable {
+        int count = countGoodG2B;
+
+        int i = 0;
+
+        
+        for (i = 0; i < count; i++) {
+            IO.writeLine("Hello");
+        }
+
+    }

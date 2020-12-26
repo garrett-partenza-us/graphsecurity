@@ -1,0 +1,17 @@
+
+    public void bad() throws Throwable {
+        int data;
+        if (true) {
+            
+            data = Short.MAX_VALUE + 5;
+        }
+        else {
+            
+            data = 0;
+        }
+ {
+            
+            IO.writeLine((short)data);
+        }
+
+    }

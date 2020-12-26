@@ -1,0 +1,22 @@
+
+    private void goodB2G(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int data;
+
+        data = Integer.MIN_VALUE; 
+
+ {
+            Cookie cookieSources[] = request.getCookies();
+            if (cookieSources != null) {
+                
+                String stringNumber = cookieSources[0].getValue();
+                try {
+                    data = Integer.parseInt(stringNumber.trim());
+                }
+                catch(NumberFormatException exceptNumberFormat) {
+                    IO.logger.log(Level.WARNING, "Number format exception reading data from cookie", exceptNumberFormat);
+                }
+            }
+        }
+
+        (new CWE191_Integer_Underflow__int_getCookies_Servlet_sub_71b()).goodB2GSink((Object)data , request, response );
+    }

@@ -1,0 +1,31 @@
+
+    private void goodB2G() throws Throwable {
+        StringBuilder data;
+        if(IO.staticReturnsTrueOrFalse()) {
+            
+            data = CWE690_NULL_Deref_From_Return__Class_Helper.getStringBuilderBad();
+        }
+        else {
+
+            
+            data = CWE690_NULL_Deref_From_Return__Class_Helper.getStringBuilderBad();
+
+        }
+
+        if(IO.staticReturnsTrueOrFalse()) {
+            
+            if (data != null) {
+                String stringTrimmed = data.toString().trim();
+                IO.writeLine(stringTrimmed);
+            }
+        }
+        else {
+
+            
+            if (data != null) {
+                String stringTrimmed = data.toString().trim();
+                IO.writeLine(stringTrimmed);
+            }
+
+        }
+    }

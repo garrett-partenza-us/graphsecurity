@@ -1,0 +1,17 @@
+
+    public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+
+        
+
+        
+        data = request.getParameter("name");
+
+        for (int j = 0; j < 1; j++) {
+            if (data != null) {
+                Cookie cookieSink = new Cookie("lang", data);
+                
+                response.addCookie(cookieSink);
+            }
+        }
+    }

@@ -1,0 +1,18 @@
+
+    private void goodG2B1() throws Throwable {
+        int data;
+        if (false) {
+            
+            data = 0;
+        }
+        else {
+
+            
+            data = 2;
+
+        }
+
+        
+        ArrayList intArrayList = new ArrayList(data);
+
+    }

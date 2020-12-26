@@ -1,0 +1,4 @@
+
+    public void goodB2GSink(int data ) throws Throwable {
+        (new CWE129_Improper_Validation_of_Array_Index__large_fixed_array_size_54e()).goodB2GSink(data );
+    }

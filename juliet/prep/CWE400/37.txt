@@ -1,0 +1,61 @@
+
+    public void bad() throws Throwable {
+        int count;
+
+        
+
+        count = Integer.MIN_VALUE; 
+
+        
+ {
+            String stringNumber = System.getProperty("user.home");
+            try {
+                count = Integer.parseInt(stringNumber.trim());
+            }
+            catch(NumberFormatException exceptNumberFormat) {
+                IO.logger.log(Level.WARNING, "Number format exception parsing count from string", exceptNumberFormat);
+            }
+        }
+
+        for (int j = 0; j < 1; j++) {
+            File file = new File("badSink.txt");
+            FileOutputStream streamFileOutput = new FileOutputStream(file);
+            OutputStreamWriter writerOutputStream = new OutputStreamWriter(streamFileOutput, "UTF-8");
+            BufferedWriter writerBuffered = new BufferedWriter(writerOutputStream);
+            int i;
+            
+            for (i = 0; i < count; i++) {
+                try {
+                    writerBuffered.write("Hello");
+                }
+                catch (IOException exceptIO) {
+                    IO.logger.log(Level.WARNING, "Error with stream writing", exceptIO);
+                }
+            }
+            
+            try {
+                if (writerBuffered != null) {
+                    writerBuffered.close();
+                }
+            }
+            catch (IOException exceptIO) {
+                IO.logger.log(Level.WARNING, "Error closing BufferedWriter", exceptIO);
+            }
+            try {
+                if (writerOutputStream != null) {
+                    writerOutputStream.close();
+                }
+            }
+            catch (IOException exceptIO) {
+                IO.logger.log(Level.WARNING, "Error closing OutputStreamWriter", exceptIO);
+            }
+            try {
+                if (streamFileOutput != null) {
+                    streamFileOutput.close();
+                }
+            }
+            catch (IOException exceptIO) {
+                IO.logger.log(Level.WARNING, "Error closing FileOutputStream", exceptIO);
+            }
+        }
+    }

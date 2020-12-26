@@ -1,0 +1,28 @@
+
+    public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+        if (IO.staticFive==5) {
+            data = ""; 
+ {
+                StringTokenizer tokenizer = new StringTokenizer(request.getQueryString(), "&");
+                while (tokenizer.hasMoreTokens()) {
+                    String token = tokenizer.nextToken(); 
+                    if(token.startsWith("id=")) {
+                        data = token.substring(3); 
+                        break; 
+                    }
+                }
+            }
+        }
+        else {
+            
+            data = null;
+        }
+
+        if (IO.staticFive==5) {
+            if (data != null) {
+                
+                response.setHeader("Location", "/author.jsp?lang=" + data);
+            }
+        }
+    }

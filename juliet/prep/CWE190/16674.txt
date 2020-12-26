@@ -1,0 +1,11 @@
+
+    public void badSink(Object dataObject ) throws Throwable {
+        short data = (Short)dataObject;
+
+        
+        data++;
+        short result = (short)(data);
+
+        IO.writeLine("result: " + result);
+
+    }

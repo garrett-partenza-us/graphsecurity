@@ -1,0 +1,11 @@
+
+    private void goodB2G(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data = (new CWE690_NULL_Deref_From_Return__getParameter_Servlet_trim_61b()).goodB2GSource(request, response);
+
+        
+        if (data != null) {
+            String stringTrimmed = data.trim();
+            IO.writeLine(stringTrimmed);
+        }
+
+    }

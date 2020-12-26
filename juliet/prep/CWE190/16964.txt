@@ -1,0 +1,47 @@
+
+    public void bad() throws Throwable {
+        int data;
+
+        data = Integer.MIN_VALUE; 
+
+ {
+            Properties properties = new Properties();
+            FileInputStream streamFileInput = null;
+
+            try {
+                streamFileInput = new FileInputStream("../common/config.properties");
+                properties.load(streamFileInput);
+
+                
+                String stringNumber = properties.getProperty("data");
+                if (stringNumber != null) {
+                    try {
+                        data = Integer.parseInt(stringNumber.trim());
+                    }
+                    catch(NumberFormatException exceptNumberFormat) {
+                        IO.logger.log(Level.WARNING, "Number format exception parsing data from string", exceptNumberFormat);
+                    }
+                }
+            }
+            catch (IOException exceptIO) {
+                IO.logger.log(Level.WARNING, "Error with stream reading", exceptIO);
+            }
+            finally {
+                
+                try {
+                    if (streamFileInput != null) {
+                        streamFileInput.close();
+                    }
+                }
+                catch (IOException exceptIO) {
+                    IO.logger.log(Level.WARNING, "Error closing FileInputStream", exceptIO);
+                }
+            }
+        }
+
+        HashMap<Integer,Integer> dataHashMap = new HashMap<Integer,Integer>();
+        dataHashMap.put(0, data);
+        dataHashMap.put(1, data);
+        dataHashMap.put(2, data);
+        (new CWE190_Integer_Overflow__int_PropertiesFile_postinc_74b()).badSink(dataHashMap  );
+    }

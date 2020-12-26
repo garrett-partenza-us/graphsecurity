@@ -1,0 +1,14 @@
+
+    private void good1() throws Throwable {
+        if (PRIVATE_STATIC_FINAL_FIVE != 5) {
+            
+            IO.writeLine("Benign, fixed string");
+        }
+        else {
+
+            
+
+            IO.writeLine("Hello from good()");
+
+        }
+    }

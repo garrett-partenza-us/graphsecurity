@@ -1,0 +1,10 @@
+
+    public void goodB2GSink(CWE134_Uncontrolled_Format_String__File_printf_67a.Container dataContainer ) throws Throwable {
+        String data = dataContainer.containerOne;
+
+        if (data != null) {
+            
+            System.out.printf("%s%n", data);
+        }
+
+    }

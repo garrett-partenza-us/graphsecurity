@@ -1,0 +1,13 @@
+
+    public void badSink(String data , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        if (CWE113_HTTP_Response_Splitting__listen_tcp_addHeaderServlet_22a.badPublicStatic) {
+            
+            if (data != null) {
+                response.addHeader("Location", "/author.jsp?lang=" + data);
+            }
+        }
+        else {
+            
+            data = null;
+        }
+    }

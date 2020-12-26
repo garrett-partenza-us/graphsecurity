@@ -1,0 +1,35 @@
+
+    private void goodG2B1() throws Throwable {
+        String data;
+        if (IO.staticFive != 5) {
+            
+            data = null;
+        }
+        else {
+
+            data = ""; 
+
+            
+            try {
+                InputStreamReader readerInputStream = new InputStreamReader(System.in, "UTF-8");
+                BufferedReader readerBuffered = new BufferedReader(readerInputStream);
+
+                
+                data = readerBuffered.readLine();
+            }
+            catch (IOException exceptIO) {
+                IO.logger.log(Level.WARNING, "Error with stream reading", exceptIO);
+            }
+
+            
+
+        }
+
+        if (data != null) {
+            KerberosPrincipal principal = new KerberosPrincipal("test");
+            
+            KerberosKey key = new KerberosKey(principal, data.toCharArray(), null);
+            IO.writeLine(key.toString());
+        }
+
+    }

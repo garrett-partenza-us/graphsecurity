@@ -1,0 +1,4 @@
+
+    public void goodG2BSink(float data ) throws Throwable {
+        (new CWE369_Divide_by_Zero__float_PropertiesFile_modulo_52c()).goodG2BSink(data );
+    }

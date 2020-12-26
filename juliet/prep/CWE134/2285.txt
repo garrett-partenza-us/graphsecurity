@@ -1,0 +1,26 @@
+
+    private void goodB2G1() throws Throwable {
+        String data;
+        if (IO.staticTrue) {
+            
+            
+            data = System.getenv("ADD");
+        }
+        else {
+            
+            data = null;
+        }
+
+        if (IO.staticFalse) {
+            
+            IO.writeLine("Benign, fixed string");
+        }
+        else {
+
+            if (data != null) {
+                
+                System.out.format("%s%n", data);
+            }
+
+        }
+    }

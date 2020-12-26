@@ -1,0 +1,19 @@
+
+    public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+        if (PRIVATE_STATIC_FINAL_TRUE) {
+            
+            data = request.getParameter("CWE690");
+        }
+        else {
+            
+            data = null;
+        }
+
+        if (PRIVATE_STATIC_FINAL_TRUE) {
+            
+            if(data.equals("CWE690")) {
+                IO.writeLine("data is CWE690");
+            }
+        }
+    }

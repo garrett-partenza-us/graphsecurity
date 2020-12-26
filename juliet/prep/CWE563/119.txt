@@ -1,0 +1,13 @@
+
+    private void goodB2G2() throws Throwable {
+        StringBuilder data;
+
+        
+        ; 
+
+        if (privateReturnsTrue()) {
+            
+            data = new StringBuilder("Good");
+            IO.writeLine(data.toString());
+        }
+    }

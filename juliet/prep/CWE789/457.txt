@@ -1,0 +1,8 @@
+
+    public void badSink(CWE789_Uncontrolled_Mem_Alloc__PropertiesFile_ArrayList_67a.Container dataContainer ) throws Throwable {
+        int data = dataContainer.containerOne;
+
+        
+        ArrayList intArrayList = new ArrayList(data);
+
+    }

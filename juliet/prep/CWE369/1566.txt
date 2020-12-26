@@ -1,0 +1,8 @@
+
+    private void goodB2G() throws Throwable {
+        float data;
+
+        data = 0.0f; 
+
+        (new CWE369_Divide_by_Zero__float_zero_modulo_51b()).goodB2GSink(data  );
+    }

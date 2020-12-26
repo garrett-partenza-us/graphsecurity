@@ -1,0 +1,19 @@
+
+    private void goodB2G() throws Throwable {
+        long data;
+
+        
+        data = (new java.security.SecureRandom()).nextLong();
+
+        for (int k = 0; k < 1; k++) {
+            
+            if (data < Long.MAX_VALUE) {
+                data++;
+                long result = (long)(data);
+                IO.writeLine("result: " + result);
+            }
+            else {
+                IO.writeLine("data value is too large to increment.");
+            }
+        }
+    }

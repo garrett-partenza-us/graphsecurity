@@ -1,0 +1,11 @@
+
+    public void badSink(LinkedList<Long> dataLinkedList ) throws Throwable {
+        long data = dataLinkedList.remove(2);
+
+        
+        data--;
+        long result = (long)(data);
+
+        IO.writeLine("result: " + result);
+
+    }

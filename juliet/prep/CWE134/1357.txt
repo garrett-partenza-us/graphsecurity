@@ -1,0 +1,20 @@
+
+    public void bad() throws Throwable {
+        String data;
+        if (PRIVATE_STATIC_FINAL_TRUE) {
+            
+            
+            data = System.getenv("ADD");
+        }
+        else {
+            
+            data = null;
+        }
+
+        if (PRIVATE_STATIC_FINAL_TRUE) {
+            if (data != null) {
+                
+                System.out.format(data);
+            }
+        }
+    }

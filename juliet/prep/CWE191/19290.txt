@@ -1,0 +1,4 @@
+
+    public void badSink(int data ) throws Throwable {
+        (new CWE191_Integer_Underflow__int_Environment_multiply_53c()).badSink(data );
+    }

@@ -1,0 +1,14 @@
+
+    public void bad() throws Throwable {
+        int data;
+
+        while (true) {
+            
+            data = Integer.MAX_VALUE;
+            break;
+        }
+
+        
+        HashSet intHashSet = new HashSet(data);
+
+    }

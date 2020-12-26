@@ -1,0 +1,1 @@
+22,20/12/2020,17:28:37,"GCN(   (conv1): GCNConv(50, 64)   (conv2): GCNConv(64, 64)   (conv3): GCNConv(64, 64)   (lin): Linear(in_features=64, out_features=2, bias=True) )",8382,0.01,CrossEntropyLoss(),1.0,1.0,1.0,1.0,1.0,1.0,1.0,0.71,0.35,0.03,0.0,0.0,0.0,0.0

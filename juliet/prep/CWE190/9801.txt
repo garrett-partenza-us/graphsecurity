@@ -1,0 +1,10 @@
+
+    public void badSink() throws Throwable {
+        long data = CWE190_Integer_Overflow__long_rand_add_68a.data;
+
+        
+        long result = (long)(data + 1);
+
+        IO.writeLine("result: " + result);
+
+    }

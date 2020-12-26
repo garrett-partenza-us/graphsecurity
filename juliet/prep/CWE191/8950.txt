@@ -1,0 +1,8 @@
+
+    private void badSink(long data ) throws Throwable {
+        if (badPrivate) {
+            
+            long result = (long)(data - 1);
+            IO.writeLine("result: " + result);
+        }
+    }

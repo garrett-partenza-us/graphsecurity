@@ -1,0 +1,30 @@
+
+    private void goodB2G1() throws Throwable {
+        short data;
+        if (privateFive==5) {
+            
+            data = Short.MAX_VALUE;
+        }
+        else {
+            
+            data = 0;
+        }
+
+        if (privateFive!=5) {
+            
+            IO.writeLine("Benign, fixed string");
+        }
+        else {
+
+            
+            
+            if ((data != Integer.MIN_VALUE) && (data != Long.MIN_VALUE) && (Math.abs(data) <= (long)Math.sqrt(Short.MAX_VALUE))) {
+                short result = (short)(data * data);
+                IO.writeLine("result: " + result);
+            }
+            else {
+                IO.writeLine("data value is too large to perform squaring.");
+            }
+
+        }
+    }

@@ -1,0 +1,10 @@
+
+    private void goodG2BSink(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int data = dataGoodG2B;
+
+        
+        int result = (int)(++data);
+
+        IO.writeLine("result: " + result);
+
+    }

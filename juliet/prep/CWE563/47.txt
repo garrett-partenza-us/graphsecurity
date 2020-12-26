@@ -1,0 +1,17 @@
+
+    public void bad() throws Throwable {
+        long data;
+
+        while (true) {
+            
+            data = 5L;
+            break;
+        }
+
+        while (true) {
+            
+            data = 10L;
+            IO.writeLine("" + data);
+            break;
+        }
+    }

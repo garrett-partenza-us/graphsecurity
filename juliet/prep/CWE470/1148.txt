@@ -1,0 +1,14 @@
+
+    public String badSource(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+
+        if (CWE470_Unsafe_Reflection__getParameter_Servlet_22a.badPublicStatic) {
+            
+            data = request.getParameter("name");
+        }
+        else {
+            
+            data = null;
+        }
+        return data;
+    }

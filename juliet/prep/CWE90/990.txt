@@ -1,0 +1,9 @@
+
+    private void goodG2B() throws Throwable {
+        String data;
+
+        
+        data = "foo";
+
+        (new CWE90_LDAP_Injection__database_52b()).goodG2BSink(data );
+    }

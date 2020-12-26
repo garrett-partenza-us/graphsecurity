@@ -1,0 +1,9 @@
+
+    private void goodB2GSink(String data ) throws Throwable {
+
+        if (data != null) {
+            
+            System.out.format("%s%n", data);
+        }
+
+    }

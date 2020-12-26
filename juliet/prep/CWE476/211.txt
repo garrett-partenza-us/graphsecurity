@@ -1,0 +1,17 @@
+
+    private void goodG2B() throws Throwable {
+        int [] dataCopy; {
+            int [] data;
+
+            
+            data = new int[5];
+
+            dataCopy = data;
+        } {
+            int [] data = dataCopy;
+
+            
+            IO.writeLine("" + data.length);
+
+        }
+    }

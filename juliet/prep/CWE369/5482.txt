@@ -1,0 +1,8 @@
+
+    public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int data = badSource(request, response);
+
+        
+        IO.writeLine("bad: 100/" + data + " = " + (100 / data) + "\n");
+
+    }

@@ -1,0 +1,20 @@
+
+    public void bad() throws Throwable {
+        String dataCopy; {
+            String data;
+
+            
+            
+            data = System.getProperty("user.home");
+
+            dataCopy = data;
+        } {
+            String data = dataCopy;
+
+            if (data != null) {
+                
+                System.out.printf(data);
+            }
+
+        }
+    }

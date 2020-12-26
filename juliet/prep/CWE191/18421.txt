@@ -1,0 +1,11 @@
+
+    public void badSink(Vector<Byte> dataVector ) throws Throwable {
+        byte data = dataVector.remove(2);
+
+        if(data < 0) {
+            
+            byte result = (byte)(data * 2);
+            IO.writeLine("result: " + result);
+        }
+
+    }

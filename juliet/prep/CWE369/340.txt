@@ -1,0 +1,19 @@
+
+    private void goodG2B1() throws Throwable {
+        int data;
+        if (5!=5) {
+            
+            data = 0;
+        }
+        else {
+
+            
+            data = 2;
+
+        }
+
+        if (5==5) {
+            
+            IO.writeLine("bad: 100/" + data + " = " + (100 / data) + "\n");
+        }
+    }

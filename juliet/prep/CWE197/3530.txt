@@ -1,0 +1,4 @@
+
+    public void badSink(int data ) throws Throwable {
+        (new CWE197_Numeric_Truncation_Error__int_Environment_to_byte_52c()).badSink(data );
+    }

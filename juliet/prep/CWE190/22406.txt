@@ -1,0 +1,8 @@
+
+    private void goodG2BSink(long data ) throws Throwable {
+        if (goodG2BPrivate) {
+            
+            long result = (long)(++data);
+            IO.writeLine("result: " + result);
+        }
+    }

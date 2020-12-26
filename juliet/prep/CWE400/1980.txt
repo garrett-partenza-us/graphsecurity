@@ -1,0 +1,11 @@
+
+    private void goodB2G() throws Throwable {
+        int count;
+
+        
+        count = Integer.MAX_VALUE;
+
+        int[] countArray = new int[5];
+        countArray[2] = count;
+        (new CWE400_Resource_Exhaustion__max_value_write_66b()).goodB2GSink(countArray  );
+    }

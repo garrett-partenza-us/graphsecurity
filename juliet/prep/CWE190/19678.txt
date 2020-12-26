@@ -1,0 +1,9 @@
+
+    private int badSource() throws Throwable {
+        int data;
+
+        
+        data = Integer.MAX_VALUE;
+
+        return data;
+    }

@@ -1,0 +1,20 @@
+
+    public void bad() throws Throwable {
+        int data;
+        if (IO.STATIC_FINAL_TRUE) {
+            
+            data = Integer.MIN_VALUE;
+        }
+        else {
+            
+            data = 0;
+        }
+
+        if (IO.STATIC_FINAL_TRUE) {
+            if(data < 0) {
+                
+                int result = (int)(data * 2);
+                IO.writeLine("result: " + result);
+            }
+        }
+    }

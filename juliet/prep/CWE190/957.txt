@@ -1,0 +1,11 @@
+
+    public void goodG2BSink(CWE190_Integer_Overflow__short_rand_multiply_67a.Container dataContainer ) throws Throwable {
+        short data = dataContainer.containerOne;
+
+        if(data > 0) {
+            
+            short result = (short)(data * 2);
+            IO.writeLine("result: " + result);
+        }
+
+    }

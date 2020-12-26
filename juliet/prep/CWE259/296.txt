@@ -1,0 +1,22 @@
+
+    public void bad() throws Throwable {
+        String data = null;
+
+        switch (6) {
+        case 6:
+            
+            data = "7e5tc4s3";
+            break;
+        default:
+            
+            data = null;
+            break;
+        }
+
+        if (data != null) {
+            
+            PasswordAuthentication credentials = new PasswordAuthentication("user", data.toCharArray());
+            IO.writeLine(credentials.toString());
+        }
+
+    }

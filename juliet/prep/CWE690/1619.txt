@@ -1,0 +1,10 @@
+
+    private void goodB2G() throws Throwable {
+        String data;
+
+        
+        data = System.getProperty("CWE690");
+
+        dataGoodB2G = data;
+        goodB2GSink();
+    }

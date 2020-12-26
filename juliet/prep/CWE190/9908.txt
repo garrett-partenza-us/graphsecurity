@@ -1,0 +1,10 @@
+
+    public void bad() throws Throwable {
+        long data;
+
+        
+        data = (new java.security.SecureRandom()).nextLong();
+
+        CWE190_Integer_Overflow__long_rand_square_81_base baseObject = new CWE190_Integer_Overflow__long_rand_square_81_bad();
+        baseObject.action(data );
+    }

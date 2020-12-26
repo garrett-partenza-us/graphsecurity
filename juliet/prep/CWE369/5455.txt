@@ -1,0 +1,8 @@
+
+    public void bad() throws Throwable {
+        int data = (new CWE369_Divide_by_Zero__int_PropertiesFile_modulo_61b()).badSource();
+
+        
+        IO.writeLine("100%" + data + " = " + (100 % data) + "\n");
+
+    }

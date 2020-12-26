@@ -1,0 +1,9 @@
+
+    public void bad() throws Throwable {
+        int data;
+
+        
+        data = Integer.MIN_VALUE;
+
+        badSink(data  );
+    }

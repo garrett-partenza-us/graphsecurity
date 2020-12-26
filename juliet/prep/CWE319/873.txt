@@ -1,0 +1,4 @@
+
+    public void goodG2BSink(String password ) throws Throwable {
+        (new CWE319_Cleartext_Tx_Sensitive_Info__connect_tcp_passwordAuth_52c()).goodG2BSink(password );
+    }

@@ -1,0 +1,8 @@
+
+    public void bad() throws Throwable {
+
+        
+        data = Integer.MAX_VALUE;
+
+        (new CWE789_Uncontrolled_Mem_Alloc__max_value_HashMap_68b()).badSink();
+    }

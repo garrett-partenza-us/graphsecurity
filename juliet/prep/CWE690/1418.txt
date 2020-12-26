@@ -1,0 +1,19 @@
+
+    private void goodB2G2() throws Throwable {
+        String data;
+        if (IO.STATIC_FINAL_TRUE) {
+            
+            data = System.getProperty("CWE690");
+        }
+        else {
+            
+            data = null;
+        }
+
+        if (IO.STATIC_FINAL_TRUE) {
+            
+            if("CWE690".equals(data)) {
+                IO.writeLine("data is CWE690");
+            }
+        }
+    }

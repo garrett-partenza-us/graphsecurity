@@ -1,0 +1,4 @@
+
+    public void goodB2GSink(int count ) throws Throwable {
+        (new CWE400_Resource_Exhaustion__console_readLine_write_52c()).goodB2GSink(count );
+    }

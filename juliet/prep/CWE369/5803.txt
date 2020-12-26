@@ -1,0 +1,17 @@
+
+    public void bad() throws Throwable {
+        int data;
+        if (privateTrue) {
+            
+            data = (new SecureRandom()).nextInt();
+        }
+        else {
+            
+            data = 0;
+        }
+
+        if (privateTrue) {
+            
+            IO.writeLine("bad: 100/" + data + " = " + (100 / data) + "\n");
+        }
+    }

@@ -1,0 +1,10 @@
+
+    private void goodG2B(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data = goodG2BSource(request, response);
+
+        
+        if (data != null) {
+            response.addHeader("Location", "/author.jsp?lang=" + data);
+        }
+
+    }

@@ -1,0 +1,8 @@
+
+    private void goodG2B() throws Throwable {
+
+        
+        data = "foo";
+
+        (new CWE36_Absolute_Path_Traversal__Property_68b()).goodG2BSink();
+    }

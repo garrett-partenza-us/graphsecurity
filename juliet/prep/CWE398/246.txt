@@ -1,0 +1,7 @@
+
+    public void bad() throws Throwable {
+        if (PRIVATE_STATIC_FINAL_TRUE) {
+            ; 
+            IO.writeLine("Hello from bad()");
+        }
+    }

@@ -1,0 +1,38 @@
+
+    private void goodB2G1() throws Throwable {
+        int data;
+        if (IO.staticFive==5) {
+            data = Integer.MIN_VALUE; 
+            
+ {
+                String stringNumber = System.getProperty("user.home");
+                try {
+                    data = Integer.parseInt(stringNumber.trim());
+                }
+                catch(NumberFormatException exceptNumberFormat) {
+                    IO.logger.log(Level.WARNING, "Number format exception parsing data from string", exceptNumberFormat);
+                }
+            }
+        }
+        else {
+            
+            data = 0;
+        }
+
+        if (IO.staticFive!=5) {
+            
+            IO.writeLine("Benign, fixed string");
+        }
+        else {
+
+            
+            if (data < Integer.MAX_VALUE) {
+                int result = (int)(++data);
+                IO.writeLine("result: " + result);
+            }
+            else {
+                IO.writeLine("data value is too large to increment.");
+            }
+
+        }
+    }

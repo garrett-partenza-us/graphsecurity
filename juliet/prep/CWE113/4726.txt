@@ -1,0 +1,27 @@
+
+    private void goodB2G1(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+        if (IO.staticTrue) {
+            
+            
+            data = System.getenv("ADD");
+        }
+        else {
+            
+            data = null;
+        }
+
+        if (IO.staticFalse) {
+            
+            IO.writeLine("Benign, fixed string");
+        }
+        else {
+
+            
+            if (data != null) {
+                data = URLEncoder.encode(data, "UTF-8");
+                response.addHeader("Location", "/author.jsp?lang=" + data);
+            }
+
+        }
+    }

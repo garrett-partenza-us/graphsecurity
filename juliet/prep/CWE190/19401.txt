@@ -1,0 +1,19 @@
+
+    public void bad() throws Throwable {
+        int data;
+        if (privateFive==5) {
+            
+            data = Integer.MAX_VALUE;
+        }
+        else {
+            
+            data = 0;
+        }
+
+        if (privateFive==5) {
+            
+            data++;
+            int result = (int)(data);
+            IO.writeLine("result: " + result);
+        }
+    }

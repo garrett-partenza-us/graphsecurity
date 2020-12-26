@@ -1,0 +1,11 @@
+
+    private void goodB2G() throws Throwable {
+        int data;
+
+        
+        data = Integer.MAX_VALUE;
+
+        Container dataContainer = new Container();
+        dataContainer.containerOne = data;
+        (new CWE190_Integer_Overflow__int_max_add_67b()).goodB2GSink(dataContainer  );
+    }

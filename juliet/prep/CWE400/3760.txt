@@ -1,0 +1,9 @@
+
+    private void goodG2B() throws Throwable {
+        int count;
+
+        
+        count = 2;
+
+        (new CWE400_Resource_Exhaustion__sleep_PropertiesFile_53b()).goodG2BSink(count );
+    }

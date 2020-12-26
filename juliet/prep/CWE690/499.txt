@@ -1,0 +1,13 @@
+
+    private void goodB2G(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+
+        
+        data = request.getParameter("CWE690");
+
+        HashMap<Integer,String> dataHashMap = new HashMap<Integer,String>();
+        dataHashMap.put(0, data);
+        dataHashMap.put(1, data);
+        dataHashMap.put(2, data);
+        (new CWE690_NULL_Deref_From_Return__getParameter_Servlet_equals_74b()).goodB2GSink(dataHashMap , request, response );
+    }

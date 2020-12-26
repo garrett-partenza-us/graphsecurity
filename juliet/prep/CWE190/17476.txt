@@ -1,0 +1,30 @@
+
+    private void goodB2G1() throws Throwable {
+        int data;
+        if (5==5) {
+            
+            data = (new SecureRandom()).nextInt();
+        }
+        else {
+            
+            data = 0;
+        }
+
+        if (5!=5) {
+            
+            IO.writeLine("Benign, fixed string");
+        }
+        else {
+
+            
+            if (data < Integer.MAX_VALUE) {
+                data++;
+                int result = (int)(data);
+                IO.writeLine("result: " + result);
+            }
+            else {
+                IO.writeLine("data value is too large to increment.");
+            }
+
+        }
+    }

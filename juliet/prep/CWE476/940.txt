@@ -1,0 +1,11 @@
+
+    public void bad() throws Throwable {
+        if (5 == 5) { {
+                
+                String myString = null;
+                if (myString == null) {
+                    IO.writeLine(myString.length());
+                }
+            }
+        }
+    }

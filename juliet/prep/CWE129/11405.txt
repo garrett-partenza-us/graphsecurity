@@ -1,0 +1,13 @@
+
+    private void goodG2BSink() throws Throwable {
+        int data = dataGoodG2B;
+
+        
+        int array[] = { 0, 1, 2, 3, 4 };
+
+        
+        array[data] = 42;
+
+        
+
+    }

@@ -1,0 +1,12 @@
+
+    public void goodG2BSink(int data ) throws Throwable {
+        if (CWE190_Integer_Overflow__int_max_square_22a.goodG2BPublicStatic) {
+            
+            int result = (int)(data * data);
+            IO.writeLine("result: " + result);
+        }
+        else {
+            
+            data = 0;
+        }
+    }

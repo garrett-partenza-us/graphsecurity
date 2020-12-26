@@ -1,0 +1,15 @@
+
+    public void bad() throws Throwable {
+        short data;
+
+        while (true) {
+            
+            data = Byte.MAX_VALUE + 5;
+            break;
+        }
+ {
+            
+            IO.writeLine((byte)data);
+        }
+
+    }

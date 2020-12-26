@@ -1,0 +1,10 @@
+
+    public void bad() throws Throwable {
+        if (IO.STATIC_FINAL_FIVE == 5) {
+            int i = 0;
+            
+            while(i++ < 10) {
+            }
+            IO.writeLine("Hello from bad()");
+        }
+    }

@@ -1,0 +1,20 @@
+
+    public void bad() throws Throwable {
+        int data = 0;
+
+        switch (6) {
+        case 6:
+            
+            data = Short.MAX_VALUE + 5;
+            break;
+        default:
+            
+            data = 0;
+            break;
+        }
+ {
+            
+            IO.writeLine((byte)data);
+        }
+
+    }

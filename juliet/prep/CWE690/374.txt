@@ -1,0 +1,18 @@
+
+    private void goodG2B(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+
+        while (true) {
+            
+            data = "CWE690";
+            break;
+        }
+
+        while (true) {
+            
+            String stringTrimmed = data.trim();
+            IO.writeLine(stringTrimmed);
+            break;
+        }
+
+    }

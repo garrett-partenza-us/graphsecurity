@@ -1,0 +1,4 @@
+
+    public void badSink(int data ) throws Throwable {
+        (new CWE789_Uncontrolled_Mem_Alloc__Environment_HashSet_54e()).badSink(data );
+    }

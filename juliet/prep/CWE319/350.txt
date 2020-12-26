@@ -1,0 +1,21 @@
+
+    private void goodG2B2() throws Throwable {
+        String password;
+        if (IO.staticFive==5) {
+            
+            
+            password = "Password1234!";
+        }
+        else {
+            
+            password = null;
+        }
+
+        if (IO.staticFive==5) {
+            if (password != null) {
+                
+                PasswordAuthentication credentials = new PasswordAuthentication("user", password.toCharArray());
+                IO.writeLine(credentials.toString());
+            }
+        }
+    }

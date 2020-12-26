@@ -1,0 +1,26 @@
+
+    private void goodB2G1(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+        if (IO.staticReturnsTrue()) {
+            
+            data = request.getParameter("CWE690");
+        }
+        else {
+            
+            data = null;
+        }
+
+        if (IO.staticReturnsFalse()) {
+            
+            IO.writeLine("Benign, fixed string");
+        }
+        else {
+
+            
+            if (data != null) {
+                String stringTrimmed = data.trim();
+                IO.writeLine(stringTrimmed);
+            }
+
+        }
+    }

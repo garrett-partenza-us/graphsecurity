@@ -1,0 +1,16 @@
+
+    public void goodB2GSink(Object dataObject ) throws Throwable {
+        int data = (Integer)dataObject;
+
+        
+        int array[] = { 0, 1, 2, 3, 4 };
+
+        
+        if (data >= 0 && data < array.length) {
+            IO.writeLine(array[data]);
+        }
+        else {
+            IO.writeLine("Array index out of bounds");
+        }
+
+    }

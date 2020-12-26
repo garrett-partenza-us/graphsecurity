@@ -1,0 +1,11 @@
+
+    private void goodG2B() throws Throwable {
+        int data;
+
+        
+        data = 2;
+
+        Container dataContainer = new Container();
+        dataContainer.containerOne = data;
+        (new CWE129_Improper_Validation_of_Array_Index__listen_tcp_array_read_check_min_67b()).goodG2BSink(dataContainer  );
+    }

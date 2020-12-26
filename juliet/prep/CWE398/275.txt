@@ -1,0 +1,8 @@
+
+    public void bad() throws Throwable {
+        if (IO.staticReturnsTrue()) {
+ {
+            }
+            IO.writeLine("Hello from bad()");
+        }
+    }

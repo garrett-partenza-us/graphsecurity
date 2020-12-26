@@ -1,0 +1,9 @@
+
+    private void goodG2B() throws Throwable {
+        String data;
+
+        
+        data = "CWE690";
+
+        goodG2BSink(data  );
+    }

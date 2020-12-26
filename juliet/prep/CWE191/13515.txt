@@ -1,0 +1,30 @@
+
+    private void goodB2G1() throws Throwable {
+        long data;
+        if (IO.staticReturnsTrue()) {
+            
+            data = (new java.security.SecureRandom()).nextLong();
+        }
+        else {
+            
+            data = 0L;
+        }
+
+        if (IO.staticReturnsFalse()) {
+            
+            IO.writeLine("Benign, fixed string");
+        }
+        else {
+
+            
+            if (data > Long.MIN_VALUE) {
+                data--;
+                long result = (long)(data);
+                IO.writeLine("result: " + result);
+            }
+            else {
+                IO.writeLine("data value is too small to decrement.");
+            }
+
+        }
+    }

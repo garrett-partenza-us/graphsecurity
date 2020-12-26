@@ -1,0 +1,26 @@
+
+    private void goodB2G2(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int count = 0;
+
+        count = Integer.MIN_VALUE; 
+
+ {
+            StringTokenizer tokenizer = new StringTokenizer(request.getQueryString(), "&");
+
+            while (tokenizer.hasMoreTokens()) {
+                String token = tokenizer.nextToken(); 
+                if(token.startsWith("id=")) {
+                    try {
+                        count = Integer.parseInt(token.substring(3)); 
+                    }
+                    catch(NumberFormatException exceptNumberFormat) {
+                        IO.logger.log(Level.WARNING, "Number format exception reading id from query string", exceptNumberFormat);
+                    }
+                    break; 
+                }
+            }
+        }
+
+        goodB2G2PublicStatic = true;
+        (new CWE400_Resource_Exhaustion__getQueryString_Servlet_write_22b()).goodB2G2Sink(count , request, response);
+    }

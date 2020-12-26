@@ -1,0 +1,27 @@
+
+    public void bad() throws Throwable {
+        long data;
+
+        switch (6) {
+        case 6:
+            
+            data = (new java.security.SecureRandom()).nextLong();
+            break;
+        default:
+            
+            data = 0L;
+            break;
+        }
+
+        switch (7) {
+        case 7:
+            
+            long result = (long)(--data);
+            IO.writeLine("result: " + result);
+            break;
+        default:
+            
+            IO.writeLine("Benign, fixed string");
+            break;
+        }
+    }

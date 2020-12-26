@@ -1,0 +1,9 @@
+
+    public short goodG2BSource() throws Throwable {
+        short data;
+
+        
+        data = 2;
+
+        return data;
+    }

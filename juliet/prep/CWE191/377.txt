@@ -1,0 +1,18 @@
+
+    public void bad() throws Throwable {
+        int data;
+        if (privateTrue) {
+            
+            data = Integer.MIN_VALUE;
+        }
+        else {
+            
+            data = 0;
+        }
+
+        if (privateTrue) {
+            
+            int result = (int)(--data);
+            IO.writeLine("result: " + result);
+        }
+    }

@@ -1,0 +1,9 @@
+
+    public void badSink(CWE369_Divide_by_Zero__float_database_divide_67a.Container dataContainer ) throws Throwable {
+        float data = dataContainer.containerOne;
+
+        
+        int result = (int)(100.0 / data);
+        IO.writeLine(result);
+
+    }

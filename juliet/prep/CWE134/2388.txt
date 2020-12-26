@@ -1,0 +1,15 @@
+
+    private void goodB2G1Sink(String data ) throws Throwable {
+        if (goodB2G1Private) {
+            
+            IO.writeLine("Benign, fixed string");
+        }
+        else {
+
+            if (data != null) {
+                
+                System.out.printf("%s%n", data);
+            }
+
+        }
+    }

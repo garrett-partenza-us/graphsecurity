@@ -1,0 +1,19 @@
+
+    public void bad() throws Throwable {
+        long data;
+        if (true) {
+            
+            data = Long.MIN_VALUE;
+        }
+        else {
+            
+            data = 0L;
+        }
+
+        if (true) {
+            
+            data--;
+            long result = (long)(data);
+            IO.writeLine("result: " + result);
+        }
+    }

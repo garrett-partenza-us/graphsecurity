@@ -1,0 +1,11 @@
+
+    private void goodG2B1() throws Throwable {
+        int data;
+
+        goodG2B1PublicStatic = false;
+        data = (new CWE789_Uncontrolled_Mem_Alloc__connect_tcp_HashSet_22b()).goodG2B1Source();
+
+        
+        HashSet intHashSet = new HashSet(data);
+
+    }

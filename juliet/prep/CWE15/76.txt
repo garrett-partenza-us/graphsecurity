@@ -1,0 +1,38 @@
+
+    public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data = null;
+
+        switch (6) {
+        case 6:
+            
+            data = request.getParameter("name");
+            break;
+        default:
+            
+            data = null;
+            break;
+        }
+
+        Connection dbConnection = null;
+
+        try {
+            dbConnection = IO.getDBConnection();
+
+            
+            dbConnection.setCatalog(data);
+        }
+        catch (SQLException exceptSql) {
+            IO.logger.log(Level.WARNING, "Error getting database connection", exceptSql);
+        }
+        finally {
+            try {
+                if (dbConnection != null) {
+                    dbConnection.close();
+                }
+            }
+            catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, "Error closing Connection", exceptSql);
+            }
+        }
+
+    }

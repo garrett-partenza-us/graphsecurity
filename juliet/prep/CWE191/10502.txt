@@ -1,0 +1,9 @@
+
+    private long goodB2GSource() throws Throwable {
+        long data;
+
+        
+        data = Long.MIN_VALUE;
+
+        return data;
+    }

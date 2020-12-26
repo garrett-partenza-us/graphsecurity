@@ -1,0 +1,10 @@
+
+    public void bad() throws Throwable {
+        String data;
+
+        
+        data = CWE690_NULL_Deref_From_Return__Class_Helper.getStringBad();
+
+        dataBad = data;
+        badSink();
+    }

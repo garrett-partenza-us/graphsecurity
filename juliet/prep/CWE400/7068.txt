@@ -1,0 +1,4 @@
+
+    public void goodG2BSink(int count , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        (new CWE400_Resource_Exhaustion__getCookies_Servlet_write_54c()).goodG2BSink(count , request, response);
+    }

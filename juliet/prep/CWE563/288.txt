@@ -1,0 +1,17 @@
+
+    private void goodB2G2() throws Throwable {
+        long data;
+        if (IO.staticTrue) {
+            
+            data = 5L;
+        }
+        else {
+            
+            data = 0L;
+        }
+
+        if (IO.staticTrue) {
+            
+            IO.writeLine("" + data);
+        }
+    }

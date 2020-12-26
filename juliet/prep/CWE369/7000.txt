@@ -1,0 +1,9 @@
+
+    private void goodB2G1() throws Throwable {
+        int data = 0;
+
+        data = 0; 
+
+        goodB2G1PublicStatic = false;
+        (new CWE369_Divide_by_Zero__int_zero_divide_22b()).goodB2G1Sink(data );
+    }

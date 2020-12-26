@@ -1,0 +1,15 @@
+
+    public void bad() throws Throwable {
+        String data;
+
+        
+
+        data = "Good";
+
+        
+
+        data = "Reinitialize";
+
+        IO.writeLine(data);
+
+    }

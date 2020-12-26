@@ -1,0 +1,9 @@
+
+    private void goodB2G() throws Throwable {
+        int data;
+
+        
+        data = -1;
+
+        (new CWE129_Improper_Validation_of_Array_Index__negative_fixed_array_write_no_check_51b()).goodB2GSink(data  );
+    }

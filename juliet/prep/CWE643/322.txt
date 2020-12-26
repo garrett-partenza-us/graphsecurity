@@ -1,0 +1,4 @@
+
+    public void goodB2GSink(String data , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        (new CWE643_Xpath_Injection__getCookies_Servlet_54c()).goodB2GSink(data , request, response);
+    }

@@ -1,0 +1,9 @@
+
+    private void goodG2B() throws Throwable {
+        StringBuilder data;
+
+        
+        data = new StringBuilder();
+
+        (new CWE476_NULL_Pointer_Dereference__StringBuilder_52b()).goodG2BSink(data );
+    }

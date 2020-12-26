@@ -1,0 +1,19 @@
+
+    public void bad() throws Throwable {
+        while(true) {
+            
+            try {
+                Robot robot = new Robot();
+                
+                BufferedImage screenCapture = robot.createScreenCapture(new Rectangle(100,100));
+                ImageIO.write(screenCapture, "jpg", new File("C:/screen.jpg"));
+            }
+            catch (AWTException exceptAWT) {
+                IO.logger.log(Level.WARNING, "Could not access screen for capture", exceptAWT);
+            }
+            catch (IOException exceptIO) {
+                IO.logger.log(Level.WARNING, "Could not access file system", exceptIO);
+            }
+            break;
+        }
+    }

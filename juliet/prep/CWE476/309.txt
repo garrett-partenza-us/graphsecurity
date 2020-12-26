@@ -1,0 +1,11 @@
+
+    public void bad() throws Throwable {
+        if (PRIVATE_STATIC_FINAL_FIVE == 5) { {
+                
+                String myString = null;
+                if (myString == null) {
+                    IO.writeLine(myString.length());
+                }
+            }
+        }
+    }

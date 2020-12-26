@@ -1,0 +1,10 @@
+
+    public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int data = (new CWE190_Integer_Overflow__int_getCookies_Servlet_square_61b()).badSource(request, response);
+
+        
+        int result = (int)(data * data);
+
+        IO.writeLine("result: " + result);
+
+    }

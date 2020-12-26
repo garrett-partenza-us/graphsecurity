@@ -1,0 +1,53 @@
+
+    public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+        if(IO.staticReturnsTrueOrFalse()) {
+            data = ""; 
+ {
+                Properties properties = new Properties();
+                FileInputStream streamFileInput = null;
+                try {
+                    streamFileInput = new FileInputStream("../common/config.properties");
+                    properties.load(streamFileInput);
+                    
+                    data = properties.getProperty("data");
+                }
+                catch (IOException exceptIO) {
+                    IO.logger.log(Level.WARNING, "Error with stream reading", exceptIO);
+                }
+                finally {
+                    
+                    try {
+                        if (streamFileInput != null) {
+                            streamFileInput.close();
+                        }
+                    }
+                    catch (IOException exceptIO) {
+                        IO.logger.log(Level.WARNING, "Error closing FileInputStream", exceptIO);
+                    }
+                }
+            }
+        }
+        else {
+
+            
+            data = "foo";
+
+        }
+
+        if(IO.staticReturnsTrueOrFalse()) {
+            if (data != null) {
+                
+                response.setHeader("Location", "/author.jsp?lang=" + data);
+            }
+        }
+        else {
+
+            if (data != null) {
+                
+                data = URLEncoder.encode(data, "UTF-8");
+                response.setHeader("Location", "/author.jsp?lang=" + data);
+            }
+
+        }
+    }

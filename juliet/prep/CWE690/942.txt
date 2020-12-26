@@ -1,0 +1,10 @@
+
+    public void goodB2GSink(Vector<String> dataVector , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data = dataVector.remove(2);
+
+        
+        if("CWE690".equals(data)) {
+            IO.writeLine("data is CWE690");
+        }
+
+    }

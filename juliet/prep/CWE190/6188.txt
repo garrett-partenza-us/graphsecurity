@@ -1,0 +1,10 @@
+
+    public void bad() throws Throwable {
+        int data = 0;
+
+        
+        data = (new SecureRandom()).nextInt();
+
+        badPublicStatic = true;
+        (new CWE190_Integer_Overflow__int_random_add_22b()).badSink(data );
+    }

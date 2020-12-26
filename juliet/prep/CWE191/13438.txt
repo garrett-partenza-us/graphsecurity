@@ -1,0 +1,15 @@
+
+    public void goodB2GSink(Vector<Long> dataVector ) throws Throwable {
+        long data = dataVector.remove(2);
+
+        
+        if (data > Long.MIN_VALUE) {
+            data--;
+            long result = (long)(data);
+            IO.writeLine("result: " + result);
+        }
+        else {
+            IO.writeLine("data value is too small to decrement.");
+        }
+
+    }

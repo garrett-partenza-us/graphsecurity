@@ -1,0 +1,10 @@
+
+    private void goodG2BSink() throws Throwable {
+        StringBuilder data = dataGoodG2B;
+
+        
+        String stringTrimmed = data.toString().trim();
+
+        IO.writeLine(stringTrimmed);
+
+    }

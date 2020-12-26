@@ -1,0 +1,9 @@
+
+    private float goodG2BSource() throws Throwable {
+        float data;
+
+        
+        data = 2.0f;
+
+        return data;
+    }

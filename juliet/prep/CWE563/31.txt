@@ -1,0 +1,30 @@
+
+    public void bad() throws Throwable {
+        int data;
+        if(IO.staticReturnsTrueOrFalse()) {
+            
+            data = 5;
+        }
+        else {
+
+            
+
+            data = 5;
+
+            IO.writeLine("" + data);
+
+        }
+
+        if(IO.staticReturnsTrueOrFalse()) {
+            
+            data = 10;
+            IO.writeLine("" + data);
+        }
+        else {
+
+            
+
+            IO.writeLine("" + data);
+
+        }
+    }

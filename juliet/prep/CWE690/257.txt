@@ -1,0 +1,4 @@
+
+    public void goodB2GSink(String data , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        (new CWE690_NULL_Deref_From_Return__getParameter_Servlet_trim_54c()).goodB2GSink(data , request, response);
+    }

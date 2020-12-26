@@ -1,0 +1,10 @@
+
+    public void badSink(byte data ) throws Throwable {
+
+        if(data > 0) {
+            
+            byte result = (byte)(data * 2);
+            IO.writeLine("result: " + result);
+        }
+
+    }

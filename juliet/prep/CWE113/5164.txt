@@ -1,0 +1,10 @@
+
+    public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data = (new CWE113_HTTP_Response_Splitting__database_addHeaderServlet_61b()).badSource(request, response);
+
+        
+        if (data != null) {
+            response.addHeader("Location", "/author.jsp?lang=" + data);
+        }
+
+    }

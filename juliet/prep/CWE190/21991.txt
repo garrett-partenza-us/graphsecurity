@@ -1,0 +1,4 @@
+
+    public void goodB2GSink(int data ) throws Throwable {
+        (new CWE190_Integer_Overflow__int_database_preinc_53d()).goodB2GSink(data );
+    }

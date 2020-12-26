@@ -1,0 +1,10 @@
+
+    public void bad() throws Throwable {
+        byte data = 0;
+
+        
+        data = Byte.MAX_VALUE;
+
+        badPublicStatic = true;
+        (new CWE190_Integer_Overflow__byte_max_multiply_22b()).badSink(data );
+    }

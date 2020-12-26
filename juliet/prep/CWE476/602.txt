@@ -1,0 +1,22 @@
+
+    private void good1() throws Throwable {
+        if (IO.staticReturnsTrueOrFalse()) { {
+                
+                String myString = null;
+                if (myString == null) {
+                    IO.writeLine("The string is null");
+                }
+            }
+        }
+        else {
+ {
+                
+                String myString = null;
+
+                if (myString == null) {
+                    IO.writeLine("The string is null");
+                }
+            }
+
+        }
+    }

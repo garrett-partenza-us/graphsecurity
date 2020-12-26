@@ -1,0 +1,11 @@
+
+    public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int data = (new CWE191_Integer_Underflow__int_getQueryString_Servlet_postdec_61b()).badSource(request, response);
+
+        
+        data--;
+        int result = (int)(data);
+
+        IO.writeLine("result: " + result);
+
+    }

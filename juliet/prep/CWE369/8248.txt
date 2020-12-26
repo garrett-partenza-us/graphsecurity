@@ -1,0 +1,27 @@
+
+    private void goodG2B() throws Throwable {
+        float data;
+        if(IO.staticReturnsTrueOrFalse()) {
+            
+            data = 2.0f;
+        }
+        else {
+
+            
+            data = 2.0f;
+
+        }
+
+        if(IO.staticReturnsTrueOrFalse()) {
+            
+            int result = (int)(100.0 % data);
+            IO.writeLine(result);
+        }
+        else {
+
+            
+            int result = (int)(100.0 % data);
+            IO.writeLine(result);
+
+        }
+    }

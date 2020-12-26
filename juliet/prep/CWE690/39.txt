@@ -1,0 +1,21 @@
+
+    private void goodG2B1() throws Throwable {
+        String data;
+        if (privateFive!=5) {
+            
+            data = null;
+        }
+        else {
+
+            
+            data = "CWE690";
+
+        }
+
+        if (privateFive==5) {
+            
+            if(data.equals("CWE690")) {
+                IO.writeLine("data is CWE690");
+            }
+        }
+    }

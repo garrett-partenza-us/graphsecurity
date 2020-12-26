@@ -1,0 +1,11 @@
+
+    public void bad() throws Throwable {
+        String data;
+
+        
+        
+        data = System.getProperty("user.home");
+
+        CWE134_Uncontrolled_Format_String__Property_format_81_base baseObject = new CWE134_Uncontrolled_Format_String__Property_format_81_bad();
+        baseObject.action(data );
+    }

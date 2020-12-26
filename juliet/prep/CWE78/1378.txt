@@ -1,0 +1,14 @@
+
+    public void bad() throws Throwable {
+        String data;
+
+        
+        
+        data = System.getProperty("user.home");
+
+        Vector<String> dataVector = new Vector<String>(5);
+        dataVector.add(0, data);
+        dataVector.add(1, data);
+        dataVector.add(2, data);
+        (new CWE78_OS_Command_Injection__Property_72b()).badSink(dataVector  );
+    }

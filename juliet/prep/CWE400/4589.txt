@@ -1,0 +1,13 @@
+
+    private void goodB2G() throws Throwable {
+        int count;
+
+        
+        count = (new SecureRandom()).nextInt();
+
+        HashMap<Integer,Integer> countHashMap = new HashMap<Integer,Integer>();
+        countHashMap.put(0, count);
+        countHashMap.put(1, count);
+        countHashMap.put(2, count);
+        (new CWE400_Resource_Exhaustion__sleep_random_74b()).goodB2GSink(countHashMap  );
+    }

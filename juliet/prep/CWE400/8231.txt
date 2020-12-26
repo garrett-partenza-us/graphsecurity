@@ -1,0 +1,22 @@
+
+    private int badSource(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int count;
+
+        count = Integer.MIN_VALUE; 
+
+ {
+            Cookie cookieSources[] = request.getCookies();
+            if (cookieSources != null) {
+                
+                String stringNumber = cookieSources[0].getValue();
+                try {
+                    count = Integer.parseInt(stringNumber.trim());
+                }
+                catch(NumberFormatException exceptNumberFormat) {
+                    IO.logger.log(Level.WARNING, "Number format exception reading count from cookie", exceptNumberFormat);
+                }
+            }
+        }
+
+        return count;
+    }

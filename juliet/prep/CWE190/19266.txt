@@ -1,0 +1,39 @@
+
+    private void goodB2G() throws Throwable {
+        short data;
+        if(IO.staticReturnsTrueOrFalse()) {
+            
+            data = Short.MAX_VALUE;
+        }
+        else {
+
+            
+            data = Short.MAX_VALUE;
+
+        }
+
+        if(IO.staticReturnsTrueOrFalse()) {
+            
+            if (data < Short.MAX_VALUE) {
+                data++;
+                short result = (short)(data);
+                IO.writeLine("result: " + result);
+            }
+            else {
+                IO.writeLine("data value is too large to increment.");
+            }
+        }
+        else {
+
+            
+            if (data < Short.MAX_VALUE) {
+                data++;
+                short result = (short)(data);
+                IO.writeLine("result: " + result);
+            }
+            else {
+                IO.writeLine("data value is too large to increment.");
+            }
+
+        }
+    }

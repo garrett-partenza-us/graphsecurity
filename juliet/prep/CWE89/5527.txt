@@ -1,0 +1,8 @@
+
+    private void goodB2G(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+
+        
+        data = request.getParameter("name");
+
+        (new CWE89_SQL_Injection__getParameter_Servlet_prepareStatement_68b()).goodB2GSink(request, response);
+    }

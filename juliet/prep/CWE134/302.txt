@@ -1,0 +1,4 @@
+
+    public void goodG2BSink(String data ) throws Throwable {
+        (new CWE134_Uncontrolled_Format_String__URLConnection_format_53c()).goodG2BSink(data );
+    }

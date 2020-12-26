@@ -1,0 +1,14 @@
+
+    public void bad() throws Throwable {
+        int data;
+
+        
+        data = (new SecureRandom()).nextInt();
+
+        
+        int array[] = { 0, 1, 2, 3, 4 };
+
+        
+        IO.writeLine(array[data]);
+
+    }

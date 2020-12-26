@@ -1,0 +1,11 @@
+
+    public void badSink(long dataArray[] ) throws Throwable {
+        long data = dataArray[2];
+
+        
+        data++;
+        long result = (long)(data);
+
+        IO.writeLine("result: " + result);
+
+    }

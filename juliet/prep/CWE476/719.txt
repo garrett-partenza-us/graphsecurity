@@ -1,0 +1,17 @@
+
+    private void goodG2B2() throws Throwable {
+        StringBuilder data;
+        if (true) {
+            
+            data = new StringBuilder();
+        }
+        else {
+            
+            data = null;
+        }
+
+        if (true) {
+            
+            IO.writeLine("" + data.length());
+        }
+    }

@@ -1,0 +1,9 @@
+
+    private void goodB2G() throws Throwable {
+        int data;
+
+        
+        data = (new SecureRandom()).nextInt();
+
+        (new CWE369_Divide_by_Zero__int_random_divide_71b()).goodB2GSink((Object)data  );
+    }

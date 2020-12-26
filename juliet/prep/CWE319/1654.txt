@@ -1,0 +1,12 @@
+
+    public void bad() throws Throwable {
+        String data;
+
+        
+        PasswordAuthentication credentials = new PasswordAuthentication("user", "AP@ssw0rd".toCharArray());
+
+        
+        data = new String(credentials.getPassword());
+
+        badSink(data  );
+    }

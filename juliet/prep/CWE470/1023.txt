@@ -1,0 +1,19 @@
+
+    private void goodG2B2() throws Throwable {
+        String data;
+        if (privateReturnsTrue()) {
+            
+            data = "Testing.test";
+        }
+        else {
+            
+            data = null;
+        }
+
+        
+        Class<?> tempClass = Class.forName(data);
+        Object tempClassObject = tempClass.newInstance();
+
+        IO.writeLine(tempClassObject.toString()); 
+
+    }

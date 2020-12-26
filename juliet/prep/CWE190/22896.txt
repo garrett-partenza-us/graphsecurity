@@ -1,0 +1,29 @@
+
+    private void goodB2G1() throws Throwable {
+        byte data;
+        if (IO.staticTrue) {
+            
+            data = Byte.MAX_VALUE;
+        }
+        else {
+            
+            data = 0;
+        }
+
+        if (IO.staticFalse) {
+            
+            IO.writeLine("Benign, fixed string");
+        }
+        else {
+
+            
+            if (data < Byte.MAX_VALUE) {
+                byte result = (byte)(++data);
+                IO.writeLine("result: " + result);
+            }
+            else {
+                IO.writeLine("data value is too large to increment.");
+            }
+
+        }
+    }

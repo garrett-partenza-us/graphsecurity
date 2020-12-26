@@ -1,0 +1,10 @@
+
+    public void bad() throws Throwable {
+        short data = (new CWE190_Integer_Overflow__short_console_readLine_square_61b()).badSource();
+
+        
+        short result = (short)(data * data);
+
+        IO.writeLine("result: " + result);
+
+    }

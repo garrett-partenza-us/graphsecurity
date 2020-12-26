@@ -1,0 +1,11 @@
+
+    public void badSink(CWE190_Integer_Overflow__int_max_multiply_67a.Container dataContainer ) throws Throwable {
+        int data = dataContainer.containerOne;
+
+        if(data > 0) {
+            
+            int result = (int)(data * 2);
+            IO.writeLine("result: " + result);
+        }
+
+    }

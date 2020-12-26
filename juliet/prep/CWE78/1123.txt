@@ -1,0 +1,10 @@
+
+    public void bad() throws Throwable {
+        String data;
+
+        
+        
+        data = System.getenv("ADD");
+
+        (new CWE78_OS_Command_Injection__Environment_52b()).badSink(data );
+    }

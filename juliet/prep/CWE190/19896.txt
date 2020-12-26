@@ -1,0 +1,9 @@
+
+    private byte goodB2GSource() throws Throwable {
+        byte data;
+
+        
+        data = Byte.MAX_VALUE;
+
+        return data;
+    }

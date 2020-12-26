@@ -1,0 +1,14 @@
+
+    public void goodB2GSink(HashMap<Integer,Long> dataHashMap ) throws Throwable {
+        long data = dataHashMap.get(2);
+
+        
+        if (data < Long.MAX_VALUE) {
+            long result = (long)(++data);
+            IO.writeLine("result: " + result);
+        }
+        else {
+            IO.writeLine("data value is too large to increment.");
+        }
+
+    }

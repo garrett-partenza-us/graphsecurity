@@ -1,0 +1,9 @@
+
+    private void goodG2B() throws Throwable {
+        String data;
+
+        
+        data = "5";
+
+        (new CWE606_Unchecked_Loop_Condition__Property_51b()).goodG2BSink(data  );
+    }

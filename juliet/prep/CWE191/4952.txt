@@ -1,0 +1,8 @@
+
+    private void goodB2G() throws Throwable {
+
+        
+        data = (new SecureRandom()).nextInt();
+
+        (new CWE191_Integer_Underflow__int_random_multiply_68b()).goodB2GSink();
+    }

@@ -1,0 +1,17 @@
+
+    public void bad() throws Throwable {
+        int data;
+
+        while (true) {
+            
+            data = Integer.MAX_VALUE;
+            break;
+        }
+
+        while (true) {
+            
+            int result = (int)(++data);
+            IO.writeLine("result: " + result);
+            break;
+        }
+    }

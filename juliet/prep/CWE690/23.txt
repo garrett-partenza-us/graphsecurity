@@ -1,0 +1,17 @@
+
+    public void bad() throws Throwable {
+        String data;
+
+        while (true) {
+            
+            data = CWE690_NULL_Deref_From_Return__Class_Helper.getStringBad();
+            break;
+        }
+
+        while (true) {
+            
+            String stringTrimmed = data.trim();
+            IO.writeLine(stringTrimmed);
+            break;
+        }
+    }

@@ -1,0 +1,11 @@
+
+    private void goodG2BSink(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int data = dataGoodG2B;
+
+        if(data < 0) {
+            
+            int result = (int)(data * 2);
+            IO.writeLine("result: " + result);
+        }
+
+    }

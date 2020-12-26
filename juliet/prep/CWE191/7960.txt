@@ -1,0 +1,9 @@
+
+    private int badSource() throws Throwable {
+        int data;
+
+        
+        data = Integer.MIN_VALUE;
+
+        return data;
+    }

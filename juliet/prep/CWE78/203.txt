@@ -1,0 +1,30 @@
+
+    public void bad() throws Throwable {
+        String data;
+        if (IO.staticReturnsTrueOrFalse()) {
+            
+            
+            data = System.getProperty("user.home");
+        }
+        else {
+
+            
+            data = "foo";
+
+        }
+
+        String osCommand;
+        if(System.getProperty("os.name").toLowerCase().indexOf("win") >= 0) {
+            
+            osCommand = "c:\\WINDOWS\\SYSTEM32\\cmd.exe /c dir ";
+        }
+        else {
+            
+            osCommand = "/bin/ls ";
+        }
+
+        
+        Process process = Runtime.getRuntime().exec(osCommand + data);
+        process.waitFor();
+
+    }

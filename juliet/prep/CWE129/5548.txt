@@ -1,0 +1,37 @@
+
+    private void goodB2G(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int data;
+
+        while (true) {
+            data = Integer.MIN_VALUE; 
+ {
+                StringTokenizer tokenizer = new StringTokenizer(request.getQueryString(), "&");
+                while (tokenizer.hasMoreTokens()) {
+                    String token = tokenizer.nextToken(); 
+                    if(token.startsWith("id=")) {
+                        try {
+                            data = Integer.parseInt(token.substring(3)); 
+                        }
+                        catch(NumberFormatException exceptNumberFormat) {
+                            IO.logger.log(Level.WARNING, "Number format exception reading id from query string", exceptNumberFormat);
+                        }
+                        break; 
+                    }
+                }
+            }
+            break;
+        }
+
+        while (true) {
+            
+            int array[] = { 0, 1, 2, 3, 4 };
+            
+            if (data >= 0 && data < array.length) {
+                IO.writeLine(array[data]);
+            }
+            else {
+                IO.writeLine("Array index out of bounds");
+            }
+            break;
+        }
+    }

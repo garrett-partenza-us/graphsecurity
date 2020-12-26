@@ -1,0 +1,20 @@
+
+    public String badSource(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+
+        if (CWE90_LDAP_Injection__getCookies_Servlet_22a.badPublicStatic) {
+            data = ""; 
+ {
+                Cookie cookieSources[] = request.getCookies();
+                if (cookieSources != null) {
+                    
+                    data = cookieSources[0].getValue();
+                }
+            }
+        }
+        else {
+            
+            data = null;
+        }
+        return data;
+    }

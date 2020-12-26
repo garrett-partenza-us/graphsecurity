@@ -1,0 +1,17 @@
+
+    public void bad() throws Throwable {
+        int [] dataCopy; {
+            int [] data;
+
+            
+            data = null;
+
+            dataCopy = data;
+        } {
+            int [] data = dataCopy;
+
+            
+            IO.writeLine("" + data.length);
+
+        }
+    }

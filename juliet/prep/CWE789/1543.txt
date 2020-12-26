@@ -1,0 +1,17 @@
+
+    public void bad() throws Throwable {
+        int dataCopy; {
+            int data;
+
+            
+            data = Integer.MAX_VALUE;
+
+            dataCopy = data;
+        } {
+            int data = dataCopy;
+
+            
+            HashMap intHashMap = new HashMap(data);
+
+        }
+    }

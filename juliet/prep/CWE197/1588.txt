@@ -1,0 +1,9 @@
+
+    public void badSink(Object dataObject ) throws Throwable {
+        short data = (Short)dataObject;
+ {
+            
+            IO.writeLine((byte)data);
+        }
+
+    }

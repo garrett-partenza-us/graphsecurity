@@ -1,0 +1,12 @@
+
+    public void bad() throws Throwable {
+        String data;
+
+        
+        
+        data = System.getProperty("user.home");
+
+        Container dataContainer = new Container();
+        dataContainer.containerOne = data;
+        (new CWE606_Unchecked_Loop_Condition__Property_67b()).badSink(dataContainer  );
+    }

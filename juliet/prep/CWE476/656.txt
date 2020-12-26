@@ -1,0 +1,17 @@
+
+    private void goodG2B2() throws Throwable {
+        String data;
+        if (IO.staticTrue) {
+            
+            data = "This is not null";
+        }
+        else {
+            
+            data = null;
+        }
+
+        if (IO.staticTrue) {
+            
+            IO.writeLine("" + data.length());
+        }
+    }

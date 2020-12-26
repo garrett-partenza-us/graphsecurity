@@ -1,0 +1,10 @@
+
+    private void goodG2B(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int data;
+
+        
+        data = 2;
+
+        CWE190_Integer_Overflow__int_getQueryString_Servlet_multiply_81_base baseObject = new CWE190_Integer_Overflow__int_getQueryString_Servlet_multiply_81_goodG2B();
+        baseObject.action(data , request, response);
+    }

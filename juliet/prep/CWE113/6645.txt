@@ -1,0 +1,10 @@
+
+    public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data = badSource(request, response);
+
+        
+        if (data != null) {
+            response.addHeader("Location", "/author.jsp?lang=" + data);
+        }
+
+    }

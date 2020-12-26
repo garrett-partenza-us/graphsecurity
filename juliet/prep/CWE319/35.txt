@@ -1,0 +1,60 @@
+
+    private void goodB2G1() throws Throwable {
+        String password = null;
+
+        password = ""; 
+
+ {
+            Socket socket = null;
+            BufferedReader readerBuffered = null;
+            InputStreamReader readerInputStream = null;
+            try {
+                
+                socket = new Socket("host.example.org", 39544);
+
+                
+
+                
+                readerInputStream = new InputStreamReader(socket.getInputStream(), "UTF-8");
+                readerBuffered = new BufferedReader(readerInputStream);
+
+                password = readerBuffered.readLine();
+            }
+            catch (IOException exceptIO) {
+                IO.logger.log(Level.WARNING, "Error with stream reading", exceptIO);
+            }
+            finally {
+                
+                try {
+                    if (readerBuffered != null) {
+                        readerBuffered.close();
+                    }
+                }
+                catch (IOException exceptIO) {
+                    IO.logger.log(Level.WARNING, "Error closing BufferedReader", exceptIO);
+                }
+
+                try {
+                    if (readerInputStream != null) {
+                        readerInputStream.close();
+                    }
+                }
+                catch (IOException exceptIO) {
+                    IO.logger.log(Level.WARNING, "Error closing InputStreamReader", exceptIO);
+                }
+
+                
+                try {
+                    if (socket != null) {
+                        socket.close();
+                    }
+                }
+                catch (IOException exceptIO) {
+                    IO.logger.log(Level.WARNING, "Error closing Socket", exceptIO);
+                }
+            }
+        }
+
+        goodB2G1PublicStatic = false;
+        (new CWE319_Cleartext_Tx_Sensitive_Info__connect_tcp_kerberosKey_22b()).goodB2G1Sink(password );
+    }

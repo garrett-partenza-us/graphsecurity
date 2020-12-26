@@ -1,0 +1,34 @@
+
+    public void bad() throws Throwable {
+
+        data = ""; 
+
+ {
+            Properties properties = new Properties();
+            FileInputStream streamFileInput = null;
+
+            try {
+                streamFileInput = new FileInputStream("../common/config.properties");
+                properties.load(streamFileInput);
+
+                
+                data = properties.getProperty("data");
+            }
+            catch (IOException exceptIO) {
+                IO.logger.log(Level.WARNING, "Error with stream reading", exceptIO);
+            }
+            finally {
+                
+                try {
+                    if (streamFileInput != null) {
+                        streamFileInput.close();
+                    }
+                }
+                catch (IOException exceptIO) {
+                    IO.logger.log(Level.WARNING, "Error closing FileInputStream", exceptIO);
+                }
+            }
+        }
+
+        (new CWE606_Unchecked_Loop_Condition__PropertiesFile_68b()).badSink();
+    }

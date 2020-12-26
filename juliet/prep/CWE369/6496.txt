@@ -1,0 +1,8 @@
+
+    private void goodG2BSink(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int data = dataGoodG2B;
+
+        
+        IO.writeLine("100%" + data + " = " + (100 % data) + "\n");
+
+    }

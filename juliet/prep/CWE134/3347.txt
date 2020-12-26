@@ -1,0 +1,10 @@
+
+    private void goodB2G() throws Throwable {
+        String data;
+
+        
+        
+        data = System.getenv("ADD");
+
+        goodB2GSink(data  );
+    }

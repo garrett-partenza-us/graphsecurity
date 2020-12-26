@@ -1,0 +1,19 @@
+
+    public void bad() throws Throwable {
+        int data;
+        if (IO.staticReturnsTrueOrFalse()) {
+            
+            data = (new SecureRandom()).nextInt();
+        }
+        else {
+
+            
+            data = 2;
+
+        }
+ {
+            
+            IO.writeLine((short)data);
+        }
+
+    }

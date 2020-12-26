@@ -1,0 +1,11 @@
+
+    public void badSink() throws Throwable {
+        int data = CWE190_Integer_Overflow__int_PropertiesFile_postinc_68a.data;
+
+        
+        data++;
+        int result = (int)(data);
+
+        IO.writeLine("result: " + result);
+
+    }

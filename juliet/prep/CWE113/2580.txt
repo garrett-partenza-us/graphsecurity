@@ -1,0 +1,11 @@
+
+    public void goodB2GSink(CWE113_HTTP_Response_Splitting__listen_tcp_setHeaderServlet_67a.Container dataContainer , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data = dataContainer.containerOne;
+
+        if (data != null) {
+            
+            data = URLEncoder.encode(data, "UTF-8");
+            response.setHeader("Location", "/author.jsp?lang=" + data);
+        }
+
+    }

@@ -1,0 +1,20 @@
+
+    public void goodG2BSink(int data ) throws Throwable {
+        if (CWE129_Improper_Validation_of_Array_Index__console_readLine_array_size_22a.goodG2BPublicStatic) {
+            int array[] = null;
+            
+            if (data >= 0) {
+                array = new int[data];
+            }
+            else {
+                IO.writeLine("Array size is negative");
+            }
+            
+            array[0] = 5;
+            IO.writeLine(array[0]);
+        }
+        else {
+            
+            data = 0;
+        }
+    }

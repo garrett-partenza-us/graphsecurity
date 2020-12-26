@@ -1,0 +1,9 @@
+
+    private void goodB2G2Sink(String data ) throws Throwable {
+        if (goodB2G2Private) {
+            if (data != null) {
+                
+                System.out.format("%s%n", data);
+            }
+        }
+    }

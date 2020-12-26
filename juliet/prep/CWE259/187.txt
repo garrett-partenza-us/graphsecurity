@@ -1,0 +1,14 @@
+
+    public void bad() throws Throwable {
+        String data;
+
+        
+        data = "7e5tc4s3";
+
+        if (data != null) {
+            
+            PasswordAuthentication credentials = new PasswordAuthentication("user", data.toCharArray());
+            IO.writeLine(credentials.toString());
+        }
+
+    }

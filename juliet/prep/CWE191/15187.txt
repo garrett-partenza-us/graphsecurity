@@ -1,0 +1,11 @@
+
+    private void badSink() throws Throwable {
+        byte data = dataBad;
+
+        
+        data--;
+        byte result = (byte)(data);
+
+        IO.writeLine("result: " + result);
+
+    }

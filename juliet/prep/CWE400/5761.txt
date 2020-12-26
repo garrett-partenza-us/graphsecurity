@@ -1,0 +1,30 @@
+
+    private void goodB2G(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int count;
+
+        count = Integer.MIN_VALUE; 
+
+ {
+            Cookie cookieSources[] = request.getCookies();
+            if (cookieSources != null) {
+                
+                String stringNumber = cookieSources[0].getValue();
+                try {
+                    count = Integer.parseInt(stringNumber.trim());
+                }
+                catch(NumberFormatException exceptNumberFormat) {
+                    IO.logger.log(Level.WARNING, "Number format exception reading count from cookie", exceptNumberFormat);
+                }
+            }
+        }
+
+        for (int k = 0; k < 1; k++) {
+            int i = 0;
+            
+            if (count > 0 && count <= 20) {
+                for (i = 0; i < count; i++) {
+                    IO.writeLine("Hello");
+                }
+            }
+        }
+    }

@@ -1,0 +1,18 @@
+
+    public void goodB2G2Sink(int data ) throws Throwable {
+        if (CWE190_Integer_Overflow__int_max_postinc_22a.goodB2G2PublicStatic) {
+            
+            if (data < Integer.MAX_VALUE) {
+                data++;
+                int result = (int)(data);
+                IO.writeLine("result: " + result);
+            }
+            else {
+                IO.writeLine("data value is too large to increment.");
+            }
+        }
+        else {
+            
+            data = 0;
+        }
+    }

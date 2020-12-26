@@ -1,0 +1,13 @@
+
+    private void badSink() throws Throwable {
+        int data = dataBad;
+
+        
+        int array[] = { 0, 1, 2, 3, 4 };
+
+        
+        array[data] = 42;
+
+        
+
+    }

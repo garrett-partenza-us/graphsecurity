@@ -1,0 +1,13 @@
+
+    public void badSink(HashMap<Integer,Integer> dataHashMap ) throws Throwable {
+        int data = dataHashMap.get(2);
+
+        
+        int array[] = { 0, 1, 2, 3, 4 };
+
+        
+        array[data] = 42;
+
+        
+
+    }

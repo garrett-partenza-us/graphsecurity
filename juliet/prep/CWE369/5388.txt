@@ -1,0 +1,28 @@
+
+    private void goodB2G1() throws Throwable {
+        int data;
+        if (PRIVATE_STATIC_FINAL_TRUE) {
+            
+            data = (new SecureRandom()).nextInt();
+        }
+        else {
+            
+            data = 0;
+        }
+
+        if (PRIVATE_STATIC_FINAL_FALSE) {
+            
+            IO.writeLine("Benign, fixed string");
+        }
+        else {
+
+            
+            if (data != 0) {
+                IO.writeLine("100%" + data + " = " + (100 % data) + "\n");
+            }
+            else {
+                IO.writeLine("This would result in a modulo by zero");
+            }
+
+        }
+    }

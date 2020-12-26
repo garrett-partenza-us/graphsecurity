@@ -1,0 +1,9 @@
+
+    public void bad() throws Throwable {
+        byte data;
+
+        
+        data = Byte.MAX_VALUE;
+
+        badSink(data  );
+    }

@@ -1,0 +1,33 @@
+
+    private void goodB2G2() throws Throwable {
+        int data;
+        if (privateReturnsTrue()) {
+            data = Integer.MIN_VALUE; 
+            
+ {
+                String stringNumber = System.getProperty("user.home");
+                try {
+                    data = Integer.parseInt(stringNumber.trim());
+                }
+                catch(NumberFormatException exceptNumberFormat) {
+                    IO.logger.log(Level.WARNING, "Number format exception parsing data from string", exceptNumberFormat);
+                }
+            }
+        }
+        else {
+            
+            data = 0;
+        }
+
+        if (privateReturnsTrue()) {
+            
+            if (data > Integer.MIN_VALUE) {
+                data--;
+                int result = (int)(data);
+                IO.writeLine("result: " + result);
+            }
+            else {
+                IO.writeLine("data value is too small to decrement.");
+            }
+        }
+    }

@@ -1,0 +1,15 @@
+
+    private String bad_source(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+
+        if (badPrivate) {
+            
+            data = request.getParameter("name");
+        }
+        else {
+            
+            data = null;
+        }
+
+        return data;
+    }

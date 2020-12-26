@@ -1,0 +1,24 @@
+
+    public void bad() throws Throwable {
+        int data;
+        if (IO.staticFive==5) {
+            
+            data = -1;
+        }
+        else {
+            
+            data = 0;
+        }
+
+        if (IO.staticFive==5) {
+            
+            int array[] = { 0, 1, 2, 3, 4 };
+            
+            if (data < array.length) {
+                IO.writeLine(array[data]);
+            }
+            else {
+                IO.writeLine("Array index out of bounds");
+            }
+        }
+    }

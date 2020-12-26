@@ -1,0 +1,8 @@
+
+    public void bad() throws Throwable {
+        String data = badSource();
+
+        
+        IO.writeLine("" + data.length());
+
+    }

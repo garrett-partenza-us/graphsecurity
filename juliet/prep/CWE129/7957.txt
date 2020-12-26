@@ -1,0 +1,10 @@
+
+    private void goodB2G() throws Throwable {
+        int data;
+
+        
+        data = 100;
+
+        CWE129_Improper_Validation_of_Array_Index__large_fixed_array_size_81_base baseObject = new CWE129_Improper_Validation_of_Array_Index__large_fixed_array_size_81_goodB2G();
+        baseObject.action(data );
+    }

@@ -1,0 +1,16 @@
+
+    public void bad() throws Throwable {
+        switch (7) {
+        case 7:
+            int intOne = 1;
+            IO.writeLine(intOne);
+            
+            intOne = intOne;
+            IO.writeLine(intOne);
+            break;
+        default:
+            
+            IO.writeLine("Benign, fixed string");
+            break;
+        }
+    }

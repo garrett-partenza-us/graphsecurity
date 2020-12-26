@@ -1,0 +1,9 @@
+
+    public void bad() throws Throwable {
+        long data;
+
+        
+        data = (new java.security.SecureRandom()).nextLong();
+
+        (new CWE190_Integer_Overflow__long_rand_preinc_52b()).badSink(data );
+    }

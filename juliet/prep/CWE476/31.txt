@@ -1,0 +1,18 @@
+
+    private void goodB2G1Sink(Integer data ) throws Throwable {
+        if (goodB2G1Private) {
+            
+            IO.writeLine("Benign, fixed string");
+        }
+        else {
+
+            
+            if (data != null) {
+                IO.writeLine("" + data.toString());
+            }
+            else {
+                IO.writeLine("data is null");
+            }
+
+        }
+    }

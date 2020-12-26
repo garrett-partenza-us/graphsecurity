@@ -1,0 +1,13 @@
+
+    private void goodB2G() throws Throwable {
+        int data;
+
+        
+        data = -1;
+
+        Vector<Integer> dataVector = new Vector<Integer>(5);
+        dataVector.add(0, data);
+        dataVector.add(1, data);
+        dataVector.add(2, data);
+        (new CWE129_Improper_Validation_of_Array_Index__negative_fixed_array_write_no_check_72b()).goodB2GSink(dataVector  );
+    }

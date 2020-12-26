@@ -1,0 +1,4 @@
+
+    public void goodG2BSink(String data , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        (new CWE601_Open_Redirect__Servlet_database_54d()).goodG2BSink(data , request, response);
+    }

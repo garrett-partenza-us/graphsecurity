@@ -1,0 +1,39 @@
+
+    private void goodB2G() throws Throwable {
+        int data;
+        if(IO.staticReturnsTrueOrFalse()) {
+            
+            data = Integer.MIN_VALUE;
+        }
+        else {
+
+            
+            data = Integer.MIN_VALUE;
+
+        }
+
+        if(IO.staticReturnsTrueOrFalse()) {
+            
+            if (data > Integer.MIN_VALUE) {
+                data--;
+                int result = (int)(data);
+                IO.writeLine("result: " + result);
+            }
+            else {
+                IO.writeLine("data value is too small to decrement.");
+            }
+        }
+        else {
+
+            
+            if (data > Integer.MIN_VALUE) {
+                data--;
+                int result = (int)(data);
+                IO.writeLine("result: " + result);
+            }
+            else {
+                IO.writeLine("data value is too small to decrement.");
+            }
+
+        }
+    }

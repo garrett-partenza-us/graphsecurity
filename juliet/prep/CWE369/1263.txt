@@ -1,0 +1,8 @@
+
+    public void badSink() throws Throwable {
+        int data = CWE369_Divide_by_Zero__int_console_readLine_modulo_68a.data;
+
+        
+        IO.writeLine("100%" + data + " = " + (100 % data) + "\n");
+
+    }

@@ -1,0 +1,18 @@
+
+    private void goodG2B2() throws Throwable {
+        byte data;
+        if (5==5) {
+            
+            data = 2;
+        }
+        else {
+            
+            data = 0;
+        }
+
+        if (5==5) {
+            
+            byte result = (byte)(--data);
+            IO.writeLine("result: " + result);
+        }
+    }

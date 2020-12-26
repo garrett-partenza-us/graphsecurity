@@ -1,0 +1,11 @@
+
+    public void bad() throws Throwable {
+        for(int j = 0; j < 1; j++) { {
+                
+                String myString = null;
+                if (myString == null) {
+                    IO.writeLine(myString.length());
+                }
+            }
+        }
+    }

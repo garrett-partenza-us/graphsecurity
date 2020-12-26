@@ -1,0 +1,19 @@
+
+    private void goodB2G1() throws Throwable {
+        int data;
+
+        
+
+        data = 5;
+
+        switch (8) {
+        case 7:
+            
+            IO.writeLine("Benign, fixed string");
+            break;
+        default:
+            
+            IO.writeLine("" + data);
+            break;
+        }
+    }

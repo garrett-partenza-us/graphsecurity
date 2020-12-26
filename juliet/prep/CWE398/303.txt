@@ -1,0 +1,19 @@
+
+    private void good1() throws Throwable {
+        if (privateReturnsFalse()) {
+            
+            IO.writeLine("Benign, fixed string");
+        }
+        else {
+
+            int i = 0;
+
+            
+            while(i++ < 10) {
+                IO.writeLine("Inside the while statement");
+            }
+
+            IO.writeLine("Hello from good()");
+
+        }
+    }

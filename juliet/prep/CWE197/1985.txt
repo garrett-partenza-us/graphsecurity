@@ -1,0 +1,12 @@
+
+    private void goodG2B1() throws Throwable {
+        int data;
+
+        goodG2B1_private = false;
+        data = goodG2B1_source();
+ {
+            
+            IO.writeLine((short)data);
+        }
+
+    }

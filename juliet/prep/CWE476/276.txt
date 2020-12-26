@@ -1,0 +1,20 @@
+
+    public void bad() throws Throwable {
+        switch (7) {
+        case 7: {
+            String myString = null;
+            myString = "Hello";
+            IO.writeLine(myString.length());
+            
+            if (myString != null) {
+                myString = "my, how I've changed";
+            }
+            IO.writeLine(myString.length());
+        }
+        break;
+        default:
+            
+            IO.writeLine("Benign, fixed string");
+            break;
+        }
+    }

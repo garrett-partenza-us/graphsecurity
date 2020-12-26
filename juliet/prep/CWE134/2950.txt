@@ -1,0 +1,12 @@
+
+    private void goodB2G() throws Throwable {
+        String data;
+
+        
+        
+        data = System.getenv("ADD");
+
+        String[] dataArray = new String[5];
+        dataArray[2] = data;
+        (new CWE134_Uncontrolled_Format_String__Environment_format_66b()).goodB2GSink(dataArray  );
+    }

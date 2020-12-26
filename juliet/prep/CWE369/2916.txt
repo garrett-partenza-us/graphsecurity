@@ -1,0 +1,10 @@
+
+    public float badSource() throws Throwable {
+        float data;
+
+        
+        SecureRandom secureRandom = new SecureRandom();
+        data = secureRandom.nextFloat();
+
+        return data;
+    }

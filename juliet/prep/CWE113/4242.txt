@@ -1,0 +1,57 @@
+
+    private void goodB2G(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String dataCopy; {
+            String data;
+
+            data = ""; 
+
+ {
+                URLConnection urlConnection = (new URL("http://www.example.org/")).openConnection();
+                BufferedReader readerBuffered = null;
+                InputStreamReader readerInputStream = null;
+
+                try {
+                    readerInputStream = new InputStreamReader(urlConnection.getInputStream(), "UTF-8");
+                    readerBuffered = new BufferedReader(readerInputStream);
+
+                    
+                    
+                    data = readerBuffered.readLine();
+                }
+                catch (IOException exceptIO) {
+                    IO.logger.log(Level.WARNING, "Error with stream reading", exceptIO);
+                }
+                finally {
+                    
+                    try {
+                        if (readerBuffered != null) {
+                            readerBuffered.close();
+                        }
+                    }
+                    catch (IOException exceptIO) {
+                        IO.logger.log(Level.WARNING, "Error closing BufferedReader", exceptIO);
+                    }
+
+                    try {
+                        if (readerInputStream != null) {
+                            readerInputStream.close();
+                        }
+                    }
+                    catch (IOException exceptIO) {
+                        IO.logger.log(Level.WARNING, "Error closing InputStreamReader", exceptIO);
+                    }
+                }
+            }
+
+            dataCopy = data;
+        } {
+            String data = dataCopy;
+
+            if (data != null) {
+                Cookie cookieSink = new Cookie("lang", URLEncoder.encode(data, "UTF-8"));
+                
+                response.addCookie(cookieSink);
+            }
+
+        }
+    }

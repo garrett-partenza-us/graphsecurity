@@ -1,0 +1,18 @@
+
+    private void goodB2G() throws Throwable {
+        long data;
+
+        
+        data = Long.MIN_VALUE;
+
+        for (int k = 0; k < 1; k++) {
+            
+            if (data > Long.MIN_VALUE) {
+                long result = (long)(--data);
+                IO.writeLine("result: " + result);
+            }
+            else {
+                IO.writeLine("data value is too small to decrement.");
+            }
+        }
+    }

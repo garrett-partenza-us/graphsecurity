@@ -1,0 +1,10 @@
+
+    private void badSink() throws Throwable {
+        String data = dataBad;
+
+        
+        if(data.equals("CWE690")) {
+            IO.writeLine("data is CWE690");
+        }
+
+    }

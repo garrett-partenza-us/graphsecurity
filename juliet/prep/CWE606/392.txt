@@ -1,0 +1,12 @@
+
+    public void bad() throws Throwable {
+        String data;
+
+        
+        
+        data = System.getenv("ADD");
+
+        Container dataContainer = new Container();
+        dataContainer.containerOne = data;
+        (new CWE606_Unchecked_Loop_Condition__Environment_67b()).badSink(dataContainer  );
+    }

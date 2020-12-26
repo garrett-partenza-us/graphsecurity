@@ -1,0 +1,22 @@
+
+    private void goodG2B1(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+        if (privateReturnsFalse()) {
+            
+            data = null;
+        }
+        else {
+
+            
+            data = "foo";
+
+        }
+
+        if (privateReturnsTrue()) {
+            if (data != null) {
+                Cookie cookieSink = new Cookie("lang", data);
+                
+                response.addCookie(cookieSink);
+            }
+        }
+    }

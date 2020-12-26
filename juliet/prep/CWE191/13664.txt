@@ -1,0 +1,19 @@
+
+    public void bad() throws Throwable {
+        byte data;
+        if (IO.STATIC_FINAL_TRUE) {
+            
+            data = Byte.MIN_VALUE;
+        }
+        else {
+            
+            data = 0;
+        }
+
+        if (IO.STATIC_FINAL_TRUE) {
+            
+            data--;
+            byte result = (byte)(data);
+            IO.writeLine("result: " + result);
+        }
+    }

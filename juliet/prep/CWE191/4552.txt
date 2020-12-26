@@ -1,0 +1,19 @@
+
+    public void bad() throws Throwable {
+        long dataCopy; {
+            long data;
+
+            
+            data = Long.MIN_VALUE;
+
+            dataCopy = data;
+        } {
+            long data = dataCopy;
+
+            
+            long result = (long)(--data);
+
+            IO.writeLine("result: " + result);
+
+        }
+    }

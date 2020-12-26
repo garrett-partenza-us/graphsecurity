@@ -1,0 +1,12 @@
+
+    private void badSink(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int count = countBad;
+
+        int i = 0;
+
+        
+        for (i = 0; i < count; i++) {
+            IO.writeLine("Hello");
+        }
+
+    }

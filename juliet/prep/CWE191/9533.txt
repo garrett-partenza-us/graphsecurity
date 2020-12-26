@@ -1,0 +1,10 @@
+
+    public void badSink() throws Throwable {
+        short data = CWE191_Integer_Underflow__short_console_readLine_sub_68a.data;
+
+        
+        short result = (short)(data - 1);
+
+        IO.writeLine("result: " + result);
+
+    }

@@ -1,0 +1,14 @@
+
+    public void goodB2G2Sink(String data , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        if (CWE113_HTTP_Response_Splitting__console_readLine_setHeaderServlet_22a.goodB2G2PublicStatic) {
+            if (data != null) {
+                
+                data = URLEncoder.encode(data, "UTF-8");
+                response.setHeader("Location", "/author.jsp?lang=" + data);
+            }
+        }
+        else {
+            
+            data = null;
+        }
+    }

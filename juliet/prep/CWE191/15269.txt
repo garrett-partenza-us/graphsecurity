@@ -1,0 +1,15 @@
+
+    private void goodB2G() throws Throwable {
+        int data = (new CWE191_Integer_Underflow__int_random_postdec_61b()).goodB2GSource();
+
+        
+        if (data > Integer.MIN_VALUE) {
+            data--;
+            int result = (int)(data);
+            IO.writeLine("result: " + result);
+        }
+        else {
+            IO.writeLine("data value is too small to decrement.");
+        }
+
+    }

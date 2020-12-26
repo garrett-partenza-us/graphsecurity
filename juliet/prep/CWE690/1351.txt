@@ -1,0 +1,11 @@
+
+    private void goodB2G(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data = goodB2GSource(request, response);
+
+        
+        if (data != null) {
+            String stringTrimmed = data.trim();
+            IO.writeLine(stringTrimmed);
+        }
+
+    }

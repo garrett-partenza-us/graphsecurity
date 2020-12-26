@@ -1,0 +1,20 @@
+
+    private void goodB2G(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+
+        data = ""; 
+
+ {
+            Cookie cookieSources[] = request.getCookies();
+            if (cookieSources != null) {
+                
+                data = cookieSources[0].getValue();
+            }
+        }
+
+        LinkedList<String> dataLinkedList = new LinkedList<String>();
+        dataLinkedList.add(0, data);
+        dataLinkedList.add(1, data);
+        dataLinkedList.add(2, data);
+        (new CWE643_Xpath_Injection__getCookies_Servlet_73b()).goodB2GSink(dataLinkedList , request, response );
+    }

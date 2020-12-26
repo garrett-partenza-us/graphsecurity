@@ -1,0 +1,9 @@
+
+    public void bad() throws Throwable {
+
+        
+        
+        data = System.getenv("ADD");
+
+        (new CWE470_Unsafe_Reflection__Environment_68b()).badSink();
+    }

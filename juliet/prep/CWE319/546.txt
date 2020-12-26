@@ -1,0 +1,12 @@
+
+    public void goodG2BSink(Vector<String> passwordVector ) throws Throwable {
+        String password = passwordVector.remove(2);
+
+        if (password != null) {
+            KerberosPrincipal principal = new KerberosPrincipal("test");
+            
+            KerberosKey key = new KerberosKey(principal, password.toCharArray(), null);
+            IO.writeLine(key.toString());
+        }
+
+    }

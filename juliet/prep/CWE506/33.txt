@@ -1,0 +1,25 @@
+
+    public void bad() throws Throwable {
+        if (PRIVATE_STATIC_FINAL_TRUE) {
+            Properties properties = new Properties();
+            Session session = Session.getDefaultInstance(properties, null);
+            String messageBody = "...";
+            try {
+                Message message = new MimeMessage(session); 
+                message.setFrom(new InternetAddress("sender@example.com"));
+                message.addRecipient(Message.RecipientType.TO, new InternetAddress("recipient@example.com"));
+                message.setSubject("Shhh, I'm sending some bad stuff!");
+                message.setText(messageBody);
+                
+                Transport.send(message);
+            }
+            catch (AddressException exceptAddress) {
+                
+                IO.logger.log(Level.WARNING, "Address is formatted incorrectly", exceptAddress);
+            }
+            catch (MessagingException exceptMessaging) {
+                
+                IO.logger.log(Level.WARNING, "Error sending message", exceptMessaging);
+            }
+        }
+    }

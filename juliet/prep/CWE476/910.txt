@@ -1,0 +1,12 @@
+
+    private void good2() throws Throwable {
+        if (IO.staticTrue) { {
+                String myString = null;
+                myString = "Hello";
+                IO.writeLine(myString.length());
+                
+                myString = "my, how I've changed";
+                IO.writeLine(myString.length());
+            }
+        }
+    }

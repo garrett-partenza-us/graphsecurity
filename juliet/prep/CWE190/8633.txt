@@ -1,0 +1,18 @@
+
+    public void goodB2G2Sink(int data ) throws Throwable {
+        if (CWE190_Integer_Overflow__int_URLConnection_square_22a.goodB2G2PublicStatic) {
+            
+            
+            if ((data != Integer.MIN_VALUE) && (data != Long.MIN_VALUE) && (Math.abs(data) <= (long)Math.sqrt(Integer.MAX_VALUE))) {
+                int result = (int)(data * data);
+                IO.writeLine("result: " + result);
+            }
+            else {
+                IO.writeLine("data value is too large to perform squaring.");
+            }
+        }
+        else {
+            
+            data = 0;
+        }
+    }

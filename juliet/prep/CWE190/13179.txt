@@ -1,0 +1,25 @@
+
+    private void goodB2G2() throws Throwable {
+        byte data;
+        if (privateTrue) {
+            
+            data = (byte)((new java.security.SecureRandom()).nextInt(1+Byte.MAX_VALUE-Byte.MIN_VALUE) + Byte.MIN_VALUE);
+        }
+        else {
+            
+            data = 0;
+        }
+
+        if (privateTrue) {
+            if(data > 0) {
+                
+                if (data < (Byte.MAX_VALUE/2)) {
+                    byte result = (byte)(data * 2);
+                    IO.writeLine("result: " + result);
+                }
+                else {
+                    IO.writeLine("data value is too large to perform multiplication.");
+                }
+            }
+        }
+    }

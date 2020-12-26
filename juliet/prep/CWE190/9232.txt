@@ -1,0 +1,29 @@
+
+    private void goodB2G1() throws Throwable {
+        long data;
+        if (privateReturnsTrue()) {
+            
+            data = Long.MAX_VALUE;
+        }
+        else {
+            
+            data = 0L;
+        }
+
+        if (privateReturnsFalse()) {
+            
+            IO.writeLine("Benign, fixed string");
+        }
+        else {
+
+            
+            if (data < Long.MAX_VALUE) {
+                long result = (long)(data + 1);
+                IO.writeLine("result: " + result);
+            }
+            else {
+                IO.writeLine("data value is too large to perform addition.");
+            }
+
+        }
+    }

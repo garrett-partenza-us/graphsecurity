@@ -1,0 +1,28 @@
+
+    public void bad() throws Throwable {
+        float data;
+
+        switch (6) {
+        case 6:
+            
+            SecureRandom secureRandom = new SecureRandom();
+            data = secureRandom.nextFloat();
+            break;
+        default:
+            
+            data = 0.0f;
+            break;
+        }
+
+        switch (7) {
+        case 7:
+            
+            int result = (int)(100.0 / data);
+            IO.writeLine(result);
+            break;
+        default:
+            
+            IO.writeLine("Benign, fixed string");
+            break;
+        }
+    }

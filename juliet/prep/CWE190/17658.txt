@@ -1,0 +1,11 @@
+
+    public void goodG2BSink(CWE190_Integer_Overflow__byte_console_readLine_postinc_67a.Container dataContainer ) throws Throwable {
+        byte data = dataContainer.containerOne;
+
+        
+        data++;
+        byte result = (byte)(data);
+
+        IO.writeLine("result: " + result);
+
+    }

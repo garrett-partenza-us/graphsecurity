@@ -1,0 +1,12 @@
+
+    public void bad() throws Throwable {
+        short data;
+
+        badPrivate = true;
+        data = bad_source();
+ {
+            
+            IO.writeLine((byte)data);
+        }
+
+    }

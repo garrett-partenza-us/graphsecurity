@@ -1,0 +1,13 @@
+
+    private void goodB2G2() throws Throwable {
+        int data;
+
+        
+        ; 
+
+        if (privateReturnsTrue()) {
+            
+            data = 5;
+            IO.writeLine("" + data);
+        }
+    }

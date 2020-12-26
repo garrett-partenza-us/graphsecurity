@@ -1,0 +1,17 @@
+
+    public void bad() throws Throwable {
+        short data;
+        if (IO.STATIC_FINAL_TRUE) {
+            
+            data = (short)((new SecureRandom()).nextInt(Short.MAX_VALUE + 1));
+        }
+        else {
+            
+            data = 0;
+        }
+ {
+            
+            IO.writeLine((byte)data);
+        }
+
+    }

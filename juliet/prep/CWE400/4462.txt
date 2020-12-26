@@ -1,0 +1,17 @@
+
+    public void bad() throws Throwable {
+        int countCopy; {
+            int count;
+
+            
+            count = Integer.MAX_VALUE;
+
+            countCopy = count;
+        } {
+            int count = countCopy;
+
+            
+            Thread.sleep(count);
+
+        }
+    }

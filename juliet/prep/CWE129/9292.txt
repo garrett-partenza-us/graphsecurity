@@ -1,0 +1,21 @@
+
+    public void bad() throws Throwable {
+        int data;
+
+        
+
+        
+        data = -1;
+
+        for (int j = 0; j < 1; j++) {
+            
+            int array[] = { 0, 1, 2, 3, 4 };
+            
+            if (data < array.length) {
+                IO.writeLine(array[data]);
+            }
+            else {
+                IO.writeLine("Array index out of bounds");
+            }
+        }
+    }

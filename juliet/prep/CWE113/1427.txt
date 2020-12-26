@@ -1,0 +1,21 @@
+
+    public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+        if (IO.staticTrue) {
+            
+            
+            data = System.getProperty("user.home");
+        }
+        else {
+            
+            data = null;
+        }
+
+        if (IO.staticTrue) {
+            if (data != null) {
+                Cookie cookieSink = new Cookie("lang", data);
+                
+                response.addCookie(cookieSink);
+            }
+        }
+    }

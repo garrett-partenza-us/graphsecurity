@@ -1,0 +1,27 @@
+
+    public void badSink(CWE15_External_Control_of_System_or_Configuration_Setting__connect_tcp_67a.Container dataContainer ) throws Throwable {
+        String data = dataContainer.containerOne;
+
+        Connection dbConnection = null;
+
+        try {
+            dbConnection = IO.getDBConnection();
+
+            
+            dbConnection.setCatalog(data);
+        }
+        catch (SQLException exceptSql) {
+            IO.logger.log(Level.WARNING, "Error getting database connection", exceptSql);
+        }
+        finally {
+            try {
+                if (dbConnection != null) {
+                    dbConnection.close();
+                }
+            }
+            catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, "Error closing Connection", exceptSql);
+            }
+        }
+
+    }

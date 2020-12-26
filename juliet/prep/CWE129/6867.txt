@@ -1,0 +1,20 @@
+
+    public void bad() throws Throwable {
+        int data;
+        if (PRIVATE_STATIC_FINAL_FIVE==5) {
+            
+            data = 100;
+        }
+        else {
+            
+            data = 0;
+        }
+
+        if (PRIVATE_STATIC_FINAL_FIVE==5) {
+            
+            int array[] = { 0, 1, 2, 3, 4 };
+            
+            array[data] = 42;
+            
+        }
+    }

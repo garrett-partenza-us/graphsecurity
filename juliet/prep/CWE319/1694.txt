@@ -1,0 +1,11 @@
+
+    private void goodG2B() throws Throwable {
+        String password;
+
+        
+        
+        password = "Password1234!";
+
+        goodG2BPrivate = true;
+        goodG2BSink(password );
+    }

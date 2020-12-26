@@ -1,0 +1,17 @@
+
+    public void bad() throws Throwable {
+        int count;
+        if (IO.staticReturnsTrue()) {
+            
+            count = (new SecureRandom()).nextInt();
+        }
+        else {
+            
+            count = 0;
+        }
+
+        if(IO.staticReturnsTrue()) {
+            
+            Thread.sleep(count);
+        }
+    }

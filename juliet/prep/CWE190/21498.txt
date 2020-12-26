@@ -1,0 +1,13 @@
+
+    private void goodB2G2Sink(int data ) throws Throwable {
+        if (goodB2G2Private) {
+            
+            if (data < Integer.MAX_VALUE) {
+                int result = (int)(++data);
+                IO.writeLine("result: " + result);
+            }
+            else {
+                IO.writeLine("data value is too large to increment.");
+            }
+        }
+    }

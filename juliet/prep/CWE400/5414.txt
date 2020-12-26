@@ -1,0 +1,39 @@
+
+    private void goodB2G2(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int count;
+
+        switch (6) {
+        case 6:
+            count = Integer.MIN_VALUE; 
+ {
+                String stringNumber = request.getParameter("name");
+                try {
+                    count = Integer.parseInt(stringNumber.trim());
+                }
+                catch(NumberFormatException exceptNumberFormat) {
+                    IO.logger.log(Level.WARNING, "Number format exception reading count from parameter 'name'", exceptNumberFormat);
+                }
+            }
+            break;
+        default:
+            
+            count = 0;
+            break;
+        }
+
+        switch (7) {
+        case 7:
+            int i = 0;
+            
+            if (count > 0 && count <= 20) {
+                for (i = 0; i < count; i++) {
+                    IO.writeLine("Hello");
+                }
+            }
+            break;
+        default:
+            
+            IO.writeLine("Benign, fixed string");
+            break;
+        }
+    }

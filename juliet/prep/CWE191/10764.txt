@@ -1,0 +1,14 @@
+
+    private void goodB2GSink() throws Throwable {
+        long data = dataGoodB2G;
+
+        
+        if (data > Long.MIN_VALUE) {
+            long result = (long)(data - 1);
+            IO.writeLine("result: " + result);
+        }
+        else {
+            IO.writeLine("data value is too small to perform subtraction.");
+        }
+
+    }

@@ -1,0 +1,11 @@
+
+    public void bad() throws Throwable {
+        int data;
+
+        
+        data = (new SecureRandom()).nextInt();
+
+        
+        HashSet intHashSet = new HashSet(data);
+
+    }

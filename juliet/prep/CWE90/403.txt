@@ -1,0 +1,4 @@
+
+    public void badSink(String data , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        (new CWE90_LDAP_Injection__getCookies_Servlet_52c()).badSink(data , request, response);
+    }

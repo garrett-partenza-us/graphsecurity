@@ -1,0 +1,30 @@
+
+    private void goodB2G(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int data;
+
+        while (true) {
+            data = Integer.MIN_VALUE; 
+ {
+                String stringNumber = request.getParameter("name");
+                try {
+                    data = Integer.parseInt(stringNumber.trim());
+                }
+                catch(NumberFormatException exceptNumberFormat) {
+                    IO.logger.log(Level.WARNING, "Number format exception reading data from parameter 'name'", exceptNumberFormat);
+                }
+            }
+            break;
+        }
+
+        while (true) {
+            
+            if (data < Integer.MAX_VALUE) {
+                int result = (int)(++data);
+                IO.writeLine("result: " + result);
+            }
+            else {
+                IO.writeLine("data value is too large to increment.");
+            }
+            break;
+        }
+    }

@@ -1,0 +1,17 @@
+
+    public int goodG2B1Source() throws Throwable {
+        int data;
+
+        if (CWE789_Uncontrolled_Mem_Alloc__max_value_HashSet_22a.goodG2B1PublicStatic) {
+            
+            data = 0;
+        }
+        else {
+
+            
+            data = 2;
+
+        }
+
+        return data;
+    }

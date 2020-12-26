@@ -1,0 +1,21 @@
+
+    private void goodG2B1(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int data;
+        if (IO.staticReturnsFalse()) {
+            
+            data = 0;
+        }
+        else {
+
+            
+            data = 2;
+
+        }
+
+        if (IO.staticReturnsTrue()) {
+            
+            int array[] = { 0, 1, 2, 3, 4 };
+            
+            IO.writeLine(array[data]);
+        }
+    }

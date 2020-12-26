@@ -1,0 +1,11 @@
+
+    private void goodB2G2(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data = null;
+
+        
+        
+        data = System.getProperty("user.home");
+
+        goodB2G2PublicStatic = true;
+        (new CWE113_HTTP_Response_Splitting__Property_addCookieServlet_22b()).goodB2G2Sink(data , request, response);
+    }

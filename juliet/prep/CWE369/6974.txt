@@ -1,0 +1,25 @@
+
+    public void bad() throws Throwable {
+        int data;
+
+        switch (6) {
+        case 6:
+            data = 0; 
+            break;
+        default:
+            
+            data = 0;
+            break;
+        }
+
+        switch (7) {
+        case 7:
+            
+            IO.writeLine("bad: 100/" + data + " = " + (100 / data) + "\n");
+            break;
+        default:
+            
+            IO.writeLine("Benign, fixed string");
+            break;
+        }
+    }

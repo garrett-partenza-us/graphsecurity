@@ -1,0 +1,4 @@
+
+    public void goodB2GSink(String data ) throws Throwable {
+        (new CWE134_Uncontrolled_Format_String__database_format_54c()).goodB2GSink(data );
+    }

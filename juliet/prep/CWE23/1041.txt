@@ -1,0 +1,10 @@
+
+    public void bad() throws Throwable {
+        String data;
+
+        
+        
+        data = System.getProperty("user.home");
+
+        (new CWE23_Relative_Path_Traversal__Property_54b()).badSink(data );
+    }

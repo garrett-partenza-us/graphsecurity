@@ -1,0 +1,41 @@
+
+    private void goodB2G() throws Throwable {
+        long data;
+        if(IO.staticReturnsTrueOrFalse()) {
+            
+            data = Long.MAX_VALUE;
+        }
+        else {
+
+            
+            data = Long.MAX_VALUE;
+
+        }
+
+        if(IO.staticReturnsTrueOrFalse()) {
+            if(data > 0) {
+                
+                if (data < (Long.MAX_VALUE/2)) {
+                    long result = (long)(data * 2);
+                    IO.writeLine("result: " + result);
+                }
+                else {
+                    IO.writeLine("data value is too large to perform multiplication.");
+                }
+            }
+        }
+        else {
+
+            if(data > 0) {
+                
+                if (data < (Long.MAX_VALUE/2)) {
+                    long result = (long)(data * 2);
+                    IO.writeLine("result: " + result);
+                }
+                else {
+                    IO.writeLine("data value is too large to perform multiplication.");
+                }
+            }
+
+        }
+    }

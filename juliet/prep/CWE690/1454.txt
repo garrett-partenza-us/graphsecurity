@@ -1,0 +1,28 @@
+
+    private void goodG2B() throws Throwable {
+        StringBuilder data;
+        if(IO.staticReturnsTrueOrFalse()) {
+            
+            data = CWE690_NULL_Deref_From_Return__Class_Helper.getStringBuilderGood();
+        }
+        else {
+
+            
+            data = CWE690_NULL_Deref_From_Return__Class_Helper.getStringBuilderGood();
+
+        }
+
+        if(IO.staticReturnsTrueOrFalse()) {
+            
+            String stringTrimmed = data.toString().trim();
+            IO.writeLine(stringTrimmed);
+        }
+        else {
+
+            
+            String stringTrimmed = data.toString().trim();
+
+            IO.writeLine(stringTrimmed);
+
+        }
+    }

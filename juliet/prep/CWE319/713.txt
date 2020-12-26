@@ -1,0 +1,81 @@
+
+    private void goodB2G2() throws Throwable {
+        String password;
+
+        switch (6) {
+        case 6:
+            password = ""; 
+ {
+                Socket socket = null;
+                BufferedReader readerBuffered = null;
+                InputStreamReader readerInputStream = null;
+                try {
+                    
+                    socket = new Socket("host.example.org", 39544);
+                    
+                    
+                    readerInputStream = new InputStreamReader(socket.getInputStream(), "UTF-8");
+                    readerBuffered = new BufferedReader(readerInputStream);
+                    password = readerBuffered.readLine();
+                }
+                catch (IOException exceptIO) {
+                    IO.logger.log(Level.WARNING, "Error with stream reading", exceptIO);
+                }
+                finally {
+                    
+                    try {
+                        if (readerBuffered != null) {
+                            readerBuffered.close();
+                        }
+                    }
+                    catch (IOException exceptIO) {
+                        IO.logger.log(Level.WARNING, "Error closing BufferedReader", exceptIO);
+                    }
+
+                    try {
+                        if (readerInputStream != null) {
+                            readerInputStream.close();
+                        }
+                    }
+                    catch (IOException exceptIO) {
+                        IO.logger.log(Level.WARNING, "Error closing InputStreamReader", exceptIO);
+                    }
+
+                    
+                    try {
+                        if (socket != null) {
+                            socket.close();
+                        }
+                    }
+                    catch (IOException exceptIO) {
+                        IO.logger.log(Level.WARNING, "Error closing Socket", exceptIO);
+                    }
+                }
+            }
+            break;
+        default:
+            
+            password = null;
+            break;
+        }
+
+        switch (7) {
+        case 7:
+            if (password != null) {
+ {
+                    Cipher aesCipher = Cipher.getInstance("AES");
+                    
+                    SecretKeySpec secretKeySpec = new SecretKeySpec("ABCDEFGHABCDEFGH".getBytes("UTF-8"), "AES");
+                    aesCipher.init(Cipher.DECRYPT_MODE, secretKeySpec);
+                    password = new String(aesCipher.doFinal(password.getBytes("UTF-8")), "UTF-8");
+                }
+                PasswordAuthentication credentials = new PasswordAuthentication("user", password.toCharArray());
+                IO.writeLine(credentials.toString());
+            }
+            break;
+        default:
+            
+            IO.writeLine("Benign, fixed string");
+            break;
+        }
+    }

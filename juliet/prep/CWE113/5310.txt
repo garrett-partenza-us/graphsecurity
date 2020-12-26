@@ -1,0 +1,14 @@
+
+    private void goodB2G(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+
+        
+        
+        data = System.getenv("ADD");
+
+        HashMap<Integer,String> dataHashMap = new HashMap<Integer,String>();
+        dataHashMap.put(0, data);
+        dataHashMap.put(1, data);
+        dataHashMap.put(2, data);
+        (new CWE113_HTTP_Response_Splitting__Environment_addCookieServlet_74b()).goodB2GSink(dataHashMap , request, response );
+    }

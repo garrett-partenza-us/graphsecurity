@@ -1,0 +1,29 @@
+
+    private void goodB2G1() throws Throwable {
+        StringBuilder data;
+
+        switch (6) {
+        case 6:
+            
+            data = CWE690_NULL_Deref_From_Return__Class_Helper.getStringBuilderBad();
+            break;
+        default:
+            
+            data = null;
+            break;
+        }
+
+        switch (8) {
+        case 7:
+            
+            IO.writeLine("Benign, fixed string");
+            break;
+        default:
+            
+            if (data != null) {
+                String stringTrimmed = data.toString().trim();
+                IO.writeLine(stringTrimmed);
+            }
+            break;
+        }
+    }

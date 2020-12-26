@@ -1,0 +1,17 @@
+
+    private void goodG2B2() throws Throwable {
+        int count;
+        if (IO.STATIC_FINAL_FIVE==5) {
+            
+            count = 2;
+        }
+        else {
+            
+            count = 0;
+        }
+
+        if (IO.STATIC_FINAL_FIVE==5) {
+            
+            Thread.sleep(count);
+        }
+    }

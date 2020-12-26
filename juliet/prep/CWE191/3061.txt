@@ -1,0 +1,17 @@
+
+    public void bad() throws Throwable {
+        long data;
+
+        while (true) {
+            
+            data = Long.MIN_VALUE;
+            break;
+        }
+
+        while (true) {
+            
+            long result = (long)(--data);
+            IO.writeLine("result: " + result);
+            break;
+        }
+    }

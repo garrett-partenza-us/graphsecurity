@@ -1,0 +1,9 @@
+
+    public void bad() throws Throwable {
+        short data;
+
+        
+        data = Short.MAX_VALUE;
+
+        (new CWE190_Integer_Overflow__short_max_add_54b()).badSink(data );
+    }

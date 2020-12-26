@@ -1,0 +1,19 @@
+
+    public void bad() throws Throwable {
+        short data;
+        if (IO.staticReturnsTrue()) {
+            
+            data = (short)((new java.security.SecureRandom()).nextInt(1+Short.MAX_VALUE-Short.MIN_VALUE)+Short.MIN_VALUE);
+        }
+        else {
+            
+            data = 0;
+        }
+
+        if(IO.staticReturnsTrue()) {
+            
+            data--;
+            short result = (short)(data);
+            IO.writeLine("result: " + result);
+        }
+    }

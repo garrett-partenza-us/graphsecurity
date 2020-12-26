@@ -1,0 +1,15 @@
+
+    public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+
+        data = ""; 
+
+ {
+            Cookie cookieSources[] = request.getCookies();
+            if (cookieSources != null) {
+                
+                data = cookieSources[0].getValue();
+            }
+        }
+
+        (new CWE80_XSS__CWE182_Servlet_getCookies_Servlet_68b()).badSink(request, response);
+    }

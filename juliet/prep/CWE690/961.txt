@@ -1,0 +1,20 @@
+
+    private void goodG2B1(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+        if (privateFalse) {
+            
+            data = null;
+        }
+        else {
+
+            
+            data = "CWE690";
+
+        }
+
+        if (privateTrue) {
+            
+            String stringTrimmed = data.trim();
+            IO.writeLine(stringTrimmed);
+        }
+    }

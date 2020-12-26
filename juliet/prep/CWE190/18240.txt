@@ -1,0 +1,24 @@
+
+    private void goodB2G2() throws Throwable {
+        short data;
+        if (privateReturnsTrue()) {
+            
+            data = (short)((new java.security.SecureRandom()).nextInt(1+Short.MAX_VALUE-Short.MIN_VALUE)+Short.MIN_VALUE);
+        }
+        else {
+            
+            data = 0;
+        }
+
+        if (privateReturnsTrue()) {
+            
+            if (data < Short.MAX_VALUE) {
+                data++;
+                short result = (short)(data);
+                IO.writeLine("result: " + result);
+            }
+            else {
+                IO.writeLine("data value is too large to increment.");
+            }
+        }
+    }

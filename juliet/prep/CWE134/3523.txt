@@ -1,0 +1,15 @@
+
+    private void goodB2G() throws Throwable {
+        String data;
+
+        
+        
+        data = System.getenv("ADD");
+
+        for (int k = 0; k < 1; k++) {
+            if (data != null) {
+                
+                System.out.format("%s%n", data);
+            }
+        }
+    }

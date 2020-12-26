@@ -1,0 +1,21 @@
+
+    private void goodB2G1Sink(int data , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        if (goodB2G1Private) {
+            
+            IO.writeLine("Benign, fixed string");
+        }
+        else {
+
+            
+            int array[] = { 0, 1, 2, 3, 4 };
+
+            
+            if (data >= 0 && data < array.length) {
+                IO.writeLine(array[data]);
+            }
+            else {
+                IO.writeLine("Array index out of bounds");
+            }
+
+        }
+    }

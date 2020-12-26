@@ -1,0 +1,8 @@
+
+    public void bad() throws Throwable {
+
+        
+        data = Short.MAX_VALUE;
+
+        (new CWE190_Integer_Overflow__short_max_preinc_68b()).badSink();
+    }

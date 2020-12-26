@@ -1,0 +1,22 @@
+
+    public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+
+        badPublicStatic = true;
+        data = (new CWE78_OS_Command_Injection__getParameter_Servlet_22b()).badSource(request, response);
+
+        String osCommand;
+        if(System.getProperty("os.name").toLowerCase().indexOf("win") >= 0) {
+            
+            osCommand = "c:\\WINDOWS\\SYSTEM32\\cmd.exe /c dir ";
+        }
+        else {
+            
+            osCommand = "/bin/ls ";
+        }
+
+        
+        Process process = Runtime.getRuntime().exec(osCommand + data);
+        process.waitFor();
+
+    }

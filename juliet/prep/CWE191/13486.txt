@@ -1,0 +1,14 @@
+
+    public void bad() throws Throwable {
+        int data;
+
+        
+        data = Integer.MIN_VALUE;
+
+        
+        data--;
+        int result = (int)(data);
+
+        IO.writeLine("result: " + result);
+
+    }

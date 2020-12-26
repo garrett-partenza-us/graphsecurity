@@ -1,0 +1,13 @@
+
+    public void goodG2BSink(String data ) throws Throwable {
+        if (CWE134_Uncontrolled_Format_String__File_format_22a.goodG2BPublicStatic) {
+            if (data != null) {
+                
+                System.out.format(data);
+            }
+        }
+        else {
+            
+            data = null;
+        }
+    }

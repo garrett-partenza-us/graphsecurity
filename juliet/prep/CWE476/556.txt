@@ -1,0 +1,17 @@
+
+    public void bad() throws Throwable {
+        Integer data;
+        if (IO.STATIC_FINAL_FIVE==5) {
+            
+            data = null;
+        }
+        else {
+            
+            data = null;
+        }
+
+        if (IO.STATIC_FINAL_FIVE==5) {
+            
+            IO.writeLine("" + data.toString());
+        }
+    }

@@ -1,0 +1,15 @@
+
+    public void bad() throws Throwable {
+        int count;
+
+        
+        count = Integer.MAX_VALUE;
+
+        int i = 0;
+
+        
+        for (i = 0; i < count; i++) {
+            IO.writeLine("Hello");
+        }
+
+    }

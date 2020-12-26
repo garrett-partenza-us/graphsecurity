@@ -1,0 +1,22 @@
+
+    private void goodG2B1() throws Throwable {
+        String data = null;
+
+        switch (5) {
+        case 6:
+            
+            data = null;
+            break;
+        default:
+            
+            data = "Testing.test";
+            break;
+        }
+
+        
+        Class<?> tempClass = Class.forName(data);
+        Object tempClassObject = tempClass.newInstance();
+
+        IO.writeLine(tempClassObject.toString()); 
+
+    }

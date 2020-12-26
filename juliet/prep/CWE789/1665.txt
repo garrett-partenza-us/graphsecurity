@@ -1,0 +1,8 @@
+
+    public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int data = (new CWE789_Uncontrolled_Mem_Alloc__getQueryString_Servlet_ArrayList_61b()).badSource(request, response);
+
+        
+        ArrayList intArrayList = new ArrayList(data);
+
+    }

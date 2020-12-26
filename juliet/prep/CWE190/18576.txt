@@ -1,0 +1,14 @@
+
+    private void goodG2B() throws Throwable {
+        short data;
+
+        
+        data = 2;
+
+        for (int j = 0; j < 1; j++) {
+            
+            data++;
+            short result = (short)(data);
+            IO.writeLine("result: " + result);
+        }
+    }

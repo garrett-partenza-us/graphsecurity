@@ -1,0 +1,4 @@
+
+    public void badSink(String data ) throws Throwable {
+        (new CWE690_NULL_Deref_From_Return__Properties_getProperty_trim_53c()).badSink(data );
+    }

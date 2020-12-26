@@ -1,0 +1,11 @@
+
+    public void bad() throws Throwable {
+        int data;
+
+        badPublicStatic = true;
+        data = (new CWE789_Uncontrolled_Mem_Alloc__connect_tcp_HashSet_22b()).badSource();
+
+        
+        HashSet intHashSet = new HashSet(data);
+
+    }

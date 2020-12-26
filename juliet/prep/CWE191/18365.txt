@@ -1,0 +1,10 @@
+
+    public void bad() throws Throwable {
+        byte data = 0;
+
+        
+        data = Byte.MIN_VALUE;
+
+        badPublicStatic = true;
+        (new CWE191_Integer_Underflow__byte_min_multiply_22b()).badSink(data );
+    }

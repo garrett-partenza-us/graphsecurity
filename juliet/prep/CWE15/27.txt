@@ -1,0 +1,4 @@
+
+    public void badSink(String data , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        (new CWE15_External_Control_of_System_or_Configuration_Setting__getCookies_Servlet_53c()).badSink(data , request, response);
+    }

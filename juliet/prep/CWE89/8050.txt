@@ -1,0 +1,11 @@
+
+    public void bad() throws Throwable {
+        String data;
+
+        
+        
+        data = System.getProperty("user.home");
+
+        badPrivate = true;
+        badSink(data );
+    }

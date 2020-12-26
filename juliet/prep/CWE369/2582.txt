@@ -1,0 +1,8 @@
+
+    public void badSink(CWE369_Divide_by_Zero__int_console_readLine_divide_67a.Container dataContainer ) throws Throwable {
+        int data = dataContainer.containerOne;
+
+        
+        IO.writeLine("bad: 100/" + data + " = " + (100 / data) + "\n");
+
+    }

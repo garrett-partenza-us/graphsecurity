@@ -1,0 +1,20 @@
+
+    public void bad() throws Throwable {
+        byte dataCopy; {
+            byte data;
+
+            
+            data = Byte.MAX_VALUE;
+
+            dataCopy = data;
+        } {
+            byte data = dataCopy;
+
+            if(data > 0) {
+                
+                byte result = (byte)(data * 2);
+                IO.writeLine("result: " + result);
+            }
+
+        }
+    }

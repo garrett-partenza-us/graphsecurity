@@ -1,0 +1,10 @@
+
+    public void badSink(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int data = CWE190_Integer_Overflow__int_getCookies_Servlet_square_68a.data;
+
+        
+        int result = (int)(data * data);
+
+        IO.writeLine("result: " + result);
+
+    }

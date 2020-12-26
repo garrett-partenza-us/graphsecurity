@@ -1,0 +1,11 @@
+
+    public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data = null;
+
+        
+        
+        data = System.getProperty("user.home");
+
+        badPublicStatic = true;
+        (new CWE113_HTTP_Response_Splitting__Property_addHeaderServlet_22b()).badSink(data , request, response);
+    }

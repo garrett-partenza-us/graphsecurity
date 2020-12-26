@@ -1,0 +1,35 @@
+
+    private void goodB2G2(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int data;
+        if (IO.staticReturnsTrue()) {
+            data = Integer.MIN_VALUE; 
+ {
+                String stringNumber = request.getParameter("name");
+                try {
+                    data = Integer.parseInt(stringNumber.trim());
+                }
+                catch(NumberFormatException exceptNumberFormat) {
+                    IO.logger.log(Level.WARNING, "Number format exception reading data from parameter 'name'", exceptNumberFormat);
+                }
+            }
+        }
+        else {
+            
+            data = 0;
+        }
+
+        if (IO.staticReturnsTrue()) {
+            
+            int array[] = null;
+            
+            if (data > 0) {
+                array = new int[data];
+            }
+            else {
+                IO.writeLine("Array size is negative");
+            }
+            
+            array[0] = 5;
+            IO.writeLine(array[0]);
+        }
+    }

@@ -1,0 +1,10 @@
+
+    private void badSink(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data = dataBad;
+
+        if (data != null) {
+            
+            response.setHeader("Location", "/author.jsp?lang=" + data);
+        }
+
+    }

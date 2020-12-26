@@ -1,0 +1,14 @@
+
+    public void bad() throws Throwable {
+        int count;
+
+        
+
+        
+        count = Integer.MAX_VALUE;
+
+        for (int j = 0; j < 1; j++) {
+            
+            Thread.sleep(count);
+        }
+    }

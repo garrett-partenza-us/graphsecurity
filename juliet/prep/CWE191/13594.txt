@@ -1,0 +1,11 @@
+
+    public void badSink() throws Throwable {
+        byte data = CWE191_Integer_Underflow__byte_min_postdec_68a.data;
+
+        
+        data--;
+        byte result = (byte)(data);
+
+        IO.writeLine("result: " + result);
+
+    }

@@ -1,0 +1,35 @@
+
+    public void bad() throws Throwable {
+        switch (7) {
+        case 7:
+            FileOutputStream streamFileOutput = null;
+            try {
+                String path = "C:\\test_bad.txt";
+                File file = new File(path);
+                long lastModified = file.lastModified();
+                streamFileOutput = new FileOutputStream(file);
+                streamFileOutput.write("This is a new line".getBytes("UTF-8"));
+                
+                
+                file.setLastModified(lastModified - 10000L);
+            }
+            catch (IOException exceptIO) {
+                IO.logger.log(Level.WARNING, "File I/O error", exceptIO);
+            }
+            finally {
+                try {
+                    if (streamFileOutput != null) {
+                        streamFileOutput.close();
+                    }
+                }
+                catch (IOException exceptIO) {
+                    IO.logger.log(Level.WARNING, "Error closing FileOutputStream", exceptIO);
+                }
+            }
+            break;
+        default:
+            
+            IO.writeLine("Benign, fixed string");
+            break;
+        }
+    }

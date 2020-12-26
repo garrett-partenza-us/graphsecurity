@@ -1,0 +1,10 @@
+
+    private void goodB2G2Sink(String data , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        if (goodB2G2Private) {
+            if (data != null) {
+                
+                data = URLEncoder.encode(data, "UTF-8");
+                response.setHeader("Location", "/author.jsp?lang=" + data);
+            }
+        }
+    }

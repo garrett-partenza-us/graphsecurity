@@ -1,0 +1,14 @@
+
+    public int badSource() throws Throwable {
+        int data;
+
+        if (CWE789_Uncontrolled_Mem_Alloc__random_ArrayList_22a.badPublicStatic) {
+            
+            data = (new SecureRandom()).nextInt();
+        }
+        else {
+            
+            data = 0;
+        }
+        return data;
+    }

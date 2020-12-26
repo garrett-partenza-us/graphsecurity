@@ -1,0 +1,9 @@
+
+    public void bad() throws Throwable {
+        byte data;
+
+        
+        data = (byte)((new java.security.SecureRandom()).nextInt(1+Byte.MAX_VALUE-Byte.MIN_VALUE) + Byte.MIN_VALUE);
+
+        (new CWE191_Integer_Underflow__byte_rand_predec_54b()).badSink(data );
+    }

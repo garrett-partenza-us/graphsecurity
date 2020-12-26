@@ -1,0 +1,10 @@
+
+    private void goodB2G1() throws Throwable {
+        int count = 0;
+
+        
+        count = (new SecureRandom()).nextInt();
+
+        goodB2G1PublicStatic = false;
+        (new CWE400_Resource_Exhaustion__sleep_random_22b()).goodB2G1Sink(count );
+    }

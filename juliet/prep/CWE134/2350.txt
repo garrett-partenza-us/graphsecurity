@@ -1,0 +1,10 @@
+
+    public void goodB2GSink() throws Throwable {
+        String data = CWE134_Uncontrolled_Format_String__listen_tcp_printf_68a.data;
+
+        if (data != null) {
+            
+            System.out.printf("%s%n", data);
+        }
+
+    }

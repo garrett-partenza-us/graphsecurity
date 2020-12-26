@@ -1,0 +1,17 @@
+
+    private void goodB2G2() throws Throwable {
+        String data;
+        if (privateReturnsTrue()) {
+            
+            data = "Good";
+        }
+        else {
+            
+            data = null;
+        }
+
+        if (privateReturnsTrue()) {
+            
+            IO.writeLine(data);
+        }
+    }

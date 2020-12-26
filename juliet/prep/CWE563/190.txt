@@ -1,0 +1,25 @@
+
+    private void goodB2G1() throws Throwable {
+        int data;
+
+        if (privateTrue) {
+            
+            data = 5;
+        }
+        else {
+            
+            data = 0;
+        }
+
+        if (privateFalse) {
+            
+            IO.writeLine("Benign, fixed string");
+        }
+        else {
+
+            
+
+            IO.writeLine("" + data);
+
+        }
+    }

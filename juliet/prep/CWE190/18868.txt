@@ -1,0 +1,9 @@
+
+    public long goodB2GSource() throws Throwable {
+        long data;
+
+        
+        data = (new java.security.SecureRandom()).nextLong();
+
+        return data;
+    }

@@ -1,0 +1,33 @@
+
+    private void goodG2B() throws Throwable {
+        String data;
+        if(IO.staticReturnsTrueOrFalse()) {
+            
+            data = "Good";
+            IO.writeLine(data);
+        }
+        else {
+
+            
+
+            data = "Good";
+
+            IO.writeLine(data);
+
+        }
+
+        if(IO.staticReturnsTrueOrFalse()) {
+            
+            data = "Reinitialize";
+            IO.writeLine(data);
+        }
+        else {
+
+            
+
+            data = "Reinitialize";
+
+            IO.writeLine(data);
+
+        }
+    }

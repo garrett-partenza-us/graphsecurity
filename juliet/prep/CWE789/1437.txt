@@ -1,0 +1,16 @@
+
+    public void bad() throws Throwable {
+        int data;
+        if (IO.staticTrue) {
+            
+            data = Integer.MAX_VALUE;
+        }
+        else {
+            
+            data = 0;
+        }
+
+        
+        HashSet intHashSet = new HashSet(data);
+
+    }

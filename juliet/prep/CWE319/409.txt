@@ -1,0 +1,44 @@
+
+    private void goodB2G2() throws Throwable {
+        String data;
+        if (5==5) {
+            
+            PasswordAuthentication credentials = new PasswordAuthentication("user", "AP@ssw0rd".toCharArray());
+            
+            data = new String(credentials.getPassword());
+        }
+        else {
+            
+            data = null;
+        }
+
+        if (5==5) {
+            SSLSocketFactory sslsSocketFactory = null;
+            SSLSocket sslSocket = null;
+            PrintWriter writer = null;
+            try {
+                sslsSocketFactory = (SSLSocketFactory) SSLSocketFactory.getDefault();
+                sslSocket = (SSLSocket) sslsSocketFactory.createSocket("remote_host", 1337);
+                writer = new PrintWriter(sslSocket.getOutputStream(), true);
+                
+                writer.println(data);
+            }
+            catch (IOException exceptIO) {
+                IO.logger.log(Level.WARNING, "Error writing to the socket", exceptIO);
+            }
+            finally {
+                if (writer != null) {
+                    writer.close();
+                }
+
+                try {
+                    if (sslSocket != null) {
+                        sslSocket.close();
+                    }
+                }
+                catch (IOException exceptIO) {
+                    IO.logger.log(Level.WARNING, "Error closing SSLSocket", exceptIO);
+                }
+            }
+        }
+    }

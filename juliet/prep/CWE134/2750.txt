@@ -1,0 +1,4 @@
+
+    public void badSink(String data ) throws Throwable {
+        (new CWE134_Uncontrolled_Format_String__listen_tcp_printf_53c()).badSink(data );
+    }

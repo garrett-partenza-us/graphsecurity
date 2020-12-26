@@ -1,0 +1,4 @@
+
+    public void badSink(short data ) throws Throwable {
+        (new CWE197_Numeric_Truncation_Error__short_large_53c()).badSink(data );
+    }

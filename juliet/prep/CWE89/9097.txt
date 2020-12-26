@@ -1,0 +1,12 @@
+
+    public void bad() throws Throwable {
+        String data;
+
+        
+        
+        data = System.getProperty("user.home");
+
+        Container dataContainer = new Container();
+        dataContainer.containerOne = data;
+        (new CWE89_SQL_Injection__Property_execute_67b()).badSink(dataContainer  );
+    }

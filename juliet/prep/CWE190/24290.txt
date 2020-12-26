@@ -1,0 +1,13 @@
+
+    public void goodB2GSink(int data , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+
+        
+        if (data < Integer.MAX_VALUE) {
+            int result = (int)(++data);
+            IO.writeLine("result: " + result);
+        }
+        else {
+            IO.writeLine("data value is too large to increment.");
+        }
+
+    }

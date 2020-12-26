@@ -1,0 +1,9 @@
+
+    private void goodB2G(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+
+        
+        data = request.getParameter("name");
+
+        (new CWE606_Unchecked_Loop_Condition__getParameter_Servlet_54b()).goodB2GSink(data , request, response);
+    }

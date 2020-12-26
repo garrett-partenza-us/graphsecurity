@@ -1,0 +1,13 @@
+
+    private void goodB2G() throws Throwable {
+        String data;
+
+        
+
+        data = "Good";
+
+        
+
+        IO.writeLine(data);
+
+    }

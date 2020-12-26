@@ -1,0 +1,11 @@
+
+    public void badSink(Object dataObject , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int data = (Integer)dataObject;
+
+        
+        data++;
+        int result = (int)(data);
+
+        IO.writeLine("result: " + result);
+
+    }

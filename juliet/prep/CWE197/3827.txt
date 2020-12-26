@@ -1,0 +1,9 @@
+
+    private void goodG2B() throws Throwable {
+        int data;
+
+        
+        data = 2;
+
+        (new CWE197_Numeric_Truncation_Error__int_large_to_byte_54b()).goodG2BSink(data );
+    }

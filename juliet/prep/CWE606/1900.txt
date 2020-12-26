@@ -1,0 +1,4 @@
+
+    public void goodB2GSink(String data , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        (new CWE606_Unchecked_Loop_Condition__getQueryString_Servlet_54e()).goodB2GSink(data , request, response);
+    }

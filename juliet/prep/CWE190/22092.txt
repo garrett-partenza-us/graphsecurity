@@ -1,0 +1,34 @@
+
+    private void goodB2G2() throws Throwable {
+        int data;
+        if (5==5) {
+            data = Integer.MIN_VALUE; 
+            
+ {
+                String stringNumber = System.getenv("ADD");
+                if (stringNumber != null) {
+                    try {
+                        data = Integer.parseInt(stringNumber.trim());
+                    }
+                    catch(NumberFormatException exceptNumberFormat) {
+                        IO.logger.log(Level.WARNING, "Number format exception parsing data from string", exceptNumberFormat);
+                    }
+                }
+            }
+        }
+        else {
+            
+            data = 0;
+        }
+
+        if (5==5) {
+            
+            if (data < Integer.MAX_VALUE) {
+                int result = (int)(++data);
+                IO.writeLine("result: " + result);
+            }
+            else {
+                IO.writeLine("data value is too large to increment.");
+            }
+        }
+    }

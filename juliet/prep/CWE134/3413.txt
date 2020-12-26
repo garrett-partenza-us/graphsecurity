@@ -1,0 +1,10 @@
+
+    private void goodG2B() throws Throwable {
+        String data = null;
+
+        
+        data = "foo";
+
+        goodG2BPublicStatic = true;
+        (new CWE134_Uncontrolled_Format_String__database_format_22b()).goodG2BSink(data );
+    }

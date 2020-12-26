@@ -1,0 +1,14 @@
+
+    public void bad() throws Throwable {
+        if (IO.staticReturnsTrueOrFalse()) {
+            ; 
+            IO.writeLine("Hello from bad()");
+        }
+        else {
+
+            
+
+            IO.writeLine("Hello from good()");
+
+        }
+    }

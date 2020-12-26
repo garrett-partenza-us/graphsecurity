@@ -1,0 +1,15 @@
+
+    public String goodG2B2Source() throws Throwable {
+        String data;
+
+        if (CWE78_OS_Command_Injection__listen_tcp_22a.goodG2B2PublicStatic) {
+            
+            data = "foo";
+        }
+        else {
+            
+            data = null;
+        }
+
+        return data;
+    }

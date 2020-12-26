@@ -1,0 +1,18 @@
+
+    public void bad() throws Throwable {
+        int data;
+        if (IO.staticReturnsTrueOrFalse()) {
+            
+            data = Integer.MAX_VALUE;
+        }
+        else {
+
+            
+            data = 2;
+
+        }
+
+        
+        HashSet intHashSet = new HashSet(data);
+
+    }

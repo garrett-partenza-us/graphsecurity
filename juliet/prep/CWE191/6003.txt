@@ -1,0 +1,13 @@
+
+    private void goodB2G() throws Throwable {
+        int data;
+
+        
+        data = (new SecureRandom()).nextInt();
+
+        Vector<Integer> dataVector = new Vector<Integer>(5);
+        dataVector.add(0, data);
+        dataVector.add(1, data);
+        dataVector.add(2, data);
+        (new CWE191_Integer_Underflow__int_random_sub_72b()).goodB2GSink(dataVector  );
+    }

@@ -1,0 +1,13 @@
+
+    public void badSink(Object dataObject ) throws Throwable {
+        int data = (Integer)dataObject;
+
+        
+        int array[] = { 0, 1, 2, 3, 4 };
+
+        
+        array[data] = 42;
+
+        
+
+    }

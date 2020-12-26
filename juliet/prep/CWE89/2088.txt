@@ -1,0 +1,8 @@
+
+    public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+
+        
+        data = request.getParameter("name");
+
+        (new CWE89_SQL_Injection__getParameter_Servlet_executeBatch_68b()).badSink(request, response);
+    }

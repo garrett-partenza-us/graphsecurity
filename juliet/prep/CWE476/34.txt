@@ -1,0 +1,10 @@
+
+    private void goodG2B() throws Throwable {
+        Integer data;
+
+        
+        data = Integer.valueOf(5);
+
+        goodG2BPrivate = true;
+        goodG2BSink(data );
+    }

@@ -1,0 +1,9 @@
+
+    private void goodG2B() throws Throwable {
+        long data;
+
+        
+        data = 2;
+
+        (new CWE190_Integer_Overflow__long_max_add_52b()).goodG2BSink(data );
+    }

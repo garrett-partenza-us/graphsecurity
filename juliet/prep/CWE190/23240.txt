@@ -1,0 +1,10 @@
+
+    public void badSink() throws Throwable {
+        byte data = CWE190_Integer_Overflow__byte_console_readLine_preinc_68a.data;
+
+        
+        byte result = (byte)(++data);
+
+        IO.writeLine("result: " + result);
+
+    }

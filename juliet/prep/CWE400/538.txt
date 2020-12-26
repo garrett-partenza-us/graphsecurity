@@ -1,0 +1,31 @@
+
+    private void goodB2G2() throws Throwable {
+        int count;
+
+        switch (6) {
+        case 6:
+            
+            count = Integer.MAX_VALUE;
+            break;
+        default:
+            
+            count = 0;
+            break;
+        }
+
+        switch (7) {
+        case 7:
+            int i = 0;
+            
+            if (count > 0 && count <= 20) {
+                for (i = 0; i < count; i++) {
+                    IO.writeLine("Hello");
+                }
+            }
+            break;
+        default:
+            
+            IO.writeLine("Benign, fixed string");
+            break;
+        }
+    }

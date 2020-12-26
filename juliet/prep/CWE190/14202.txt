@@ -1,0 +1,10 @@
+
+    public void badSink(CWE190_Integer_Overflow__byte_max_square_67a.Container dataContainer ) throws Throwable {
+        byte data = dataContainer.containerOne;
+
+        
+        byte result = (byte)(data * data);
+
+        IO.writeLine("result: " + result);
+
+    }

@@ -1,0 +1,4 @@
+
+    public void goodG2BSink(String data , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        (new CWE80_XSS__Servlet_PropertiesFile_53d()).goodG2BSink(data , request, response);
+    }

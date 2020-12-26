@@ -1,0 +1,23 @@
+
+    private void goodB2G(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+
+        data = ""; 
+
+ {
+            StringTokenizer tokenizer = new StringTokenizer(request.getQueryString(), "&");
+            while (tokenizer.hasMoreTokens()) {
+                String token = tokenizer.nextToken(); 
+                if(token.startsWith("id=")) {
+                    data = token.substring(3); 
+                    break; 
+                }
+            }
+        }
+
+        LinkedList<String> dataLinkedList = new LinkedList<String>();
+        dataLinkedList.add(0, data);
+        dataLinkedList.add(1, data);
+        dataLinkedList.add(2, data);
+        (new CWE643_Xpath_Injection__getQueryString_Servlet_73b()).goodB2GSink(dataLinkedList , request, response );
+    }

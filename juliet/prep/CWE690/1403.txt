@@ -1,0 +1,13 @@
+
+    public void goodB2G2Sink(String data ) throws Throwable {
+        if (CWE690_NULL_Deref_From_Return__System_getProperty_equals_22a.goodB2G2PublicStatic) {
+            
+            if("CWE690".equals(data)) {
+                IO.writeLine("data is CWE690");
+            }
+        }
+        else {
+            
+            data = null;
+        }
+    }

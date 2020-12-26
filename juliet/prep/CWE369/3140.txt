@@ -1,0 +1,9 @@
+
+    public void bad() throws Throwable {
+
+        
+        SecureRandom secureRandom = new SecureRandom();
+        data = secureRandom.nextFloat();
+
+        (new CWE369_Divide_by_Zero__float_random_modulo_68b()).badSink();
+    }

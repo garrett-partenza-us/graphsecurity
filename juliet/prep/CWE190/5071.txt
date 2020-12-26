@@ -1,0 +1,8 @@
+
+    private void badSink(int data ) throws Throwable {
+        if (badPrivate) {
+            
+            int result = (int)(data * data);
+            IO.writeLine("result: " + result);
+        }
+    }

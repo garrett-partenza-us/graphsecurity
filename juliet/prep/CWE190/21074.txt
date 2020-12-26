@@ -1,0 +1,8 @@
+
+    private void goodG2B() throws Throwable {
+
+        
+        data = 2;
+
+        (new CWE190_Integer_Overflow__int_connect_tcp_preinc_68b()).goodG2BSink();
+    }

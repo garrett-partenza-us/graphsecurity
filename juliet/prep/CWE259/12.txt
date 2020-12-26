@@ -1,0 +1,11 @@
+
+    public void badSink(LinkedList<String> dataLinkedList ) throws Throwable {
+        String data = dataLinkedList.remove(2);
+
+        if (data != null) {
+            
+            PasswordAuthentication credentials = new PasswordAuthentication("user", data.toCharArray());
+            IO.writeLine(credentials.toString());
+        }
+
+    }

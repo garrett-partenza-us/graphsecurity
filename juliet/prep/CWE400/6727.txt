@@ -1,0 +1,30 @@
+
+    private void goodB2G2(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int count;
+        if (PRIVATE_STATIC_FINAL_FIVE==5) {
+            count = Integer.MIN_VALUE; 
+ {
+                String stringNumber = request.getParameter("name");
+                try {
+                    count = Integer.parseInt(stringNumber.trim());
+                }
+                catch(NumberFormatException exceptNumberFormat) {
+                    IO.logger.log(Level.WARNING, "Number format exception reading count from parameter 'name'", exceptNumberFormat);
+                }
+            }
+        }
+        else {
+            
+            count = 0;
+        }
+
+        if (PRIVATE_STATIC_FINAL_FIVE==5) {
+            int i = 0;
+            
+            if (count > 0 && count <= 20) {
+                for (i = 0; i < count; i++) {
+                    IO.writeLine("Hello");
+                }
+            }
+        }
+    }

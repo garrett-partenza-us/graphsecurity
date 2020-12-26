@@ -1,0 +1,12 @@
+
+    public void bad() throws Throwable {
+        String data;
+
+        
+        
+        data = System.getProperty("user.home");
+
+        Container dataContainer = new Container();
+        dataContainer.containerOne = data;
+        (new CWE643_Xpath_Injection__Property_67b()).badSink(dataContainer  );
+    }

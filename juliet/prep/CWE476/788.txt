@@ -1,0 +1,13 @@
+
+    public void goodB2GSink(String dataArray[] ) throws Throwable {
+        String data = dataArray[2];
+
+        
+        if (data != null) {
+            IO.writeLine("" + data.length());
+        }
+        else {
+            IO.writeLine("data is null");
+        }
+
+    }

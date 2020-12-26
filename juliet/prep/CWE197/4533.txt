@@ -1,0 +1,13 @@
+
+    public void bad() throws Throwable {
+        int data;
+
+        
+        data = Short.MAX_VALUE + 5;
+
+        for (int i = 0; i < 1; i++) { {
+                
+                IO.writeLine((short)data);
+            }
+        }
+    }

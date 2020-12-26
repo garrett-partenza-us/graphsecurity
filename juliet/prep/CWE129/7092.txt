@@ -1,0 +1,25 @@
+
+    private void goodB2G() throws Throwable {
+        int dataCopy; {
+            int data;
+
+            
+            data = 100;
+
+            dataCopy = data;
+        } {
+            int data = dataCopy;
+
+            
+            int array[] = { 0, 1, 2, 3, 4 };
+
+            
+            if (data >= 0 && data < array.length) {
+                IO.writeLine(array[data]);
+            }
+            else {
+                IO.writeLine("Array index out of bounds");
+            }
+
+        }
+    }

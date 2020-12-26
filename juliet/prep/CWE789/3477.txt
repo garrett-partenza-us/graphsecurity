@@ -1,0 +1,9 @@
+
+    public void bad() throws Throwable {
+        int data;
+
+        
+        data = (new SecureRandom()).nextInt();
+
+        (new CWE789_Uncontrolled_Mem_Alloc__random_ArrayList_53b()).badSink(data );
+    }

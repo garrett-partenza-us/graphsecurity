@@ -1,0 +1,17 @@
+
+    public void bad() throws Throwable {
+        float dataCopy; {
+            float data;
+
+            data = 0.0f; 
+
+            dataCopy = data;
+        } {
+            float data = dataCopy;
+
+            
+            int result = (int)(100.0 % data);
+            IO.writeLine(result);
+
+        }
+    }

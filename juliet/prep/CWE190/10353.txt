@@ -1,0 +1,18 @@
+
+    public void bad() throws Throwable {
+        long data;
+        if (IO.STATIC_FINAL_FIVE==5) {
+            
+            data = Long.MAX_VALUE;
+        }
+        else {
+            
+            data = 0L;
+        }
+
+        if (IO.STATIC_FINAL_FIVE==5) {
+            
+            long result = (long)(data * data);
+            IO.writeLine("result: " + result);
+        }
+    }

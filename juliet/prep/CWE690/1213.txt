@@ -1,0 +1,21 @@
+
+    private void goodG2B1() throws Throwable {
+        String data;
+        if (IO.STATIC_FINAL_FALSE) {
+            
+            data = null;
+        }
+        else {
+
+            
+            data = "CWE690";
+
+        }
+
+        if (IO.STATIC_FINAL_TRUE) {
+            
+            if(data.equals("CWE690")) {
+                IO.writeLine("data is CWE690");
+            }
+        }
+    }

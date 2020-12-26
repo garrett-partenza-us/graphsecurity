@@ -1,0 +1,9 @@
+
+    public void badSink() throws Throwable {
+        float data = CWE369_Divide_by_Zero__float_PropertiesFile_divide_68a.data;
+
+        
+        int result = (int)(100.0 / data);
+        IO.writeLine(result);
+
+    }

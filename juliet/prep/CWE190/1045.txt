@@ -1,0 +1,39 @@
+
+    private void goodB2G() throws Throwable {
+        short data;
+        if(IO.staticReturnsTrueOrFalse()) {
+            
+            data = Short.MAX_VALUE;
+        }
+        else {
+
+            
+            data = Short.MAX_VALUE;
+
+        }
+
+        if(IO.staticReturnsTrueOrFalse()) {
+            
+            
+            if ((data != Integer.MIN_VALUE) && (data != Long.MIN_VALUE) && (Math.abs(data) <= (long)Math.sqrt(Short.MAX_VALUE))) {
+                short result = (short)(data * data);
+                IO.writeLine("result: " + result);
+            }
+            else {
+                IO.writeLine("data value is too large to perform squaring.");
+            }
+        }
+        else {
+
+            
+            
+            if ((data != Integer.MIN_VALUE) && (data != Long.MIN_VALUE) && (Math.abs(data) <= (long)Math.sqrt(Short.MAX_VALUE))) {
+                short result = (short)(data * data);
+                IO.writeLine("result: " + result);
+            }
+            else {
+                IO.writeLine("data value is too large to perform squaring.");
+            }
+
+        }
+    }

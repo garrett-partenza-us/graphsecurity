@@ -1,0 +1,10 @@
+
+    private void goodB2G2() throws Throwable {
+        int data = 0;
+
+        
+        data = (new SecureRandom()).nextInt();
+
+        goodB2G2PublicStatic = true;
+        (new CWE369_Divide_by_Zero__int_random_modulo_22b()).goodB2G2Sink(data );
+    }

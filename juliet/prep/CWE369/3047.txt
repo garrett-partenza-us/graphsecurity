@@ -1,0 +1,10 @@
+
+    private void goodG2B() throws Throwable {
+        float data = 0.0f;
+
+        
+        data = 2.0f;
+
+        goodG2BPublicStatic = true;
+        (new CWE369_Divide_by_Zero__float_URLConnection_modulo_22b()).goodG2BSink(data );
+    }

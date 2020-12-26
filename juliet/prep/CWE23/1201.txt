@@ -1,0 +1,4 @@
+
+    public void badSink(String data ) throws Throwable {
+        (new CWE23_Relative_Path_Traversal__connect_tcp_54c()).badSink(data );
+    }

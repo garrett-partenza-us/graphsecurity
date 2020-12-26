@@ -1,0 +1,8 @@
+
+    public void badSink(int countArray[] ) throws Throwable {
+        int count = countArray[2];
+
+        
+        Thread.sleep(count);
+
+    }

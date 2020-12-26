@@ -1,0 +1,10 @@
+
+    public void goodG2BSink(String data , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+
+        
+        Class<?> tempClass = Class.forName(data);
+        Object tempClassObject = tempClass.newInstance();
+
+        IO.writeLine(tempClassObject.toString()); 
+
+    }

@@ -1,0 +1,13 @@
+
+    private void goodB2G() throws Throwable {
+        short data;
+
+        
+        data = Short.MIN_VALUE;
+
+        LinkedList<Short> dataLinkedList = new LinkedList<Short>();
+        dataLinkedList.add(0, data);
+        dataLinkedList.add(1, data);
+        dataLinkedList.add(2, data);
+        (new CWE191_Integer_Underflow__short_min_sub_73b()).goodB2GSink(dataLinkedList  );
+    }

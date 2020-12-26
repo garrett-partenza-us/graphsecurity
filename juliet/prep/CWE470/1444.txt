@@ -1,0 +1,14 @@
+
+    private void goodG2B(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+
+        
+        data = "Testing.test";
+
+        for (int i = 0; i < 1; i++) {
+            
+            Class<?> tempClass = Class.forName(data);
+            Object tempClassObject = tempClass.newInstance();
+            IO.writeLine(tempClassObject.toString()); 
+        }
+    }

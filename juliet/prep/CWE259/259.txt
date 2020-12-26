@@ -1,0 +1,12 @@
+
+    public void bad() throws Throwable {
+        String data = badSource();
+
+        if (data != null) {
+            KerberosPrincipal principal = new KerberosPrincipal("test");
+            
+            KerberosKey key = new KerberosKey(principal, data.toCharArray(), null);
+            IO.writeLine(key.toString());
+        }
+
+    }

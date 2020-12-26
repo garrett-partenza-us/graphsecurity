@@ -1,0 +1,22 @@
+
+    public void bad() throws Throwable {
+        String data;
+        if (IO.staticReturnsTrueOrFalse()) {
+            
+            
+            data = System.getProperty("user.home");
+        }
+        else {
+
+            
+            data = "Testing.test";
+
+        }
+
+        
+        Class<?> tempClass = Class.forName(data);
+        Object tempClassObject = tempClass.newInstance();
+
+        IO.writeLine(tempClassObject.toString()); 
+
+    }

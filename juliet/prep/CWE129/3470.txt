@@ -1,0 +1,16 @@
+
+    private void goodB2G(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int data = (new CWE129_Improper_Validation_of_Array_Index__getCookies_Servlet_array_read_check_max_61b()).goodB2GSource(request, response);
+
+        
+        int array[] = { 0, 1, 2, 3, 4 };
+
+        
+        if (data >= 0 && data < array.length) {
+            IO.writeLine(array[data]);
+        }
+        else {
+            IO.writeLine("Array index out of bounds");
+        }
+
+    }

@@ -1,0 +1,15 @@
+
+    public String badSource() throws Throwable {
+        String data;
+
+        if (CWE15_External_Control_of_System_or_Configuration_Setting__Property_22a.badPublicStatic) {
+            
+            
+            data = System.getProperty("user.home");
+        }
+        else {
+            
+            data = null;
+        }
+        return data;
+    }

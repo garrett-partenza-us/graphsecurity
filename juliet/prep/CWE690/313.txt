@@ -1,0 +1,9 @@
+
+    private void badSink(String data , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        if (badPrivate) {
+            
+            if(data.equals("CWE690")) {
+                IO.writeLine("data is CWE690");
+            }
+        }
+    }

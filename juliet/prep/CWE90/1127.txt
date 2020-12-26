@@ -1,0 +1,9 @@
+
+    public void bad() throws Throwable {
+
+        
+        
+        data = System.getProperty("user.home");
+
+        (new CWE90_LDAP_Injection__Property_68b()).badSink();
+    }

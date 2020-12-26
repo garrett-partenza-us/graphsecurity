@@ -1,0 +1,4 @@
+
+    public void goodG2BSink(int data ) throws Throwable {
+        (new CWE190_Integer_Overflow__int_max_add_54e()).goodG2BSink(data );
+    }

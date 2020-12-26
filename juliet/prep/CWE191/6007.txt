@@ -1,0 +1,11 @@
+
+    private void goodG2B() throws Throwable {
+        int data = goodG2BSource();
+
+        if(data < 0) {
+            
+            int result = (int)(data * 2);
+            IO.writeLine("result: " + result);
+        }
+
+    }

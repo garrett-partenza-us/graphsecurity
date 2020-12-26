@@ -1,0 +1,9 @@
+
+    public int goodG2BSource(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int count;
+
+        
+        count = 2;
+
+        return count;
+    }

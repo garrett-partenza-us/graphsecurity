@@ -1,0 +1,4 @@
+
+    public void badSink(int count ) throws Throwable {
+        (new CWE400_Resource_Exhaustion__Environment_for_loop_52c()).badSink(count );
+    }

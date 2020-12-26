@@ -1,0 +1,30 @@
+
+    public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+
+        badPublicStatic = true;
+        data = (new CWE15_External_Control_of_System_or_Configuration_Setting__getParameter_Servlet_22b()).badSource(request, response);
+
+        Connection dbConnection = null;
+
+        try {
+            dbConnection = IO.getDBConnection();
+
+            
+            dbConnection.setCatalog(data);
+        }
+        catch (SQLException exceptSql) {
+            IO.logger.log(Level.WARNING, "Error getting database connection", exceptSql);
+        }
+        finally {
+            try {
+                if (dbConnection != null) {
+                    dbConnection.close();
+                }
+            }
+            catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, "Error closing Connection", exceptSql);
+            }
+        }
+
+    }

@@ -1,0 +1,15 @@
+
+    public void goodB2G1Sink(String data ) throws Throwable {
+        if (CWE134_Uncontrolled_Format_String__Environment_format_22a.goodB2G1PublicStatic) {
+            
+            data = null;
+        }
+        else {
+
+            if (data != null) {
+                
+                System.out.format("%s%n", data);
+            }
+
+        }
+    }

@@ -1,0 +1,7 @@
+
+    private void good2() throws Throwable {
+        if (5 == 5) {
+            
+            IO.writeLine("Hello from good()");
+        }
+    }

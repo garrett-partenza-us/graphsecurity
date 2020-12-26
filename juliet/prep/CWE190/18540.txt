@@ -1,0 +1,13 @@
+
+    public void badSink(short data ) throws Throwable {
+        if (CWE190_Integer_Overflow__short_max_postinc_22a.badPublicStatic) {
+            
+            data++;
+            short result = (short)(data);
+            IO.writeLine("result: " + result);
+        }
+        else {
+            
+            data = 0;
+        }
+    }

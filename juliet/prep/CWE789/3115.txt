@@ -1,0 +1,11 @@
+
+    public void bad() throws Throwable {
+        int data;
+
+        
+        data = (new SecureRandom()).nextInt();
+
+        
+        ArrayList intArrayList = new ArrayList(data);
+
+    }

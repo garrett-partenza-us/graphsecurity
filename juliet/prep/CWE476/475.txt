@@ -1,0 +1,14 @@
+
+    public void bad() throws Throwable {
+        int [] data;
+
+        
+
+        
+        data = null;
+
+        for (int j = 0; j < 1; j++) {
+            
+            IO.writeLine("" + data.length);
+        }
+    }

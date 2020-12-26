@@ -1,0 +1,36 @@
+
+    private void goodB2G2(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int data;
+        if (5==5) {
+            data = Integer.MIN_VALUE; 
+ {
+                StringTokenizer tokenizer = new StringTokenizer(request.getQueryString(), "&");
+                while (tokenizer.hasMoreTokens()) {
+                    String token = tokenizer.nextToken(); 
+                    if(token.startsWith("id=")) {
+                        try {
+                            data = Integer.parseInt(token.substring(3)); 
+                        }
+                        catch(NumberFormatException exceptNumberFormat) {
+                            IO.logger.log(Level.WARNING, "Number format exception reading id from query string", exceptNumberFormat);
+                        }
+                        break; 
+                    }
+                }
+            }
+        }
+        else {
+            
+            data = 0;
+        }
+
+        if (5==5) {
+            
+            if (data != 0) {
+                IO.writeLine("100%" + data + " = " + (100 % data) + "\n");
+            }
+            else {
+                IO.writeLine("This would result in a modulo by zero");
+            }
+        }
+    }

@@ -1,0 +1,20 @@
+
+    private void goodB2G2() throws Throwable {
+        StringBuilder data;
+        if (IO.STATIC_FINAL_FIVE==5) {
+            
+            data = CWE690_NULL_Deref_From_Return__Class_Helper.getStringBuilderBad();
+        }
+        else {
+            
+            data = null;
+        }
+
+        if (IO.STATIC_FINAL_FIVE==5) {
+            
+            if (data != null) {
+                String stringTrimmed = data.toString().trim();
+                IO.writeLine(stringTrimmed);
+            }
+        }
+    }

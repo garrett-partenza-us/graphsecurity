@@ -1,0 +1,11 @@
+
+    private void badSink() throws Throwable {
+        String password = passwordBad;
+
+        if (password != null) {
+            
+            PasswordAuthentication credentials = new PasswordAuthentication("user", password.toCharArray());
+            IO.writeLine(credentials.toString());
+        }
+
+    }

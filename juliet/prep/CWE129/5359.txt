@@ -1,0 +1,33 @@
+
+    public void bad() throws Throwable {
+        int data;
+
+        switch (6) {
+        case 6:
+            
+            data = 100;
+            break;
+        default:
+            
+            data = 0;
+            break;
+        }
+
+        switch (7) {
+        case 7:
+            
+            int array[] = { 0, 1, 2, 3, 4 };
+            
+            if (data >= 0) {
+                IO.writeLine(array[data]);
+            }
+            else {
+                IO.writeLine("Array index out of bounds");
+            }
+            break;
+        default:
+            
+            IO.writeLine("Benign, fixed string");
+            break;
+        }
+    }

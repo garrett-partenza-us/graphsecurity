@@ -1,0 +1,21 @@
+
+    private void goodG2B() throws Throwable {
+        int countCopy; {
+            int count;
+
+            
+            count = 2;
+
+            countCopy = count;
+        } {
+            int count = countCopy;
+
+            int i = 0;
+
+            
+            for (i = 0; i < count; i++) {
+                IO.writeLine("Hello");
+            }
+
+        }
+    }

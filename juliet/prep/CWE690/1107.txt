@@ -1,0 +1,19 @@
+
+    public void bad() throws Throwable {
+        String data;
+        if (true) {
+            
+            data = System.getProperty("CWE690");
+        }
+        else {
+            
+            data = null;
+        }
+
+        if (true) {
+            
+            if(data.equals("CWE690")) {
+                IO.writeLine("data is CWE690");
+            }
+        }
+    }

@@ -1,0 +1,58 @@
+
+    public void bad() throws Throwable {
+        short data;
+        if (privateReturnsTrue()) {
+            
+            data = -1;
+            
+            BufferedReader readerBuffered = null;
+            InputStreamReader readerInputStream = null;
+            try {
+                readerInputStream = new InputStreamReader(System.in, "UTF-8");
+                readerBuffered = new BufferedReader(readerInputStream);
+                String stringNumber = readerBuffered.readLine();
+                if (stringNumber != null) {
+                    data = Short.parseShort(stringNumber.trim());
+                }
+            }
+            catch (IOException exceptIO) {
+                IO.logger.log(Level.WARNING, "Error with stream reading", exceptIO);
+            }
+            catch (NumberFormatException exceptNumberFormat) {
+                IO.logger.log(Level.WARNING, "Error with number parsing", exceptNumberFormat);
+            }
+            finally {
+                
+                try {
+                    if (readerBuffered != null) {
+                        readerBuffered.close();
+                    }
+                }
+                catch (IOException exceptIO) {
+                    IO.logger.log(Level.WARNING, "Error closing BufferedReader", exceptIO);
+                }
+                finally {
+                    try {
+                        if (readerInputStream != null) {
+                            readerInputStream.close();
+                        }
+                    }
+                    catch (IOException exceptIO) {
+                        IO.logger.log(Level.WARNING, "Error closing InputStreamReader", exceptIO);
+                    }
+                }
+            }
+        }
+        else {
+            
+            data = 0;
+        }
+
+        if (privateReturnsTrue()) {
+            if(data > 0) {
+                
+                short result = (short)(data * 2);
+                IO.writeLine("result: " + result);
+            }
+        }
+    }

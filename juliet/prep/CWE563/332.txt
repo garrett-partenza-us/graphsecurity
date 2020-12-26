@@ -1,0 +1,19 @@
+
+    private void goodG2B() throws Throwable {
+        StringBuilder data;
+
+        while (true) {
+            
+            data = new StringBuilder("Good");
+            IO.writeLine(data.toString());
+            break;
+        }
+
+        while (true) {
+            
+            data = new StringBuilder("Reinitialize");
+            IO.writeLine(data.toString());
+            break;
+        }
+
+    }

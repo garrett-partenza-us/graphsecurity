@@ -1,0 +1,8 @@
+
+    public void badSink(CWE369_Divide_by_Zero__int_getCookies_Servlet_modulo_67a.Container dataContainer , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int data = dataContainer.containerOne;
+
+        
+        IO.writeLine("100%" + data + " = " + (100 % data) + "\n");
+
+    }

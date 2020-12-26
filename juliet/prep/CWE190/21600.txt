@@ -1,0 +1,19 @@
+
+    public void goodB2G1Sink(byte data ) throws Throwable {
+        if (CWE190_Integer_Overflow__byte_rand_preinc_22a.goodB2G1PublicStatic) {
+            
+            data = 0;
+        }
+        else {
+
+            
+            if (data < Byte.MAX_VALUE) {
+                byte result = (byte)(++data);
+                IO.writeLine("result: " + result);
+            }
+            else {
+                IO.writeLine("data value is too large to increment.");
+            }
+
+        }
+    }

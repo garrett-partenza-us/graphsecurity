@@ -1,0 +1,10 @@
+
+    private void badSink(int data ) throws Throwable {
+        if (badPrivate) {
+            
+            int array[] = { 0, 1, 2, 3, 4 };
+            
+            array[data] = 42;
+            
+        }
+    }

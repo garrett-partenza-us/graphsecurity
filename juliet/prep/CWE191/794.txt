@@ -1,0 +1,10 @@
+
+    private void goodG2B() throws Throwable {
+        int data = goodG2BSource();
+
+        
+        int result = (int)(--data);
+
+        IO.writeLine("result: " + result);
+
+    }

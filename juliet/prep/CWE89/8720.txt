@@ -1,0 +1,9 @@
+
+    public void bad() throws Throwable {
+
+        
+        
+        data = System.getProperty("user.home");
+
+        (new CWE89_SQL_Injection__Property_executeQuery_68b()).badSink();
+    }

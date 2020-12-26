@@ -1,0 +1,13 @@
+
+    private void goodB2G() throws Throwable {
+        StringBuilder data;
+
+        
+
+        data = new StringBuilder("Good");
+
+        for (int k = 0; k < 1; k++) {
+            
+            IO.writeLine(data.toString());
+        }
+    }

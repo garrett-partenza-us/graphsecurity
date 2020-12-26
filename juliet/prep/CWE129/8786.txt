@@ -1,0 +1,19 @@
+
+    public void badSink(LinkedList<Integer> dataLinkedList ) throws Throwable {
+        int data = dataLinkedList.remove(2);
+
+        int array[] = null;
+
+        
+        if (data >= 0) {
+            array = new int[data];
+        }
+        else {
+            IO.writeLine("Array size is negative");
+        }
+
+        
+        array[0] = 5;
+        IO.writeLine(array[0]);
+
+    }

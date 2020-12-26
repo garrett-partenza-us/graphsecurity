@@ -1,0 +1,10 @@
+
+    public void bad() throws Throwable {
+        short data;
+
+        
+        data = Short.MAX_VALUE;
+
+        CWE190_Integer_Overflow__short_max_add_81_base baseObject = new CWE190_Integer_Overflow__short_max_add_81_bad();
+        baseObject.action(data );
+    }

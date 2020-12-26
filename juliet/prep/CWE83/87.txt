@@ -1,0 +1,10 @@
+
+    public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data = (new CWE83_XSS_Attribute__Servlet_getCookies_Servlet_61b()).badSource(request, response);
+
+        if (data != null) {
+            
+            response.getWriter().println("<br>bad() - <img src=\"" + data + "\">");
+        }
+
+    }

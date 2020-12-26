@@ -1,0 +1,9 @@
+
+    public void bad() throws Throwable {
+        float data = badSource();
+
+        
+        int result = (int)(100.0 % data);
+        IO.writeLine(result);
+
+    }

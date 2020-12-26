@@ -1,0 +1,26 @@
+
+    public void bad() throws Throwable {
+        int data;
+        if (privateFive==5) {
+            
+            data = 100;
+        }
+        else {
+            
+            data = 0;
+        }
+
+        if (privateFive==5) {
+            int array[] = null;
+            
+            if (data >= 0) {
+                array = new int[data];
+            }
+            else {
+                IO.writeLine("Array size is negative");
+            }
+            
+            array[0] = 5;
+            IO.writeLine(array[0]);
+        }
+    }

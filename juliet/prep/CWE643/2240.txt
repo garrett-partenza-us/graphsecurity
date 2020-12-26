@@ -1,0 +1,10 @@
+
+    public void bad() throws Throwable {
+        String data;
+
+        
+        
+        data = System.getProperty("user.home");
+
+        (new CWE643_Xpath_Injection__Property_71b()).badSink((Object)data  );
+    }

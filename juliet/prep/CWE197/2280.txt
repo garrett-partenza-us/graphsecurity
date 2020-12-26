@@ -1,0 +1,4 @@
+
+    public void goodG2BSink(short data ) throws Throwable {
+        (new CWE197_Numeric_Truncation_Error__short_URLConnection_54d()).goodG2BSink(data );
+    }

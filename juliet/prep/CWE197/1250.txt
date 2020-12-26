@@ -1,0 +1,19 @@
+
+    public short badSource() throws Throwable {
+        short data;
+
+        data = Short.MIN_VALUE; 
+
+        
+ {
+            String stringNumber = System.getProperty("user.home");
+            try {
+                data = Short.parseShort(stringNumber.trim());
+            }
+            catch(NumberFormatException exceptNumberFormat) {
+                IO.logger.log(Level.WARNING, "Number format exception parsing data from string", exceptNumberFormat);
+            }
+        }
+
+        return data;
+    }

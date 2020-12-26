@@ -1,0 +1,11 @@
+
+    public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int data = (new CWE190_Integer_Overflow__int_getParameter_Servlet_multiply_61b()).badSource(request, response);
+
+        if(data > 0) {
+            
+            int result = (int)(data * 2);
+            IO.writeLine("result: " + result);
+        }
+
+    }

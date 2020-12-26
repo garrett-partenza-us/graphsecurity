@@ -1,0 +1,10 @@
+
+    public void badSink(LinkedList<String> dataLinkedList ) throws Throwable {
+        String data = dataLinkedList.remove(2);
+
+        if (data != null) {
+            
+            System.out.format(data);
+        }
+
+    }

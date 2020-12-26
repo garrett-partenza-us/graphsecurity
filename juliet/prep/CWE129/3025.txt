@@ -1,0 +1,14 @@
+
+    public void goodG2BSink(int data , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        if (CWE129_Improper_Validation_of_Array_Index__getCookies_Servlet_array_write_no_check_22a.goodG2BPublicStatic) {
+            
+            int array[] = { 0, 1, 2, 3, 4 };
+            
+            array[data] = 42;
+            
+        }
+        else {
+            
+            data = 0;
+        }
+    }

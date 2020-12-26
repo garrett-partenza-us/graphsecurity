@@ -1,0 +1,9 @@
+
+    private void goodG2B() throws Throwable {
+        String data;
+
+        
+        data = "foo";
+
+        (new CWE23_Relative_Path_Traversal__Property_52b()).goodG2BSink(data );
+    }

@@ -1,0 +1,20 @@
+
+    public void bad() throws Throwable {
+        long data;
+
+        
+
+        data = 5L;
+
+        switch (7) {
+        case 7:
+            
+            
+            ; 
+            break;
+        default:
+            
+            IO.writeLine("Benign, fixed string");
+            break;
+        }
+    }

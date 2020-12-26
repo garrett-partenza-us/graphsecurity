@@ -1,0 +1,17 @@
+
+    public String goodG2B1Source() throws Throwable {
+        String data;
+
+        if (CWE23_Relative_Path_Traversal__listen_tcp_22a.goodG2B1PublicStatic) {
+            
+            data = null;
+        }
+        else {
+
+            
+            data = "foo";
+
+        }
+
+        return data;
+    }

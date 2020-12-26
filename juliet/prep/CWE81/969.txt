@@ -1,0 +1,17 @@
+
+    public String goodG2B1Source(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+
+        if (CWE81_XSS_Error_Message__Servlet_URLConnection_22a.goodG2B1PublicStatic) {
+            
+            data = null;
+        }
+        else {
+
+            
+            data = "foo";
+
+        }
+
+        return data;
+    }

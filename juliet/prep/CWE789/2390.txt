@@ -1,0 +1,8 @@
+
+    public void badSink() throws Throwable {
+        int data = CWE789_Uncontrolled_Mem_Alloc__random_HashSet_68a.data;
+
+        
+        HashSet intHashSet = new HashSet(data);
+
+    }

@@ -1,0 +1,12 @@
+
+    public void bad() throws Throwable {
+        String data;
+
+        
+        
+        data = System.getenv("ADD");
+
+        String[] dataArray = new String[5];
+        dataArray[2] = data;
+        (new CWE23_Relative_Path_Traversal__Environment_66b()).badSink(dataArray  );
+    }

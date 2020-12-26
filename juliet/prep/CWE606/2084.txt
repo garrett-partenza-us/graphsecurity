@@ -1,0 +1,14 @@
+
+    private void goodB2G() throws Throwable {
+        String data;
+
+        
+        
+        data = System.getenv("ADD");
+
+        Vector<String> dataVector = new Vector<String>(5);
+        dataVector.add(0, data);
+        dataVector.add(1, data);
+        dataVector.add(2, data);
+        (new CWE606_Unchecked_Loop_Condition__Environment_72b()).goodB2GSink(dataVector  );
+    }

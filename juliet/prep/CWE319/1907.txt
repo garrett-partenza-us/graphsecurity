@@ -1,0 +1,10 @@
+
+    private void goodG2B() throws Throwable {
+        String data;
+
+        
+        data = "Hello World";
+
+        goodG2BPrivate = true;
+        goodG2BSink(data );
+    }

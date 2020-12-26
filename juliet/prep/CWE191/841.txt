@@ -1,0 +1,9 @@
+
+    public short badSource() throws Throwable {
+        short data;
+
+        
+        data = Short.MIN_VALUE;
+
+        return data;
+    }

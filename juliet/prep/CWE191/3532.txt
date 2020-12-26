@@ -1,0 +1,10 @@
+
+    public void goodG2BSink(Vector<Short> dataVector ) throws Throwable {
+        short data = dataVector.remove(2);
+
+        
+        short result = (short)(--data);
+
+        IO.writeLine("result: " + result);
+
+    }

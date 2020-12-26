@@ -1,0 +1,11 @@
+
+    private void goodG2B2(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int data;
+
+        goodG2B2PublicStatic = true;
+        data = (new CWE789_Uncontrolled_Mem_Alloc__getQueryString_Servlet_HashMap_22b()).goodG2B2Source(request, response);
+
+        
+        HashMap intHashMap = new HashMap(data);
+
+    }

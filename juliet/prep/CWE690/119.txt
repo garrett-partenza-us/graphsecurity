@@ -1,0 +1,18 @@
+
+    private void goodB2G(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+
+        while (true) {
+            
+            data = request.getParameter("CWE690");
+            break;
+        }
+
+        while (true) {
+            
+            if("CWE690".equals(data)) {
+                IO.writeLine("data is CWE690");
+            }
+            break;
+        }
+    }

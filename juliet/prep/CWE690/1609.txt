@@ -1,0 +1,10 @@
+
+    public void bad() throws Throwable {
+        String data = badSource();
+
+        
+        String stringTrimmed = data.trim();
+
+        IO.writeLine(stringTrimmed);
+
+    }

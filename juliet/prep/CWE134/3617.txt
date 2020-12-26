@@ -1,0 +1,11 @@
+
+    public void bad() throws Throwable {
+        String data = null;
+
+        
+        
+        data = System.getenv("ADD");
+
+        badPublicStatic = true;
+        (new CWE134_Uncontrolled_Format_String__Environment_format_22b()).badSink(data );
+    }

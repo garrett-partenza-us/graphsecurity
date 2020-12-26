@@ -1,0 +1,29 @@
+
+    private void goodB2G1() throws Throwable {
+        short data;
+        if (true) {
+            
+            data = Short.MIN_VALUE;
+        }
+        else {
+            
+            data = 0;
+        }
+
+        if (false) {
+            
+            IO.writeLine("Benign, fixed string");
+        }
+        else {
+
+            
+            if (data > Short.MIN_VALUE) {
+                short result = (short)(data - 1);
+                IO.writeLine("result: " + result);
+            }
+            else {
+                IO.writeLine("data value is too small to perform subtraction.");
+            }
+
+        }
+    }

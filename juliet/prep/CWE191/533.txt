@@ -1,0 +1,14 @@
+
+    public void goodB2GSink() throws Throwable {
+        long data = CWE191_Integer_Underflow__long_min_predec_68a.data;
+
+        
+        if (data > Long.MIN_VALUE) {
+            long result = (long)(--data);
+            IO.writeLine("result: " + result);
+        }
+        else {
+            IO.writeLine("data value is too small to decrement.");
+        }
+
+    }

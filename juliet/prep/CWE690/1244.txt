@@ -1,0 +1,10 @@
+
+    public void goodG2BSink(HashMap<Integer,StringBuilder> dataHashMap ) throws Throwable {
+        StringBuilder data = dataHashMap.get(2);
+
+        
+        String stringTrimmed = data.toString().trim();
+
+        IO.writeLine(stringTrimmed);
+
+    }

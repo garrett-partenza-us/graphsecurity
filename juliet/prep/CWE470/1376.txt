@@ -1,0 +1,15 @@
+
+    public String goodG2B2Source() throws Throwable {
+        String data;
+
+        if (CWE470_Unsafe_Reflection__URLConnection_22a.goodG2B2PublicStatic) {
+            
+            data = "Testing.test";
+        }
+        else {
+            
+            data = null;
+        }
+
+        return data;
+    }

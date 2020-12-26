@@ -1,0 +1,16 @@
+
+    private void goodB2G() throws Throwable {
+        String data;
+
+        
+        PasswordAuthentication credentials = new PasswordAuthentication("user", "AP@ssw0rd".toCharArray());
+
+        
+        data = new String(credentials.getPassword());
+
+        Vector<String> dataVector = new Vector<String>(5);
+        dataVector.add(0, data);
+        dataVector.add(1, data);
+        dataVector.add(2, data);
+        (new CWE319_Cleartext_Tx_Sensitive_Info__send_72b()).goodB2GSink(dataVector  );
+    }

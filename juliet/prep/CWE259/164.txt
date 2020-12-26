@@ -1,0 +1,15 @@
+
+    private String bad_source() throws Throwable {
+        String data;
+
+        if (badPrivate) {
+            
+            data = "7e5tc4s3";
+        }
+        else {
+            
+            data = null;
+        }
+
+        return data;
+    }

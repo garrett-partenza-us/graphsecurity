@@ -1,0 +1,8 @@
+
+    public void bad() throws Throwable {
+        int data = badSource();
+
+        
+        ArrayList intArrayList = new ArrayList(data);
+
+    }

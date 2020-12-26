@@ -1,0 +1,11 @@
+
+    private void goodG2B() throws Throwable {
+        long data = (new CWE190_Integer_Overflow__long_console_readLine_multiply_61b()).goodG2BSource();
+
+        if(data > 0) {
+            
+            long result = (long)(data * 2);
+            IO.writeLine("result: " + result);
+        }
+
+    }

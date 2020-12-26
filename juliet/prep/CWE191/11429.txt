@@ -1,0 +1,11 @@
+
+    public void bad() throws Throwable {
+        int data = (new CWE191_Integer_Underflow__int_Environment_postdec_61b()).badSource();
+
+        
+        data--;
+        int result = (int)(data);
+
+        IO.writeLine("result: " + result);
+
+    }

@@ -1,0 +1,21 @@
+
+    public void bad() throws Throwable {
+        int data;
+
+        data = Integer.MIN_VALUE; 
+
+        
+ {
+            String stringNumber = System.getProperty("user.home");
+            try {
+                data = Integer.parseInt(stringNumber.trim());
+            }
+            catch(NumberFormatException exceptNumberFormat) {
+                IO.logger.log(Level.WARNING, "Number format exception parsing data from string", exceptNumberFormat);
+            }
+        }
+
+        Container dataContainer = new Container();
+        dataContainer.containerOne = data;
+        (new CWE190_Integer_Overflow__int_Property_square_67b()).badSink(dataContainer  );
+    }

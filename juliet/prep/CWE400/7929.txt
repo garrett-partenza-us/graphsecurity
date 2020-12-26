@@ -1,0 +1,11 @@
+
+    private void goodG2B(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int count;
+
+        
+        count = 2;
+
+        int[] countArray = new int[5];
+        countArray[2] = count;
+        (new CWE400_Resource_Exhaustion__getCookies_Servlet_write_66b()).goodG2BSink(countArray , request, response );
+    }

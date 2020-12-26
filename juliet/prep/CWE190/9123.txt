@@ -1,0 +1,8 @@
+
+    private void goodB2G() throws Throwable {
+
+        
+        data = (new java.security.SecureRandom()).nextLong();
+
+        (new CWE190_Integer_Overflow__long_rand_add_68b()).goodB2GSink();
+    }

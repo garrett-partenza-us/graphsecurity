@@ -1,0 +1,9 @@
+
+    private void goodG2B(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+
+        
+        data = "foo";
+
+        (new CWE78_OS_Command_Injection__getQueryString_Servlet_54b()).goodG2BSink(data , request, response);
+    }

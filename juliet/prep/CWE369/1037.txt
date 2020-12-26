@@ -1,0 +1,11 @@
+
+    public void bad() throws Throwable {
+        float data;
+
+        
+        SecureRandom secureRandom = new SecureRandom();
+        data = secureRandom.nextFloat();
+
+        CWE369_Divide_by_Zero__float_random_modulo_81_base baseObject = new CWE369_Divide_by_Zero__float_random_modulo_81_bad();
+        baseObject.action(data );
+    }

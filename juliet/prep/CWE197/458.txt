@@ -1,0 +1,8 @@
+
+    public void badSink(short data ) throws Throwable {
+ {
+            
+            IO.writeLine((byte)data);
+        }
+
+    }

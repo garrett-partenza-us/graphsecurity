@@ -1,0 +1,11 @@
+
+    public void bad() throws Throwable {
+        String data = null;
+
+        
+        
+        data = System.getenv("ADD");
+
+        badPublicStatic = true;
+        (new CWE89_SQL_Injection__Environment_executeUpdate_22b()).badSink(data );
+    }

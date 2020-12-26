@@ -1,0 +1,8 @@
+
+    public void badSink(CWE789_Uncontrolled_Mem_Alloc__max_value_HashSet_67a.Container dataContainer ) throws Throwable {
+        int data = dataContainer.containerOne;
+
+        
+        HashSet intHashSet = new HashSet(data);
+
+    }

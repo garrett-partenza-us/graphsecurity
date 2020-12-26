@@ -1,0 +1,17 @@
+
+    private void good1() throws Throwable {
+        if (IO.STATIC_FINAL_FALSE) {
+            
+            IO.writeLine("Benign, fixed string");
+        }
+        else {
+
+ {
+                String sentence = "Inside the block"; 
+                IO.writeLine(sentence);
+            }
+
+            IO.writeLine("Hello from good()");
+
+        }
+    }

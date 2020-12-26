@@ -1,0 +1,14 @@
+
+    public void badSink(long data ) throws Throwable {
+        if (CWE190_Integer_Overflow__long_console_readLine_multiply_22a.badPublicStatic) {
+            if(data > 0) {
+                
+                long result = (long)(data * 2);
+                IO.writeLine("result: " + result);
+            }
+        }
+        else {
+            
+            data = 0L;
+        }
+    }

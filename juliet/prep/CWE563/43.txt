@@ -1,0 +1,20 @@
+
+    private void goodB2G1() throws Throwable {
+        String data;
+
+        
+
+        data = "Good";
+
+        if (PRIVATE_STATIC_FINAL_FALSE) {
+            
+            IO.writeLine("Benign, fixed string");
+        }
+        else {
+
+            
+
+            IO.writeLine(data);
+
+        }
+    }

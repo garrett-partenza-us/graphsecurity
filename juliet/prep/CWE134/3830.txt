@@ -1,0 +1,20 @@
+
+    private void goodB2G2() throws Throwable {
+        String data;
+        if (IO.staticReturnsTrue()) {
+            
+            
+            data = System.getProperty("user.home");
+        }
+        else {
+            
+            data = null;
+        }
+
+        if (IO.staticReturnsTrue()) {
+            if (data != null) {
+                
+                System.out.format("%s%n", data);
+            }
+        }
+    }

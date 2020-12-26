@@ -1,0 +1,10 @@
+
+    private void goodB2G2(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data = null;
+
+        
+        data = request.getParameter("name");
+
+        goodB2G2PublicStatic = true;
+        (new CWE643_Xpath_Injection__getParameter_Servlet_22b()).goodB2G2Sink(data , request, response);
+    }

@@ -1,0 +1,9 @@
+
+    public void bad() throws Throwable {
+
+        
+        
+        data = System.getenv("ADD");
+
+        (new CWE15_External_Control_of_System_or_Configuration_Setting__Environment_68b()).badSink();
+    }

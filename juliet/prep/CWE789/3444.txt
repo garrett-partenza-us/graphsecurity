@@ -1,0 +1,8 @@
+
+    public void badSink(Object dataObject ) throws Throwable {
+        int data = (Integer)dataObject;
+
+        
+        HashMap intHashMap = new HashMap(data);
+
+    }

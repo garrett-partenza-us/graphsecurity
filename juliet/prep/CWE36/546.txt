@@ -1,0 +1,4 @@
+
+    public void badSink(String data ) throws Throwable {
+        (new CWE36_Absolute_Path_Traversal__Property_54e()).badSink(data );
+    }

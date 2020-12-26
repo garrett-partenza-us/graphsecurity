@@ -1,0 +1,4 @@
+
+    public void badSink(String data , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        (new CWE89_SQL_Injection__getParameter_Servlet_executeQuery_53d()).badSink(data , request, response);
+    }

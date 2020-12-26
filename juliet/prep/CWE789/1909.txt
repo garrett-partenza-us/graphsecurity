@@ -1,0 +1,19 @@
+
+    public void bad() throws Throwable {
+        int data = 0;
+
+        switch (6) {
+        case 6:
+            
+            data = Integer.MAX_VALUE;
+            break;
+        default:
+            
+            data = 0;
+            break;
+        }
+
+        
+        ArrayList intArrayList = new ArrayList(data);
+
+    }

@@ -1,0 +1,44 @@
+
+    private void goodB2G() throws Throwable {
+        int count;
+
+        count = Integer.MIN_VALUE; 
+
+ {
+            Properties properties = new Properties();
+            FileInputStream streamFileInput = null;
+
+            try {
+                streamFileInput = new FileInputStream("../common/config.properties");
+                properties.load(streamFileInput);
+
+                
+                String stringNumber = properties.getProperty("data");
+                if (stringNumber != null) {
+                    try {
+                        count = Integer.parseInt(stringNumber.trim());
+                    }
+                    catch(NumberFormatException exceptNumberFormat) {
+                        IO.logger.log(Level.WARNING, "Number format exception parsing count from string", exceptNumberFormat);
+                    }
+                }
+            }
+            catch (IOException exceptIO) {
+                IO.logger.log(Level.WARNING, "Error with stream reading", exceptIO);
+            }
+            finally {
+                
+                try {
+                    if (streamFileInput != null) {
+                        streamFileInput.close();
+                    }
+                }
+                catch (IOException exceptIO) {
+                    IO.logger.log(Level.WARNING, "Error closing FileInputStream", exceptIO);
+                }
+            }
+        }
+
+        CWE400_Resource_Exhaustion__sleep_PropertiesFile_81_base baseObject = new CWE400_Resource_Exhaustion__sleep_PropertiesFile_81_goodB2G();
+        baseObject.action(count );
+    }

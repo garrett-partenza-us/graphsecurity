@@ -1,0 +1,17 @@
+
+    public void bad() throws Throwable {
+        String data;
+
+        while (true) {
+            
+            data = System.getProperty("CWE690");
+            break;
+        }
+
+        while (true) {
+            
+            String stringTrimmed = data.trim();
+            IO.writeLine(stringTrimmed);
+            break;
+        }
+    }

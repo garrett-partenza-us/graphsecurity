@@ -1,0 +1,22 @@
+
+    public String goodG2BSource() throws Throwable {
+        String data;
+
+        data = ""; 
+
+        
+        try {
+            InputStreamReader readerInputStream = new InputStreamReader(System.in, "UTF-8");
+            BufferedReader readerBuffered = new BufferedReader(readerInputStream);
+
+            
+            data = readerBuffered.readLine();
+        }
+        catch (IOException exceptIO) {
+            IO.logger.log(Level.WARNING, "Error with stream reading", exceptIO);
+        }
+
+        
+
+        return data;
+    }

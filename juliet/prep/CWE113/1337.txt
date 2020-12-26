@@ -1,0 +1,10 @@
+
+    public void badSink(LinkedList<String> dataLinkedList , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data = dataLinkedList.remove(2);
+
+        if (data != null) {
+            
+            response.setHeader("Location", "/author.jsp?lang=" + data);
+        }
+
+    }

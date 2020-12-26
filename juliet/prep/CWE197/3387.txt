@@ -1,0 +1,15 @@
+
+    public int goodG2B2Source() throws Throwable {
+        int data;
+
+        if (CWE197_Numeric_Truncation_Error__int_connect_tcp_to_short_22a.goodG2B2PublicStatic) {
+            
+            data = 2;
+        }
+        else {
+            
+            data = 0;
+        }
+
+        return data;
+    }

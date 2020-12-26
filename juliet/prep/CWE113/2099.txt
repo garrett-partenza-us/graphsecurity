@@ -1,0 +1,19 @@
+
+    private void goodB2G(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+
+        data = ""; 
+
+ {
+            StringTokenizer tokenizer = new StringTokenizer(request.getQueryString(), "&");
+            while (tokenizer.hasMoreTokens()) {
+                String token = tokenizer.nextToken(); 
+                if(token.startsWith("id=")) {
+                    data = token.substring(3); 
+                    break; 
+                }
+            }
+        }
+
+        (new CWE113_HTTP_Response_Splitting__getQueryString_Servlet_addCookieServlet_71b()).goodB2GSink((Object)data , request, response );
+    }

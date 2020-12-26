@@ -1,0 +1,9 @@
+
+    public byte goodB2GSource() throws Throwable {
+        byte data;
+
+        
+        data = (byte)((new java.security.SecureRandom()).nextInt(1+Byte.MAX_VALUE-Byte.MIN_VALUE) + Byte.MIN_VALUE);
+
+        return data;
+    }

@@ -1,0 +1,8 @@
+
+    public void badSink() throws Throwable {
+        int data = CWE789_Uncontrolled_Mem_Alloc__max_value_HashMap_68a.data;
+
+        
+        HashMap intHashMap = new HashMap(data);
+
+    }

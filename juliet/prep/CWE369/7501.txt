@@ -1,0 +1,29 @@
+
+    public void bad() throws Throwable {
+        float data;
+        if (IO.staticTrue) {
+            data = -1.0f; 
+            
+ {
+                String stringNumber = System.getProperty("user.home");
+                if (stringNumber != null) {
+                    try {
+                        data = Float.parseFloat(stringNumber.trim());
+                    }
+                    catch(NumberFormatException exceptNumberFormat) {
+                        IO.logger.log(Level.WARNING, "Number format exception parsing data from string", exceptNumberFormat);
+                    }
+                }
+            }
+        }
+        else {
+            
+            data = 0.0f;
+        }
+
+        if (IO.staticTrue) {
+            
+            int result = (int)(100.0 / data);
+            IO.writeLine(result);
+        }
+    }

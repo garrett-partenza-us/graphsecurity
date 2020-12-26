@@ -1,0 +1,8 @@
+
+    public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int data = (new CWE789_Uncontrolled_Mem_Alloc__getCookies_Servlet_HashMap_61b()).badSource(request, response);
+
+        
+        HashMap intHashMap = new HashMap(data);
+
+    }

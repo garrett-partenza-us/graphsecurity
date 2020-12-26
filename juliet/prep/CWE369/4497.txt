@@ -1,0 +1,8 @@
+
+    public void badSink(HashMap<Integer,Integer> dataHashMap ) throws Throwable {
+        int data = dataHashMap.get(2);
+
+        
+        IO.writeLine("bad: 100/" + data + " = " + (100 / data) + "\n");
+
+    }

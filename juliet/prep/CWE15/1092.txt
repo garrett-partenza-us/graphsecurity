@@ -1,0 +1,31 @@
+
+    public void bad() throws Throwable {
+        String data;
+
+        
+        
+        data = System.getProperty("user.home");
+
+        Connection dbConnection = null;
+
+        try {
+            dbConnection = IO.getDBConnection();
+
+            
+            dbConnection.setCatalog(data);
+        }
+        catch (SQLException exceptSql) {
+            IO.logger.log(Level.WARNING, "Error getting database connection", exceptSql);
+        }
+        finally {
+            try {
+                if (dbConnection != null) {
+                    dbConnection.close();
+                }
+            }
+            catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, "Error closing Connection", exceptSql);
+            }
+        }
+
+    }

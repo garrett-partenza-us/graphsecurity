@@ -1,0 +1,4 @@
+
+    public void goodB2GSink(int data ) throws Throwable {
+        (new CWE369_Divide_by_Zero__int_PropertiesFile_divide_54e()).goodB2GSink(data );
+    }

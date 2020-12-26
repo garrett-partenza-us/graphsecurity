@@ -1,0 +1,16 @@
+
+    public void bad() throws Throwable {
+        int data;
+        if (IO.staticTrue) {
+            data = 0; 
+        }
+        else {
+            
+            data = 0;
+        }
+
+        if (IO.staticTrue) {
+            
+            IO.writeLine("100%" + data + " = " + (100 % data) + "\n");
+        }
+    }

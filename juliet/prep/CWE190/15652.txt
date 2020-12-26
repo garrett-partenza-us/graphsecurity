@@ -1,0 +1,15 @@
+
+    private void goodB2G() throws Throwable {
+        long data = goodB2GSource();
+
+        
+        if (data < Long.MAX_VALUE) {
+            data++;
+            long result = (long)(data);
+            IO.writeLine("result: " + result);
+        }
+        else {
+            IO.writeLine("data value is too large to increment.");
+        }
+
+    }

@@ -1,0 +1,12 @@
+
+    public void goodG2BSink(int data ) throws Throwable {
+        if (CWE190_Integer_Overflow__int_connect_tcp_add_22a.goodG2BPublicStatic) {
+            
+            int result = (int)(data + 1);
+            IO.writeLine("result: " + result);
+        }
+        else {
+            
+            data = 0;
+        }
+    }

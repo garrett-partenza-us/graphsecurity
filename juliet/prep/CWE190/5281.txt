@@ -1,0 +1,13 @@
+
+    public void bad() throws Throwable {
+        int data;
+
+        
+        data = Integer.MAX_VALUE;
+
+        
+        int result = (int)(data + 1);
+
+        IO.writeLine("result: " + result);
+
+    }

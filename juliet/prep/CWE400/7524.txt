@@ -1,0 +1,22 @@
+
+    private void goodG2B1(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int count;
+        if (privateReturnsFalse()) {
+            
+            count = 0;
+        }
+        else {
+
+            
+            count = 2;
+
+        }
+
+        if (privateReturnsTrue()) {
+            int i = 0;
+            
+            for (i = 0; i < count; i++) {
+                IO.writeLine("Hello");
+            }
+        }
+    }

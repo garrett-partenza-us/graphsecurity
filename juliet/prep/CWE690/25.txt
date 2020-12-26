@@ -1,0 +1,19 @@
+
+    private void goodB2G() throws Throwable {
+        String data;
+
+        while (true) {
+            
+            data = CWE690_NULL_Deref_From_Return__Class_Helper.getStringBad();
+            break;
+        }
+
+        while (true) {
+            
+            if (data != null) {
+                String stringTrimmed = data.trim();
+                IO.writeLine(stringTrimmed);
+            }
+            break;
+        }
+    }

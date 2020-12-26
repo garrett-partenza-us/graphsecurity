@@ -1,0 +1,28 @@
+
+    private void goodG2B2(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+
+        if (IO.staticReturnsTrue()) {
+            
+            data = "5";
+        }
+        else {
+            
+            data = null;
+        }
+
+        if (IO.staticReturnsTrue()) {
+            int numberOfLoops;
+            try {
+                numberOfLoops = Integer.parseInt(data);
+            }
+            catch (NumberFormatException exceptNumberFormat) {
+                IO.writeLine("Invalid response. Numeric input expected. Assuming 1.");
+                numberOfLoops = 1;
+            }
+            for (int i=0; i < numberOfLoops; i++) {
+                
+                IO.writeLine("hello world");
+            }
+        }
+    }

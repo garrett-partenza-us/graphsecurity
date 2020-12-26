@@ -1,0 +1,23 @@
+
+    private void goodB2G2(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int count = 0;
+
+        count = Integer.MIN_VALUE; 
+
+ {
+            Cookie cookieSources[] = request.getCookies();
+            if (cookieSources != null) {
+                
+                String stringNumber = cookieSources[0].getValue();
+                try {
+                    count = Integer.parseInt(stringNumber.trim());
+                }
+                catch(NumberFormatException exceptNumberFormat) {
+                    IO.logger.log(Level.WARNING, "Number format exception reading count from cookie", exceptNumberFormat);
+                }
+            }
+        }
+
+        goodB2G2PublicStatic = true;
+        (new CWE400_Resource_Exhaustion__getCookies_Servlet_write_22b()).goodB2G2Sink(count , request, response);
+    }

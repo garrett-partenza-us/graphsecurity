@@ -1,0 +1,16 @@
+
+    public void goodB2G1Sink(String data , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        if (CWE113_HTTP_Response_Splitting__PropertiesFile_addCookieServlet_22a.goodB2G1PublicStatic) {
+            
+            data = null;
+        }
+        else {
+
+            if (data != null) {
+                Cookie cookieSink = new Cookie("lang", URLEncoder.encode(data, "UTF-8"));
+                
+                response.addCookie(cookieSink);
+            }
+
+        }
+    }

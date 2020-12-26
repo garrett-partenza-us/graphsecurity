@@ -1,0 +1,10 @@
+
+    public void bad() throws Throwable {
+        String data;
+
+        
+        
+        data = System.getenv("ADD");
+
+        (new CWE36_Absolute_Path_Traversal__Environment_71b()).badSink((Object)data  );
+    }

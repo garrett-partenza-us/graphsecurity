@@ -1,0 +1,26 @@
+
+    private void goodB2G1() throws Throwable {
+        String data;
+        if (privateFive==5) {
+            
+            data = System.getProperty("CWE690");
+        }
+        else {
+            
+            data = null;
+        }
+
+        if (privateFive!=5) {
+            
+            IO.writeLine("Benign, fixed string");
+        }
+        else {
+
+            
+            if (data != null) {
+                String stringTrimmed = data.trim();
+                IO.writeLine(stringTrimmed);
+            }
+
+        }
+    }

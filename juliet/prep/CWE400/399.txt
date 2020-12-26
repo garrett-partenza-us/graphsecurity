@@ -1,0 +1,10 @@
+
+    public void goodB2GSink(LinkedList<Integer> countLinkedList ) throws Throwable {
+        int count = countLinkedList.remove(2);
+
+        
+        if (count > 0 && count <= 2000) {
+            Thread.sleep(count);
+        }
+
+    }

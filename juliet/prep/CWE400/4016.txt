@@ -1,0 +1,12 @@
+
+    private void goodG2B() throws Throwable {
+        int count = goodG2BSource();
+
+        int i = 0;
+
+        
+        for (i = 0; i < count; i++) {
+            IO.writeLine("Hello");
+        }
+
+    }

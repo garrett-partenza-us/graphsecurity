@@ -1,0 +1,19 @@
+
+    private void goodG2B2() throws Throwable {
+        long data;
+        if (IO.STATIC_FINAL_TRUE) {
+            
+            data = 5L;
+            IO.writeLine("" + data);
+        }
+        else {
+            
+            data = 0L;
+        }
+
+        if (IO.STATIC_FINAL_TRUE) {
+            
+            data = 10L;
+            IO.writeLine("" + data);
+        }
+    }

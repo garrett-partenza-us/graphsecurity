@@ -1,0 +1,23 @@
+
+    private void goodG2B1() throws Throwable {
+        String data;
+        if (privateFive!=5) {
+            
+            data = null;
+        }
+        else {
+
+            
+
+            data = "Good";
+
+            IO.writeLine(data);
+
+        }
+
+        if (privateFive==5) {
+            
+            data = "Reinitialize";
+            IO.writeLine(data);
+        }
+    }

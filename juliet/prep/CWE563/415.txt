@@ -1,0 +1,22 @@
+
+    public void bad() throws Throwable {
+        long data;
+
+        
+        ; 
+
+        if (IO.staticReturnsTrueOrFalse()) {
+            
+            
+            ; 
+        }
+        else {
+
+            
+
+            data = 5L;
+
+            IO.writeLine("" + data);
+
+        }
+    }

@@ -1,0 +1,20 @@
+
+    private void goodB2G() throws Throwable {
+        int data = (new CWE129_Improper_Validation_of_Array_Index__File_array_size_61b()).goodB2GSource();
+
+        
+        int array[] = null;
+
+        
+        if (data > 0) {
+            array = new int[data];
+        }
+        else {
+            IO.writeLine("Array size is negative");
+        }
+
+        
+        array[0] = 5;
+        IO.writeLine(array[0]);
+
+    }

@@ -1,0 +1,10 @@
+
+    private void goodB2G2Sink(StringBuilder data ) throws Throwable {
+        if (goodB2G2Private) {
+            
+            if (data != null) {
+                String stringTrimmed = data.toString().trim();
+                IO.writeLine(stringTrimmed);
+            }
+        }
+    }

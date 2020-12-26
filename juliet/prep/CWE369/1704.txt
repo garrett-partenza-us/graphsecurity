@@ -1,0 +1,8 @@
+
+    public void badSink(float data ) throws Throwable {
+
+        
+        int result = (int)(100.0 / data);
+        IO.writeLine(result);
+
+    }

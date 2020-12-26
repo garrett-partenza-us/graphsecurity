@@ -1,0 +1,16 @@
+
+    private void good2() throws Throwable {
+        if (IO.STATIC_FINAL_FIVE == 5) {
+            int x = (new SecureRandom()).nextInt();
+            switch (x) {
+                
+            case 0:
+                IO.writeLine("Inside the case statement");
+                break;
+            default:
+                IO.writeLine("Inside the default statement");
+                break;
+            }
+            IO.writeLine("Hello from good()");
+        }
+    }

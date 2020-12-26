@@ -1,0 +1,13 @@
+
+    public void bad() throws Throwable {
+        long data;
+
+        
+        data = (new java.security.SecureRandom()).nextLong();
+
+        HashMap<Integer,Long> dataHashMap = new HashMap<Integer,Long>();
+        dataHashMap.put(0, data);
+        dataHashMap.put(1, data);
+        dataHashMap.put(2, data);
+        (new CWE190_Integer_Overflow__long_rand_add_74b()).badSink(dataHashMap  );
+    }

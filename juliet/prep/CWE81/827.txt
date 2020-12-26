@@ -1,0 +1,13 @@
+
+    public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+
+        badPublicStatic = true;
+        data = (new CWE81_XSS_Error_Message__Servlet_getParameter_Servlet_22b()).badSource(request, response);
+
+        if (data != null) {
+            
+            response.sendError(404, "<br>bad() - Parameter name has value " + data);
+        }
+
+    }

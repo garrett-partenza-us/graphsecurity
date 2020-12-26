@@ -1,0 +1,9 @@
+
+    private void goodG2B(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+
+        
+        data = "foo";
+
+        (new CWE113_HTTP_Response_Splitting__getCookies_Servlet_addHeaderServlet_51b()).goodG2BSink(data , request, response );
+    }

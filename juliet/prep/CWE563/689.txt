@@ -1,0 +1,14 @@
+
+    private void goodB2G() throws Throwable {
+        int data;
+
+        
+        ; 
+
+        while (true) {
+            
+            data = 5;
+            IO.writeLine("" + data);
+            break;
+        }
+    }

@@ -1,0 +1,11 @@
+
+    public void badSink(CWE191_Integer_Underflow__long_rand_postdec_67a.Container dataContainer ) throws Throwable {
+        long data = dataContainer.containerOne;
+
+        
+        data--;
+        long result = (long)(data);
+
+        IO.writeLine("result: " + result);
+
+    }

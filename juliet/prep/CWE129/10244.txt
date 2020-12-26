@@ -1,0 +1,4 @@
+
+    public void badSink(int data ) throws Throwable {
+        (new CWE129_Improper_Validation_of_Array_Index__Property_array_size_53c()).badSink(data );
+    }

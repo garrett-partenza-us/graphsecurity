@@ -1,0 +1,13 @@
+
+    public void goodB2GSink(HashMap<Integer,Integer> dataHashMap , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int data = dataHashMap.get(2);
+
+        
+        if (data != 0) {
+            IO.writeLine("100/" + data + " = " + (100 / data) + "\n");
+        }
+        else {
+            IO.writeLine("This would result in a divide by zero");
+        }
+
+    }

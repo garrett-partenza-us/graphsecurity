@@ -1,0 +1,17 @@
+
+    private void goodG2B() throws Throwable {
+        int countCopy; {
+            int count;
+
+            
+            count = 2;
+
+            countCopy = count;
+        } {
+            int count = countCopy;
+
+            
+            Thread.sleep(count);
+
+        }
+    }

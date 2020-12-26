@@ -1,0 +1,14 @@
+
+    private void goodB2G() throws Throwable {
+        int count;
+
+        
+        count = (new SecureRandom()).nextInt();
+
+        for (int k = 0; k < 1; k++) {
+            
+            if (count > 0 && count <= 2000) {
+                Thread.sleep(count);
+            }
+        }
+    }

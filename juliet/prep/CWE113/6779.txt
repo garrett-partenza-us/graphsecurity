@@ -1,0 +1,10 @@
+
+    public void badSink(CWE113_HTTP_Response_Splitting__console_readLine_addHeaderServlet_67a.Container dataContainer , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data = dataContainer.containerOne;
+
+        
+        if (data != null) {
+            response.addHeader("Location", "/author.jsp?lang=" + data);
+        }
+
+    }

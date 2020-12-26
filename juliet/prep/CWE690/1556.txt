@@ -1,0 +1,10 @@
+
+    public void badSink() throws Throwable {
+        String data = CWE690_NULL_Deref_From_Return__System_getProperty_trim_68a.data;
+
+        
+        String stringTrimmed = data.trim();
+
+        IO.writeLine(stringTrimmed);
+
+    }

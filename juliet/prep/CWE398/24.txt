@@ -1,0 +1,11 @@
+
+    private void good2() throws Throwable {
+        if (PRIVATE_STATIC_FINAL_FIVE == 5) {
+            int i = 0;
+            
+            while(i++ < 10) {
+                IO.writeLine("Inside the while statement");
+            }
+            IO.writeLine("Hello from good()");
+        }
+    }

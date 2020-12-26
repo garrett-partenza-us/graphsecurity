@@ -1,0 +1,13 @@
+
+    private void good1() throws Throwable {
+
+        int intOne = 1, intFive = 5;
+
+        IO.writeLine(intOne);
+
+        
+        intOne = intFive;
+
+        IO.writeLine(intOne);
+
+    }

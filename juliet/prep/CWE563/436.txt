@@ -1,0 +1,27 @@
+
+    public void bad() throws Throwable {
+        StringBuilder data;
+
+        switch (6) {
+        case 6:
+            
+            data = new StringBuilder("Good");
+            break;
+        default:
+            
+            data = null;
+            break;
+        }
+
+        switch (7) {
+        case 7:
+            
+            data = new StringBuilder("Reinitialize");
+            IO.writeLine(data.toString());
+            break;
+        default:
+            
+            IO.writeLine("Benign, fixed string");
+            break;
+        }
+    }

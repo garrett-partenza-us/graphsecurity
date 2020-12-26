@@ -1,0 +1,14 @@
+
+    public void bad() throws Throwable {
+        String data;
+
+        badPrivate = true;
+        data = bad_source();
+
+        
+        Class<?> tempClass = Class.forName(data);
+        Object tempClassObject = tempClass.newInstance();
+
+        IO.writeLine(tempClassObject.toString()); 
+
+    }

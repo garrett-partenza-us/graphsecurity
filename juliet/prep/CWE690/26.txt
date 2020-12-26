@@ -1,0 +1,15 @@
+
+    public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+
+        
+
+        
+        data = request.getParameter("CWE690");
+
+        for (int j = 0; j < 1; j++) {
+            
+            String stringTrimmed = data.trim();
+            IO.writeLine(stringTrimmed);
+        }
+    }

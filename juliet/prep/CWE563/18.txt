@@ -1,0 +1,17 @@
+
+    private void goodB2G2() throws Throwable {
+        StringBuilder data;
+        if (privateFive==5) {
+            
+            data = new StringBuilder("Good");
+        }
+        else {
+            
+            data = null;
+        }
+
+        if (privateFive==5) {
+            
+            IO.writeLine(data.toString());
+        }
+    }

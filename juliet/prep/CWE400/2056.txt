@@ -1,0 +1,21 @@
+
+    public void bad() throws Throwable {
+        int countCopy; {
+            int count;
+
+            
+            count = (new SecureRandom()).nextInt();
+
+            countCopy = count;
+        } {
+            int count = countCopy;
+
+            int i = 0;
+
+            
+            for (i = 0; i < count; i++) {
+                IO.writeLine("Hello");
+            }
+
+        }
+    }

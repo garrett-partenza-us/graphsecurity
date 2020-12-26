@@ -1,0 +1,19 @@
+
+    public void bad() throws Throwable {
+        int data;
+        if (IO.staticReturnsTrueOrFalse()) {
+            
+            data = Short.MAX_VALUE + 5;
+        }
+        else {
+
+            
+            data = 2;
+
+        }
+ {
+            
+            IO.writeLine((byte)data);
+        }
+
+    }

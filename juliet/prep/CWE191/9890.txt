@@ -1,0 +1,22 @@
+
+    private void goodG2B1() throws Throwable {
+        short data;
+        if (IO.staticFive!=5) {
+            
+            data = 0;
+        }
+        else {
+
+            
+            data = 2;
+
+        }
+
+        if (IO.staticFive==5) {
+            if(data < 0) {
+                
+                short result = (short)(data * 2);
+                IO.writeLine("result: " + result);
+            }
+        }
+    }

@@ -1,0 +1,16 @@
+
+    public void bad() throws Throwable {
+        int data;
+        if (privateReturnsTrue()) {
+            data = 0; 
+        }
+        else {
+            
+            data = 0;
+        }
+
+        if (privateReturnsTrue()) {
+            
+            IO.writeLine("bad: 100/" + data + " = " + (100 / data) + "\n");
+        }
+    }

@@ -1,0 +1,15 @@
+
+    public void bad() throws Throwable {
+        String data;
+
+        
+        
+        data = System.getenv("ADD");
+
+        for (int i = 0; i < 1; i++) {
+            
+            Class<?> tempClass = Class.forName(data);
+            Object tempClassObject = tempClass.newInstance();
+            IO.writeLine(tempClassObject.toString()); 
+        }
+    }

@@ -1,0 +1,10 @@
+
+    public void bad() throws Throwable {
+        String data;
+
+        
+        
+        data = System.getProperty("user.home");
+
+        (new CWE470_Unsafe_Reflection__Property_53b()).badSink(data );
+    }

@@ -1,0 +1,37 @@
+
+    private void goodB2G() throws Throwable {
+        byte data;
+        if(IO.staticReturnsTrueOrFalse()) {
+            
+            data = Byte.MIN_VALUE;
+        }
+        else {
+
+            
+            data = Byte.MIN_VALUE;
+
+        }
+
+        if(IO.staticReturnsTrueOrFalse()) {
+            
+            if (data > Byte.MIN_VALUE) {
+                byte result = (byte)(data - 1);
+                IO.writeLine("result: " + result);
+            }
+            else {
+                IO.writeLine("data value is too small to perform subtraction.");
+            }
+        }
+        else {
+
+            
+            if (data > Byte.MIN_VALUE) {
+                byte result = (byte)(data - 1);
+                IO.writeLine("result: " + result);
+            }
+            else {
+                IO.writeLine("data value is too small to perform subtraction.");
+            }
+
+        }
+    }

@@ -1,0 +1,17 @@
+
+    public void bad() throws Throwable {
+        StringBuilder data;
+
+        while (true) {
+            
+            data = new StringBuilder("Good");
+            break;
+        }
+
+        while (true) {
+            
+            data = new StringBuilder("Reinitialize");
+            IO.writeLine(data.toString());
+            break;
+        }
+    }

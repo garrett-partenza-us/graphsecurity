@@ -1,0 +1,9 @@
+
+    private void goodB2G() throws Throwable {
+        int count;
+
+        
+        count = (new SecureRandom()).nextInt();
+
+        (new CWE400_Resource_Exhaustion__random_for_loop_53b()).goodB2GSink(count );
+    }

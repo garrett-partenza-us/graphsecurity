@@ -1,0 +1,10 @@
+
+    public void badSink(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data = CWE80_XSS__CWE182_Servlet_URLConnection_68a.data;
+
+        if (data != null) {
+            
+            response.getWriter().println("<br>bad(): data = " + data.replaceAll("(<script>)", ""));
+        }
+
+    }

@@ -1,0 +1,19 @@
+
+    private void goodG2B() throws Throwable {
+        byte data;
+
+        while (true) {
+            
+            data = 2;
+            break;
+        }
+
+        while (true) {
+            
+            data++;
+            byte result = (byte)(data);
+            IO.writeLine("result: " + result);
+            break;
+        }
+
+    }

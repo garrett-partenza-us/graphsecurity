@@ -1,0 +1,18 @@
+
+    private void goodG2B2() throws Throwable {
+        float data;
+        if (privateReturnsTrue()) {
+            
+            data = 2.0f;
+        }
+        else {
+            
+            data = 0.0f;
+        }
+
+        if (privateReturnsTrue()) {
+            
+            int result = (int)(100.0 / data);
+            IO.writeLine(result);
+        }
+    }

@@ -1,0 +1,4 @@
+
+    public void goodG2BSink(float data ) throws Throwable {
+        (new CWE369_Divide_by_Zero__float_console_readLine_divide_53d()).goodG2BSink(data );
+    }

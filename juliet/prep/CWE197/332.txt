@@ -1,0 +1,14 @@
+
+    public short badSource() throws Throwable {
+        short data;
+
+        if (CWE197_Numeric_Truncation_Error__short_random_22a.badPublicStatic) {
+            
+            data = (short)((new SecureRandom()).nextInt(Short.MAX_VALUE + 1));
+        }
+        else {
+            
+            data = 0;
+        }
+        return data;
+    }

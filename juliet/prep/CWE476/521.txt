@@ -1,0 +1,12 @@
+
+    private void good1() throws Throwable {
+        for(int k = 0; k < 1; k++) { {
+                String myString = null;
+                myString = "Hello";
+                IO.writeLine(myString.length());
+                
+                myString = "my, how I've changed";
+                IO.writeLine(myString.length());
+            }
+        }
+    }

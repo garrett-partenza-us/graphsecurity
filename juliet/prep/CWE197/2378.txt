@@ -1,0 +1,15 @@
+
+    private int bad_source() throws Throwable {
+        int data;
+
+        if (badPrivate) {
+            
+            data = Short.MAX_VALUE + 5;
+        }
+        else {
+            
+            data = 0;
+        }
+
+        return data;
+    }

@@ -1,0 +1,23 @@
+
+    public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int count;
+
+        count = Integer.MIN_VALUE; 
+
+ {
+            Cookie cookieSources[] = request.getCookies();
+            if (cookieSources != null) {
+                
+                String stringNumber = cookieSources[0].getValue();
+                try {
+                    count = Integer.parseInt(stringNumber.trim());
+                }
+                catch(NumberFormatException exceptNumberFormat) {
+                    IO.logger.log(Level.WARNING, "Number format exception reading count from cookie", exceptNumberFormat);
+                }
+            }
+        }
+
+        CWE400_Resource_Exhaustion__getCookies_Servlet_for_loop_81_base baseObject = new CWE400_Resource_Exhaustion__getCookies_Servlet_for_loop_81_bad();
+        baseObject.action(count , request, response);
+    }

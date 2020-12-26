@@ -1,0 +1,18 @@
+
+    public void bad() throws Throwable {
+        short data;
+
+        while (true) {
+            
+            data = (short)((new java.security.SecureRandom()).nextInt(1+Short.MAX_VALUE-Short.MIN_VALUE)+Short.MIN_VALUE);
+            break;
+        }
+
+        while (true) {
+            
+            data--;
+            short result = (short)(data);
+            IO.writeLine("result: " + result);
+            break;
+        }
+    }

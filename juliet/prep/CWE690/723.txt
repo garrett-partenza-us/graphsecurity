@@ -1,0 +1,20 @@
+
+    private void goodB2G() throws Throwable {
+        String dataCopy; {
+            String data;
+
+            
+            data = CWE690_NULL_Deref_From_Return__Class_Helper.getStringBad();
+
+            dataCopy = data;
+        } {
+            String data = dataCopy;
+
+            
+            if (data != null) {
+                String stringTrimmed = data.trim();
+                IO.writeLine(stringTrimmed);
+            }
+
+        }
+    }

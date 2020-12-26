@@ -1,0 +1,12 @@
+
+    private void goodB2G2Sink(Integer data ) throws Throwable {
+        if (goodB2G2Private) {
+            
+            if (data != null) {
+                IO.writeLine("" + data.toString());
+            }
+            else {
+                IO.writeLine("data is null");
+            }
+        }
+    }

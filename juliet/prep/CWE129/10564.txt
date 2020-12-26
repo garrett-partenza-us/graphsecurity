@@ -1,0 +1,13 @@
+
+    private void goodB2G() throws Throwable {
+        int data;
+
+        
+        data = (new SecureRandom()).nextInt();
+
+        HashMap<Integer,Integer> dataHashMap = new HashMap<Integer,Integer>();
+        dataHashMap.put(0, data);
+        dataHashMap.put(1, data);
+        dataHashMap.put(2, data);
+        (new CWE129_Improper_Validation_of_Array_Index__random_array_read_check_min_74b()).goodB2GSink(dataHashMap  );
+    }

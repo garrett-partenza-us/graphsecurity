@@ -1,0 +1,22 @@
+
+    private void goodB2G2() throws Throwable {
+        String data;
+        if (IO.staticReturnsTrue()) {
+            
+            data = null;
+        }
+        else {
+            
+            data = null;
+        }
+
+        if (IO.staticReturnsTrue()) {
+            
+            if (data != null) {
+                IO.writeLine("" + data.length());
+            }
+            else {
+                IO.writeLine("data is null");
+            }
+        }
+    }

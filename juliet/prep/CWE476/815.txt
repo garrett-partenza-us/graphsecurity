@@ -1,0 +1,19 @@
+
+    private void goodG2B1() throws Throwable {
+        Integer data;
+        if (5!=5) {
+            
+            data = null;
+        }
+        else {
+
+            
+            data = Integer.valueOf(5);
+
+        }
+
+        if (5==5) {
+            
+            IO.writeLine("" + data.toString());
+        }
+    }

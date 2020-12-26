@@ -1,0 +1,8 @@
+
+    private void badSink(byte data ) throws Throwable {
+        if (badPrivate) {
+            
+            byte result = (byte)(data + 1);
+            IO.writeLine("result: " + result);
+        }
+    }

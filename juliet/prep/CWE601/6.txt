@@ -1,0 +1,35 @@
+
+    public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+
+        while (true) {
+            data = ""; 
+ {
+                StringTokenizer tokenizer = new StringTokenizer(request.getQueryString(), "&");
+                while (tokenizer.hasMoreTokens()) {
+                    String token = tokenizer.nextToken(); 
+                    if(token.startsWith("id=")) {
+                        data = token.substring(3); 
+                        break; 
+                    }
+                }
+            }
+            break;
+        }
+
+        if (data != null) {
+            
+            URI uri;
+            try {
+                uri = new URI(data);
+            }
+            catch (URISyntaxException exceptURISyntax) {
+                response.getWriter().write("Invalid redirect URL");
+                return;
+            }
+            
+            response.sendRedirect(data);
+            return;
+        }
+
+    }

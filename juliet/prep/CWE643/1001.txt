@@ -1,0 +1,11 @@
+
+    private void goodG2B() throws Throwable {
+        String data;
+
+        
+        data = "foo";
+
+        Container dataContainer = new Container();
+        dataContainer.containerOne = data;
+        (new CWE643_Xpath_Injection__Property_67b()).goodG2BSink(dataContainer  );
+    }

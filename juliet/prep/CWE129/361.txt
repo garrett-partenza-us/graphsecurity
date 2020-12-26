@@ -1,0 +1,4 @@
+
+    public void goodB2GSink(int data ) throws Throwable {
+        (new CWE129_Improper_Validation_of_Array_Index__random_array_size_52c()).goodB2GSink(data );
+    }

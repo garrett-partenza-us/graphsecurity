@@ -1,0 +1,20 @@
+
+    public void goodB2G1Sink(long data ) throws Throwable {
+        if (CWE190_Integer_Overflow__long_max_postinc_22a.goodB2G1PublicStatic) {
+            
+            data = 0L;
+        }
+        else {
+
+            
+            if (data < Long.MAX_VALUE) {
+                data++;
+                long result = (long)(data);
+                IO.writeLine("result: " + result);
+            }
+            else {
+                IO.writeLine("data value is too large to increment.");
+            }
+
+        }
+    }

@@ -1,0 +1,4 @@
+
+    public void goodB2GSink(int data ) throws Throwable {
+        (new CWE190_Integer_Overflow__int_Environment_postinc_54e()).goodB2GSink(data );
+    }

@@ -1,0 +1,19 @@
+
+    private void goodG2B2(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int data;
+        if (privateReturnsTrue()) {
+            
+            data = 2;
+        }
+        else {
+            
+            data = 0;
+        }
+
+        if (privateReturnsTrue()) {
+            
+            data--;
+            int result = (int)(data);
+            IO.writeLine("result: " + result);
+        }
+    }

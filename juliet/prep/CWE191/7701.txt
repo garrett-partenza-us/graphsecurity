@@ -1,0 +1,8 @@
+
+    private void goodG2BSink(int data , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        if (goodG2BPrivate) {
+            
+            int result = (int)(data - 1);
+            IO.writeLine("result: " + result);
+        }
+    }

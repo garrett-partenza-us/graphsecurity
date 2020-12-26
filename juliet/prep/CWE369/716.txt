@@ -1,0 +1,19 @@
+
+    public void bad() throws Throwable {
+        float data;
+        if (privateReturnsTrue()) {
+            
+            SecureRandom secureRandom = new SecureRandom();
+            data = secureRandom.nextFloat();
+        }
+        else {
+            
+            data = 0.0f;
+        }
+
+        if (privateReturnsTrue()) {
+            
+            int result = (int)(100.0 % data);
+            IO.writeLine(result);
+        }
+    }

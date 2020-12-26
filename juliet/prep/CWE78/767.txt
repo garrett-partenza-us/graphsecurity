@@ -1,0 +1,35 @@
+
+    public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+        if (IO.staticReturnsTrueOrFalse()) {
+            data = ""; 
+ {
+                Cookie cookieSources[] = request.getCookies();
+                if (cookieSources != null) {
+                    
+                    data = cookieSources[0].getValue();
+                }
+            }
+        }
+        else {
+
+            
+            data = "foo";
+
+        }
+
+        String osCommand;
+        if(System.getProperty("os.name").toLowerCase().indexOf("win") >= 0) {
+            
+            osCommand = "c:\\WINDOWS\\SYSTEM32\\cmd.exe /c dir ";
+        }
+        else {
+            
+            osCommand = "/bin/ls ";
+        }
+
+        
+        Process process = Runtime.getRuntime().exec(osCommand + data);
+        process.waitFor();
+
+    }

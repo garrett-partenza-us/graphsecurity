@@ -1,0 +1,18 @@
+
+    private void goodB2G() throws Throwable {
+
+        data = Integer.MIN_VALUE; 
+
+        
+ {
+            String stringNumber = System.getProperty("user.home");
+            try {
+                data = Integer.parseInt(stringNumber.trim());
+            }
+            catch(NumberFormatException exceptNumberFormat) {
+                IO.logger.log(Level.WARNING, "Number format exception parsing data from string", exceptNumberFormat);
+            }
+        }
+
+        (new CWE129_Improper_Validation_of_Array_Index__Property_array_read_check_min_68b()).goodB2GSink();
+    }

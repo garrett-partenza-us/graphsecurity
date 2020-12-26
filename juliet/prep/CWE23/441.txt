@@ -1,0 +1,13 @@
+
+    public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+
+        
+        data = request.getParameter("name");
+
+        Vector<String> dataVector = new Vector<String>(5);
+        dataVector.add(0, data);
+        dataVector.add(1, data);
+        dataVector.add(2, data);
+        (new CWE23_Relative_Path_Traversal__getParameter_Servlet_72b()).badSink(dataVector , request, response );
+    }

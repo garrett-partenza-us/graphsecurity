@@ -1,0 +1,16 @@
+
+    public void bad() throws Throwable {
+        StringBuilder data;
+
+        
+
+        
+
+        data = new StringBuilder("Good");
+
+        for (int j = 0; j < 1; j++) {
+            
+            data = new StringBuilder("Reinitialize");
+            IO.writeLine(data.toString());
+        }
+    }

@@ -1,0 +1,21 @@
+
+    private void goodG2B1(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+        if (5!=5) {
+            
+            data = null;
+        }
+        else {
+
+            
+            data = "CWE690";
+
+        }
+
+        if (5==5) {
+            
+            if(data.equals("CWE690")) {
+                IO.writeLine("data is CWE690");
+            }
+        }
+    }

@@ -1,0 +1,10 @@
+
+    private String goodG2BSource() throws Throwable {
+        String password;
+
+        
+        
+        password = "Password1234!";
+
+        return password;
+    }

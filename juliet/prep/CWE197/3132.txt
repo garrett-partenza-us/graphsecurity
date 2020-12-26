@@ -1,0 +1,18 @@
+
+    public void bad() throws Throwable {
+        int dataCopy; {
+            int data;
+
+            
+            data = Short.MAX_VALUE + 5;
+
+            dataCopy = data;
+        } {
+            int data = dataCopy;
+ {
+                
+                IO.writeLine((byte)data);
+            }
+
+        }
+    }

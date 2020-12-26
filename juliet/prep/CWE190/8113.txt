@@ -1,0 +1,8 @@
+
+    public void bad() throws Throwable {
+
+        
+        data = Long.MAX_VALUE;
+
+        (new CWE190_Integer_Overflow__long_max_multiply_68b()).badSink();
+    }

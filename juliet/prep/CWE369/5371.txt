@@ -1,0 +1,9 @@
+
+    private void goodG2B(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int data;
+
+        
+        data = 2;
+
+        (new CWE369_Divide_by_Zero__int_getParameter_Servlet_modulo_51b()).goodG2BSink(data , request, response );
+    }

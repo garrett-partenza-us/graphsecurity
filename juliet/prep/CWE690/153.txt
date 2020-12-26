@@ -1,0 +1,8 @@
+
+    private void goodG2BSink(String data , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        if (goodG2BPrivate) {
+            
+            String stringTrimmed = data.trim();
+            IO.writeLine(stringTrimmed);
+        }
+    }

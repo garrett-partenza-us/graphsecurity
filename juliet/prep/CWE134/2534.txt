@@ -1,0 +1,20 @@
+
+    private void goodB2G2() throws Throwable {
+        String data;
+        if (IO.staticReturnsTrue()) {
+            
+            
+            data = System.getenv("ADD");
+        }
+        else {
+            
+            data = null;
+        }
+
+        if (IO.staticReturnsTrue()) {
+            if (data != null) {
+                
+                System.out.printf("%s%n", data);
+            }
+        }
+    }

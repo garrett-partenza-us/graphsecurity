@@ -1,0 +1,19 @@
+
+    private void goodG2B1() throws Throwable {
+        int [] data;
+        if (privateFive!=5) {
+            
+            data = null;
+        }
+        else {
+
+            
+            data = new int[5];
+
+        }
+
+        if (privateFive==5) {
+            
+            IO.writeLine("" + data.length);
+        }
+    }

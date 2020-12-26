@@ -1,0 +1,9 @@
+
+    private void goodB2G() throws Throwable {
+
+        
+        
+        data = System.getProperty("user.home");
+
+        (new CWE643_Xpath_Injection__Property_68b()).goodB2GSink();
+    }

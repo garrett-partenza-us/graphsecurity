@@ -1,0 +1,14 @@
+
+    public void bad() throws Throwable {
+        int data;
+
+        
+
+        data = 5;
+
+        if (privateReturnsTrue()) {
+            
+            
+            ; 
+        }
+    }

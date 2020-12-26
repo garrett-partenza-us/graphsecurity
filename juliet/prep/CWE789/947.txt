@@ -1,0 +1,11 @@
+
+    public void bad() throws Throwable {
+        int data;
+
+        
+        data = Integer.MAX_VALUE;
+
+        Container dataContainer = new Container();
+        dataContainer.containerOne = data;
+        (new CWE789_Uncontrolled_Mem_Alloc__max_value_HashMap_67b()).badSink(dataContainer  );
+    }

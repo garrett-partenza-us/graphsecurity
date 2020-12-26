@@ -1,0 +1,19 @@
+
+    private void goodG2B2() throws Throwable {
+        String data;
+        if (true) {
+            
+            data = "CWE690";
+        }
+        else {
+            
+            data = null;
+        }
+
+        if (true) {
+            
+            if(data.equals("CWE690")) {
+                IO.writeLine("data is CWE690");
+            }
+        }
+    }

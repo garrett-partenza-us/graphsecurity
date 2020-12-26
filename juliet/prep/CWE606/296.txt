@@ -1,0 +1,10 @@
+
+    public void bad() throws Throwable {
+        String data;
+
+        
+        
+        data = System.getProperty("user.home");
+
+        (new CWE606_Unchecked_Loop_Condition__Property_51b()).badSink(data  );
+    }

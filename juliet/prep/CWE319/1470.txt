@@ -1,0 +1,10 @@
+
+    private void goodG2B() throws Throwable {
+        String password;
+
+        
+        
+        password = "Password1234!";
+
+        (new CWE319_Cleartext_Tx_Sensitive_Info__connect_tcp_driverManager_71b()).goodG2BSink((Object)password  );
+    }

@@ -1,0 +1,9 @@
+
+    private void goodG2B() throws Throwable {
+        String data;
+
+        
+        data = "foo";
+
+        (new CWE89_SQL_Injection__database_execute_53b()).goodG2BSink(data );
+    }

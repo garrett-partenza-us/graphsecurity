@@ -1,0 +1,14 @@
+
+    public void bad() throws Throwable {
+        long data;
+
+        
+
+        data = 5L;
+
+        if (PRIVATE_STATIC_FINAL_TRUE) {
+            
+            
+            ; 
+        }
+    }

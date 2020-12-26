@@ -1,0 +1,21 @@
+
+    public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+
+        data = ""; 
+
+ {
+            StringTokenizer tokenizer = new StringTokenizer(request.getQueryString(), "&");
+            while (tokenizer.hasMoreTokens()) {
+                String token = tokenizer.nextToken(); 
+                if(token.startsWith("id=")) {
+                    data = token.substring(3); 
+                    break; 
+                }
+            }
+        }
+
+        Container dataContainer = new Container();
+        dataContainer.containerOne = data;
+        (new CWE89_SQL_Injection__getQueryString_Servlet_executeBatch_67b()).badSink(dataContainer , request, response );
+    }

@@ -1,0 +1,9 @@
+
+    private void badSink(String data ) throws Throwable {
+        if (badPrivate) {
+            if (data != null) {
+                
+                System.out.format(data);
+            }
+        }
+    }

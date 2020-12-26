@@ -1,0 +1,7 @@
+
+    public void bad() throws Throwable {
+
+        data = 0.0f; 
+
+        (new CWE369_Divide_by_Zero__float_zero_divide_68b()).badSink();
+    }

@@ -1,0 +1,4 @@
+
+    public void goodB2GSink(String data , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        (new CWE113_HTTP_Response_Splitting__listen_tcp_addHeaderServlet_52c()).goodB2GSink(data , request, response);
+    }

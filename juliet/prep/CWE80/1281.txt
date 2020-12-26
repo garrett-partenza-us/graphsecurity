@@ -1,0 +1,10 @@
+
+    public void badSink(HashMap<Integer,String> dataHashMap , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data = dataHashMap.get(2);
+
+        if (data != null) {
+            
+            response.getWriter().println("<br>bad(): data = " + data.replaceAll("(<script>)", ""));
+        }
+
+    }

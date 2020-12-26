@@ -1,0 +1,11 @@
+
+    private void goodB2G() throws Throwable {
+        int count;
+
+        
+        count = (new SecureRandom()).nextInt();
+
+        int[] countArray = new int[5];
+        countArray[2] = count;
+        (new CWE400_Resource_Exhaustion__sleep_random_66b()).goodB2GSink(countArray  );
+    }

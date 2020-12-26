@@ -1,0 +1,4 @@
+
+    public void badSink(int data , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        (new CWE129_Improper_Validation_of_Array_Index__getCookies_Servlet_array_read_check_min_54e()).badSink(data , request, response);
+    }

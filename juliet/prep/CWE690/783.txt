@@ -1,0 +1,19 @@
+
+    private void goodB2G() throws Throwable {
+        String data;
+
+        while (true) {
+            
+            data = System.getProperty("CWE690");
+            break;
+        }
+
+        while (true) {
+            
+            if (data != null) {
+                String stringTrimmed = data.trim();
+                IO.writeLine(stringTrimmed);
+            }
+            break;
+        }
+    }

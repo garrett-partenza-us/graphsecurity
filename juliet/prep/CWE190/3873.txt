@@ -1,0 +1,4 @@
+
+    public void goodG2BSink(int data , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        (new CWE190_Integer_Overflow__int_getQueryString_Servlet_multiply_54e()).goodG2BSink(data , request, response);
+    }

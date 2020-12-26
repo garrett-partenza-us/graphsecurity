@@ -1,0 +1,9 @@
+
+    private void goodG2B() throws Throwable {
+        String data;
+
+        
+        data = "foo";
+
+        (new CWE15_External_Control_of_System_or_Configuration_Setting__Environment_53b()).goodG2BSink(data );
+    }

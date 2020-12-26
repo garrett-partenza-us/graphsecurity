@@ -1,0 +1,15 @@
+
+    private String goodG2B2_source(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data = null;
+
+        if (goodG2B2_private) {
+            
+            data = "Testing.test";
+        }
+        else {
+            
+            data = null;
+        }
+
+        return data;
+    }

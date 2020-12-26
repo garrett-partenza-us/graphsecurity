@@ -1,0 +1,10 @@
+
+    private void goodB2G() throws Throwable {
+        float data;
+
+        data = 0.0f; 
+
+        Container dataContainer = new Container();
+        dataContainer.containerOne = data;
+        (new CWE369_Divide_by_Zero__float_zero_modulo_67b()).goodB2GSink(dataContainer  );
+    }

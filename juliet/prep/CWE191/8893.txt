@@ -1,0 +1,11 @@
+
+    private void goodG2BSink() throws Throwable {
+        long data = dataGoodG2B;
+
+        if(data < 0) {
+            
+            long result = (long)(data * 2);
+            IO.writeLine("result: " + result);
+        }
+
+    }

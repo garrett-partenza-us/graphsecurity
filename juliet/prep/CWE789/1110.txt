@@ -1,0 +1,14 @@
+
+    public int badSource() throws Throwable {
+        int data;
+
+        if (CWE789_Uncontrolled_Mem_Alloc__max_value_HashMap_22a.badPublicStatic) {
+            
+            data = Integer.MAX_VALUE;
+        }
+        else {
+            
+            data = 0;
+        }
+        return data;
+    }

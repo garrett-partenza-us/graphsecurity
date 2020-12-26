@@ -1,0 +1,10 @@
+
+    public void goodG2BSink(String password ) throws Throwable {
+
+        if (password != null) {
+            
+            PasswordAuthentication credentials = new PasswordAuthentication("user", password.toCharArray());
+            IO.writeLine(credentials.toString());
+        }
+
+    }

@@ -1,0 +1,4 @@
+
+    public void badSink(String data , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        (new CWE83_XSS_Attribute__Servlet_PropertiesFile_54e()).badSink(data , request, response);
+    }

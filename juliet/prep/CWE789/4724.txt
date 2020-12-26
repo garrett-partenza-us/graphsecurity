@@ -1,0 +1,11 @@
+
+    public void bad() throws Throwable {
+        int data;
+
+        badPrivate = true;
+        data = bad_source();
+
+        
+        HashMap intHashMap = new HashMap(data);
+
+    }

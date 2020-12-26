@@ -1,0 +1,26 @@
+
+    public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+        if (IO.staticReturnsTrueOrFalse()) {
+            data = ""; 
+ {
+                Cookie cookieSources[] = request.getCookies();
+                if (cookieSources != null) {
+                    
+                    data = cookieSources[0].getValue();
+                }
+            }
+        }
+        else {
+
+            
+            data = "foo";
+
+        }
+
+        if (data != null) {
+            
+            response.getWriter().println("<br>bad(): data = " + data.replaceAll("(<script>)", ""));
+        }
+
+    }

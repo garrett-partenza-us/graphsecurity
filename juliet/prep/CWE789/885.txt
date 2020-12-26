@@ -1,0 +1,7 @@
+
+    public void badSink(int data , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+
+        
+        HashMap intHashMap = new HashMap(data);
+
+    }

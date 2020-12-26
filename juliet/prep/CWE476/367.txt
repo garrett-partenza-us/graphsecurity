@@ -1,0 +1,17 @@
+
+    public void bad() throws Throwable {
+        String data;
+        if (PRIVATE_STATIC_FINAL_TRUE) {
+            
+            data = null;
+        }
+        else {
+            
+            data = null;
+        }
+
+        if (PRIVATE_STATIC_FINAL_TRUE) {
+            
+            IO.writeLine("" + data.length());
+        }
+    }

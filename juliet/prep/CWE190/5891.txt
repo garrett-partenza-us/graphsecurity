@@ -1,0 +1,10 @@
+
+    public void bad() throws Throwable {
+        int data;
+
+        
+        data = Integer.MAX_VALUE;
+
+        CWE190_Integer_Overflow__int_max_multiply_81_base baseObject = new CWE190_Integer_Overflow__int_max_multiply_81_bad();
+        baseObject.action(data );
+    }

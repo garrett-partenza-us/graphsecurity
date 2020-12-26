@@ -1,0 +1,26 @@
+
+    public void bad() throws Throwable {
+        String data;
+
+        switch (6) {
+        case 6:
+            
+            data = null;
+            break;
+        default:
+            
+            data = null;
+            break;
+        }
+
+        switch (7) {
+        case 7:
+            
+            IO.writeLine("" + data.length());
+            break;
+        default:
+            
+            IO.writeLine("Benign, fixed string");
+            break;
+        }
+    }

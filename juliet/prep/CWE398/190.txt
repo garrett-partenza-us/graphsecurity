@@ -1,0 +1,8 @@
+
+    public void bad() throws Throwable {
+        if (PRIVATE_STATIC_FINAL_FIVE == 5) {
+ {
+            }
+            IO.writeLine("Hello from bad()");
+        }
+    }

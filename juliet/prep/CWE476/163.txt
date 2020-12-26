@@ -1,0 +1,9 @@
+
+    public void bad() throws Throwable {
+        Integer data;
+
+        
+        data = null;
+
+        badSink(data  );
+    }

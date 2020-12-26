@@ -1,0 +1,20 @@
+
+    private void goodB2G() throws Throwable {
+        StringBuilder data;
+
+        
+
+        data = new StringBuilder("Good");
+
+        if (IO.staticReturnsTrueOrFalse()) {
+            
+            IO.writeLine(data.toString());
+        }
+        else {
+
+            
+
+            IO.writeLine(data.toString());
+
+        }
+    }

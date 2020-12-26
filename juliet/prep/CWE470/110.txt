@@ -1,0 +1,9 @@
+
+    private String goodG2BSource(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+
+        
+        data = "Testing.test";
+
+        return data;
+    }

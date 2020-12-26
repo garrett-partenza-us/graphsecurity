@@ -1,0 +1,13 @@
+
+    public void badSink(int dataArray[] , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int data = dataArray[2];
+
+        
+        int array[] = { 0, 1, 2, 3, 4 };
+
+        
+        array[data] = 42;
+
+        
+
+    }

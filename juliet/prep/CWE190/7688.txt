@@ -1,0 +1,4 @@
+
+    public void goodB2GSink(int data , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        (new CWE190_Integer_Overflow__int_getQueryString_Servlet_square_53c()).goodB2GSink(data , request, response);
+    }

@@ -1,0 +1,7 @@
+
+    private void goodG2BSink(Integer data ) throws Throwable {
+        if (goodG2BPrivate) {
+            
+            IO.writeLine("" + data.toString());
+        }
+    }

@@ -1,0 +1,10 @@
+
+    public void bad() throws Throwable {
+        int count;
+
+        
+        count = Integer.MAX_VALUE;
+
+        countBad = count;
+        badSink();
+    }

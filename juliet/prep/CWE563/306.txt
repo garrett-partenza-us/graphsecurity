@@ -1,0 +1,18 @@
+
+    public void bad() throws Throwable {
+        long data;
+        if (privateFive==5) {
+            
+            data = 5L;
+        }
+        else {
+            
+            data = 0L;
+        }
+
+        if (privateFive==5) {
+            
+            data = 10L;
+            IO.writeLine("" + data);
+        }
+    }

@@ -1,0 +1,12 @@
+
+    public void badSink(String data ) throws Throwable {
+        if (CWE690_NULL_Deref_From_Return__Class_String_22a.badPublicStatic) {
+            
+            String stringTrimmed = data.trim();
+            IO.writeLine(stringTrimmed);
+        }
+        else {
+            
+            data = null;
+        }
+    }

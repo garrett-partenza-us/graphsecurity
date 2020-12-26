@@ -1,0 +1,9 @@
+
+    public void goodG2BSink(CWE197_Numeric_Truncation_Error__short_File_67a.Container dataContainer ) throws Throwable {
+        short data = dataContainer.containerOne;
+ {
+            
+            IO.writeLine((byte)data);
+        }
+
+    }

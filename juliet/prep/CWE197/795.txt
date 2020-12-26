@@ -1,0 +1,15 @@
+
+    private short bad_source() throws Throwable {
+        short data;
+
+        if (badPrivate) {
+            
+            data = (short)((new SecureRandom()).nextInt(Short.MAX_VALUE + 1));
+        }
+        else {
+            
+            data = 0;
+        }
+
+        return data;
+    }

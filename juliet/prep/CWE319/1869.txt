@@ -1,0 +1,22 @@
+
+    private void goodG2B2() throws Throwable {
+        String password;
+        if (5==5) {
+            
+            
+            password = "Password1234!";
+        }
+        else {
+            
+            password = null;
+        }
+
+        if (5==5) {
+            if (password != null) {
+                KerberosPrincipal principal = new KerberosPrincipal("test");
+                
+                KerberosKey key = new KerberosKey(principal, password.toCharArray(), null);
+                IO.writeLine(key.toString());
+            }
+        }
+    }

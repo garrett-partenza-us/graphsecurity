@@ -1,0 +1,11 @@
+
+    public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+
+        
+        data = request.getParameter("name");
+
+        String[] dataArray = new String[5];
+        dataArray[2] = data;
+        (new CWE15_External_Control_of_System_or_Configuration_Setting__getParameter_Servlet_66b()).badSink(dataArray , request, response );
+    }

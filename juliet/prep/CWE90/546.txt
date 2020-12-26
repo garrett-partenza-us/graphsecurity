@@ -1,0 +1,38 @@
+
+    private String bad_source() throws Throwable {
+        String data;
+
+        if (badPrivate) {
+            data = ""; 
+ {
+                Properties properties = new Properties();
+                FileInputStream streamFileInput = null;
+                try {
+                    streamFileInput = new FileInputStream("../common/config.properties");
+                    properties.load(streamFileInput);
+                    
+                    data = properties.getProperty("data");
+                }
+                catch (IOException exceptIO) {
+                    IO.logger.log(Level.WARNING, "Error with stream reading", exceptIO);
+                }
+                finally {
+                    
+                    try {
+                        if (streamFileInput != null) {
+                            streamFileInput.close();
+                        }
+                    }
+                    catch (IOException exceptIO) {
+                        IO.logger.log(Level.WARNING, "Error closing FileInputStream", exceptIO);
+                    }
+                }
+            }
+        }
+        else {
+            
+            data = null;
+        }
+
+        return data;
+    }

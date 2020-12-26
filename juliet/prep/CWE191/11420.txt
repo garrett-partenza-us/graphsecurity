@@ -1,0 +1,4 @@
+
+    public void badSink(int data , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        (new CWE191_Integer_Underflow__int_getParameter_Servlet_postdec_54e()).badSink(data , request, response);
+    }

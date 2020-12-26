@@ -1,0 +1,4 @@
+
+    public void badSink(String data , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        (new CWE470_Unsafe_Reflection__getParameter_Servlet_53d()).badSink(data , request, response);
+    }

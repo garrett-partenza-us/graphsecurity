@@ -1,0 +1,4 @@
+
+    public void badSink(String data , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        (new CWE601_Open_Redirect__Servlet_PropertiesFile_53c()).badSink(data , request, response);
+    }

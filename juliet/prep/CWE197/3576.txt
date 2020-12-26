@@ -1,0 +1,12 @@
+
+    public void bad() throws Throwable {
+        int data;
+
+        badPublicStatic = true;
+        data = (new CWE197_Numeric_Truncation_Error__int_listen_tcp_to_byte_22b()).badSource();
+ {
+            
+            IO.writeLine((byte)data);
+        }
+
+    }

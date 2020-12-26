@@ -1,0 +1,47 @@
+
+    public void bad() throws Throwable {
+        float data;
+
+        while (true) {
+            data = -1.0f; 
+            
+            Properties properties = new Properties();
+            FileInputStream streamFileInput = null;
+            try {
+                streamFileInput = new FileInputStream("../common/config.properties");
+                properties.load(streamFileInput);
+                
+                String stringNumber = properties.getProperty("data");
+                if (stringNumber != null) {
+                    try {
+                        data = Float.parseFloat(stringNumber.trim());
+                    }
+                    catch (NumberFormatException exceptNumberFormat) {
+                        IO.logger.log(Level.WARNING, "Number format exception parsing data from string", exceptNumberFormat);
+                    }
+                }
+            }
+            catch (IOException exceptIO) {
+                IO.logger.log(Level.WARNING, "Error with stream reading", exceptIO);
+            }
+            finally {
+                
+                try {
+                    if (streamFileInput != null) {
+                        streamFileInput.close();
+                    }
+                }
+                catch (IOException exceptIO) {
+                    IO.logger.log(Level.WARNING, "Error closing FileInputStream", exceptIO);
+                }
+            }
+            break;
+        }
+
+        while (true) {
+            
+            int result = (int)(100.0 % data);
+            IO.writeLine(result);
+            break;
+        }
+    }

@@ -1,0 +1,26 @@
+
+    public void bad() throws Throwable {
+        int count;
+
+        switch (6) {
+        case 6:
+            
+            count = Integer.MAX_VALUE;
+            break;
+        default:
+            
+            count = 0;
+            break;
+        }
+
+        switch (7) {
+        case 7:
+            
+            Thread.sleep(count);
+            break;
+        default:
+            
+            IO.writeLine("Benign, fixed string");
+            break;
+        }
+    }

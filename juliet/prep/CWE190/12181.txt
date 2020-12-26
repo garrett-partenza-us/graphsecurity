@@ -1,0 +1,9 @@
+
+    public byte badSource() throws Throwable {
+        byte data;
+
+        
+        data = Byte.MAX_VALUE;
+
+        return data;
+    }

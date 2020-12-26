@@ -1,0 +1,19 @@
+
+    private void goodG2B(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int dataCopy; {
+            int data;
+
+            
+            data = 2;
+
+            dataCopy = data;
+        } {
+            int data = dataCopy;
+
+            
+            int result = (int)(data * data);
+
+            IO.writeLine("result: " + result);
+
+        }
+    }

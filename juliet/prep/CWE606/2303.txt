@@ -1,0 +1,11 @@
+
+    private void goodG2B() throws Throwable {
+        String data;
+
+        
+        data = "5";
+
+        Container dataContainer = new Container();
+        dataContainer.containerOne = data;
+        (new CWE606_Unchecked_Loop_Condition__PropertiesFile_67b()).goodG2BSink(dataContainer  );
+    }

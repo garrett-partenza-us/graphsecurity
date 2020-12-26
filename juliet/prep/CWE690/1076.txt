@@ -1,0 +1,29 @@
+
+    public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+        if(IO.staticReturnsTrueOrFalse()) {
+            
+            data = request.getParameter("CWE690");
+        }
+        else {
+
+            
+            data = "CWE690";
+
+        }
+
+        if(IO.staticReturnsTrueOrFalse()) {
+            
+            String stringTrimmed = data.trim();
+            IO.writeLine(stringTrimmed);
+        }
+        else {
+
+            
+            if (data != null) {
+                String stringTrimmed = data.trim();
+                IO.writeLine(stringTrimmed);
+            }
+
+        }
+    }

@@ -1,0 +1,11 @@
+
+    private void goodB2GSink() throws Throwable {
+        String data = dataGoodB2G;
+
+        
+        if (data != null) {
+            String stringTrimmed = data.trim();
+            IO.writeLine(stringTrimmed);
+        }
+
+    }

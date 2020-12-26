@@ -1,0 +1,10 @@
+
+    private void goodB2G1() throws Throwable {
+        short data;
+
+        
+        data = Short.MAX_VALUE;
+
+        goodB2G1Private = false;
+        goodB2G1Sink(data );
+    }

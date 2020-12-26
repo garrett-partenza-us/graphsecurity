@@ -1,0 +1,9 @@
+
+    public short goodB2GSource() throws Throwable {
+        short data;
+
+        
+        data = Short.MIN_VALUE;
+
+        return data;
+    }

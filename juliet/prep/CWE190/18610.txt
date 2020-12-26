@@ -1,0 +1,19 @@
+
+    public void bad() throws Throwable {
+        byte data;
+        if (PRIVATE_STATIC_FINAL_FIVE==5) {
+            
+            data = (byte)((new java.security.SecureRandom()).nextInt(1+Byte.MAX_VALUE-Byte.MIN_VALUE) + Byte.MIN_VALUE);
+        }
+        else {
+            
+            data = 0;
+        }
+
+        if (PRIVATE_STATIC_FINAL_FIVE==5) {
+            
+            data++;
+            byte result = (byte)(data);
+            IO.writeLine("result: " + result);
+        }
+    }

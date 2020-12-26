@@ -1,0 +1,8 @@
+
+    private void goodB2G() throws Throwable {
+
+        
+        data = System.getProperty("CWE690");
+
+        (new CWE690_NULL_Deref_From_Return__System_getProperty_equals_68b()).goodB2GSink();
+    }

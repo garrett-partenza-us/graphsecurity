@@ -1,0 +1,4 @@
+
+    public void badSink(String data ) throws Throwable {
+        (new CWE78_OS_Command_Injection__URLConnection_53c()).badSink(data );
+    }

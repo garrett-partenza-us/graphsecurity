@@ -1,0 +1,16 @@
+
+    public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+
+        while (true) {
+            
+            data = request.getParameter("name");
+            break;
+        }
+
+        if (data != null) {
+            
+            response.getWriter().println("<br>bad(): data = " + data.replaceAll("(<script>)", ""));
+        }
+
+    }

@@ -1,0 +1,8 @@
+
+    public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+
+        
+        data = request.getParameter("name");
+
+        (new CWE470_Unsafe_Reflection__getParameter_Servlet_68b()).badSink(request, response);
+    }

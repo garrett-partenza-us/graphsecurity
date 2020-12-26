@@ -1,0 +1,8 @@
+
+    public void goodG2BSink(Vector<Integer> countVector ) throws Throwable {
+        int count = countVector.remove(2);
+
+        
+        Thread.sleep(count);
+
+    }

@@ -1,0 +1,11 @@
+
+    public void bad() throws Throwable {
+        int data;
+
+        
+        data = (new SecureRandom()).nextInt();
+
+        int[] dataArray = new int[5];
+        dataArray[2] = data;
+        (new CWE191_Integer_Underflow__int_random_predec_66b()).badSink(dataArray  );
+    }

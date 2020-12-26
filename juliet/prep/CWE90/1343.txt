@@ -1,0 +1,4 @@
+
+    public void badSink(String data ) throws Throwable {
+        (new CWE90_LDAP_Injection__File_52c()).badSink(data );
+    }

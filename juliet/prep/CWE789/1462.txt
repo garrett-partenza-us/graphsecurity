@@ -1,0 +1,20 @@
+
+    private void good2() throws Throwable {
+        if (IO.staticReturnsTrue()) {
+            ArrayList<byte[]> byteArrayList = new ArrayList<byte[]>();
+            
+            if(true) {
+                while(true) {
+                    
+                    if (Runtime.getRuntime().freeMemory() < 10485760) {
+                        IO.writeLine("Not enough memory to go again");
+                        break;
+                    }
+                    
+                    byte[] byteArray = new byte[10485760];
+                    byteArrayList.add(byteArray);
+                    IO.writeLine("" + Runtime.getRuntime().freeMemory());
+                }
+            }
+        }
+    }

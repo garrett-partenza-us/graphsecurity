@@ -1,0 +1,10 @@
+
+    public void bad() throws Throwable {
+        int count = 0;
+
+        
+        count = (new SecureRandom()).nextInt();
+
+        badPublicStatic = true;
+        (new CWE400_Resource_Exhaustion__random_write_22b()).badSink(count );
+    }

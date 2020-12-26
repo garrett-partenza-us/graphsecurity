@@ -1,0 +1,10 @@
+
+    private void goodB2G() throws Throwable {
+        float data;
+
+        
+        SecureRandom secureRandom = new SecureRandom();
+        data = secureRandom.nextFloat();
+
+        goodB2GSink(data  );
+    }

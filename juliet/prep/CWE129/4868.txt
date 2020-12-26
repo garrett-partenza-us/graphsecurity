@@ -1,0 +1,47 @@
+
+    public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int data;
+
+        switch (6) {
+        case 6:
+            data = Integer.MIN_VALUE; 
+ {
+                Cookie cookieSources[] = request.getCookies();
+                if (cookieSources != null) {
+                    
+                    String stringNumber = cookieSources[0].getValue();
+                    try {
+                        data = Integer.parseInt(stringNumber.trim());
+                    }
+                    catch(NumberFormatException exceptNumberFormat) {
+                        IO.logger.log(Level.WARNING, "Number format exception reading data from cookie", exceptNumberFormat);
+                    }
+                }
+            }
+            break;
+        default:
+            
+            data = 0;
+            break;
+        }
+
+        switch (7) {
+        case 7:
+            int array[] = null;
+            
+            if (data >= 0) {
+                array = new int[data];
+            }
+            else {
+                IO.writeLine("Array size is negative");
+            }
+            
+            array[0] = 5;
+            IO.writeLine(array[0]);
+            break;
+        default:
+            
+            IO.writeLine("Benign, fixed string");
+            break;
+        }
+    }

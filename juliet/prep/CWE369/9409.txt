@@ -1,0 +1,4 @@
+
+    public void badSink(float data ) throws Throwable {
+        (new CWE369_Divide_by_Zero__float_PropertiesFile_divide_54d()).badSink(data );
+    }

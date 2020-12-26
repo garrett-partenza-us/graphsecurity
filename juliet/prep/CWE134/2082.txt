@@ -1,0 +1,10 @@
+
+    public void bad() throws Throwable {
+        String data;
+
+        
+        
+        data = System.getenv("ADD");
+
+        (new CWE134_Uncontrolled_Format_String__Environment_format_53b()).badSink(data );
+    }

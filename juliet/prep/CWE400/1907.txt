@@ -1,0 +1,25 @@
+
+    private void goodG2B() throws Throwable {
+        int count;
+        if(IO.staticReturnsTrueOrFalse()) {
+            
+            count = 2;
+        }
+        else {
+
+            
+            count = 2;
+
+        }
+
+        if(IO.staticReturnsTrueOrFalse()) {
+            
+            Thread.sleep(count);
+        }
+        else {
+
+            
+            Thread.sleep(count);
+
+        }
+    }

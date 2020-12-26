@@ -1,0 +1,14 @@
+
+    public void goodB2GSink(Object dataObject ) throws Throwable {
+        long data = (Long)dataObject;
+
+        
+        if (data < Long.MAX_VALUE) {
+            long result = (long)(++data);
+            IO.writeLine("result: " + result);
+        }
+        else {
+            IO.writeLine("data value is too large to increment.");
+        }
+
+    }

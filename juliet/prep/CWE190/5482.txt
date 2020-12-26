@@ -1,0 +1,11 @@
+
+    public void badSink() throws Throwable {
+        int data = CWE190_Integer_Overflow__int_random_multiply_68a.data;
+
+        if(data > 0) {
+            
+            int result = (int)(data * 2);
+            IO.writeLine("result: " + result);
+        }
+
+    }

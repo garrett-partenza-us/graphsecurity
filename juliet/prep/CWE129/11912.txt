@@ -1,0 +1,13 @@
+
+    public void badSink(CWE129_Improper_Validation_of_Array_Index__negative_fixed_array_write_no_check_67a.Container dataContainer ) throws Throwable {
+        int data = dataContainer.containerOne;
+
+        
+        int array[] = { 0, 1, 2, 3, 4 };
+
+        
+        array[data] = 42;
+
+        
+
+    }

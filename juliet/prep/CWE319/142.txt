@@ -1,0 +1,11 @@
+
+    private void goodG2BSink(String password ) throws Throwable {
+        if (goodG2BPrivate) {
+            if (password != null) {
+                KerberosPrincipal principal = new KerberosPrincipal("test");
+                
+                KerberosKey key = new KerberosKey(principal, password.toCharArray(), null);
+                IO.writeLine(key.toString());
+            }
+        }
+    }

@@ -1,0 +1,11 @@
+
+    public void goodB2GSink() throws Throwable {
+        StringBuilder data = CWE690_NULL_Deref_From_Return__Class_StringBuilder_68a.data;
+
+        
+        if (data != null) {
+            String stringTrimmed = data.toString().trim();
+            IO.writeLine(stringTrimmed);
+        }
+
+    }

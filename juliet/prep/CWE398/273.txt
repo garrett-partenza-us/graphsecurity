@@ -1,0 +1,17 @@
+
+    private void good1() throws Throwable {
+        switch (8) {
+        case 7:
+            
+            IO.writeLine("Benign, fixed string");
+            break;
+        default:
+            int i = 0;
+            
+            while(i++ < 10) {
+                IO.writeLine("Inside the while statement");
+            }
+            IO.writeLine("Hello from good()");
+            break;
+        }
+    }

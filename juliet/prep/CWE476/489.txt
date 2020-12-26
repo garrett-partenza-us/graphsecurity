@@ -1,0 +1,11 @@
+
+    public void bad() throws Throwable {
+        int [] data;
+
+        
+        data = null;
+
+        
+        IO.writeLine("" + data.length);
+
+    }

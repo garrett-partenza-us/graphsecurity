@@ -1,0 +1,17 @@
+
+    private void goodB2G() throws Throwable {
+        short data;
+
+        
+        data = Short.MAX_VALUE;
+
+        
+        if (data < Short.MAX_VALUE) {
+            short result = (short)(++data);
+            IO.writeLine("result: " + result);
+        }
+        else {
+            IO.writeLine("data value is too large to increment.");
+        }
+
+    }

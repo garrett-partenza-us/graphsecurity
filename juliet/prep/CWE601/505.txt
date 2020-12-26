@@ -1,0 +1,34 @@
+
+    public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+        if (IO.staticTrue) {
+            data = ""; 
+ {
+                Cookie cookieSources[] = request.getCookies();
+                if (cookieSources != null) {
+                    
+                    data = cookieSources[0].getValue();
+                }
+            }
+        }
+        else {
+            
+            data = null;
+        }
+
+        if (data != null) {
+            
+            URI uri;
+            try {
+                uri = new URI(data);
+            }
+            catch (URISyntaxException exceptURISyntax) {
+                response.getWriter().write("Invalid redirect URL");
+                return;
+            }
+            
+            response.sendRedirect(data);
+            return;
+        }
+
+    }

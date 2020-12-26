@@ -1,0 +1,11 @@
+
+    private void goodG2B(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+
+        
+        data = "foo";
+
+        String[] dataArray = new String[5];
+        dataArray[2] = data;
+        (new CWE89_SQL_Injection__getParameter_Servlet_executeUpdate_66b()).goodG2BSink(dataArray , request, response );
+    }

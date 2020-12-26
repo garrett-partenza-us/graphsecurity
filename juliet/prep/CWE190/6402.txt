@@ -1,0 +1,17 @@
+
+    public void goodB2G2Sink(int data ) throws Throwable {
+        if (CWE190_Integer_Overflow__int_random_add_22a.goodB2G2PublicStatic) {
+            
+            if (data < Integer.MAX_VALUE) {
+                int result = (int)(data + 1);
+                IO.writeLine("result: " + result);
+            }
+            else {
+                IO.writeLine("data value is too large to perform addition.");
+            }
+        }
+        else {
+            
+            data = 0;
+        }
+    }

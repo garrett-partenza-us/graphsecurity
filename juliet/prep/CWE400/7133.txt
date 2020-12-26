@@ -1,0 +1,41 @@
+
+    private void goodB2G1(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int count;
+        if (IO.STATIC_FINAL_FIVE==5) {
+            count = Integer.MIN_VALUE; 
+ {
+                Cookie cookieSources[] = request.getCookies();
+                if (cookieSources != null) {
+                    
+                    String stringNumber = cookieSources[0].getValue();
+                    try {
+                        count = Integer.parseInt(stringNumber.trim());
+                    }
+                    catch(NumberFormatException exceptNumberFormat) {
+                        IO.logger.log(Level.WARNING, "Number format exception reading count from cookie", exceptNumberFormat);
+                    }
+                }
+            }
+        }
+        else {
+            
+            count = 0;
+        }
+
+        if (IO.STATIC_FINAL_FIVE!=5) {
+            
+            IO.writeLine("Benign, fixed string");
+        }
+        else {
+
+            int i = 0;
+
+            
+            if (count > 0 && count <= 20) {
+                for (i = 0; i < count; i++) {
+                    IO.writeLine("Hello");
+                }
+            }
+
+        }
+    }

@@ -1,0 +1,7 @@
+
+    private void badSink(int data ) throws Throwable {
+        if (badPrivate) {
+            
+            IO.writeLine("100%" + data + " = " + (100 % data) + "\n");
+        }
+    }

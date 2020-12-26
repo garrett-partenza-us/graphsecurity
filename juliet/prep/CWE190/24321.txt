@@ -1,0 +1,9 @@
+
+    public void bad() throws Throwable {
+        byte data;
+
+        
+        data = Byte.MAX_VALUE;
+
+        (new CWE190_Integer_Overflow__byte_max_preinc_51b()).badSink(data  );
+    }

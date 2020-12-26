@@ -1,0 +1,17 @@
+
+    public void bad() throws Throwable {
+        String data;
+
+        
+
+        
+        
+        data = System.getenv("ADD");
+
+        for (int j = 0; j < 1; j++) {
+            if (data != null) {
+                
+                System.out.printf(data);
+            }
+        }
+    }

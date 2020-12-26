@@ -1,0 +1,19 @@
+
+    public void goodB2G1Sink(byte data ) throws Throwable {
+        if (CWE191_Integer_Underflow__byte_min_predec_22a.goodB2G1PublicStatic) {
+            
+            data = 0;
+        }
+        else {
+
+            
+            if (data > Byte.MIN_VALUE) {
+                byte result = (byte)(--data);
+                IO.writeLine("result: " + result);
+            }
+            else {
+                IO.writeLine("data value is too small to decrement.");
+            }
+
+        }
+    }

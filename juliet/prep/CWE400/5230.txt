@@ -1,0 +1,9 @@
+
+    private void goodG2B(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int count;
+
+        
+        count = 2;
+
+        (new CWE400_Resource_Exhaustion__getParameter_Servlet_write_51b()).goodG2BSink(count , request, response );
+    }

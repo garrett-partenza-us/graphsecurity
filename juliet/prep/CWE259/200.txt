@@ -1,0 +1,30 @@
+
+    private String goodG2B1_source() throws Throwable {
+        String data = null;
+
+        if (goodG2B1_private) {
+            
+            data = null;
+        }
+        else {
+
+            data = ""; 
+
+            
+            try {
+                InputStreamReader readerInputStream = new InputStreamReader(System.in, "UTF-8");
+                BufferedReader readerBuffered = new BufferedReader(readerInputStream);
+
+                
+                data = readerBuffered.readLine();
+            }
+            catch (IOException exceptIO) {
+                IO.logger.log(Level.WARNING, "Error with stream reading", exceptIO);
+            }
+
+            
+
+        }
+
+        return data;
+    }

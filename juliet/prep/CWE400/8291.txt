@@ -1,0 +1,70 @@
+
+    public void bad() throws Throwable {
+        int count;
+
+        count = Integer.MIN_VALUE; 
+
+ {
+            Connection connection = null;
+            PreparedStatement preparedStatement = null;
+            ResultSet resultSet = null;
+
+            try {
+                
+                connection = IO.getDBConnection();
+
+                
+                preparedStatement = connection.prepareStatement("select name from users where id=0");
+                resultSet = preparedStatement.executeQuery();
+
+                
+                String stringNumber = resultSet.getString(1);
+                if (stringNumber != null) {
+                    try {
+                        count = Integer.parseInt(stringNumber.trim());
+                    }
+                    catch (NumberFormatException exceptNumberFormat) {
+                        IO.logger.log(Level.WARNING, "Number format exception parsing count from string", exceptNumberFormat);
+                    }
+                }
+            }
+            catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, "Error with SQL statement", exceptSql);
+            }
+            finally {
+                
+                try {
+                    if (resultSet != null) {
+                        resultSet.close();
+                    }
+                }
+                catch (SQLException exceptSql) {
+                    IO.logger.log(Level.WARNING, "Error closing ResultSet", exceptSql);
+                }
+
+                try {
+                    if (preparedStatement != null) {
+                        preparedStatement.close();
+                    }
+                }
+                catch (SQLException exceptSql) {
+                    IO.logger.log(Level.WARNING, "Error closing PreparedStatement", exceptSql);
+                }
+
+                try {
+                    if (connection != null) {
+                        connection.close();
+                    }
+                }
+                catch (SQLException exceptSql) {
+                    IO.logger.log(Level.WARNING, "Error closing Connection", exceptSql);
+                }
+            }
+        }
+
+        HashMap<Integer,Integer> countHashMap = new HashMap<Integer,Integer>();
+        countHashMap.put(0, count);
+        countHashMap.put(1, count);
+        countHashMap.put(2, count);
+        (new CWE400_Resource_Exhaustion__database_for_loop_74b()).badSink(countHashMap  );
+    }

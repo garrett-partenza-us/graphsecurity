@@ -1,0 +1,16 @@
+
+    private void good2() throws Throwable {
+        switch (7) {
+        case 7:
+            int intOne = 1, intFive = 5;
+            IO.writeLine(intOne);
+            
+            intOne = intFive;
+            IO.writeLine(intOne);
+            break;
+        default:
+            
+            IO.writeLine("Benign, fixed string");
+            break;
+        }
+    }

@@ -1,0 +1,17 @@
+
+    public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+
+        
+
+        
+        
+        data = System.getProperty("user.home");
+
+        for (int j = 0; j < 1; j++) {
+            
+            if (data != null) {
+                response.addHeader("Location", "/author.jsp?lang=" + data);
+            }
+        }
+    }

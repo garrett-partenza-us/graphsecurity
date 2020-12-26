@@ -1,0 +1,11 @@
+
+    public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int data;
+
+        badPublicStatic = true;
+        data = (new CWE789_Uncontrolled_Mem_Alloc__getParameter_Servlet_HashSet_22b()).badSource(request, response);
+
+        
+        HashSet intHashSet = new HashSet(data);
+
+    }

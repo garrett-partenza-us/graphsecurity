@@ -1,0 +1,45 @@
+
+    private void goodB2G1(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int data;
+
+        switch (6) {
+        case 6:
+            data = Integer.MIN_VALUE; 
+ {
+                Cookie cookieSources[] = request.getCookies();
+                if (cookieSources != null) {
+                    
+                    String stringNumber = cookieSources[0].getValue();
+                    try {
+                        data = Integer.parseInt(stringNumber.trim());
+                    }
+                    catch(NumberFormatException exceptNumberFormat) {
+                        IO.logger.log(Level.WARNING, "Number format exception reading data from cookie", exceptNumberFormat);
+                    }
+                }
+            }
+            break;
+        default:
+            
+            data = 0;
+            break;
+        }
+
+        switch (8) {
+        case 7:
+            
+            IO.writeLine("Benign, fixed string");
+            break;
+        default:
+            
+            int array[] = { 0, 1, 2, 3, 4 };
+            
+            if (data >= 0 && data < array.length) {
+                array[data] = 42;
+            }
+            else {
+                IO.writeLine("Array index out of bounds");
+            }
+            break;
+        }
+    }

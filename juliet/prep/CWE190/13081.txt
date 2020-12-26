@@ -1,0 +1,10 @@
+
+    public void badSink(Object dataObject ) throws Throwable {
+        byte data = (Byte)dataObject;
+
+        
+        byte result = (byte)(data * data);
+
+        IO.writeLine("result: " + result);
+
+    }

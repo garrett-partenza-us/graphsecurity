@@ -1,0 +1,30 @@
+
+    private void goodG2B2() throws Throwable {
+        String password;
+
+        switch (6) {
+        case 6:
+            
+            
+            password = "Password1234!";
+            break;
+        default:
+            
+            password = null;
+            break;
+        }
+
+        switch (7) {
+        case 7:
+            if (password != null) {
+                
+                PasswordAuthentication credentials = new PasswordAuthentication("user", password.toCharArray());
+                IO.writeLine(credentials.toString());
+            }
+            break;
+        default:
+            
+            IO.writeLine("Benign, fixed string");
+            break;
+        }
+    }

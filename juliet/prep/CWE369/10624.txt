@@ -1,0 +1,21 @@
+
+    private float badSource() throws Throwable {
+        float data;
+
+        data = -1.0f; 
+
+        
+ {
+            String stringNumber = System.getenv("ADD");
+            if (stringNumber != null) {
+                try {
+                    data = Float.parseFloat(stringNumber.trim());
+                }
+                catch (NumberFormatException exceptNumberFormat) {
+                    IO.logger.log(Level.WARNING, "Number format exception parsing data from string", exceptNumberFormat);
+                }
+            }
+        }
+
+        return data;
+    }

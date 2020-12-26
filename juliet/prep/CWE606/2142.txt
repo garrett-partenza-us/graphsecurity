@@ -1,0 +1,9 @@
+
+    public String goodG2BSource() throws Throwable {
+        String data;
+
+        
+        data = "5";
+
+        return data;
+    }

@@ -1,0 +1,9 @@
+
+    private void goodB2G() throws Throwable {
+
+        
+        
+        data = System.getenv("ADD");
+
+        (new CWE643_Xpath_Injection__Environment_68b()).goodB2GSink();
+    }

@@ -1,0 +1,26 @@
+
+    public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String dataCopy; {
+            String data;
+
+            data = ""; 
+
+ {
+                Cookie cookieSources[] = request.getCookies();
+                if (cookieSources != null) {
+                    
+                    data = cookieSources[0].getValue();
+                }
+            }
+
+            dataCopy = data;
+        } {
+            String data = dataCopy;
+
+            if (data != null) {
+                
+                response.setHeader("Location", "/author.jsp?lang=" + data);
+            }
+
+        }
+    }

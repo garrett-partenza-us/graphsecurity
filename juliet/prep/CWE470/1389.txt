@@ -1,0 +1,11 @@
+
+    public void bad() throws Throwable {
+        String data;
+
+        
+        
+        data = System.getenv("ADD");
+
+        CWE470_Unsafe_Reflection__Environment_81_base baseObject = new CWE470_Unsafe_Reflection__Environment_81_bad();
+        baseObject.action(data );
+    }

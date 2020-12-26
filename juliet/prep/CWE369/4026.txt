@@ -1,0 +1,11 @@
+
+    public void bad() throws Throwable {
+        int data;
+
+        
+        data = (new SecureRandom()).nextInt();
+
+        
+        IO.writeLine("100%" + data + " = " + (100 % data) + "\n");
+
+    }

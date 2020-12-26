@@ -1,0 +1,4 @@
+
+    public void goodB2GSink(Integer data ) throws Throwable {
+        (new CWE476_NULL_Pointer_Dereference__Integer_54d()).goodB2GSink(data );
+    }

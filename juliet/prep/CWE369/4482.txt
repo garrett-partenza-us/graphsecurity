@@ -1,0 +1,19 @@
+
+    private void goodG2B1() throws Throwable {
+        int data;
+        if (privateFalse) {
+            
+            data = 0;
+        }
+        else {
+
+            
+            data = 2;
+
+        }
+
+        if (privateTrue) {
+            
+            IO.writeLine("100%" + data + " = " + (100 % data) + "\n");
+        }
+    }

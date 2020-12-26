@@ -1,0 +1,22 @@
+
+    public void bad() throws Throwable {
+        if (IO.staticReturnsTrueOrFalse()) { {
+                
+                String myString = null;
+                if (myString == null) {
+                    IO.writeLine(myString.length());
+                }
+            }
+        }
+        else {
+ {
+                
+                String myString = null;
+
+                if (myString == null) {
+                    IO.writeLine("The string is null");
+                }
+            }
+
+        }
+    }

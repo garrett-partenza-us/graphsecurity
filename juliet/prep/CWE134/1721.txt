@@ -1,0 +1,11 @@
+
+    private void goodG2B() throws Throwable {
+        String data;
+
+        
+        data = "foo";
+
+        String[] dataArray = new String[5];
+        dataArray[2] = data;
+        (new CWE134_Uncontrolled_Format_String__console_readLine_format_66b()).goodG2BSink(dataArray  );
+    }

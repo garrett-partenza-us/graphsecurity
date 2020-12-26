@@ -1,0 +1,17 @@
+
+    private void good1() throws Throwable {
+        switch (8) {
+        case 7:
+            
+            IO.writeLine("Benign, fixed string");
+            break;
+        default: {
+            
+            String myString = null;
+            if (myString == null) {
+                IO.writeLine("The string is null");
+            }
+        }
+        break;
+        }
+    }

@@ -1,0 +1,12 @@
+
+    private void goodB2G() throws Throwable {
+        float data;
+
+        data = 0.0f; 
+
+        LinkedList<Float> dataLinkedList = new LinkedList<Float>();
+        dataLinkedList.add(0, data);
+        dataLinkedList.add(1, data);
+        dataLinkedList.add(2, data);
+        (new CWE369_Divide_by_Zero__float_zero_divide_73b()).goodB2GSink(dataLinkedList  );
+    }

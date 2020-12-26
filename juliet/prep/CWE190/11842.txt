@@ -1,0 +1,11 @@
+
+    public void badSink(LinkedList<Byte> dataLinkedList ) throws Throwable {
+        byte data = dataLinkedList.remove(2);
+
+        if(data > 0) {
+            
+            byte result = (byte)(data * 2);
+            IO.writeLine("result: " + result);
+        }
+
+    }

@@ -1,0 +1,11 @@
+
+    private void goodB2G() throws Throwable {
+        int count;
+
+        
+        count = (new SecureRandom()).nextInt();
+
+        Container countContainer = new Container();
+        countContainer.containerOne = count;
+        (new CWE400_Resource_Exhaustion__random_for_loop_67b()).goodB2GSink(countContainer  );
+    }

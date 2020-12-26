@@ -1,0 +1,10 @@
+
+    private void goodG2B() throws Throwable {
+        long data = 0L;
+
+        
+        data = 2;
+
+        goodG2BPublicStatic = true;
+        (new CWE190_Integer_Overflow__long_console_readLine_square_22b()).goodG2BSink(data );
+    }

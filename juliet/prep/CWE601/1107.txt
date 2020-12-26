@@ -1,0 +1,23 @@
+
+    private void goodG2B2(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+
+        goodG2B2PublicStatic = true;
+        data = (new CWE601_Open_Redirect__Servlet_URLConnection_22b()).goodG2B2Source(request, response);
+
+        if (data != null) {
+            
+            URI uri;
+            try {
+                uri = new URI(data);
+            }
+            catch (URISyntaxException exceptURISyntax) {
+                response.getWriter().write("Invalid redirect URL");
+                return;
+            }
+            
+            response.sendRedirect(data);
+            return;
+        }
+
+    }

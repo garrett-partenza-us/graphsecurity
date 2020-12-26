@@ -1,0 +1,9 @@
+
+    public void badSink(String data , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+
+        if (data != null) {
+            
+            response.sendError(404, "<br>bad() - Parameter name has value " + data);
+        }
+
+    }

@@ -1,0 +1,11 @@
+
+    private void goodB2G() throws Throwable {
+        long data;
+
+        
+        data = (new java.security.SecureRandom()).nextLong();
+
+        long[] dataArray = new long[5];
+        dataArray[2] = data;
+        (new CWE190_Integer_Overflow__long_rand_preinc_66b()).goodB2GSink(dataArray  );
+    }

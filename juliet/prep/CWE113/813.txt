@@ -1,0 +1,29 @@
+
+    private void goodB2G2(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+        if (PRIVATE_STATIC_FINAL_TRUE) {
+            data = ""; 
+ {
+                StringTokenizer tokenizer = new StringTokenizer(request.getQueryString(), "&");
+                while (tokenizer.hasMoreTokens()) {
+                    String token = tokenizer.nextToken(); 
+                    if(token.startsWith("id=")) {
+                        data = token.substring(3); 
+                        break; 
+                    }
+                }
+            }
+        }
+        else {
+            
+            data = null;
+        }
+
+        if (PRIVATE_STATIC_FINAL_TRUE) {
+            
+            if (data != null) {
+                data = URLEncoder.encode(data, "UTF-8");
+                response.addHeader("Location", "/author.jsp?lang=" + data);
+            }
+        }
+    }

@@ -1,0 +1,10 @@
+
+    private void badSink(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int data = dataBad;
+
+        
+        int result = (int)(--data);
+
+        IO.writeLine("result: " + result);
+
+    }

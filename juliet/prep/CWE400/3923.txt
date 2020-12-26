@@ -1,0 +1,25 @@
+
+    private void goodB2G1() throws Throwable {
+        int count;
+        if (privateReturnsTrue()) {
+            
+            count = Integer.MAX_VALUE;
+        }
+        else {
+            
+            count = 0;
+        }
+
+        if (privateReturnsFalse()) {
+            
+            IO.writeLine("Benign, fixed string");
+        }
+        else {
+
+            
+            if (count > 0 && count <= 2000) {
+                Thread.sleep(count);
+            }
+
+        }
+    }

@@ -1,0 +1,15 @@
+
+    public void bad() throws Throwable {
+        StringBuilder data;
+
+        
+        ; 
+
+        while (true) {
+            
+            
+            ; 
+            break;
+        }
+
+    }

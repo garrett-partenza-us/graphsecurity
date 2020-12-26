@@ -1,0 +1,31 @@
+
+    private void goodB2G2() throws Throwable {
+        StringBuilder data;
+
+        switch (6) {
+        case 6:
+            
+            data = null;
+            break;
+        default:
+            
+            data = null;
+            break;
+        }
+
+        switch (7) {
+        case 7:
+            
+            if (data != null) {
+                IO.writeLine("" + data.length());
+            }
+            else {
+                IO.writeLine("data is null");
+            }
+            break;
+        default:
+            
+            IO.writeLine("Benign, fixed string");
+            break;
+        }
+    }

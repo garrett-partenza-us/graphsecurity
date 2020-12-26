@@ -1,0 +1,10 @@
+
+    public void bad() throws Throwable {
+        String data;
+
+        
+        data = System.getProperty("CWE690");
+
+        dataBad = data;
+        badSink();
+    }

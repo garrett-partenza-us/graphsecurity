@@ -1,0 +1,19 @@
+
+    public void bad() throws Throwable {
+        short data;
+        if (privateFive==5) {
+            
+            data = Short.MAX_VALUE;
+        }
+        else {
+            
+            data = 0;
+        }
+
+        if (privateFive==5) {
+            
+            data++;
+            short result = (short)(data);
+            IO.writeLine("result: " + result);
+        }
+    }

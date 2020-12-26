@@ -1,0 +1,10 @@
+
+    public void goodG2BSink(long dataArray[] ) throws Throwable {
+        long data = dataArray[2];
+
+        
+        long result = (long)(data * data);
+
+        IO.writeLine("result: " + result);
+
+    }

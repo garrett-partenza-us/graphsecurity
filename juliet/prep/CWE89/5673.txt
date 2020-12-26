@@ -1,0 +1,20 @@
+
+    private void goodB2G2(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data = null;
+
+        data = ""; 
+
+ {
+            StringTokenizer tokenizer = new StringTokenizer(request.getQueryString(), "&");
+            while (tokenizer.hasMoreTokens()) {
+                String token = tokenizer.nextToken(); 
+                if(token.startsWith("id=")) {
+                    data = token.substring(3); 
+                    break; 
+                }
+            }
+        }
+
+        goodB2G2PublicStatic = true;
+        (new CWE89_SQL_Injection__getQueryString_Servlet_prepareStatement_22b()).goodB2G2Sink(data , request, response);
+    }

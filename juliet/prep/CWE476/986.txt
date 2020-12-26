@@ -1,0 +1,17 @@
+
+    private void good2() throws Throwable {
+        switch (7) {
+        case 7: {
+            String myString = null;
+            
+            if ((myString != null) && (myString.length() > 0)) {
+                IO.writeLine("The string length is greater than 0");
+            }
+        }
+        break;
+        default:
+            
+            IO.writeLine("Benign, fixed string");
+            break;
+        }
+    }

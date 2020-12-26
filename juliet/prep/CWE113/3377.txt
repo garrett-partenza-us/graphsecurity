@@ -1,0 +1,11 @@
+
+    public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+
+        
+        
+        data = System.getProperty("user.home");
+
+        dataBad = data;
+        badSink(request, response);
+    }

@@ -1,0 +1,8 @@
+
+    public void badSink() throws Throwable {
+        int data = CWE789_Uncontrolled_Mem_Alloc__console_readLine_ArrayList_68a.data;
+
+        
+        ArrayList intArrayList = new ArrayList(data);
+
+    }

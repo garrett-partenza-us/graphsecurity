@@ -1,0 +1,21 @@
+
+    private void goodG2B2(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data = null;
+
+        switch (6) {
+        case 6:
+            
+            data = "foo";
+            break;
+        default:
+            
+            data = null;
+            break;
+        }
+
+        if (data != null) {
+            
+            response.getWriter().println("<br>bad(): data = " + data.replaceAll("(<script>)", ""));
+        }
+
+    }

@@ -1,0 +1,10 @@
+
+    public void bad() throws Throwable {
+        short data = 0;
+
+        
+        data = Short.MAX_VALUE;
+
+        badPublicStatic = true;
+        (new CWE190_Integer_Overflow__short_max_preinc_22b()).badSink(data );
+    }

@@ -1,0 +1,15 @@
+
+    public void bad() throws Throwable {
+        long data;
+
+        
+
+        
+        data = Long.MAX_VALUE;
+
+        for (int j = 0; j < 1; j++) {
+            
+            long result = (long)(data * data);
+            IO.writeLine("result: " + result);
+        }
+    }

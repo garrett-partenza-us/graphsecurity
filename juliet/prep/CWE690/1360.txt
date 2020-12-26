@@ -1,0 +1,11 @@
+
+    public void goodB2GSink(CWE690_NULL_Deref_From_Return__getParameter_Servlet_trim_67a.Container dataContainer , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data = dataContainer.containerOne;
+
+        
+        if (data != null) {
+            String stringTrimmed = data.trim();
+            IO.writeLine(stringTrimmed);
+        }
+
+    }

@@ -1,0 +1,18 @@
+
+    private void goodB2G() throws Throwable {
+        short data;
+
+        
+        data = Short.MIN_VALUE;
+
+        for (int k = 0; k < 1; k++) {
+            
+            if (data > Short.MIN_VALUE) {
+                short result = (short)(data - 1);
+                IO.writeLine("result: " + result);
+            }
+            else {
+                IO.writeLine("data value is too small to perform subtraction.");
+            }
+        }
+    }

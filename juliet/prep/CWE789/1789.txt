@@ -1,0 +1,4 @@
+
+    public void badSink(int data , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        (new CWE789_Uncontrolled_Mem_Alloc__getParameter_Servlet_ArrayList_53d()).badSink(data , request, response);
+    }

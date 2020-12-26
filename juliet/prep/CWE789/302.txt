@@ -1,0 +1,8 @@
+
+    public void goodG2BSink(Vector<Integer> dataVector , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int data = dataVector.remove(2);
+
+        
+        HashSet intHashSet = new HashSet(data);
+
+    }

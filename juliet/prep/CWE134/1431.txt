@@ -1,0 +1,10 @@
+
+    private void goodG2BSink() throws Throwable {
+        String data = dataGoodG2B;
+
+        if (data != null) {
+            
+            System.out.format(data);
+        }
+
+    }

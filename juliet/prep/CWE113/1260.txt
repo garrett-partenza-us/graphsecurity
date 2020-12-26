@@ -1,0 +1,9 @@
+
+    private void goodB2G(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+
+        
+        data = request.getParameter("name");
+
+        (new CWE113_HTTP_Response_Splitting__getParameter_Servlet_setHeaderServlet_51b()).goodB2GSink(data , request, response );
+    }

@@ -1,0 +1,9 @@
+
+    public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+
+        
+        data = request.getParameter("CWE690");
+
+        (new CWE690_NULL_Deref_From_Return__getParameter_Servlet_trim_53b()).badSink(data , request, response);
+    }

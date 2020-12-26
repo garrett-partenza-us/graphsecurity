@@ -1,0 +1,22 @@
+
+    private void good1() throws Throwable {
+        switch (8) {
+        case 7:
+            
+            IO.writeLine("Benign, fixed string");
+            break;
+        default:
+            int x = (new SecureRandom()).nextInt();
+            switch (x) {
+                
+            case 0:
+                IO.writeLine("Inside the case statement");
+                break;
+            default:
+                IO.writeLine("Inside the default statement");
+                break;
+            }
+            IO.writeLine("Hello from good()");
+            break;
+        }
+    }

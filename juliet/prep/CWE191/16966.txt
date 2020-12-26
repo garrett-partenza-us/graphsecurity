@@ -1,0 +1,32 @@
+
+    private void goodB2G() throws Throwable {
+        int data;
+
+        data = Integer.MIN_VALUE; 
+
+        
+ {
+            String stringNumber = System.getenv("ADD");
+            if (stringNumber != null) {
+                try {
+                    data = Integer.parseInt(stringNumber.trim());
+                }
+                catch(NumberFormatException exceptNumberFormat) {
+                    IO.logger.log(Level.WARNING, "Number format exception parsing data from string", exceptNumberFormat);
+                }
+            }
+        }
+
+        for (int k = 0; k < 1; k++) {
+            if(data < 0) {
+                
+                if (data > (Integer.MIN_VALUE/2)) {
+                    int result = (int)(data * 2);
+                    IO.writeLine("result: " + result);
+                }
+                else {
+                    IO.writeLine("data value is too small to perform multiplication.");
+                }
+            }
+        }
+    }

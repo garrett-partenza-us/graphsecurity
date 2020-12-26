@@ -1,0 +1,9 @@
+
+    public void bad() throws Throwable {
+        int count;
+
+        
+        count = Integer.MAX_VALUE;
+
+        (new CWE400_Resource_Exhaustion__max_value_write_53b()).badSink(count );
+    }

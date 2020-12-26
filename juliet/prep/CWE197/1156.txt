@@ -1,0 +1,11 @@
+
+    public void bad() throws Throwable {
+        short data;
+
+        
+        data = (short)((new SecureRandom()).nextInt(Short.MAX_VALUE + 1));
+
+        short[] dataArray = new short[5];
+        dataArray[2] = data;
+        (new CWE197_Numeric_Truncation_Error__short_random_66b()).badSink(dataArray  );
+    }

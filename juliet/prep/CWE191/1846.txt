@@ -1,0 +1,14 @@
+
+    public void goodB2GSink(long dataArray[] ) throws Throwable {
+        long data = dataArray[2];
+
+        
+        if (data > Long.MIN_VALUE) {
+            long result = (long)(--data);
+            IO.writeLine("result: " + result);
+        }
+        else {
+            IO.writeLine("data value is too small to decrement.");
+        }
+
+    }

@@ -1,0 +1,18 @@
+
+    public void bad() throws Throwable {
+
+        data = Integer.MIN_VALUE; 
+
+        
+ {
+            String stringNumber = System.getProperty("user.home");
+            try {
+                data = Integer.parseInt(stringNumber.trim());
+            }
+            catch(NumberFormatException exceptNumberFormat) {
+                IO.logger.log(Level.WARNING, "Number format exception parsing data from string", exceptNumberFormat);
+            }
+        }
+
+        (new CWE369_Divide_by_Zero__int_Property_divide_68b()).badSink();
+    }

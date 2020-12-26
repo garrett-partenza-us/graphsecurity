@@ -1,0 +1,4 @@
+
+    public void badSink(String data , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        (new CWE36_Absolute_Path_Traversal__getCookies_Servlet_54d()).badSink(data , request, response);
+    }

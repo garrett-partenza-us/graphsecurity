@@ -1,0 +1,9 @@
+
+    public void bad() throws Throwable {
+
+        
+        
+        data = System.getenv("ADD");
+
+        (new CWE134_Uncontrolled_Format_String__Environment_printf_68b()).badSink();
+    }

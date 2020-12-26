@@ -1,0 +1,15 @@
+
+    private void goodB2G(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int data = goodB2GSource(request, response);
+
+        
+        if (data > Integer.MIN_VALUE) {
+            data--;
+            int result = (int)(data);
+            IO.writeLine("result: " + result);
+        }
+        else {
+            IO.writeLine("data value is too small to decrement.");
+        }
+
+    }

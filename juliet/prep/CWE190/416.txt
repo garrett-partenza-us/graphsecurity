@@ -1,0 +1,13 @@
+
+    public void bad() throws Throwable {
+        short data;
+
+        
+        data = Short.MAX_VALUE;
+
+        
+        short result = (short)(data * data);
+
+        IO.writeLine("result: " + result);
+
+    }

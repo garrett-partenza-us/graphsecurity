@@ -1,0 +1,4 @@
+
+    public void badSink(int count ) throws Throwable {
+        (new CWE400_Resource_Exhaustion__sleep_URLConnection_52c()).badSink(count );
+    }

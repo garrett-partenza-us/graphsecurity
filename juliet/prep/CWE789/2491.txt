@@ -1,0 +1,19 @@
+
+    public void bad() throws Throwable {
+        int data = 0;
+
+        switch (6) {
+        case 6:
+            
+            data = (new SecureRandom()).nextInt();
+            break;
+        default:
+            
+            data = 0;
+            break;
+        }
+
+        
+        HashMap intHashMap = new HashMap(data);
+
+    }

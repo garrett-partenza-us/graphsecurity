@@ -1,0 +1,11 @@
+
+    private void goodB2G() throws Throwable {
+        String data;
+
+        
+        
+        data = System.getenv("ADD");
+
+        CWE89_SQL_Injection__Environment_executeUpdate_81_base baseObject = new CWE89_SQL_Injection__Environment_executeUpdate_81_goodB2G();
+        baseObject.action(data );
+    }

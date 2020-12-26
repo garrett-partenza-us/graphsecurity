@@ -1,0 +1,19 @@
+
+    public void bad() throws Throwable {
+        long data;
+        if (IO.staticFive==5) {
+            
+            data = (new java.security.SecureRandom()).nextLong();
+        }
+        else {
+            
+            data = 0L;
+        }
+
+        if (IO.staticFive==5) {
+            
+            data--;
+            long result = (long)(data);
+            IO.writeLine("result: " + result);
+        }
+    }

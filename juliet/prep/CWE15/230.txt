@@ -1,0 +1,30 @@
+
+    private void goodG2B1() throws Throwable {
+        String data;
+
+        goodG2B1PublicStatic = false;
+        data = (new CWE15_External_Control_of_System_or_Configuration_Setting__File_22b()).goodG2B1Source();
+
+        Connection dbConnection = null;
+
+        try {
+            dbConnection = IO.getDBConnection();
+
+            
+            dbConnection.setCatalog(data);
+        }
+        catch (SQLException exceptSql) {
+            IO.logger.log(Level.WARNING, "Error getting database connection", exceptSql);
+        }
+        finally {
+            try {
+                if (dbConnection != null) {
+                    dbConnection.close();
+                }
+            }
+            catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, "Error closing Connection", exceptSql);
+            }
+        }
+
+    }

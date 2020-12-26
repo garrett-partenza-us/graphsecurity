@@ -1,0 +1,23 @@
+
+    private void goodB2G() throws Throwable {
+        int dataCopy; {
+            int data;
+
+            
+            data = (new SecureRandom()).nextInt();
+
+            dataCopy = data;
+        } {
+            int data = dataCopy;
+
+            
+            if (data > Integer.MIN_VALUE) {
+                int result = (int)(data - 1);
+                IO.writeLine("result: " + result);
+            }
+            else {
+                IO.writeLine("data value is too small to perform subtraction.");
+            }
+
+        }
+    }

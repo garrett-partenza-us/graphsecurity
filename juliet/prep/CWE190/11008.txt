@@ -1,0 +1,9 @@
+
+    private long badSource() throws Throwable {
+        long data;
+
+        
+        data = Long.MAX_VALUE;
+
+        return data;
+    }

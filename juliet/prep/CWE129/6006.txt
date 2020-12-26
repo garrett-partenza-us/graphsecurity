@@ -1,0 +1,20 @@
+
+    public void bad() throws Throwable {
+        int dataCopy; {
+            int data;
+
+            
+            data = 100;
+
+            dataCopy = data;
+        } {
+            int data = dataCopy;
+
+            
+            int array[] = { 0, 1, 2, 3, 4 };
+
+            
+            IO.writeLine(array[data]);
+
+        }
+    }

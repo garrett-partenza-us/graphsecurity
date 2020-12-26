@@ -1,0 +1,25 @@
+
+    public int badSource() throws Throwable {
+        int data;
+
+        if (CWE197_Numeric_Truncation_Error__int_Environment_to_short_22a.badPublicStatic) {
+            data = Integer.MIN_VALUE; 
+            
+ {
+                String stringNumber = System.getenv("ADD");
+                if (stringNumber != null) {
+                    try {
+                        data = Integer.parseInt(stringNumber.trim());
+                    }
+                    catch(NumberFormatException exceptNumberFormat) {
+                        IO.logger.log(Level.WARNING, "Number format exception parsing data from string", exceptNumberFormat);
+                    }
+                }
+            }
+        }
+        else {
+            
+            data = 0;
+        }
+        return data;
+    }

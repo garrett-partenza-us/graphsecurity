@@ -1,0 +1,24 @@
+
+    private void goodG2B2() throws Throwable {
+        int data;
+        if (privateTrue) {
+            
+            data = 2;
+        }
+        else {
+            
+            data = 0;
+        }
+
+        if (privateTrue) {
+            
+            int array[] = { 0, 1, 2, 3, 4 };
+            
+            if (data < array.length) {
+                IO.writeLine(array[data]);
+            }
+            else {
+                IO.writeLine("Array index out of bounds");
+            }
+        }
+    }

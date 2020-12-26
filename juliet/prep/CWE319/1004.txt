@@ -1,0 +1,11 @@
+
+    public void goodG2BSink(HashMap<Integer,String> passwordHashMap ) throws Throwable {
+        String password = passwordHashMap.get(2);
+
+        if (password != null) {
+            
+            PasswordAuthentication credentials = new PasswordAuthentication("user", password.toCharArray());
+            IO.writeLine(credentials.toString());
+        }
+
+    }

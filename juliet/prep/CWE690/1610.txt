@@ -1,0 +1,9 @@
+
+    private String goodG2BSource() throws Throwable {
+        String data;
+
+        
+        data = CWE690_NULL_Deref_From_Return__Class_Helper.getStringGood();
+
+        return data;
+    }

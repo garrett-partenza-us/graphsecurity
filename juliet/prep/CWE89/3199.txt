@@ -1,0 +1,9 @@
+
+    private void goodG2B(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+
+        
+        data = "foo";
+
+        (new CWE89_SQL_Injection__getCookies_Servlet_executeQuery_52b()).goodG2BSink(data , request, response);
+    }

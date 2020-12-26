@@ -1,0 +1,10 @@
+
+    private void goodG2B() throws Throwable {
+        String data;
+
+        
+        data = "5";
+
+        CWE606_Unchecked_Loop_Condition__connect_tcp_81_base baseObject = new CWE606_Unchecked_Loop_Condition__connect_tcp_81_goodG2B();
+        baseObject.action(data );
+    }

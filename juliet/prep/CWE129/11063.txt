@@ -1,0 +1,9 @@
+
+    private int goodB2GSource() throws Throwable {
+        int data;
+
+        
+        data = -1;
+
+        return data;
+    }

@@ -1,0 +1,35 @@
+
+    private void goodB2G() throws Throwable {
+        float data;
+        if(IO.staticReturnsTrueOrFalse()) {
+            data = 0.0f; 
+        }
+        else {
+
+            data = 0.0f; 
+
+        }
+
+        if(IO.staticReturnsTrueOrFalse()) {
+            
+            if (Math.abs(data) > 0.000001) {
+                int result = (int)(100.0 % data);
+                IO.writeLine(result);
+            }
+            else {
+                IO.writeLine("This would result in a modulo by zero");
+            }
+        }
+        else {
+
+            
+            if (Math.abs(data) > 0.000001) {
+                int result = (int)(100.0 % data);
+                IO.writeLine(result);
+            }
+            else {
+                IO.writeLine("This would result in a modulo by zero");
+            }
+
+        }
+    }

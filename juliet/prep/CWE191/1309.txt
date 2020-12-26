@@ -1,0 +1,18 @@
+
+    public void bad() throws Throwable {
+        int data;
+        if (5==5) {
+            
+            data = Integer.MIN_VALUE;
+        }
+        else {
+            
+            data = 0;
+        }
+
+        if (5==5) {
+            
+            int result = (int)(--data);
+            IO.writeLine("result: " + result);
+        }
+    }

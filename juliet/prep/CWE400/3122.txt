@@ -1,0 +1,17 @@
+
+    private void goodB2G() throws Throwable {
+        int count;
+
+        
+        count = Integer.MAX_VALUE;
+
+        for (int k = 0; k < 1; k++) {
+            int i = 0;
+            
+            if (count > 0 && count <= 20) {
+                for (i = 0; i < count; i++) {
+                    IO.writeLine("Hello");
+                }
+            }
+        }
+    }

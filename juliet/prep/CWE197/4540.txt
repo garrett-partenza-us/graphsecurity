@@ -1,0 +1,12 @@
+
+    private void goodG2B() throws Throwable {
+        int data;
+
+        
+        data = 2;
+ {
+            
+            IO.writeLine((byte)data);
+        }
+
+    }

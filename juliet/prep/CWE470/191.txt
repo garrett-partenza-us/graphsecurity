@@ -1,0 +1,11 @@
+
+    public void badSink(Object dataObject , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data = (String)dataObject;
+
+        
+        Class<?> tempClass = Class.forName(data);
+        Object tempClassObject = tempClass.newInstance();
+
+        IO.writeLine(tempClassObject.toString()); 
+
+    }

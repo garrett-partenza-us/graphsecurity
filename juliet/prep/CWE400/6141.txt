@@ -1,0 +1,10 @@
+
+    private void goodG2BSink(int count ) throws Throwable {
+        if (goodG2BPrivate) {
+            int i = 0;
+            
+            for (i = 0; i < count; i++) {
+                IO.writeLine("Hello");
+            }
+        }
+    }

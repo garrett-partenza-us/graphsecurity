@@ -1,0 +1,8 @@
+
+    private void badSink(String data ) throws Throwable {
+        if (badPrivate) {
+            
+            String stringTrimmed = data.trim();
+            IO.writeLine(stringTrimmed);
+        }
+    }

@@ -1,0 +1,9 @@
+
+    private void goodB2G() throws Throwable {
+        int count;
+
+        
+        count = (new SecureRandom()).nextInt();
+
+        goodB2GSink(count  );
+    }

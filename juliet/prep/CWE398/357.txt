@@ -1,0 +1,11 @@
+
+    private void good1() throws Throwable {
+
+ {
+            String sentence = "Inside the block"; 
+            IO.writeLine(sentence);
+        }
+
+        IO.writeLine("Hello from good()");
+
+    }

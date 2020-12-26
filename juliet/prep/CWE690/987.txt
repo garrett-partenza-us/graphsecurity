@@ -1,0 +1,29 @@
+
+    public void bad() throws Throwable {
+        String data;
+        if(IO.staticReturnsTrueOrFalse()) {
+            
+            data = CWE690_NULL_Deref_From_Return__Class_Helper.getStringBad();
+        }
+        else {
+
+            
+            data = CWE690_NULL_Deref_From_Return__Class_Helper.getStringGood();
+
+        }
+
+        if(IO.staticReturnsTrueOrFalse()) {
+            
+            String stringTrimmed = data.trim();
+            IO.writeLine(stringTrimmed);
+        }
+        else {
+
+            
+            if (data != null) {
+                String stringTrimmed = data.trim();
+                IO.writeLine(stringTrimmed);
+            }
+
+        }
+    }

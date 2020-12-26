@@ -1,0 +1,11 @@
+
+    public void goodG2BSink(CWE470_Unsafe_Reflection__connect_tcp_67a.Container dataContainer ) throws Throwable {
+        String data = dataContainer.containerOne;
+
+        
+        Class<?> tempClass = Class.forName(data);
+        Object tempClassObject = tempClass.newInstance();
+
+        IO.writeLine(tempClassObject.toString()); 
+
+    }

@@ -1,0 +1,22 @@
+
+    private void goodB2G2() throws Throwable {
+        float data;
+        if (PRIVATE_STATIC_FINAL_FIVE==5) {
+            data = 0.0f; 
+        }
+        else {
+            
+            data = 0.0f;
+        }
+
+        if (PRIVATE_STATIC_FINAL_FIVE==5) {
+            
+            if (Math.abs(data) > 0.000001) {
+                int result = (int)(100.0 / data);
+                IO.writeLine(result);
+            }
+            else {
+                IO.writeLine("This would result in a divide by zero");
+            }
+        }
+    }

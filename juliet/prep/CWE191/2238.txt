@@ -1,0 +1,18 @@
+
+    private void goodG2B2() throws Throwable {
+        long data;
+        if (IO.staticFive==5) {
+            
+            data = 2;
+        }
+        else {
+            
+            data = 0L;
+        }
+
+        if (IO.staticFive==5) {
+            
+            long result = (long)(--data);
+            IO.writeLine("result: " + result);
+        }
+    }

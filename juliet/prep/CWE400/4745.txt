@@ -1,0 +1,9 @@
+
+    private void goodB2GSink(int count ) throws Throwable {
+
+        
+        if (count > 0 && count <= 2000) {
+            Thread.sleep(count);
+        }
+
+    }

@@ -1,0 +1,10 @@
+
+    private void goodB2G() throws Throwable {
+        String data;
+
+        
+        data = CWE690_NULL_Deref_From_Return__Class_Helper.getStringBad();
+
+        dataGoodB2G = data;
+        goodB2GSink();
+    }

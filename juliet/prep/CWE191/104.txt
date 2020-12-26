@@ -1,0 +1,10 @@
+
+    public void goodG2BSink(HashMap<Integer,Integer> dataHashMap , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int data = dataHashMap.get(2);
+
+        
+        int result = (int)(--data);
+
+        IO.writeLine("result: " + result);
+
+    }

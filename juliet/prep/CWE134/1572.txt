@@ -1,0 +1,51 @@
+
+    public void bad() throws Throwable {
+        String data;
+        if (IO.staticFive==5) {
+            data = ""; {
+                InputStreamReader readerInputStream = null;
+                BufferedReader readerBuffered = null;
+                
+                try {
+                    readerInputStream = new InputStreamReader(System.in, "UTF-8");
+                    readerBuffered = new BufferedReader(readerInputStream);
+                    
+                    data = readerBuffered.readLine();
+                }
+                catch (IOException exceptIO) {
+                    IO.logger.log(Level.WARNING, "Error with stream reading", exceptIO);
+                }
+                finally {
+                    try {
+                        if (readerBuffered != null) {
+                            readerBuffered.close();
+                        }
+                    }
+                    catch (IOException exceptIO) {
+                        IO.logger.log(Level.WARNING, "Error closing BufferedReader", exceptIO);
+                    }
+
+                    try {
+                        if (readerInputStream != null) {
+                            readerInputStream.close();
+                        }
+                    }
+                    catch (IOException exceptIO) {
+                        IO.logger.log(Level.WARNING, "Error closing InputStreamReader", exceptIO);
+                    }
+                }
+            }
+            
+        }
+        else {
+            
+            data = null;
+        }
+
+        if (IO.staticFive==5) {
+            if (data != null) {
+                
+                System.out.printf(data);
+            }
+        }
+    }

@@ -1,0 +1,11 @@
+
+    public void badSink(Vector<String> passwordVector ) throws Throwable {
+        String password = passwordVector.remove(2);
+
+        if (password != null) {
+            
+            PasswordAuthentication credentials = new PasswordAuthentication("user", password.toCharArray());
+            IO.writeLine(credentials.toString());
+        }
+
+    }

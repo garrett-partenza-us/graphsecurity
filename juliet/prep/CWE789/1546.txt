@@ -1,0 +1,8 @@
+
+    public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int data = badSource(request, response);
+
+        
+        HashSet intHashSet = new HashSet(data);
+
+    }

@@ -1,0 +1,14 @@
+
+    public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+
+        
+        
+        data = System.getProperty("user.home");
+
+        LinkedList<String> dataLinkedList = new LinkedList<String>();
+        dataLinkedList.add(0, data);
+        dataLinkedList.add(1, data);
+        dataLinkedList.add(2, data);
+        (new CWE113_HTTP_Response_Splitting__Property_addCookieServlet_73b()).badSink(dataLinkedList , request, response );
+    }

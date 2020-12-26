@@ -1,0 +1,18 @@
+
+    public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+        if (privateReturnsTrue()) {
+            
+            data = request.getParameter("name");
+        }
+        else {
+            
+            data = null;
+        }
+
+        if (data != null) {
+            
+            response.getWriter().println("<br>bad(): data = " + data);
+        }
+
+    }

@@ -1,0 +1,4 @@
+
+    public void goodG2BSink(int count ) throws Throwable {
+        (new CWE400_Resource_Exhaustion__sleep_random_54d()).goodG2BSink(count );
+    }

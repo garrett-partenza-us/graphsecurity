@@ -1,0 +1,10 @@
+
+    public void goodB2GSink(CWE690_NULL_Deref_From_Return__getParameter_Servlet_equals_67a.Container dataContainer , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data = dataContainer.containerOne;
+
+        
+        if("CWE690".equals(data)) {
+            IO.writeLine("data is CWE690");
+        }
+
+    }

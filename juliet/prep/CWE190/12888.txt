@@ -1,0 +1,9 @@
+
+    private void goodB2G() throws Throwable {
+        byte data;
+
+        
+        data = (byte)((new java.security.SecureRandom()).nextInt(1+Byte.MAX_VALUE-Byte.MIN_VALUE) + Byte.MIN_VALUE);
+
+        (new CWE190_Integer_Overflow__byte_rand_square_71b()).goodB2GSink((Object)data  );
+    }

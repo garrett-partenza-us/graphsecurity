@@ -1,0 +1,4 @@
+
+    public void goodB2GSink(String data , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        (new CWE113_HTTP_Response_Splitting__connect_tcp_addCookieServlet_54d()).goodB2GSink(data , request, response);
+    }

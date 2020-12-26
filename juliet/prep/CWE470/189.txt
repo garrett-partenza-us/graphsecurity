@@ -1,0 +1,11 @@
+
+    public void bad() throws Throwable {
+        String data = (new CWE470_Unsafe_Reflection__listen_tcp_61b()).badSource();
+
+        
+        Class<?> tempClass = Class.forName(data);
+        Object tempClassObject = tempClass.newInstance();
+
+        IO.writeLine(tempClassObject.toString()); 
+
+    }

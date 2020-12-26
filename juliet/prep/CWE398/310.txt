@@ -1,0 +1,22 @@
+
+    public void bad() throws Throwable {
+        if (IO.staticReturnsTrueOrFalse()) {
+            int i = 0;
+            
+            while(i++ < 10) {
+            }
+            IO.writeLine("Hello from bad()");
+        }
+        else {
+
+            int i = 0;
+
+            
+            while(i++ < 10) {
+                IO.writeLine("Inside the while statement");
+            }
+
+            IO.writeLine("Hello from good()");
+
+        }
+    }

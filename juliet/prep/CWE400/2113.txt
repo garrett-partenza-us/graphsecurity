@@ -1,0 +1,9 @@
+
+    private void goodG2B() throws Throwable {
+        int count;
+
+        
+        count = 2;
+
+        (new CWE400_Resource_Exhaustion__max_value_for_loop_71b()).goodG2BSink((Object)count  );
+    }

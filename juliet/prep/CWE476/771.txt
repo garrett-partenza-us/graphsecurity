@@ -1,0 +1,11 @@
+
+    private void good2() throws Throwable {
+        if (IO.staticFive == 5) { {
+                
+                String myString = null;
+                if (myString == null) {
+                    IO.writeLine("The string is null");
+                }
+            }
+        }
+    }

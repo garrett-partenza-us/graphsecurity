@@ -1,0 +1,8 @@
+
+    private void goodB2G() throws Throwable {
+
+        
+        data = null;
+
+        (new CWE476_NULL_Pointer_Dereference__int_array_68b()).goodB2GSink();
+    }

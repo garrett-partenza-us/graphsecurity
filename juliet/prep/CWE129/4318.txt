@@ -1,0 +1,21 @@
+
+    public void goodB2G1Sink(int data , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        if (CWE129_Improper_Validation_of_Array_Index__getCookies_Servlet_array_read_check_min_22a.goodB2G1PublicStatic) {
+            
+            data = 0;
+        }
+        else {
+
+            
+            int array[] = { 0, 1, 2, 3, 4 };
+
+            
+            if (data >= 0 && data < array.length) {
+                IO.writeLine(array[data]);
+            }
+            else {
+                IO.writeLine("Array index out of bounds");
+            }
+
+        }
+    }

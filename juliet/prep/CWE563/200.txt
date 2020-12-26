@@ -1,0 +1,13 @@
+
+    public void bad() throws Throwable {
+        int data;
+
+        
+        ; 
+
+        if (IO.STATIC_FINAL_TRUE) {
+            
+            
+            ; 
+        }
+    }

@@ -1,0 +1,22 @@
+
+    public void bad() throws Throwable {
+        int dataCopy; {
+            int data;
+
+            
+            data = (new SecureRandom()).nextInt();
+
+            dataCopy = data;
+        } {
+            int data = dataCopy;
+
+            
+            int array[] = { 0, 1, 2, 3, 4 };
+
+            
+            array[data] = 42;
+
+            
+
+        }
+    }

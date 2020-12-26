@@ -1,0 +1,11 @@
+
+    private void goodG2B() throws Throwable {
+        byte data;
+
+        
+        data = 2;
+
+        Container dataContainer = new Container();
+        dataContainer.containerOne = data;
+        (new CWE190_Integer_Overflow__byte_max_add_67b()).goodG2BSink(dataContainer  );
+    }

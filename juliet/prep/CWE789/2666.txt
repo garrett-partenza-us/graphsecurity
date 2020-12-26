@@ -1,0 +1,15 @@
+
+    public int goodG2B2Source() throws Throwable {
+        int data;
+
+        if (CWE789_Uncontrolled_Mem_Alloc__URLConnection_HashMap_22a.goodG2B2PublicStatic) {
+            
+            data = 2;
+        }
+        else {
+            
+            data = 0;
+        }
+
+        return data;
+    }

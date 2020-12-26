@@ -1,0 +1,23 @@
+
+    private void goodB2G2() throws Throwable {
+        short data;
+        if (IO.staticTrue) {
+            
+            data = (short)((new java.security.SecureRandom()).nextInt(1+Short.MAX_VALUE-Short.MIN_VALUE)+Short.MIN_VALUE);
+        }
+        else {
+            
+            data = 0;
+        }
+
+        if (IO.staticTrue) {
+            
+            if (data < Short.MAX_VALUE) {
+                short result = (short)(data + 1);
+                IO.writeLine("result: " + result);
+            }
+            else {
+                IO.writeLine("data value is too large to perform addition.");
+            }
+        }
+    }

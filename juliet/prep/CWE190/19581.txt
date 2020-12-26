@@ -1,0 +1,11 @@
+
+    public void goodG2BSink(CWE190_Integer_Overflow__long_rand_postinc_67a.Container dataContainer ) throws Throwable {
+        long data = dataContainer.containerOne;
+
+        
+        data++;
+        long result = (long)(data);
+
+        IO.writeLine("result: " + result);
+
+    }

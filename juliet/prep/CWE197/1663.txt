@@ -1,0 +1,14 @@
+
+    public short badSource() throws Throwable {
+        short data;
+
+        if (CWE197_Numeric_Truncation_Error__short_large_22a.badPublicStatic) {
+            
+            data = Byte.MAX_VALUE + 5;
+        }
+        else {
+            
+            data = 0;
+        }
+        return data;
+    }

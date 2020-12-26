@@ -1,0 +1,13 @@
+
+    public void bad() throws Throwable {
+        int data;
+
+        
+
+        data = 0; 
+
+        for (int j = 0; j < 1; j++) {
+            
+            IO.writeLine("100%" + data + " = " + (100 % data) + "\n");
+        }
+    }

@@ -1,0 +1,11 @@
+
+    public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+
+        
+        
+        data = System.getenv("ADD");
+
+        badPrivate = true;
+        badSink(data , request, response);
+    }

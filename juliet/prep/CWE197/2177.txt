@@ -1,0 +1,8 @@
+
+    public void bad() throws Throwable {
+
+        
+        data = Byte.MAX_VALUE + 5;
+
+        (new CWE197_Numeric_Truncation_Error__short_large_68b()).badSink();
+    }

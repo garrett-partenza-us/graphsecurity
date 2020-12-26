@@ -1,0 +1,4 @@
+
+    public void badSink(long data ) throws Throwable {
+        (new CWE191_Integer_Underflow__long_console_readLine_multiply_52c()).badSink(data );
+    }

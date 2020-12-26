@@ -1,0 +1,19 @@
+
+    private void goodG2B1() throws Throwable {
+        int [] data;
+        if (privateReturnsFalse()) {
+            
+            data = null;
+        }
+        else {
+
+            
+            data = new int[5];
+
+        }
+
+        if (privateReturnsTrue()) {
+            
+            IO.writeLine("" + data.length);
+        }
+    }

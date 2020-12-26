@@ -1,0 +1,8 @@
+
+    public void badSink(CWE400_Resource_Exhaustion__sleep_Environment_67a.Container countContainer ) throws Throwable {
+        int count = countContainer.containerOne;
+
+        
+        Thread.sleep(count);
+
+    }

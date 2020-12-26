@@ -1,0 +1,4 @@
+
+    public void badSink(byte data ) throws Throwable {
+        (new CWE190_Integer_Overflow__byte_max_add_54c()).badSink(data );
+    }

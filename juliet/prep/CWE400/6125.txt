@@ -1,0 +1,26 @@
+
+    public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int count;
+
+        count = Integer.MIN_VALUE; 
+
+ {
+            Cookie cookieSources[] = request.getCookies();
+            if (cookieSources != null) {
+                
+                String stringNumber = cookieSources[0].getValue();
+                try {
+                    count = Integer.parseInt(stringNumber.trim());
+                }
+                catch(NumberFormatException exceptNumberFormat) {
+                    IO.logger.log(Level.WARNING, "Number format exception reading count from cookie", exceptNumberFormat);
+                }
+            }
+        }
+
+        HashMap<Integer,Integer> countHashMap = new HashMap<Integer,Integer>();
+        countHashMap.put(0, count);
+        countHashMap.put(1, count);
+        countHashMap.put(2, count);
+        (new CWE400_Resource_Exhaustion__getCookies_Servlet_for_loop_74b()).badSink(countHashMap , request, response );
+    }

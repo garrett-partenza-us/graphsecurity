@@ -1,0 +1,33 @@
+
+    public void bad() throws Throwable {
+        long data;
+        if(IO.staticReturnsTrueOrFalse()) {
+            
+            data = Long.MAX_VALUE;
+        }
+        else {
+
+            
+            data = 2;
+
+        }
+
+        if(IO.staticReturnsTrueOrFalse()) {
+            
+            long result = (long)(data * data);
+            IO.writeLine("result: " + result);
+        }
+        else {
+
+            
+            
+            if ((data != Integer.MIN_VALUE) && (data != Long.MIN_VALUE) && (Math.abs(data) <= (long)Math.sqrt(Long.MAX_VALUE))) {
+                long result = (long)(data * data);
+                IO.writeLine("result: " + result);
+            }
+            else {
+                IO.writeLine("data value is too large to perform squaring.");
+            }
+
+        }
+    }

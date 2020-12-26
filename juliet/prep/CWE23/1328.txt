@@ -1,0 +1,9 @@
+
+    public void bad() throws Throwable {
+
+        
+        
+        data = System.getenv("ADD");
+
+        (new CWE23_Relative_Path_Traversal__Environment_68b()).badSink();
+    }

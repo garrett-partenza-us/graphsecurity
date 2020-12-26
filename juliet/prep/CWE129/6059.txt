@@ -1,0 +1,40 @@
+
+    private void goodB2G() throws Throwable {
+        int data;
+        if(IO.staticReturnsTrueOrFalse()) {
+            
+            data = 100;
+        }
+        else {
+
+            
+            data = 100;
+
+        }
+
+        if(IO.staticReturnsTrueOrFalse()) {
+            
+            int array[] = { 0, 1, 2, 3, 4 };
+            
+            if (data >= 0 && data < array.length) {
+                array[data] = 42;
+            }
+            else {
+                IO.writeLine("Array index out of bounds");
+            }
+        }
+        else {
+
+            
+            int array[] = { 0, 1, 2, 3, 4 };
+
+            
+            if (data >= 0 && data < array.length) {
+                array[data] = 42;
+            }
+            else {
+                IO.writeLine("Array index out of bounds");
+            }
+
+        }
+    }

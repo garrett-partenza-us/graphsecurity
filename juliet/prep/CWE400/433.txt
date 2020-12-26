@@ -1,0 +1,12 @@
+
+    public void badSink(Vector<Integer> countVector ) throws Throwable {
+        int count = countVector.remove(2);
+
+        int i = 0;
+
+        
+        for (i = 0; i < count; i++) {
+            IO.writeLine("Hello");
+        }
+
+    }

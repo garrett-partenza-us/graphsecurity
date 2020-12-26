@@ -1,0 +1,4 @@
+
+    public void goodG2BSink(long data ) throws Throwable {
+        (new CWE191_Integer_Underflow__long_console_readLine_multiply_54e()).goodG2BSink(data );
+    }

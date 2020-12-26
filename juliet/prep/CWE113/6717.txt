@@ -1,0 +1,11 @@
+
+    public void goodG2BSink(Object dataObject , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data = (String)dataObject;
+
+        if (data != null) {
+            Cookie cookieSink = new Cookie("lang", data);
+            
+            response.addCookie(cookieSink);
+        }
+
+    }

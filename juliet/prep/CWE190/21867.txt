@@ -1,0 +1,18 @@
+
+    public void bad() throws Throwable {
+        byte data;
+        if (privateReturnsTrue()) {
+            
+            data = Byte.MAX_VALUE;
+        }
+        else {
+            
+            data = 0;
+        }
+
+        if (privateReturnsTrue()) {
+            
+            byte result = (byte)(++data);
+            IO.writeLine("result: " + result);
+        }
+    }

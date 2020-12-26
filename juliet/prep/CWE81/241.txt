@@ -1,0 +1,10 @@
+
+    public void goodG2BSink(Object dataObject , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data = (String)dataObject;
+
+        if (data != null) {
+            
+            response.sendError(404, "<br>bad() - Parameter name has value " + data);
+        }
+
+    }

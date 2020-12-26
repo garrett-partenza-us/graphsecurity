@@ -1,0 +1,8 @@
+
+    public void goodG2BSink(LinkedList<Integer> countLinkedList ) throws Throwable {
+        int count = countLinkedList.remove(2);
+
+        
+        Thread.sleep(count);
+
+    }

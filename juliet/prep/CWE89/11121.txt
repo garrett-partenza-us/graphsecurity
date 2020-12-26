@@ -1,0 +1,13 @@
+
+    private void goodG2B() throws Throwable {
+        String data;
+
+        
+        data = "foo";
+
+        Vector<String> dataVector = new Vector<String>(5);
+        dataVector.add(0, data);
+        dataVector.add(1, data);
+        dataVector.add(2, data);
+        (new CWE89_SQL_Injection__database_prepareStatement_72b()).goodG2BSink(dataVector  );
+    }

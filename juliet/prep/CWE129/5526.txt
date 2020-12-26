@@ -1,0 +1,9 @@
+
+    public void bad() throws Throwable {
+        int data;
+
+        
+        data = 100;
+
+        (new CWE129_Improper_Validation_of_Array_Index__large_fixed_array_read_check_min_54b()).badSink(data );
+    }

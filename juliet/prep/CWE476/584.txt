@@ -1,0 +1,11 @@
+
+    private void good2() throws Throwable {
+        if (PRIVATE_STATIC_FINAL_TRUE) { {
+                String myString = null;
+                
+                if ((myString != null) && (myString.length() > 0)) {
+                    IO.writeLine("The string length is greater than 0");
+                }
+            }
+        }
+    }

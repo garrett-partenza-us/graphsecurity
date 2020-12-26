@@ -1,0 +1,28 @@
+
+    private void goodB2G2() throws Throwable {
+        int count;
+
+        switch (6) {
+        case 6:
+            
+            count = (new SecureRandom()).nextInt();
+            break;
+        default:
+            
+            count = 0;
+            break;
+        }
+
+        switch (7) {
+        case 7:
+            
+            if (count > 0 && count <= 2000) {
+                Thread.sleep(count);
+            }
+            break;
+        default:
+            
+            IO.writeLine("Benign, fixed string");
+            break;
+        }
+    }

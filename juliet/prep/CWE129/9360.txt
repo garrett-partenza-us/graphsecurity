@@ -1,0 +1,59 @@
+
+    private void goodB2G() throws Throwable {
+        int data;
+        if(IO.staticReturnsTrueOrFalse()) {
+            data = Integer.MIN_VALUE; 
+            
+ {
+                String stringNumber = System.getProperty("user.home");
+                try {
+                    data = Integer.parseInt(stringNumber.trim());
+                }
+                catch(NumberFormatException exceptNumberFormat) {
+                    IO.logger.log(Level.WARNING, "Number format exception parsing data from string", exceptNumberFormat);
+                }
+            }
+        }
+        else {
+
+            data = Integer.MIN_VALUE; 
+
+            
+ {
+                String stringNumber = System.getProperty("user.home");
+                try {
+                    data = Integer.parseInt(stringNumber.trim());
+                }
+                catch(NumberFormatException exceptNumberFormat) {
+                    IO.logger.log(Level.WARNING, "Number format exception parsing data from string", exceptNumberFormat);
+                }
+            }
+
+        }
+
+        if(IO.staticReturnsTrueOrFalse()) {
+            
+            int array[] = { 0, 1, 2, 3, 4 };
+            
+            if (data >= 0 && data < array.length) {
+                array[data] = 42;
+            }
+            else {
+                IO.writeLine("Array index out of bounds");
+            }
+        }
+        else {
+
+            
+            int array[] = { 0, 1, 2, 3, 4 };
+
+            
+            if (data >= 0 && data < array.length) {
+                array[data] = 42;
+            }
+            else {
+                IO.writeLine("Array index out of bounds");
+            }
+
+        }
+    }

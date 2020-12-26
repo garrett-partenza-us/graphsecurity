@@ -1,0 +1,17 @@
+
+    public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+
+        data = ""; 
+
+ {
+            Cookie cookieSources[] = request.getCookies();
+            if (cookieSources != null) {
+                
+                data = cookieSources[0].getValue();
+            }
+        }
+
+        CWE89_SQL_Injection__getCookies_Servlet_prepareStatement_81_base baseObject = new CWE89_SQL_Injection__getCookies_Servlet_prepareStatement_81_bad();
+        baseObject.action(data , request, response);
+    }

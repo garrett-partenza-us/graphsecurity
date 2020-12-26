@@ -1,0 +1,11 @@
+
+    public void badSink(Vector<Integer> dataVector ) throws Throwable {
+        int data = dataVector.remove(2);
+
+        
+        int array[] = { 0, 1, 2, 3, 4 };
+
+        
+        IO.writeLine(array[data]);
+
+    }

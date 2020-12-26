@@ -1,0 +1,10 @@
+
+    private void badSink() throws Throwable {
+        StringBuilder data = dataBad;
+
+        
+        String stringTrimmed = data.toString().trim();
+
+        IO.writeLine(stringTrimmed);
+
+    }

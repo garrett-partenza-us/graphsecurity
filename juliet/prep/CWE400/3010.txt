@@ -1,0 +1,27 @@
+
+    public void bad() throws Throwable {
+        int count;
+
+        while (true) {
+            count = Integer.MIN_VALUE; 
+            
+ {
+                String stringNumber = System.getenv("ADD");
+                if (stringNumber != null) {
+                    try {
+                        count = Integer.parseInt(stringNumber.trim());
+                    }
+                    catch(NumberFormatException exceptNumberFormat) {
+                        IO.logger.log(Level.WARNING, "Number format exception parsing count from string", exceptNumberFormat);
+                    }
+                }
+            }
+            break;
+        }
+
+        while (true) {
+            
+            Thread.sleep(count);
+            break;
+        }
+    }

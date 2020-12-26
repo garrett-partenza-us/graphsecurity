@@ -1,0 +1,14 @@
+
+    public void bad() throws Throwable {
+        float data;
+
+        
+        SecureRandom secureRandom = new SecureRandom();
+        data = secureRandom.nextFloat();
+
+        LinkedList<Float> dataLinkedList = new LinkedList<Float>();
+        dataLinkedList.add(0, data);
+        dataLinkedList.add(1, data);
+        dataLinkedList.add(2, data);
+        (new CWE369_Divide_by_Zero__float_random_modulo_73b()).badSink(dataLinkedList  );
+    }

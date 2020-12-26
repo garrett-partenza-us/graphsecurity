@@ -1,0 +1,9 @@
+
+    public long badSource() throws Throwable {
+        long data;
+
+        
+        data = Long.MIN_VALUE;
+
+        return data;
+    }

@@ -1,0 +1,4 @@
+
+    public void goodB2GSink(String data ) throws Throwable {
+        (new CWE89_SQL_Injection__URLConnection_prepareStatement_52c()).goodB2GSink(data );
+    }

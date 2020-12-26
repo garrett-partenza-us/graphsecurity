@@ -1,0 +1,10 @@
+
+    public void bad() throws Throwable {
+        int count;
+
+        
+        count = (new SecureRandom()).nextInt();
+
+        countBad = count;
+        badSink();
+    }

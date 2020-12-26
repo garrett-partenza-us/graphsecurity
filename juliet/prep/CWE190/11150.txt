@@ -1,0 +1,14 @@
+
+    private void goodB2G() throws Throwable {
+        long data = (new CWE190_Integer_Overflow__long_rand_add_61b()).goodB2GSource();
+
+        
+        if (data < Long.MAX_VALUE) {
+            long result = (long)(data + 1);
+            IO.writeLine("result: " + result);
+        }
+        else {
+            IO.writeLine("data value is too large to perform addition.");
+        }
+
+    }

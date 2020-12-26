@@ -1,0 +1,17 @@
+
+    private void goodG2B() throws Throwable {
+        int dataCopy; {
+            int data;
+
+            
+            data = 2;
+
+            dataCopy = data;
+        } {
+            int data = dataCopy;
+
+            
+            IO.writeLine("100%" + data + " = " + (100 % data) + "\n");
+
+        }
+    }

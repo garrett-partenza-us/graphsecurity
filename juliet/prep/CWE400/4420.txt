@@ -1,0 +1,8 @@
+
+    public void badSink(HashMap<Integer,Integer> countHashMap ) throws Throwable {
+        int count = countHashMap.get(2);
+
+        
+        Thread.sleep(count);
+
+    }

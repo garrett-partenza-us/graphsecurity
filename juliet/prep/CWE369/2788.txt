@@ -1,0 +1,21 @@
+
+    private void goodB2G() throws Throwable {
+        int data;
+
+        data = Integer.MIN_VALUE; 
+
+        
+ {
+            String stringNumber = System.getenv("ADD");
+            if (stringNumber != null) {
+                try {
+                    data = Integer.parseInt(stringNumber.trim());
+                }
+                catch(NumberFormatException exceptNumberFormat) {
+                    IO.logger.log(Level.WARNING, "Number format exception parsing data from string", exceptNumberFormat);
+                }
+            }
+        }
+
+        (new CWE369_Divide_by_Zero__int_Environment_modulo_71b()).goodB2GSink((Object)data  );
+    }

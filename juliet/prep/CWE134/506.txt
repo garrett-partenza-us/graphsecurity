@@ -1,0 +1,10 @@
+
+    private void goodB2G() throws Throwable {
+        String data;
+
+        
+        
+        data = System.getProperty("user.home");
+
+        (new CWE134_Uncontrolled_Format_String__Property_format_51b()).goodB2GSink(data  );
+    }

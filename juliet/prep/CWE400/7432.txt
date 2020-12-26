@@ -1,0 +1,29 @@
+
+    private void goodG2B2(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int count;
+
+        switch (6) {
+        case 6:
+            
+            count = 2;
+            break;
+        default:
+            
+            count = 0;
+            break;
+        }
+
+        switch (7) {
+        case 7:
+            int i = 0;
+            
+            for (i = 0; i < count; i++) {
+                IO.writeLine("Hello");
+            }
+            break;
+        default:
+            
+            IO.writeLine("Benign, fixed string");
+            break;
+        }
+    }

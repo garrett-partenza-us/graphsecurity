@@ -1,0 +1,15 @@
+
+    public String badSource() throws Throwable {
+        String data;
+
+        if (CWE470_Unsafe_Reflection__Environment_22a.badPublicStatic) {
+            
+            
+            data = System.getenv("ADD");
+        }
+        else {
+            
+            data = null;
+        }
+        return data;
+    }

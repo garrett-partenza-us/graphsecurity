@@ -1,0 +1,10 @@
+
+    private void badSink() throws Throwable {
+        short data = dataBad;
+
+        
+        short result = (short)(--data);
+
+        IO.writeLine("result: " + result);
+
+    }

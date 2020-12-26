@@ -1,0 +1,17 @@
+
+    private void goodB2G(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+
+        data = ""; 
+
+ {
+            Cookie cookieSources[] = request.getCookies();
+            if (cookieSources != null) {
+                
+                data = cookieSources[0].getValue();
+            }
+        }
+
+        CWE606_Unchecked_Loop_Condition__getCookies_Servlet_81_base baseObject = new CWE606_Unchecked_Loop_Condition__getCookies_Servlet_81_goodB2G();
+        baseObject.action(data , request, response);
+    }

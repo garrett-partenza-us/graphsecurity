@@ -1,0 +1,8 @@
+
+    private void goodG2B() throws Throwable {
+
+        
+        data = 2.0f;
+
+        (new CWE369_Divide_by_Zero__float_File_modulo_68b()).goodG2BSink();
+    }

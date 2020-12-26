@@ -1,0 +1,25 @@
+
+    private void goodB2G1(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+        if (IO.staticFive==5) {
+            
+            data = request.getParameter("CWE690");
+        }
+        else {
+            
+            data = null;
+        }
+
+        if (IO.staticFive!=5) {
+            
+            IO.writeLine("Benign, fixed string");
+        }
+        else {
+
+            
+            if("CWE690".equals(data)) {
+                IO.writeLine("data is CWE690");
+            }
+
+        }
+    }

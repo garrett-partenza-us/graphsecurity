@@ -1,0 +1,10 @@
+
+    public void bad() throws Throwable {
+        int data = badSource();
+
+        
+        int result = (int)(--data);
+
+        IO.writeLine("result: " + result);
+
+    }

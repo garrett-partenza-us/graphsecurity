@@ -1,0 +1,17 @@
+
+    private void goodG2B() throws Throwable {
+        int count;
+
+        while (true) {
+            
+            count = 2;
+            break;
+        }
+
+        while (true) {
+            
+            Thread.sleep(count);
+            break;
+        }
+
+    }

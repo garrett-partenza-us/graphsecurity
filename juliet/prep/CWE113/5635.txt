@@ -1,0 +1,10 @@
+
+    private void goodB2G(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+
+        
+        
+        data = System.getenv("ADD");
+
+        goodB2GSink(data , request, response );
+    }

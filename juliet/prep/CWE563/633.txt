@@ -1,0 +1,23 @@
+
+    private void goodG2B1() throws Throwable {
+        StringBuilder data;
+        if (privateReturnsFalse()) {
+            
+            data = null;
+        }
+        else {
+
+            
+
+            data = new StringBuilder("Good");
+
+            IO.writeLine(data.toString());
+
+        }
+
+        if (privateReturnsTrue()) {
+            
+            data = new StringBuilder("Reinitialize");
+            IO.writeLine(data.toString());
+        }
+    }

@@ -1,0 +1,33 @@
+
+    private void goodB2G() throws Throwable {
+        String data;
+
+        FileInputStream streamFileInput = null;
+        String propertiesFileName = "./CWE690_NULL_Deref_From_Return__Helper.properties";
+        try {
+            streamFileInput = new FileInputStream(propertiesFileName);
+            Properties properties = new Properties();
+            properties.load(streamFileInput);
+
+            
+            data = properties.getProperty("CWE690");
+        }
+        catch (IOException exceptIO) {
+            IO.writeLine("Could not open properties file: " + propertiesFileName);
+            data = ""; 
+        }
+        finally {
+            try {
+                if (streamFileInput != null) {
+                    streamFileInput.close();
+                }
+            }
+            catch (IOException e) {
+                IO.logger.log(Level.WARNING, "Error closing FileInputStream", e);
+            }
+        }
+
+        Container dataContainer = new Container();
+        dataContainer.containerOne = data;
+        (new CWE690_NULL_Deref_From_Return__Properties_getProperty_trim_67b()).goodB2GSink(dataContainer  );
+    }

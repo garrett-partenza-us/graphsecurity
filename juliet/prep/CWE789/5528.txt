@@ -1,0 +1,7 @@
+
+    public void badSink(int data , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+
+        
+        ArrayList intArrayList = new ArrayList(data);
+
+    }

@@ -1,0 +1,13 @@
+
+    public void bad() throws Throwable {
+
+        int intOne = 1;
+
+        IO.writeLine(intOne);
+
+        
+        intOne = intOne;
+
+        IO.writeLine(intOne);
+
+    }

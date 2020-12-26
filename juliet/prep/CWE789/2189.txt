@@ -1,0 +1,14 @@
+
+    private void goodG2B() throws Throwable {
+        int data;
+
+        while (true) {
+            
+            data = 2;
+            break;
+        }
+
+        
+        HashSet intHashSet = new HashSet(data);
+
+    }

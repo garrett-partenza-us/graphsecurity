@@ -1,0 +1,4 @@
+
+    public void goodG2BSink(String data ) throws Throwable {
+        (new CWE23_Relative_Path_Traversal__database_54d()).goodG2BSink(data );
+    }

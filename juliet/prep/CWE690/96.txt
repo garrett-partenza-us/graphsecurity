@@ -1,0 +1,18 @@
+
+    public void bad() throws Throwable {
+        String data;
+        if (IO.staticReturnsTrue()) {
+            
+            data = System.getProperty("CWE690");
+        }
+        else {
+            
+            data = null;
+        }
+
+        if(IO.staticReturnsTrue()) {
+            
+            String stringTrimmed = data.trim();
+            IO.writeLine(stringTrimmed);
+        }
+    }

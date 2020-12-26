@@ -1,0 +1,4 @@
+
+    public void goodG2BSink(String data , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        (new CWE113_HTTP_Response_Splitting__File_addHeaderServlet_54e()).goodG2BSink(data , request, response);
+    }

@@ -1,0 +1,10 @@
+
+    public void badSink(CWE190_Integer_Overflow__int_console_readLine_add_67a.Container dataContainer ) throws Throwable {
+        int data = dataContainer.containerOne;
+
+        
+        int result = (int)(data + 1);
+
+        IO.writeLine("result: " + result);
+
+    }

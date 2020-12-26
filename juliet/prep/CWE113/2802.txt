@@ -1,0 +1,30 @@
+
+    public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+        if(IO.staticReturnsTrueOrFalse()) {
+            
+            data = request.getParameter("name");
+        }
+        else {
+
+            
+            data = "foo";
+
+        }
+
+        if(IO.staticReturnsTrueOrFalse()) {
+            if (data != null) {
+                
+                response.setHeader("Location", "/author.jsp?lang=" + data);
+            }
+        }
+        else {
+
+            if (data != null) {
+                
+                data = URLEncoder.encode(data, "UTF-8");
+                response.setHeader("Location", "/author.jsp?lang=" + data);
+            }
+
+        }
+    }

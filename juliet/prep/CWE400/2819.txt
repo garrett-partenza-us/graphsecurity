@@ -1,0 +1,8 @@
+
+    public void goodG2BSink(int countArray[] ) throws Throwable {
+        int count = countArray[2];
+
+        
+        Thread.sleep(count);
+
+    }

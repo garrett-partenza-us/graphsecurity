@@ -1,0 +1,19 @@
+
+    private void goodG2B2() throws Throwable {
+        long data;
+        if (privateTrue) {
+            
+            data = 2;
+        }
+        else {
+            
+            data = 0L;
+        }
+
+        if (privateTrue) {
+            
+            data++;
+            long result = (long)(data);
+            IO.writeLine("result: " + result);
+        }
+    }

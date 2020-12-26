@@ -1,0 +1,14 @@
+
+    public void bad() throws Throwable {
+        String data;
+
+        
+        
+        data = System.getenv("ADD");
+
+        if (data != null) {
+            
+            System.out.format(data);
+        }
+
+    }

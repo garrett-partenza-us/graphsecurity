@@ -1,0 +1,16 @@
+
+    private void goodB2G() throws Throwable {
+        int data = (new CWE129_Improper_Validation_of_Array_Index__Environment_array_write_no_check_61b()).goodB2GSource();
+
+        
+        int array[] = { 0, 1, 2, 3, 4 };
+
+        
+        if (data >= 0 && data < array.length) {
+            array[data] = 42;
+        }
+        else {
+            IO.writeLine("Array index out of bounds");
+        }
+
+    }

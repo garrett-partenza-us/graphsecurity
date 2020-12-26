@@ -1,0 +1,10 @@
+
+    private void goodB2GSink() throws Throwable {
+        String data = dataGoodB2G;
+
+        if (data != null) {
+            
+            System.out.printf("%s%n", data);
+        }
+
+    }

@@ -1,0 +1,12 @@
+
+    public void badSink() throws Throwable {
+        int count = CWE400_Resource_Exhaustion__listen_tcp_for_loop_68a.count;
+
+        int i = 0;
+
+        
+        for (i = 0; i < count; i++) {
+            IO.writeLine("Hello");
+        }
+
+    }

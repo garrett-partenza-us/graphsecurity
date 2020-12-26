@@ -1,0 +1,12 @@
+
+    private void goodG2B() throws Throwable {
+        int count = (new CWE400_Resource_Exhaustion__Environment_for_loop_61b()).goodG2BSource();
+
+        int i = 0;
+
+        
+        for (i = 0; i < count; i++) {
+            IO.writeLine("Hello");
+        }
+
+    }

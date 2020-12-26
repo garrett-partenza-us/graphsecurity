@@ -1,0 +1,16 @@
+
+    private void goodB2G1Sink(StringBuilder data ) throws Throwable {
+        if (goodB2G1Private) {
+            
+            IO.writeLine("Benign, fixed string");
+        }
+        else {
+
+            
+            if (data != null) {
+                String stringTrimmed = data.toString().trim();
+                IO.writeLine(stringTrimmed);
+            }
+
+        }
+    }

@@ -1,0 +1,4 @@
+
+    public void badSink(int data ) throws Throwable {
+        (new CWE369_Divide_by_Zero__int_listen_tcp_modulo_53c()).badSink(data );
+    }

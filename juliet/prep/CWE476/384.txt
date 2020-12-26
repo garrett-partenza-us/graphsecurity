@@ -1,0 +1,10 @@
+
+    public void bad() throws Throwable {
+        int [] data;
+
+        
+        data = null;
+
+        badPrivate = true;
+        badSink(data );
+    }

@@ -1,0 +1,8 @@
+
+    private void badSink(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int data = dataBad;
+
+        
+        IO.writeLine("bad: 100/" + data + " = " + (100 / data) + "\n");
+
+    }

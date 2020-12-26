@@ -1,0 +1,14 @@
+
+    public void badSink(String data , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        if (CWE113_HTTP_Response_Splitting__PropertiesFile_addCookieServlet_22a.badPublicStatic) {
+            if (data != null) {
+                Cookie cookieSink = new Cookie("lang", data);
+                
+                response.addCookie(cookieSink);
+            }
+        }
+        else {
+            
+            data = null;
+        }
+    }

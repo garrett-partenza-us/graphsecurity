@@ -1,0 +1,13 @@
+
+    public void bad() throws Throwable {
+        float data;
+
+        
+        SecureRandom secureRandom = new SecureRandom();
+        data = secureRandom.nextFloat();
+
+        
+        int result = (int)(100.0 % data);
+        IO.writeLine(result);
+
+    }

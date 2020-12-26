@@ -1,0 +1,10 @@
+
+    public void bad() throws Throwable {
+        byte data;
+
+        
+        data = Byte.MIN_VALUE;
+
+        dataBad = data;
+        badSink();
+    }

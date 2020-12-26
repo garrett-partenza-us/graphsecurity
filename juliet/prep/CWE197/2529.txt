@@ -1,0 +1,9 @@
+
+    public void bad() throws Throwable {
+        int data = (new CWE197_Numeric_Truncation_Error__int_console_readLine_to_byte_61b()).badSource();
+ {
+            
+            IO.writeLine((byte)data);
+        }
+
+    }

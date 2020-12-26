@@ -1,0 +1,8 @@
+
+    private void goodB2G() throws Throwable {
+
+        
+        data = Long.MAX_VALUE;
+
+        (new CWE190_Integer_Overflow__long_max_preinc_68b()).goodB2GSink();
+    }

@@ -1,0 +1,34 @@
+
+    private void goodB2G1() throws Throwable {
+        int count;
+        if (IO.staticTrue) {
+            count = Integer.MIN_VALUE; 
+            
+ {
+                String stringNumber = System.getProperty("user.home");
+                try {
+                    count = Integer.parseInt(stringNumber.trim());
+                }
+                catch(NumberFormatException exceptNumberFormat) {
+                    IO.logger.log(Level.WARNING, "Number format exception parsing count from string", exceptNumberFormat);
+                }
+            }
+        }
+        else {
+            
+            count = 0;
+        }
+
+        if (IO.staticFalse) {
+            
+            IO.writeLine("Benign, fixed string");
+        }
+        else {
+
+            
+            if (count > 0 && count <= 2000) {
+                Thread.sleep(count);
+            }
+
+        }
+    }

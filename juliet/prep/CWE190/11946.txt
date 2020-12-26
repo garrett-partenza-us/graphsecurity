@@ -1,0 +1,12 @@
+
+    public void badSink(byte data ) throws Throwable {
+        if (CWE190_Integer_Overflow__byte_rand_square_22a.badPublicStatic) {
+            
+            byte result = (byte)(data * data);
+            IO.writeLine("result: " + result);
+        }
+        else {
+            
+            data = 0;
+        }
+    }

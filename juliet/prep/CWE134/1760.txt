@@ -1,0 +1,29 @@
+
+    public void bad() throws Throwable {
+        String data;
+
+        switch (6) {
+        case 6:
+            
+            
+            data = System.getProperty("user.home");
+            break;
+        default:
+            
+            data = null;
+            break;
+        }
+
+        switch (7) {
+        case 7:
+            if (data != null) {
+                
+                System.out.format(data);
+            }
+            break;
+        default:
+            
+            IO.writeLine("Benign, fixed string");
+            break;
+        }
+    }

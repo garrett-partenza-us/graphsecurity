@@ -1,0 +1,24 @@
+
+    public void bad() throws Throwable {
+        int data;
+
+        data = Integer.MIN_VALUE; 
+
+        
+ {
+            String stringNumber = System.getenv("ADD");
+            if (stringNumber != null) {
+                try {
+                    data = Integer.parseInt(stringNumber.trim());
+                }
+                catch(NumberFormatException exceptNumberFormat) {
+                    IO.logger.log(Level.WARNING, "Number format exception parsing data from string", exceptNumberFormat);
+                }
+            }
+        }
+
+        for (int i = 0; i < 1; i++) {
+            
+            HashMap intHashMap = new HashMap(data);
+        }
+    }

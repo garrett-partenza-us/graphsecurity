@@ -1,0 +1,8 @@
+
+    public void goodG2BSink(CWE369_Divide_by_Zero__int_listen_tcp_modulo_67a.Container dataContainer ) throws Throwable {
+        int data = dataContainer.containerOne;
+
+        
+        IO.writeLine("100%" + data + " = " + (100 % data) + "\n");
+
+    }

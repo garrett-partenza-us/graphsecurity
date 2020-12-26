@@ -1,0 +1,8 @@
+
+    private void goodB2G() throws Throwable {
+
+        
+        data = Long.MIN_VALUE;
+
+        (new CWE191_Integer_Underflow__long_min_sub_68b()).goodB2GSink();
+    }

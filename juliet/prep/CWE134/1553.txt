@@ -1,0 +1,10 @@
+
+    public void bad() throws Throwable {
+        String data;
+
+        
+        
+        data = System.getProperty("user.home");
+
+        (new CWE134_Uncontrolled_Format_String__Property_format_52b()).badSink(data );
+    }

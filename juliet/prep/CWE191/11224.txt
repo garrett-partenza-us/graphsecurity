@@ -1,0 +1,20 @@
+
+    public void bad() throws Throwable {
+        long data;
+        if (privateTrue) {
+            
+            data = Long.MIN_VALUE;
+        }
+        else {
+            
+            data = 0L;
+        }
+
+        if (privateTrue) {
+            if(data < 0) {
+                
+                long result = (long)(data * 2);
+                IO.writeLine("result: " + result);
+            }
+        }
+    }

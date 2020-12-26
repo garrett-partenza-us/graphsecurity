@@ -1,0 +1,8 @@
+
+    public void badSink(int dataArray[] , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int data = dataArray[2];
+
+        
+        IO.writeLine("100%" + data + " = " + (100 % data) + "\n");
+
+    }

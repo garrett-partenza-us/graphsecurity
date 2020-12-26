@@ -1,0 +1,9 @@
+
+    private void goodG2B() throws Throwable {
+        String data;
+
+        
+        data = "This is not null";
+
+        (new CWE476_NULL_Pointer_Dereference__String_71b()).goodG2BSink((Object)data  );
+    }

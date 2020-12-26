@@ -1,0 +1,10 @@
+
+    public void badSink(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data = CWE83_XSS_Attribute__Servlet_getParameter_Servlet_68a.data;
+
+        if (data != null) {
+            
+            response.getWriter().println("<br>bad() - <img src=\"" + data + "\">");
+        }
+
+    }

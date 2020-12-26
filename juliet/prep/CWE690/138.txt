@@ -1,0 +1,9 @@
+
+    private void goodB2GSink(String data , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+
+        
+        if("CWE690".equals(data)) {
+            IO.writeLine("data is CWE690");
+        }
+
+    }

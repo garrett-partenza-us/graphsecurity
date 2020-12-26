@@ -1,0 +1,13 @@
+
+    public void badSink(int data ) throws Throwable {
+        if (CWE191_Integer_Underflow__int_random_postdec_22a.badPublicStatic) {
+            
+            data--;
+            int result = (int)(data);
+            IO.writeLine("result: " + result);
+        }
+        else {
+            
+            data = 0;
+        }
+    }

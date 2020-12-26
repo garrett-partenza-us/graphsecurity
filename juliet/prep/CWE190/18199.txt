@@ -1,0 +1,50 @@
+
+    public void bad() throws Throwable {
+        int data;
+        if (privateReturnsTrue()) {
+            data = Integer.MIN_VALUE; 
+ {
+                Properties properties = new Properties();
+                FileInputStream streamFileInput = null;
+                try {
+                    streamFileInput = new FileInputStream("../common/config.properties");
+                    properties.load(streamFileInput);
+                    
+                    String stringNumber = properties.getProperty("data");
+                    if (stringNumber != null) {
+                        try {
+                            data = Integer.parseInt(stringNumber.trim());
+                        }
+                        catch(NumberFormatException exceptNumberFormat) {
+                            IO.logger.log(Level.WARNING, "Number format exception parsing data from string", exceptNumberFormat);
+                        }
+                    }
+                }
+                catch (IOException exceptIO) {
+                    IO.logger.log(Level.WARNING, "Error with stream reading", exceptIO);
+                }
+                finally {
+                    
+                    try {
+                        if (streamFileInput != null) {
+                            streamFileInput.close();
+                        }
+                    }
+                    catch (IOException exceptIO) {
+                        IO.logger.log(Level.WARNING, "Error closing FileInputStream", exceptIO);
+                    }
+                }
+            }
+        }
+        else {
+            
+            data = 0;
+        }
+
+        if (privateReturnsTrue()) {
+            
+            data++;
+            int result = (int)(data);
+            IO.writeLine("result: " + result);
+        }
+    }

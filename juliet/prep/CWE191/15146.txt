@@ -1,0 +1,4 @@
+
+    public void goodB2GSink(int data ) throws Throwable {
+        (new CWE191_Integer_Underflow__int_URLConnection_postdec_52c()).goodB2GSink(data );
+    }

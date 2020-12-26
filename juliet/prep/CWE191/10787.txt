@@ -1,0 +1,9 @@
+
+    private void goodG2B() throws Throwable {
+        short data;
+
+        
+        data = 2;
+
+        goodG2BSink(data  );
+    }

@@ -1,0 +1,18 @@
+
+    public void bad() throws Throwable {
+        long data;
+        if (IO.staticTrue) {
+            
+            data = (new java.security.SecureRandom()).nextLong();
+        }
+        else {
+            
+            data = 0L;
+        }
+
+        if (IO.staticTrue) {
+            
+            long result = (long)(++data);
+            IO.writeLine("result: " + result);
+        }
+    }

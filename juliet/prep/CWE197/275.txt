@@ -1,0 +1,9 @@
+
+    public void badSink() throws Throwable {
+        short data = CWE197_Numeric_Truncation_Error__short_Property_68a.data;
+ {
+            
+            IO.writeLine((byte)data);
+        }
+
+    }

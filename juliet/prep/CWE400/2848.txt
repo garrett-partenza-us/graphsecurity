@@ -1,0 +1,15 @@
+
+    public void bad() throws Throwable {
+        int count;
+
+        
+        count = (new SecureRandom()).nextInt();
+
+        int i = 0;
+
+        
+        for (i = 0; i < count; i++) {
+            IO.writeLine("Hello");
+        }
+
+    }

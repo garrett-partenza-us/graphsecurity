@@ -1,0 +1,10 @@
+
+    public void bad() throws Throwable {
+        String data;
+
+        
+        data = null;
+
+        dataBad = data;
+        badSink();
+    }

@@ -1,0 +1,9 @@
+
+    public void bad() throws Throwable {
+        float data = (new CWE369_Divide_by_Zero__float_listen_tcp_modulo_61b()).badSource();
+
+        
+        int result = (int)(100.0 % data);
+        IO.writeLine(result);
+
+    }

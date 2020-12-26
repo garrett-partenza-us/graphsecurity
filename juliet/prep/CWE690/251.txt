@@ -1,0 +1,8 @@
+
+    private void goodB2G(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+
+        
+        data = request.getParameter("CWE690");
+
+        (new CWE690_NULL_Deref_From_Return__getParameter_Servlet_equals_68b()).goodB2GSink(request, response);
+    }

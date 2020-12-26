@@ -1,0 +1,14 @@
+
+    private void goodB2GSink(int data , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+
+        
+        if (data > Integer.MIN_VALUE) {
+            data--;
+            int result = (int)(data);
+            IO.writeLine("result: " + result);
+        }
+        else {
+            IO.writeLine("data value is too small to decrement.");
+        }
+
+    }

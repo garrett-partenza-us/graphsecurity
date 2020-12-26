@@ -1,0 +1,11 @@
+
+    public void bad() throws Throwable {
+        String data = null;
+
+        
+        
+        data = System.getenv("ADD");
+
+        badPublicStatic = true;
+        (new CWE606_Unchecked_Loop_Condition__Environment_22b()).badSink(data );
+    }

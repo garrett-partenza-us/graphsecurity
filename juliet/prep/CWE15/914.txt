@@ -1,0 +1,4 @@
+
+    public void goodG2BSink(String data ) throws Throwable {
+        (new CWE15_External_Control_of_System_or_Configuration_Setting__connect_tcp_53d()).goodG2BSink(data );
+    }

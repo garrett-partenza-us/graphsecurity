@@ -1,0 +1,23 @@
+
+    public void bad() throws Throwable {
+        float data;
+
+        data = -1.0f; 
+
+        
+ {
+            String stringNumber = System.getProperty("user.home");
+            if (stringNumber != null) {
+                try {
+                    data = Float.parseFloat(stringNumber.trim());
+                }
+                catch(NumberFormatException exceptNumberFormat) {
+                    IO.logger.log(Level.WARNING, "Number format exception parsing data from string", exceptNumberFormat);
+                }
+            }
+        }
+
+        Container dataContainer = new Container();
+        dataContainer.containerOne = data;
+        (new CWE369_Divide_by_Zero__float_Property_modulo_67b()).badSink(dataContainer  );
+    }

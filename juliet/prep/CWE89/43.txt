@@ -1,0 +1,4 @@
+
+    public void goodB2GSink(String data , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        (new CWE89_SQL_Injection__getCookies_Servlet_execute_54d()).goodB2GSink(data , request, response);
+    }

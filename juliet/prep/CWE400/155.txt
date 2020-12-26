@@ -1,0 +1,13 @@
+
+    public void goodB2G2Sink(int count ) throws Throwable {
+        if (CWE400_Resource_Exhaustion__sleep_Environment_22a.goodB2G2PublicStatic) {
+            
+            if (count > 0 && count <= 2000) {
+                Thread.sleep(count);
+            }
+        }
+        else {
+            
+            count = 0;
+        }
+    }

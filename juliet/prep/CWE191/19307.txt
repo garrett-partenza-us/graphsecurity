@@ -1,0 +1,11 @@
+
+    private void badSink() throws Throwable {
+        int data = dataBad;
+
+        if(data < 0) {
+            
+            int result = (int)(data * 2);
+            IO.writeLine("result: " + result);
+        }
+
+    }

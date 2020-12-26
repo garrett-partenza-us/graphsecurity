@@ -1,0 +1,19 @@
+
+    public void bad() throws Throwable {
+        String data;
+        if (IO.STATIC_FINAL_FIVE == 5) {
+            
+            data = "7e5tc4s3";
+        }
+        else {
+            
+            data = null;
+        }
+
+        if (data != null) {
+            
+            PasswordAuthentication credentials = new PasswordAuthentication("user", data.toCharArray());
+            IO.writeLine(credentials.toString());
+        }
+
+    }

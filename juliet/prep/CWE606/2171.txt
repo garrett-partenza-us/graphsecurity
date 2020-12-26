@@ -1,0 +1,68 @@
+
+    private void goodB2G1() throws Throwable {
+        String data;
+        if (IO.staticTrue) {
+            data = ""; {
+                InputStreamReader readerInputStream = null;
+                BufferedReader readerBuffered = null;
+                
+                try {
+                    readerInputStream = new InputStreamReader(System.in, "UTF-8");
+                    readerBuffered = new BufferedReader(readerInputStream);
+                    
+                    data = readerBuffered.readLine();
+                }
+                catch (IOException exceptIO) {
+                    IO.logger.log(Level.WARNING, "Error with stream reading", exceptIO);
+                }
+                finally {
+                    try {
+                        if (readerBuffered != null) {
+                            readerBuffered.close();
+                        }
+                    }
+                    catch (IOException exceptIO) {
+                        IO.logger.log(Level.WARNING, "Error closing BufferedReader", exceptIO);
+                    }
+
+                    try {
+                        if (readerInputStream != null) {
+                            readerInputStream.close();
+                        }
+                    }
+                    catch (IOException exceptIO) {
+                        IO.logger.log(Level.WARNING, "Error closing InputStreamReader", exceptIO);
+                    }
+                }
+            }
+            
+        }
+        else {
+            
+            data = null;
+        }
+
+        if (IO.staticFalse) {
+            
+            IO.writeLine("Benign, fixed string");
+        }
+        else {
+
+            int numberOfLoops;
+            try {
+                numberOfLoops = Integer.parseInt(data);
+            }
+            catch (NumberFormatException exceptNumberFormat) {
+                IO.writeLine("Invalid response. Numeric input expected. Assuming 1.");
+                numberOfLoops = 1;
+            }
+
+            
+            if (numberOfLoops >= 0 && numberOfLoops <= 5) {
+                for (int i=0; i < numberOfLoops; i++) {
+                    IO.writeLine("hello world");
+                }
+            }
+
+        }
+    }

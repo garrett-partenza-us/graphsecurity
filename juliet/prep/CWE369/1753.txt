@@ -1,0 +1,28 @@
+
+    private void goodB2G1() throws Throwable {
+        float data;
+        if (IO.staticTrue) {
+            data = 0.0f; 
+        }
+        else {
+            
+            data = 0.0f;
+        }
+
+        if (IO.staticFalse) {
+            
+            IO.writeLine("Benign, fixed string");
+        }
+        else {
+
+            
+            if (Math.abs(data) > 0.000001) {
+                int result = (int)(100.0 % data);
+                IO.writeLine(result);
+            }
+            else {
+                IO.writeLine("This would result in a modulo by zero");
+            }
+
+        }
+    }

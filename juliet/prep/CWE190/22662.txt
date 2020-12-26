@@ -1,0 +1,18 @@
+
+    public void bad() throws Throwable {
+        int data;
+        if (IO.staticReturnsTrue()) {
+            
+            data = Integer.MAX_VALUE;
+        }
+        else {
+            
+            data = 0;
+        }
+
+        if(IO.staticReturnsTrue()) {
+            
+            int result = (int)(++data);
+            IO.writeLine("result: " + result);
+        }
+    }

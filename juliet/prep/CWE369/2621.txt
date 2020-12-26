@@ -1,0 +1,8 @@
+
+    private float badSource() throws Throwable {
+        float data;
+
+        data = 0.0f; 
+
+        return data;
+    }

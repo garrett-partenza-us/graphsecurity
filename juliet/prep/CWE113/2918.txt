@@ -1,0 +1,10 @@
+
+    public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data = null;
+
+        
+        data = request.getParameter("name");
+
+        badPublicStatic = true;
+        (new CWE113_HTTP_Response_Splitting__getParameter_Servlet_addCookieServlet_22b()).badSink(data , request, response);
+    }

@@ -1,0 +1,8 @@
+
+    public void bad() throws Throwable {
+
+        
+        data = Short.MIN_VALUE;
+
+        (new CWE191_Integer_Underflow__short_min_postdec_68b()).badSink();
+    }

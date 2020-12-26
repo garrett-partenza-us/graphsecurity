@@ -1,0 +1,8 @@
+
+    public void goodG2BSink() throws Throwable {
+        int data = CWE789_Uncontrolled_Mem_Alloc__File_HashSet_68a.data;
+
+        
+        HashSet intHashSet = new HashSet(data);
+
+    }

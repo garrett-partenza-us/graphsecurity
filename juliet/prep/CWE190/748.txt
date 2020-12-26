@@ -1,0 +1,31 @@
+
+    private void goodG2B() throws Throwable {
+        short data;
+        if(IO.staticReturnsTrueOrFalse()) {
+            
+            data = 2;
+        }
+        else {
+
+            
+            data = 2;
+
+        }
+
+        if(IO.staticReturnsTrueOrFalse()) {
+            if(data > 0) {
+                
+                short result = (short)(data * 2);
+                IO.writeLine("result: " + result);
+            }
+        }
+        else {
+
+            if(data > 0) {
+                
+                short result = (short)(data * 2);
+                IO.writeLine("result: " + result);
+            }
+
+        }
+    }

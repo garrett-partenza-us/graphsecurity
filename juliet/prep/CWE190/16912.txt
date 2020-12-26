@@ -1,0 +1,28 @@
+
+    public void bad() throws Throwable {
+        byte data;
+
+        switch (6) {
+        case 6:
+            
+            data = (byte)((new java.security.SecureRandom()).nextInt(1+Byte.MAX_VALUE-Byte.MIN_VALUE) + Byte.MIN_VALUE);
+            break;
+        default:
+            
+            data = 0;
+            break;
+        }
+
+        switch (7) {
+        case 7:
+            
+            data++;
+            byte result = (byte)(data);
+            IO.writeLine("result: " + result);
+            break;
+        default:
+            
+            IO.writeLine("Benign, fixed string");
+            break;
+        }
+    }

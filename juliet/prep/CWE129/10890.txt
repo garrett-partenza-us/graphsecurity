@@ -1,0 +1,9 @@
+
+    public void bad() throws Throwable {
+        int data;
+
+        
+        data = -1;
+
+        (new CWE129_Improper_Validation_of_Array_Index__negative_fixed_array_write_no_check_71b()).badSink((Object)data  );
+    }

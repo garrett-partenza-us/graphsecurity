@@ -1,0 +1,21 @@
+
+    public void bad() throws Throwable {
+        StringBuilder data;
+
+        
+
+        data = new StringBuilder("Good");
+
+        if (IO.staticReturnsTrueOrFalse()) {
+            
+            
+            ; 
+        }
+        else {
+
+            
+
+            IO.writeLine(data.toString());
+
+        }
+    }

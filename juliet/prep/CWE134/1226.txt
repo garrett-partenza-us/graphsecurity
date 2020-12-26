@@ -1,0 +1,10 @@
+
+    public void goodB2GSink(HashMap<Integer,String> dataHashMap ) throws Throwable {
+        String data = dataHashMap.get(2);
+
+        if (data != null) {
+            
+            System.out.printf("%s%n", data);
+        }
+
+    }

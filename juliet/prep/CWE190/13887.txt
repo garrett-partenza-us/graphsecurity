@@ -1,0 +1,14 @@
+
+    private void goodB2G() throws Throwable {
+        byte data = (new CWE190_Integer_Overflow__byte_rand_add_61b()).goodB2GSource();
+
+        
+        if (data < Byte.MAX_VALUE) {
+            byte result = (byte)(data + 1);
+            IO.writeLine("result: " + result);
+        }
+        else {
+            IO.writeLine("data value is too large to perform addition.");
+        }
+
+    }

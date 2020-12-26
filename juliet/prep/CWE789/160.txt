@@ -1,0 +1,15 @@
+
+    public int goodG2B2Source(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int data;
+
+        if (CWE789_Uncontrolled_Mem_Alloc__getCookies_Servlet_HashSet_22a.goodG2B2PublicStatic) {
+            
+            data = 2;
+        }
+        else {
+            
+            data = 0;
+        }
+
+        return data;
+    }

@@ -1,0 +1,11 @@
+
+    public void bad() throws Throwable {
+        int data;
+
+        badPrivate = true;
+        data = bad_source();
+
+        
+        ArrayList intArrayList = new ArrayList(data);
+
+    }

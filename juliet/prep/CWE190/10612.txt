@@ -1,0 +1,15 @@
+
+    public void goodB2GSink() throws Throwable {
+        long data = CWE190_Integer_Overflow__long_rand_square_68a.data;
+
+        
+        
+        if ((data != Integer.MIN_VALUE) && (data != Long.MIN_VALUE) && (Math.abs(data) <= (long)Math.sqrt(Long.MAX_VALUE))) {
+            long result = (long)(data * data);
+            IO.writeLine("result: " + result);
+        }
+        else {
+            IO.writeLine("data value is too large to perform squaring.");
+        }
+
+    }

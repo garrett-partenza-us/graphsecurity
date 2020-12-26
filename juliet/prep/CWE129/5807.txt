@@ -1,0 +1,18 @@
+
+    public void bad() throws Throwable {
+        int data;
+
+        while (true) {
+            
+            data = 100;
+            break;
+        }
+
+        while (true) {
+            
+            int array[] = { 0, 1, 2, 3, 4 };
+            
+            IO.writeLine(array[data]);
+            break;
+        }
+    }

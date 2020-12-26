@@ -1,0 +1,34 @@
+
+    public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int count;
+        if (privateFive==5) {
+            count = Integer.MIN_VALUE; 
+ {
+                StringTokenizer tokenizer = new StringTokenizer(request.getQueryString(), "&");
+                while (tokenizer.hasMoreTokens()) {
+                    String token = tokenizer.nextToken(); 
+                    if(token.startsWith("id=")) {
+                        try {
+                            count = Integer.parseInt(token.substring(3)); 
+                        }
+                        catch(NumberFormatException exceptNumberFormat) {
+                            IO.logger.log(Level.WARNING, "Number format exception reading id from query string", exceptNumberFormat);
+                        }
+                        break; 
+                    }
+                }
+            }
+        }
+        else {
+            
+            count = 0;
+        }
+
+        if (privateFive==5) {
+            int i = 0;
+            
+            for (i = 0; i < count; i++) {
+                IO.writeLine("Hello");
+            }
+        }
+    }

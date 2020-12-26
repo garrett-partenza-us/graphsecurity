@@ -1,0 +1,25 @@
+
+    private void goodB2G2() throws Throwable {
+        int data;
+        if (true) {
+            
+            data = Integer.MAX_VALUE;
+        }
+        else {
+            
+            data = 0;
+        }
+
+        if (true) {
+            if(data > 0) {
+                
+                if (data < (Integer.MAX_VALUE/2)) {
+                    int result = (int)(data * 2);
+                    IO.writeLine("result: " + result);
+                }
+                else {
+                    IO.writeLine("data value is too large to perform multiplication.");
+                }
+            }
+        }
+    }

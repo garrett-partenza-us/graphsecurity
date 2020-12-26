@@ -1,0 +1,4 @@
+
+    public void goodB2GSink(byte data ) throws Throwable {
+        (new CWE190_Integer_Overflow__byte_max_preinc_54c()).goodB2GSink(data );
+    }

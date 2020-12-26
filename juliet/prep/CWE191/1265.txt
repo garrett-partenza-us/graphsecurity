@@ -1,0 +1,10 @@
+
+    public void badSink(CWE191_Integer_Underflow__short_rand_predec_67a.Container dataContainer ) throws Throwable {
+        short data = dataContainer.containerOne;
+
+        
+        short result = (short)(--data);
+
+        IO.writeLine("result: " + result);
+
+    }

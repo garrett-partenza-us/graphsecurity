@@ -1,0 +1,23 @@
+
+    public int badSource() throws Throwable {
+        int data;
+
+        if (CWE789_Uncontrolled_Mem_Alloc__Property_ArrayList_22a.badPublicStatic) {
+            data = Integer.MIN_VALUE; 
+            
+ {
+                String stringNumber = System.getProperty("user.home");
+                try {
+                    data = Integer.parseInt(stringNumber.trim());
+                }
+                catch(NumberFormatException exceptNumberFormat) {
+                    IO.logger.log(Level.WARNING, "Number format exception parsing data from string", exceptNumberFormat);
+                }
+            }
+        }
+        else {
+            
+            data = 0;
+        }
+        return data;
+    }

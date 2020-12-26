@@ -1,0 +1,50 @@
+
+    private void goodB2G2() throws Throwable {
+        int count;
+        if (IO.staticFive==5) {
+            count = Integer.MIN_VALUE; 
+ {
+                Properties properties = new Properties();
+                FileInputStream streamFileInput = null;
+                try {
+                    streamFileInput = new FileInputStream("../common/config.properties");
+                    properties.load(streamFileInput);
+                    
+                    String stringNumber = properties.getProperty("data");
+                    if (stringNumber != null) {
+                        try {
+                            count = Integer.parseInt(stringNumber.trim());
+                        }
+                        catch(NumberFormatException exceptNumberFormat) {
+                            IO.logger.log(Level.WARNING, "Number format exception parsing count from string", exceptNumberFormat);
+                        }
+                    }
+                }
+                catch (IOException exceptIO) {
+                    IO.logger.log(Level.WARNING, "Error with stream reading", exceptIO);
+                }
+                finally {
+                    
+                    try {
+                        if (streamFileInput != null) {
+                            streamFileInput.close();
+                        }
+                    }
+                    catch (IOException exceptIO) {
+                        IO.logger.log(Level.WARNING, "Error closing FileInputStream", exceptIO);
+                    }
+                }
+            }
+        }
+        else {
+            
+            count = 0;
+        }
+
+        if (IO.staticFive==5) {
+            
+            if (count > 0 && count <= 2000) {
+                Thread.sleep(count);
+            }
+        }
+    }

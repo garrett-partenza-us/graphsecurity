@@ -1,0 +1,28 @@
+
+    private void goodG2B1() throws Throwable {
+        StringBuilder data;
+
+        switch (5) {
+        case 6:
+            
+            data = null;
+            break;
+        default:
+            
+            data = new StringBuilder("Good");
+            IO.writeLine(data.toString());
+            break;
+        }
+
+        switch (7) {
+        case 7:
+            
+            data = new StringBuilder("Reinitialize");
+            IO.writeLine(data.toString());
+            break;
+        default:
+            
+            IO.writeLine("Benign, fixed string");
+            break;
+        }
+    }

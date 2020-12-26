@@ -1,0 +1,18 @@
+
+    private void goodB2G() throws Throwable {
+        String data;
+
+        while (true) {
+            
+            data = System.getProperty("CWE690");
+            break;
+        }
+
+        while (true) {
+            
+            if("CWE690".equals(data)) {
+                IO.writeLine("data is CWE690");
+            }
+            break;
+        }
+    }

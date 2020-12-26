@@ -1,0 +1,11 @@
+
+    private void goodG2B() throws Throwable {
+        int count;
+
+        
+        count = 2;
+
+        Container countContainer = new Container();
+        countContainer.containerOne = count;
+        (new CWE400_Resource_Exhaustion__connect_tcp_write_67b()).goodG2BSink(countContainer  );
+    }

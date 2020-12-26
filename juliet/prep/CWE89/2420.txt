@@ -1,0 +1,11 @@
+
+    public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+
+        
+        data = request.getParameter("name");
+
+        Container dataContainer = new Container();
+        dataContainer.containerOne = data;
+        (new CWE89_SQL_Injection__getParameter_Servlet_executeQuery_67b()).badSink(dataContainer , request, response );
+    }

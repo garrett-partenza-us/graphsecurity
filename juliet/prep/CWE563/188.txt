@@ -1,0 +1,23 @@
+
+    private void goodG2B1() throws Throwable {
+        int data;
+        if (privateFalse) {
+            
+            data = 0;
+        }
+        else {
+
+            
+
+            data = 5;
+
+            IO.writeLine("" + data);
+
+        }
+
+        if (privateTrue) {
+            
+            data = 10;
+            IO.writeLine("" + data);
+        }
+    }

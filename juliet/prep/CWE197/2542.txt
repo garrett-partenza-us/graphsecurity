@@ -1,0 +1,8 @@
+
+    private void goodG2B() throws Throwable {
+
+        
+        data = 2;
+
+        (new CWE197_Numeric_Truncation_Error__int_PropertiesFile_to_short_68b()).goodG2BSink();
+    }

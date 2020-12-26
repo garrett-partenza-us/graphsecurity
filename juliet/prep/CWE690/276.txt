@@ -1,0 +1,16 @@
+
+    public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+
+        
+
+        
+        data = request.getParameter("CWE690");
+
+        for (int j = 0; j < 1; j++) {
+            
+            if(data.equals("CWE690")) {
+                IO.writeLine("data is CWE690");
+            }
+        }
+    }

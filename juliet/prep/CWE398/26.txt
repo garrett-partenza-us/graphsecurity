@@ -1,0 +1,4 @@
+
+    private void good1() {
+        helperGood1();
+    }

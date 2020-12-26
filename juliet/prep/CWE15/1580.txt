@@ -1,0 +1,38 @@
+
+    public void bad() throws Throwable {
+        String data;
+        if (IO.staticReturnsTrueOrFalse()) {
+            
+            
+            data = System.getenv("ADD");
+        }
+        else {
+
+            
+            data = "foo";
+
+        }
+
+        Connection dbConnection = null;
+
+        try {
+            dbConnection = IO.getDBConnection();
+
+            
+            dbConnection.setCatalog(data);
+        }
+        catch (SQLException exceptSql) {
+            IO.logger.log(Level.WARNING, "Error getting database connection", exceptSql);
+        }
+        finally {
+            try {
+                if (dbConnection != null) {
+                    dbConnection.close();
+                }
+            }
+            catch (SQLException exceptSql) {
+                IO.logger.log(Level.WARNING, "Error closing Connection", exceptSql);
+            }
+        }
+
+    }

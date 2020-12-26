@@ -1,0 +1,8 @@
+
+    private void goodG2B() throws Throwable {
+
+        
+        data = 2;
+
+        (new CWE789_Uncontrolled_Mem_Alloc__random_HashMap_68b()).goodG2BSink();
+    }

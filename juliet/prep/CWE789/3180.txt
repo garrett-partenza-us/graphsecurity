@@ -1,0 +1,10 @@
+
+    private void goodG2B() throws Throwable {
+        int data;
+
+        
+        data = 2;
+
+        CWE789_Uncontrolled_Mem_Alloc__URLConnection_HashMap_81_base baseObject = new CWE789_Uncontrolled_Mem_Alloc__URLConnection_HashMap_81_goodG2B();
+        baseObject.action(data );
+    }

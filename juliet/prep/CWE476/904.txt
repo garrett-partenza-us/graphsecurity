@@ -1,0 +1,19 @@
+
+    private void goodG2B1() throws Throwable {
+        StringBuilder data;
+        if (PRIVATE_STATIC_FINAL_FALSE) {
+            
+            data = null;
+        }
+        else {
+
+            
+            data = new StringBuilder();
+
+        }
+
+        if (PRIVATE_STATIC_FINAL_TRUE) {
+            
+            IO.writeLine("" + data.length());
+        }
+    }

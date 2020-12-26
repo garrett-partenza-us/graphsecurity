@@ -1,0 +1,13 @@
+
+    public void bad() throws Throwable {
+        long data;
+
+        
+        data = Long.MAX_VALUE;
+
+        Vector<Long> dataVector = new Vector<Long>(5);
+        dataVector.add(0, data);
+        dataVector.add(1, data);
+        dataVector.add(2, data);
+        (new CWE190_Integer_Overflow__long_max_multiply_72b()).badSink(dataVector  );
+    }

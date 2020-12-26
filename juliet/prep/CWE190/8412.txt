@@ -1,0 +1,18 @@
+
+    public void bad() throws Throwable {
+        long data;
+        if (true) {
+            
+            data = Long.MAX_VALUE;
+        }
+        else {
+            
+            data = 0L;
+        }
+
+        if (true) {
+            
+            long result = (long)(data + 1);
+            IO.writeLine("result: " + result);
+        }
+    }

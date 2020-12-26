@@ -1,0 +1,32 @@
+
+    public void bad() throws Throwable {
+        short data;
+        if(IO.staticReturnsTrueOrFalse()) {
+            
+            data = Short.MIN_VALUE;
+        }
+        else {
+
+            
+            data = 2;
+
+        }
+
+        if(IO.staticReturnsTrueOrFalse()) {
+            
+            short result = (short)(data - 1);
+            IO.writeLine("result: " + result);
+        }
+        else {
+
+            
+            if (data > Short.MIN_VALUE) {
+                short result = (short)(data - 1);
+                IO.writeLine("result: " + result);
+            }
+            else {
+                IO.writeLine("data value is too small to perform subtraction.");
+            }
+
+        }
+    }

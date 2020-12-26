@@ -1,0 +1,20 @@
+
+    public void bad() throws Throwable {
+        String data;
+        if (privateFive == 5) {
+            
+            data = "7e5tc4s3";
+        }
+        else {
+            
+            data = null;
+        }
+
+        if (data != null) {
+            KerberosPrincipal principal = new KerberosPrincipal("test");
+            
+            KerberosKey key = new KerberosKey(principal, data.toCharArray(), null);
+            IO.writeLine(key.toString());
+        }
+
+    }

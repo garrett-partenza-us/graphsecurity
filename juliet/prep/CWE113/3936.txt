@@ -1,0 +1,11 @@
+
+    public void goodB2GSink(CWE113_HTTP_Response_Splitting__URLConnection_addCookieServlet_67a.Container dataContainer , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data = dataContainer.containerOne;
+
+        if (data != null) {
+            Cookie cookieSink = new Cookie("lang", URLEncoder.encode(data, "UTF-8"));
+            
+            response.addCookie(cookieSink);
+        }
+
+    }

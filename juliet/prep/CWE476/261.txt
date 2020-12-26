@@ -1,0 +1,21 @@
+
+    private void goodB2G() throws Throwable {
+        int [] data;
+
+        while (true) {
+            
+            data = null;
+            break;
+        }
+
+        while (true) {
+            
+            if (data != null) {
+                IO.writeLine("" + data.length);
+            }
+            else {
+                IO.writeLine("data is null");
+            }
+            break;
+        }
+    }

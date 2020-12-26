@@ -1,0 +1,9 @@
+
+    private void goodG2B() throws Throwable {
+        StringBuilder data;
+
+        
+        data = new StringBuilder();
+
+        goodG2BSink(data  );
+    }

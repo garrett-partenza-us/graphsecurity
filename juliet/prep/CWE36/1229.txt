@@ -1,0 +1,15 @@
+
+    public String goodG2B2Source(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+
+        if (CWE36_Absolute_Path_Traversal__getQueryString_Servlet_22a.goodG2B2PublicStatic) {
+            
+            data = "foo";
+        }
+        else {
+            
+            data = null;
+        }
+
+        return data;
+    }

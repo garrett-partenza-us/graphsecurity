@@ -1,0 +1,4 @@
+
+    public void badSink(short data ) throws Throwable {
+        (new CWE191_Integer_Underflow__short_min_multiply_52c()).badSink(data );
+    }

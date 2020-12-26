@@ -1,0 +1,8 @@
+
+    public void goodG2BSink(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int data = CWE789_Uncontrolled_Mem_Alloc__getQueryString_Servlet_HashSet_68a.data;
+
+        
+        HashSet intHashSet = new HashSet(data);
+
+    }

@@ -1,0 +1,19 @@
+
+    public void goodB2G1Sink(int data ) throws Throwable {
+        if (CWE190_Integer_Overflow__int_URLConnection_preinc_22a.goodB2G1PublicStatic) {
+            
+            data = 0;
+        }
+        else {
+
+            
+            if (data < Integer.MAX_VALUE) {
+                int result = (int)(++data);
+                IO.writeLine("result: " + result);
+            }
+            else {
+                IO.writeLine("data value is too large to increment.");
+            }
+
+        }
+    }

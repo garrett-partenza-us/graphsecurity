@@ -1,0 +1,14 @@
+
+    public void bad() throws Throwable {
+        String data;
+
+        badPublicStatic = true;
+        data = (new CWE470_Unsafe_Reflection__connect_tcp_22b()).badSource();
+
+        
+        Class<?> tempClass = Class.forName(data);
+        Object tempClassObject = tempClass.newInstance();
+
+        IO.writeLine(tempClassObject.toString()); 
+
+    }

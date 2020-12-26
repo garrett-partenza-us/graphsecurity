@@ -1,0 +1,4 @@
+
+    public void badSink(int data , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        (new CWE789_Uncontrolled_Mem_Alloc__getCookies_Servlet_HashMap_53c()).badSink(data , request, response);
+    }

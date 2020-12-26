@@ -1,0 +1,15 @@
+
+    public void bad() throws Throwable {
+        byte data;
+
+        
+
+        
+        data = (byte)((new java.security.SecureRandom()).nextInt(1+Byte.MAX_VALUE-Byte.MIN_VALUE) + Byte.MIN_VALUE);
+
+        for (int j = 0; j < 1; j++) {
+            
+            byte result = (byte)(++data);
+            IO.writeLine("result: " + result);
+        }
+    }

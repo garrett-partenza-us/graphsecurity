@@ -1,0 +1,12 @@
+
+    private void badSink(int data , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+
+        
+        int array[] = { 0, 1, 2, 3, 4 };
+
+        
+        array[data] = 42;
+
+        
+
+    }

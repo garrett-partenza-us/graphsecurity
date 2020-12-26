@@ -1,0 +1,8 @@
+
+    public void badSink(LinkedList<Integer> dataLinkedList , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int data = dataLinkedList.remove(2);
+
+        
+        IO.writeLine("100%" + data + " = " + (100 % data) + "\n");
+
+    }

@@ -1,0 +1,23 @@
+
+    private void goodB2G() throws Throwable {
+        int count;
+
+        count = Integer.MIN_VALUE; 
+
+        
+ {
+            String stringNumber = System.getenv("ADD");
+            if (stringNumber != null) {
+                try {
+                    count = Integer.parseInt(stringNumber.trim());
+                }
+                catch(NumberFormatException exceptNumberFormat) {
+                    IO.logger.log(Level.WARNING, "Number format exception parsing count from string", exceptNumberFormat);
+                }
+            }
+        }
+
+        Container countContainer = new Container();
+        countContainer.containerOne = count;
+        (new CWE400_Resource_Exhaustion__Environment_write_67b()).goodB2GSink(countContainer  );
+    }

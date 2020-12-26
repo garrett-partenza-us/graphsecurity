@@ -1,0 +1,4 @@
+
+    public void goodB2GSink(String data ) throws Throwable {
+        (new CWE643_Xpath_Injection__database_53c()).goodB2GSink(data );
+    }

@@ -1,0 +1,13 @@
+
+    public void bad() throws Throwable {
+        int data;
+
+        
+        data = (new SecureRandom()).nextInt();
+
+        LinkedList<Integer> dataLinkedList = new LinkedList<Integer>();
+        dataLinkedList.add(0, data);
+        dataLinkedList.add(1, data);
+        dataLinkedList.add(2, data);
+        (new CWE191_Integer_Underflow__int_random_predec_73b()).badSink(dataLinkedList  );
+    }

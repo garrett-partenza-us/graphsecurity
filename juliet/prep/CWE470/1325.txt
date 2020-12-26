@@ -1,0 +1,22 @@
+
+    private void goodG2B2(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data = null;
+
+        switch (6) {
+        case 6:
+            
+            data = "Testing.test";
+            break;
+        default:
+            
+            data = null;
+            break;
+        }
+
+        
+        Class<?> tempClass = Class.forName(data);
+        Object tempClassObject = tempClass.newInstance();
+
+        IO.writeLine(tempClassObject.toString()); 
+
+    }

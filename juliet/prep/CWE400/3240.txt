@@ -1,0 +1,4 @@
+
+    public void goodG2BSink(int count ) throws Throwable {
+        (new CWE400_Resource_Exhaustion__listen_tcp_write_53c()).goodG2BSink(count );
+    }

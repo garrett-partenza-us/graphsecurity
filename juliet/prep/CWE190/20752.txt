@@ -1,0 +1,10 @@
+
+    public void goodG2BSink() throws Throwable {
+        byte data = CWE190_Integer_Overflow__byte_max_preinc_68a.data;
+
+        
+        byte result = (byte)(++data);
+
+        IO.writeLine("result: " + result);
+
+    }

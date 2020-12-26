@@ -1,0 +1,16 @@
+
+    private String bad_source() throws Throwable {
+        String data;
+
+        if (badPrivate) {
+            
+            
+            data = System.getenv("ADD");
+        }
+        else {
+            
+            data = null;
+        }
+
+        return data;
+    }

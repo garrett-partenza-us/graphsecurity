@@ -1,0 +1,30 @@
+
+    public void bad() throws Throwable {
+        String data;
+        if(IO.staticReturnsTrueOrFalse()) {
+            
+            data = null;
+        }
+        else {
+
+            
+            data = "This is not null";
+
+        }
+
+        if(IO.staticReturnsTrueOrFalse()) {
+            
+            IO.writeLine("" + data.length());
+        }
+        else {
+
+            
+            if (data != null) {
+                IO.writeLine("" + data.length());
+            }
+            else {
+                IO.writeLine("data is null");
+            }
+
+        }
+    }

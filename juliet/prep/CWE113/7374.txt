@@ -1,0 +1,33 @@
+
+    private void goodB2G(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+        if(IO.staticReturnsTrueOrFalse()) {
+            
+            
+            data = System.getenv("ADD");
+        }
+        else {
+
+            
+            
+            data = System.getenv("ADD");
+
+        }
+
+        if(IO.staticReturnsTrueOrFalse()) {
+            
+            if (data != null) {
+                data = URLEncoder.encode(data, "UTF-8");
+                response.addHeader("Location", "/author.jsp?lang=" + data);
+            }
+        }
+        else {
+
+            
+            if (data != null) {
+                data = URLEncoder.encode(data, "UTF-8");
+                response.addHeader("Location", "/author.jsp?lang=" + data);
+            }
+
+        }
+    }

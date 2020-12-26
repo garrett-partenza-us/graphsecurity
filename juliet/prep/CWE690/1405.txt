@@ -1,0 +1,10 @@
+
+    public void badSink(CWE690_NULL_Deref_From_Return__System_getProperty_equals_67a.Container dataContainer ) throws Throwable {
+        String data = dataContainer.containerOne;
+
+        
+        if(data.equals("CWE690")) {
+            IO.writeLine("data is CWE690");
+        }
+
+    }

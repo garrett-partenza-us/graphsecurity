@@ -1,0 +1,29 @@
+
+    private void goodG2B() throws Throwable {
+        String data;
+        if(IO.staticReturnsTrueOrFalse()) {
+            
+            data = "foo";
+        }
+        else {
+
+            
+            data = "foo";
+
+        }
+
+        if(IO.staticReturnsTrueOrFalse()) {
+            if (data != null) {
+                
+                System.out.format(data);
+            }
+        }
+        else {
+
+            if (data != null) {
+                
+                System.out.format(data);
+            }
+
+        }
+    }

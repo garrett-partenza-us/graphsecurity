@@ -1,0 +1,10 @@
+
+    private void badSink(String data , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        if (badPrivate) {
+            if (data != null) {
+                Cookie cookieSink = new Cookie("lang", data);
+                
+                response.addCookie(cookieSink);
+            }
+        }
+    }

@@ -1,0 +1,10 @@
+
+    private void goodG2BSink() throws Throwable {
+        long data = dataGoodG2B;
+
+        
+        long result = (long)(--data);
+
+        IO.writeLine("result: " + result);
+
+    }

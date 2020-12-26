@@ -1,0 +1,15 @@
+
+    private void goodB2G() throws Throwable {
+        int data = (new CWE190_Integer_Overflow__int_Property_postinc_61b()).goodB2GSource();
+
+        
+        if (data < Integer.MAX_VALUE) {
+            data++;
+            int result = (int)(data);
+            IO.writeLine("result: " + result);
+        }
+        else {
+            IO.writeLine("data value is too large to increment.");
+        }
+
+    }

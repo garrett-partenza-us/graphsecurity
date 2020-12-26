@@ -1,0 +1,15 @@
+
+    public void goodB2GSink() throws Throwable {
+        int data = CWE191_Integer_Underflow__int_listen_tcp_postdec_68a.data;
+
+        
+        if (data > Integer.MIN_VALUE) {
+            data--;
+            int result = (int)(data);
+            IO.writeLine("result: " + result);
+        }
+        else {
+            IO.writeLine("data value is too small to decrement.");
+        }
+
+    }

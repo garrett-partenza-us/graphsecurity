@@ -1,0 +1,10 @@
+
+    private void goodB2G(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+
+        
+        
+        data = System.getProperty("user.home");
+
+        (new CWE113_HTTP_Response_Splitting__Property_addHeaderServlet_71b()).goodB2GSink((Object)data , request, response );
+    }

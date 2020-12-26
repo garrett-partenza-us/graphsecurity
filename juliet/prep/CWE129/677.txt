@@ -1,0 +1,9 @@
+
+    private void goodG2B() throws Throwable {
+        int data;
+
+        
+        data = 2;
+
+        (new CWE129_Improper_Validation_of_Array_Index__random_array_write_no_check_71b()).goodG2BSink((Object)data  );
+    }

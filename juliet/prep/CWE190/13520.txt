@@ -1,0 +1,36 @@
+
+    public void bad() throws Throwable {
+        byte data;
+        if(IO.staticReturnsTrueOrFalse()) {
+            
+            data = (byte)((new java.security.SecureRandom()).nextInt(1+Byte.MAX_VALUE-Byte.MIN_VALUE) + Byte.MIN_VALUE);
+        }
+        else {
+
+            
+            data = 2;
+
+        }
+
+        if(IO.staticReturnsTrueOrFalse()) {
+            if(data > 0) {
+                
+                byte result = (byte)(data * 2);
+                IO.writeLine("result: " + result);
+            }
+        }
+        else {
+
+            if(data > 0) {
+                
+                if (data < (Byte.MAX_VALUE/2)) {
+                    byte result = (byte)(data * 2);
+                    IO.writeLine("result: " + result);
+                }
+                else {
+                    IO.writeLine("data value is too large to perform multiplication.");
+                }
+            }
+
+        }
+    }

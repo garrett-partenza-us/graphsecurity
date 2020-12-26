@@ -1,0 +1,15 @@
+
+    public String goodG2B2Source() throws Throwable {
+        String data;
+
+        if (CWE15_External_Control_of_System_or_Configuration_Setting__Property_22a.goodG2B2PublicStatic) {
+            
+            data = "foo";
+        }
+        else {
+            
+            data = null;
+        }
+
+        return data;
+    }

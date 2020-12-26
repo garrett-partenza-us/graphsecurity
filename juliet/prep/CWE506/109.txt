@@ -1,0 +1,5 @@
+
+    private void good1() {
+        
+        IO.writeLine(READONLY_VARIABLE);
+    }

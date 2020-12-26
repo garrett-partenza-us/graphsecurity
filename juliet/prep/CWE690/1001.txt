@@ -1,0 +1,10 @@
+
+    private void goodG2B() throws Throwable {
+        String data = goodG2BSource();
+
+        
+        if(data.equals("CWE690")) {
+            IO.writeLine("data is CWE690");
+        }
+
+    }

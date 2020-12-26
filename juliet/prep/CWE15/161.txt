@@ -1,0 +1,4 @@
+
+    public void badSink(String data ) throws Throwable {
+        (new CWE15_External_Control_of_System_or_Configuration_Setting__Environment_54c()).badSink(data );
+    }

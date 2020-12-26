@@ -1,0 +1,50 @@
+
+    private void goodB2G2() throws Throwable {
+        String data;
+
+        switch (6) {
+        case 6:
+            FileInputStream streamFileInput = null;
+            String propertiesFileName = "./CWE690_NULL_Deref_From_Return__Helper.properties";
+            try {
+                streamFileInput = new FileInputStream(propertiesFileName);
+                Properties properties = new Properties();
+                properties.load(streamFileInput);
+                
+                data = properties.getProperty("CWE690");
+            }
+            catch (IOException exceptIO) {
+                IO.writeLine("Could not open properties file: " + propertiesFileName);
+                data = ""; 
+            }
+            finally {
+                try {
+                    if (streamFileInput != null) {
+                        streamFileInput.close();
+                    }
+                }
+                catch (IOException e) {
+                    IO.logger.log(Level.WARNING, "Error closing FileInputStream", e);
+                }
+            }
+            break;
+        default:
+            
+            data = null;
+            break;
+        }
+
+        switch (7) {
+        case 7:
+            
+            if (data != null) {
+                String stringTrimmed = data.trim();
+                IO.writeLine(stringTrimmed);
+            }
+            break;
+        default:
+            
+            IO.writeLine("Benign, fixed string");
+            break;
+        }
+    }

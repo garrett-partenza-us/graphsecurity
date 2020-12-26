@@ -1,0 +1,13 @@
+
+    private void goodB2G2Sink(int data , HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        if (goodB2G2Private) {
+            
+            if (data > Integer.MIN_VALUE) {
+                int result = (int)(data - 1);
+                IO.writeLine("result: " + result);
+            }
+            else {
+                IO.writeLine("data value is too small to perform subtraction.");
+            }
+        }
+    }

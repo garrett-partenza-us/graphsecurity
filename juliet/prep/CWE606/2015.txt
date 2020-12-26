@@ -1,0 +1,36 @@
+
+    private void goodG2B2() throws Throwable {
+        String data;
+
+        switch (6) {
+        case 6:
+            
+            data = "5";
+            break;
+        default:
+            
+            data = null;
+            break;
+        }
+
+        switch (7) {
+        case 7:
+            int numberOfLoops;
+            try {
+                numberOfLoops = Integer.parseInt(data);
+            }
+            catch (NumberFormatException exceptNumberFormat) {
+                IO.writeLine("Invalid response. Numeric input expected. Assuming 1.");
+                numberOfLoops = 1;
+            }
+            for (int i=0; i < numberOfLoops; i++) {
+                
+                IO.writeLine("hello world");
+            }
+            break;
+        default:
+            
+            IO.writeLine("Benign, fixed string");
+            break;
+        }
+    }

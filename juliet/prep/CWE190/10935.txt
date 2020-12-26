@@ -1,0 +1,9 @@
+
+    private void goodB2G() throws Throwable {
+        long data;
+
+        
+        data = Long.MAX_VALUE;
+
+        goodB2GSink(data  );
+    }

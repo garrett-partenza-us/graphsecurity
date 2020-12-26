@@ -1,0 +1,11 @@
+
+    public void badSink(CWE191_Integer_Underflow__int_connect_tcp_postdec_67a.Container dataContainer ) throws Throwable {
+        int data = dataContainer.containerOne;
+
+        
+        data--;
+        int result = (int)(data);
+
+        IO.writeLine("result: " + result);
+
+    }

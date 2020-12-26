@@ -1,0 +1,26 @@
+
+    private void goodB2G() throws Throwable {
+        int data;
+
+        while (true) {
+            
+            data = 100;
+            break;
+        }
+
+        while (true) {
+            
+            int array[] = null;
+            
+            if (data > 0) {
+                array = new int[data];
+            }
+            else {
+                IO.writeLine("Array size is negative");
+            }
+            
+            array[0] = 5;
+            IO.writeLine(array[0]);
+            break;
+        }
+    }

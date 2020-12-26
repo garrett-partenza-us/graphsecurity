@@ -1,0 +1,8 @@
+
+    public void bad() throws Throwable {
+
+        
+        data = (short)((new SecureRandom()).nextInt(Short.MAX_VALUE + 1));
+
+        (new CWE197_Numeric_Truncation_Error__short_random_68b()).badSink();
+    }

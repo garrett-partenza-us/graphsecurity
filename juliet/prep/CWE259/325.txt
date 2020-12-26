@@ -1,0 +1,35 @@
+
+    public void bad() throws Throwable {
+        String data;
+        if (IO.staticReturnsTrueOrFalse()) {
+            
+            data = "7e5tc4s3";
+        }
+        else {
+
+            data = ""; 
+
+            
+            try {
+                InputStreamReader readerInputStream = new InputStreamReader(System.in, "UTF-8");
+                BufferedReader readerBuffered = new BufferedReader(readerInputStream);
+
+                
+                data = readerBuffered.readLine();
+            }
+            catch (IOException exceptIO) {
+                IO.logger.log(Level.WARNING, "Error with stream reading", exceptIO);
+            }
+
+            
+
+        }
+
+        if (data != null) {
+            KerberosPrincipal principal = new KerberosPrincipal("test");
+            
+            KerberosKey key = new KerberosKey(principal, data.toCharArray(), null);
+            IO.writeLine(key.toString());
+        }
+
+    }

@@ -1,0 +1,17 @@
+
+    public void bad() throws Throwable {
+        int [] data;
+        if (true) {
+            
+            data = null;
+        }
+        else {
+            
+            data = null;
+        }
+
+        if (true) {
+            
+            IO.writeLine("" + data.length);
+        }
+    }

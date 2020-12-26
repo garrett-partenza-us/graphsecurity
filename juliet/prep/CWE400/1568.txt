@@ -1,0 +1,29 @@
+
+    private void goodB2G1() throws Throwable {
+        int count;
+        if (PRIVATE_STATIC_FINAL_TRUE) {
+            
+            count = (new SecureRandom()).nextInt();
+        }
+        else {
+            
+            count = 0;
+        }
+
+        if (PRIVATE_STATIC_FINAL_FALSE) {
+            
+            IO.writeLine("Benign, fixed string");
+        }
+        else {
+
+            int i = 0;
+
+            
+            if (count > 0 && count <= 20) {
+                for (i = 0; i < count; i++) {
+                    IO.writeLine("Hello");
+                }
+            }
+
+        }
+    }

@@ -1,0 +1,66 @@
+
+    public void bad() throws Throwable {
+        long data;
+
+        switch (6) {
+        case 6:
+            
+            data = -1;
+            
+            BufferedReader readerBuffered = null;
+            InputStreamReader readerInputStream = null;
+            try {
+                readerInputStream = new InputStreamReader(System.in, "UTF-8");
+                readerBuffered = new BufferedReader(readerInputStream);
+                String stringNumber = readerBuffered.readLine();
+                if (stringNumber != null) {
+                    data = Long.parseLong(stringNumber.trim());
+                }
+            }
+            catch (IOException exceptIO) {
+                IO.logger.log(Level.WARNING, "Error with stream reading", exceptIO);
+            }
+            catch (NumberFormatException exceptNumberFormat) {
+                IO.logger.log(Level.WARNING, "Error with number parsing", exceptNumberFormat);
+            }
+            finally {
+                
+                try {
+                    if (readerBuffered != null) {
+                        readerBuffered.close();
+                    }
+                }
+                catch (IOException exceptIO) {
+                    IO.logger.log(Level.WARNING, "Error closing BufferedReader", exceptIO);
+                }
+                finally {
+                    try {
+                        if (readerInputStream != null) {
+                            readerInputStream.close();
+                        }
+                    }
+                    catch (IOException exceptIO) {
+                        IO.logger.log(Level.WARNING, "Error closing InputStreamReader", exceptIO);
+                    }
+                }
+            }
+            break;
+        default:
+            
+            data = 0L;
+            break;
+        }
+
+        switch (7) {
+        case 7:
+            
+            data++;
+            long result = (long)(data);
+            IO.writeLine("result: " + result);
+            break;
+        default:
+            
+            IO.writeLine("Benign, fixed string");
+            break;
+        }
+    }

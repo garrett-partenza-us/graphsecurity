@@ -1,0 +1,57 @@
+
+    public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+
+        switch (6) {
+        case 6:
+            data = ""; 
+ {
+                Cookie cookieSources[] = request.getCookies();
+                if (cookieSources != null) {
+                    
+                    data = cookieSources[0].getValue();
+                }
+            }
+            break;
+        default:
+            
+            data = null;
+            break;
+        }
+
+        switch (7) {
+        case 7:
+            String xmlFile = null;
+            if(System.getProperty("os.name").toLowerCase().indexOf("win") >= 0) {
+                
+                xmlFile = "\\src\\testcases\\CWE643_Xpath Injection\\CWE643_Xpath_Injection__Helper.xml";
+            }
+            else {
+                
+                xmlFile = "./src/testcases/CWE643_Xpath Injection/CWE643_Xpath_Injection__Helper.xml";
+            }
+            if (data != null) {
+                
+                String [] tokens = data.split("||");
+                if (tokens.length < 2) {
+                    return;
+                }
+                String username = tokens[0];
+                String password = tokens[1];
+                
+                XPath xPath = XPathFactory.newInstance().newXPath();
+                InputSource inputXml = new InputSource(xmlFile);
+                
+                
+                String query = "//users/user[name/text()='" + username +
+                "' and pass/text()='" + password + "']" +
+                "/secret/text()";
+                String secret = (String)xPath.evaluate(query, inputXml, XPathConstants.STRING);
+            }
+            break;
+        default:
+            
+            IO.writeLine("Benign, fixed string");
+            break;
+        }
+    }

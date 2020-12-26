@@ -1,0 +1,30 @@
+
+    public void bad() throws Throwable {
+        StringBuilder data;
+        if(IO.staticReturnsTrueOrFalse()) {
+            
+            data = new StringBuilder("Good");
+        }
+        else {
+
+            
+
+            data = new StringBuilder("Good");
+
+            IO.writeLine(data.toString());
+
+        }
+
+        if(IO.staticReturnsTrueOrFalse()) {
+            
+            data = new StringBuilder("Reinitialize");
+            IO.writeLine(data.toString());
+        }
+        else {
+
+            
+
+            IO.writeLine(data.toString());
+
+        }
+    }

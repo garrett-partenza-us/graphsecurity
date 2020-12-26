@@ -1,0 +1,35 @@
+
+    private void goodB2G1() throws Throwable {
+        int data;
+        if (privateReturnsTrue()) {
+            
+            data = (new SecureRandom()).nextInt();
+        }
+        else {
+            
+            data = 0;
+        }
+
+        if (privateReturnsFalse()) {
+            
+            IO.writeLine("Benign, fixed string");
+        }
+        else {
+
+            
+            int array[] = null;
+
+            
+            if (data > 0) {
+                array = new int[data];
+            }
+            else {
+                IO.writeLine("Array size is negative");
+            }
+
+            
+            array[0] = 5;
+            IO.writeLine(array[0]);
+
+        }
+    }

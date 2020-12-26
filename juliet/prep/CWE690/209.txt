@@ -1,0 +1,9 @@
+
+    private void goodG2B() throws Throwable {
+        String data;
+
+        
+        data = "CWE690";
+
+        (new CWE690_NULL_Deref_From_Return__System_getProperty_trim_51b()).goodG2BSink(data  );
+    }

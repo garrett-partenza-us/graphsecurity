@@ -1,0 +1,9 @@
+
+    public void bad() throws Throwable {
+        Integer data;
+
+        
+        data = null;
+
+        (new CWE476_NULL_Pointer_Dereference__Integer_54b()).badSink(data );
+    }

@@ -1,0 +1,15 @@
+
+    public String goodG2B2Source(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+
+        if (CWE81_XSS_Error_Message__Servlet_getCookies_Servlet_22a.goodG2B2PublicStatic) {
+            
+            data = "foo";
+        }
+        else {
+            
+            data = null;
+        }
+
+        return data;
+    }

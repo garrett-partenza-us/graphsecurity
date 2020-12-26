@@ -1,0 +1,17 @@
+
+    public short goodG2B1Source() throws Throwable {
+        short data;
+
+        if (CWE197_Numeric_Truncation_Error__short_connect_tcp_22a.goodG2B1PublicStatic) {
+            
+            data = 0;
+        }
+        else {
+
+            
+            data = 2;
+
+        }
+
+        return data;
+    }

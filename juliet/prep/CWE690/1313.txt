@@ -1,0 +1,26 @@
+
+    private void goodB2G1() throws Throwable {
+        String data;
+        if (true) {
+            
+            data = CWE690_NULL_Deref_From_Return__Class_Helper.getStringBad();
+        }
+        else {
+            
+            data = null;
+        }
+
+        if (false) {
+            
+            IO.writeLine("Benign, fixed string");
+        }
+        else {
+
+            
+            if (data != null) {
+                String stringTrimmed = data.trim();
+                IO.writeLine(stringTrimmed);
+            }
+
+        }
+    }

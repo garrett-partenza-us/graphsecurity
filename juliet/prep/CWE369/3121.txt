@@ -1,0 +1,10 @@
+
+    public void bad() throws Throwable {
+        float data;
+
+        
+        SecureRandom secureRandom = new SecureRandom();
+        data = secureRandom.nextFloat();
+
+        (new CWE369_Divide_by_Zero__float_random_divide_54b()).badSink(data );
+    }

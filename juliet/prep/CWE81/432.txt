@@ -1,0 +1,14 @@
+
+    public String badSource(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data;
+
+        if (CWE81_XSS_Error_Message__Servlet_getParameter_Servlet_22a.badPublicStatic) {
+            
+            data = request.getParameter("name");
+        }
+        else {
+            
+            data = null;
+        }
+        return data;
+    }

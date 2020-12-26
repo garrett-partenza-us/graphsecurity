@@ -1,0 +1,22 @@
+
+    private void goodB2G() throws Throwable {
+        float data;
+
+        data = -1.0f; 
+
+        
+ {
+            String stringNumber = System.getenv("ADD");
+            if (stringNumber != null) {
+                try {
+                    data = Float.parseFloat(stringNumber.trim());
+                }
+                catch (NumberFormatException exceptNumberFormat) {
+                    IO.logger.log(Level.WARNING, "Number format exception parsing data from string", exceptNumberFormat);
+                }
+            }
+        }
+
+        CWE369_Divide_by_Zero__float_Environment_modulo_81_base baseObject = new CWE369_Divide_by_Zero__float_Environment_modulo_81_goodB2G();
+        baseObject.action(data );
+    }

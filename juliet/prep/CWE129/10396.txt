@@ -1,0 +1,9 @@
+
+    private void goodG2BSink(int data ) throws Throwable {
+        if (goodG2BPrivate) {
+            
+            int array[] = { 0, 1, 2, 3, 4 };
+            
+            IO.writeLine(array[data]);
+        }
+    }

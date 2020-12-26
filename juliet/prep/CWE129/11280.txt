@@ -1,0 +1,19 @@
+
+    public void bad() throws Throwable {
+        int data;
+
+        while (true) {
+            
+            data = -1;
+            break;
+        }
+
+        while (true) {
+            
+            int array[] = { 0, 1, 2, 3, 4 };
+            
+            array[data] = 42;
+            
+            break;
+        }
+    }

@@ -1,0 +1,9 @@
+
+    private void goodG2B() throws Throwable {
+        String data;
+
+        
+        data = "foo";
+
+        (new CWE134_Uncontrolled_Format_String__PropertiesFile_format_52b()).goodG2BSink(data );
+    }

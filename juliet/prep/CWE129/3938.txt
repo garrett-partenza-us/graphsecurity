@@ -1,0 +1,22 @@
+
+    public void bad(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        int data;
+
+        data = Integer.MIN_VALUE; 
+
+ {
+            Cookie cookieSources[] = request.getCookies();
+            if (cookieSources != null) {
+                
+                String stringNumber = cookieSources[0].getValue();
+                try {
+                    data = Integer.parseInt(stringNumber.trim());
+                }
+                catch(NumberFormatException exceptNumberFormat) {
+                    IO.logger.log(Level.WARNING, "Number format exception reading data from cookie", exceptNumberFormat);
+                }
+            }
+        }
+
+        (new CWE129_Improper_Validation_of_Array_Index__getCookies_Servlet_array_read_check_min_53b()).badSink(data , request, response);
+    }

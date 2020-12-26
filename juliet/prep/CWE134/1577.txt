@@ -1,0 +1,9 @@
+
+    public void badSink(String data ) throws Throwable {
+
+        if (data != null) {
+            
+            System.out.printf(data);
+        }
+
+    }

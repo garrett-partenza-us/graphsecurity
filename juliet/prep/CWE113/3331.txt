@@ -1,0 +1,11 @@
+
+    private void goodG2B(HttpServletRequest request, HttpServletResponse response) throws Throwable {
+        String data = (new CWE113_HTTP_Response_Splitting__getParameter_Servlet_addCookieServlet_61b()).goodG2BSource(request, response);
+
+        if (data != null) {
+            Cookie cookieSink = new Cookie("lang", data);
+            
+            response.addCookie(cookieSink);
+        }
+
+    }
