@@ -1,0 +1,4 @@
+1. Ensure that sink methods should be removed, and explore the idea of also removing source methods.
+2. Run and log all Juliet performances's
+3. Make sure OWASP does not need top be obfuscated
+4. Generate report 

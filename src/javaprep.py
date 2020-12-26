@@ -350,6 +350,9 @@ def createast(dirname, mode):
             elif mode == "juliet":
                 programfile=open(os.path.join(rt,file),encoding='utf-8')
                 programtext=programfile.read()
+                if "Sink" in programtext:
+                    continue
+                programtext=programtext.replace("Source", ''.join(random.choice(string.ascii_uppercase) for _ in range(5)))
                 programtext=programtext.replace("good", ''.join(random.choice(string.ascii_uppercase) for _ in range(5)))
                 programtext=programtext.replace("bad", ''.join(random.choice(string.ascii_uppercase) for _ in range(5)))
                 programtext=programtext.replace("G2B", ''.join(random.choice(string.ascii_uppercase) for _ in range(3)))
