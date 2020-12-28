@@ -1,8 +1,0 @@
-
-    public void goodG2BSink(CWE476_NULL_Pointer_Dereference__Integer_67a.Container dataContainer ) throws Throwable {
-        Integer data = dataContainer.containerOne;
-
-        
-        IO.writeLine("" + data.toString());
-
-    }

@@ -1,8 +1,0 @@
-
-    public void badSink(Vector<Integer> dataVector ) throws Throwable {
-        Integer data = dataVector.remove(2);
-
-        
-        IO.writeLine("" + data.toString());
-
-    }

@@ -1,9 +1,0 @@
-
-    public void bad() throws Throwable {
-        StringBuilder data;
-
-        
-        data = null;
-
-        (new CWE476_NULL_Pointer_Dereference__StringBuilder_54b()).badSink(data );
-    }

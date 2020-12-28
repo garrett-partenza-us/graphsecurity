@@ -1,9 +1,0 @@
-
-    private String badSource() throws Throwable {
-        String data;
-
-        
-        data = null;
-
-        return data;
-    }

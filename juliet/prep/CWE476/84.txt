@@ -1,4 +1,0 @@
-
-    public void badSink(Integer data ) throws Throwable {
-        (new CWE476_NULL_Pointer_Dereference__Integer_53d()).badSink(data );
-    }

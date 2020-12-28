@@ -1,9 +1,0 @@
-
-    public StringBuilder goodB2GSource() throws Throwable {
-        StringBuilder data;
-
-        
-        data = null;
-
-        return data;
-    }

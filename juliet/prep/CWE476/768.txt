@@ -1,9 +1,0 @@
-
-    private void goodB2G() throws Throwable {
-        String data;
-
-        
-        data = null;
-
-        (new CWE476_NULL_Pointer_Dereference__String_71b()).goodB2GSink((Object)data  );
-    }

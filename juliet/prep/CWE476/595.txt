@@ -1,9 +1,0 @@
-
-    public Integer goodB2GSource() throws Throwable {
-        Integer data;
-
-        
-        data = null;
-
-        return data;
-    }

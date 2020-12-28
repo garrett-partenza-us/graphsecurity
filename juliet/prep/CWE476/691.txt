@@ -1,8 +1,0 @@
-
-    public void bad() throws Throwable {
-        int [] data = badSource();
-
-        
-        IO.writeLine("" + data.length);
-
-    }

@@ -1,9 +1,0 @@
-
-    public Integer badSource() throws Throwable {
-        Integer data;
-
-        
-        data = null;
-
-        return data;
-    }

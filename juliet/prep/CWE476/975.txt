@@ -1,9 +1,0 @@
-
-    private void goodG2B() throws Throwable {
-        String data;
-
-        
-        data = "This is not null";
-
-        goodG2BSink(data  );
-    }

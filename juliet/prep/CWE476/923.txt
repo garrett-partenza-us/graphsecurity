@@ -1,8 +1,0 @@
-
-    private void badSink() throws Throwable {
-        StringBuilder data = dataBad;
-
-        
-        IO.writeLine("" + data.length());
-
-    }

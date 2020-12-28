@@ -1,8 +1,0 @@
-
-    public void bad() throws Throwable {
-        StringBuilder data = (new CWE476_NULL_Pointer_Dereference__StringBuilder_61b()).badSource();
-
-        
-        IO.writeLine("" + data.length());
-
-    }

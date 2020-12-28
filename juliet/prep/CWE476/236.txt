@@ -1,7 +1,0 @@
-
-    public void badSink(Integer data ) throws Throwable {
-
-        
-        IO.writeLine("" + data.toString());
-
-    }

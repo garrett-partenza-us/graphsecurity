@@ -1,8 +1,0 @@
-
-    public void goodG2BSink(HashMap<Integer,StringBuilder> dataHashMap ) throws Throwable {
-        StringBuilder data = dataHashMap.get(2);
-
-        
-        IO.writeLine("" + data.length());
-
-    }

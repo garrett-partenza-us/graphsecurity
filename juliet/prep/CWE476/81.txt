@@ -1,8 +1,0 @@
-
-    public void badSink() throws Throwable {
-        StringBuilder data = CWE476_NULL_Pointer_Dereference__StringBuilder_68a.data;
-
-        
-        IO.writeLine("" + data.length());
-
-    }

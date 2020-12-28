@@ -1,8 +1,0 @@
-
-    private void goodG2BSink() throws Throwable {
-        Integer data = dataGoodG2B;
-
-        
-        IO.writeLine("" + data.toString());
-
-    }

@@ -1,4 +1,0 @@
-
-    public void goodG2BSink(Integer data ) throws Throwable {
-        (new CWE476_NULL_Pointer_Dereference__Integer_53c()).goodG2BSink(data );
-    }

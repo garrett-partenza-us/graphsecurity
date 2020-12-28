@@ -1,8 +1,0 @@
-
-    public void badSink(LinkedList<Integer> dataLinkedList ) throws Throwable {
-        Integer data = dataLinkedList.remove(2);
-
-        
-        IO.writeLine("" + data.toString());
-
-    }

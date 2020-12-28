@@ -1,9 +1,0 @@
-
-    private String goodB2GSource() throws Throwable {
-        String data;
-
-        
-        data = null;
-
-        return data;
-    }

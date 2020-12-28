@@ -1,9 +1,0 @@
-
-    private String goodG2BSource() throws Throwable {
-        String data;
-
-        
-        data = "This is not null";
-
-        return data;
-    }

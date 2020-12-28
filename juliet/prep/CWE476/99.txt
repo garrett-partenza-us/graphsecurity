@@ -1,8 +1,0 @@
-
-    public void goodG2BSink(Object dataObject ) throws Throwable {
-        StringBuilder data = (StringBuilder)dataObject;
-
-        
-        IO.writeLine("" + data.length());
-
-    }

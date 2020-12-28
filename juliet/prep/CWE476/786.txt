@@ -1,8 +1,0 @@
-
-    public void badSink(String dataArray[] ) throws Throwable {
-        String data = dataArray[2];
-
-        
-        IO.writeLine("" + data.length());
-
-    }

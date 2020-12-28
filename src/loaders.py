@@ -29,6 +29,8 @@ def get_word_embeddings(treedict, vocabdict):
     
 def generate_graphlist_owasp(treedict, vocabdict, model, cat_res, type_res, cwe):
     graphlist = []
+    good = 0
+    bad = 0
     for key in treedict:
         filename = (key.split('/')[2]).split('.')[0]
         if type_res[filename].item()!=int(cwe):
@@ -44,11 +46,27 @@ def generate_graphlist_owasp(treedict, vocabdict, model, cat_res, type_res, cwe)
         edge_index = torch.tensor([srcs, trgs], dtype=torch.long)
         x = torch.tensor(x, dtype=torch.float)
         if cat_res[filename] == True:
+            bad+=1
             y = 1
         else:
+            good+=1
             y = 0
         graph = Data(x=x, edge_index=edge_index, y=y)
         graphlist.append(graph)
+    
+    passes = 1
+    while good != bad:
+        print("balancing dataset (pass "+str(passes)+")")
+        if good > bad:
+            graphlist, good, bad = balance_bad(graphlist, good, bad)
+        elif bad > good:
+            graphlist, good, bad = balance_good(graphlist, good, bad)
+        passes+=1
+            
+    print("Number of good methods: ", good, " Number of bad methods: ", bad)
+    random.shuffle(graphlist)
+    random.shuffle(graphlist)
+    random.shuffle(graphlist)
     return graphlist
 
 def balance_bad(graphlist, good, bad):
@@ -123,7 +141,28 @@ def split_dataset(graphlist):
     loader_test = DataLoader(graphlist[int(len(graphlist)*0.8):], batch_size=32, shuffle=False)
     return loader_train, loader_test
 
-def get_loaders(cwe, mode):
+def get_trees():
+    device = torch.device('cuda:1')
+    print("creating asts...")
+    astdict, vocablen, vocabdict = createast(dirname='../data', mode="owasp")
+    print("creating trees...")
+    treedict = createseparategraph(
+        astdict,
+        vocablen,
+        vocabdict,
+        device,
+        mode='astandnext',
+        nextsib=True,
+        ifedge=True,
+        whileedge=True,
+        foredge=True,
+        blockedge=True,
+        nexttoken=True,
+        nextuse=True,
+        )
+    return vocabdict, treedict, 
+                                             
+def get_loaders(cwe, mode, vocabdict, treedict):
     device = torch.device('cuda:1')
     print(cwe)
     if mode == "juliet":
@@ -153,33 +192,15 @@ def get_loaders(cwe, mode):
         model = get_word_embeddings(treedict, vocabdict)
         graphlist = generate_graphlist_juliet(treedict, vocabdict, model, mydict, cwe)
         
- 
- 
+
     elif mode == "owasp":
-        (astdict, vocablen, vocabdict) = createast(dirname='../data', mode = mode)
-        dfname = '../expectedresults-1.1.csv'
-        df = pd.read_csv(dfname)
-        filenames = df['# test name']
-        classifications = df[' real vulnerability']
-        cwes = df[' cwe']
-        treedict = createseparategraph(
-        astdict,
-        vocablen,
-        vocabdict,
-        device,
-        mode='astandnext',
-        nextsib=True,
-        ifedge=True,
-        whileedge=True,
-        foredge=True,
-        blockedge=True,
-        nexttoken=True,
-        nextuse=True,
-        )
+        df = pd.read_csv('../expectedresults-1.1.csv')
+        filenames, classifications, cwes = df['# test name'], df[' real vulnerability'], df[' cwe']
         vocabdict = {v: k for k, v in vocabdict.items()}
+        print("training word2vec...")
         model = get_word_embeddings(treedict, vocabdict)
         cat_res = {filenames[i]: classifications[i] for i in range(len(filenames))} 
         type_res = {filenames[i]: cwes[i] for i in range(len(filenames))} 
+        print("creating graphs..")
         graphlist = generate_graphlist_owasp(treedict, vocabdict, model, cat_res, type_res, cwe)
- 
     return(split_dataset(graphlist))

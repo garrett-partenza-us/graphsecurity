@@ -1,4 +1,0 @@
-
-    public void badSink(int [] data ) throws Throwable {
-        (new CWE476_NULL_Pointer_Dereference__int_array_53c()).badSink(data );
-    }

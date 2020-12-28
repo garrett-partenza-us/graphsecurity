@@ -333,26 +333,20 @@ def createast(dirname, mode):
         for file in files:
             if mode == "owasp":
                 programfile=open(os.path.join(rt,file),encoding='utf-8')
-                #print(os.path.join(rt,file))
                 programtext=programfile.read()
-                #programtext=programtext.replace('\r','')
                 programtokens=javalang.tokenizer.tokenize(programtext)
-                #print(list(programtokens))
                 parser=javalang.parse.Parser(programtokens)
                 programast=parser.parse()
                 paths.append(os.path.join(rt,file))
                 asts.append(programast)
                 get_sequence(programast,alltokens)
                 programfile.close()
-                #print(programast)
-                #print(alltokens)
-                #print(programast)
+
             elif mode == "juliet":
                 programfile=open(os.path.join(rt,file),encoding='utf-8')
                 programtext=programfile.read()
-                if "Sink" in programtext:
+                if "B2GSource" in programtext.splitlines()[1] or "Sink" in programtext.splitlines()[1]:
                     continue
-                programtext=programtext.replace("Source", ''.join(random.choice(string.ascii_uppercase) for _ in range(5)))
                 programtext=programtext.replace("good", ''.join(random.choice(string.ascii_uppercase) for _ in range(5)))
                 programtext=programtext.replace("bad", ''.join(random.choice(string.ascii_uppercase) for _ in range(5)))
                 programtext=programtext.replace("G2B", ''.join(random.choice(string.ascii_uppercase) for _ in range(3)))

@@ -1,9 +1,0 @@
-
-    public void bad() throws Throwable {
-        String data;
-
-        
-        data = null;
-
-        badSink(data  );
-    }

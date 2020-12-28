@@ -1,9 +1,0 @@
-
-    private void goodG2B() throws Throwable {
-        Integer data;
-
-        
-        data = Integer.valueOf(5);
-
-        (new CWE476_NULL_Pointer_Dereference__Integer_54b()).goodG2BSink(data );
-    }
