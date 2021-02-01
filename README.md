@@ -23,23 +23,17 @@ To train Juliet model:
 cd src
 python3 run_juliet.py 89
 ```
-or to run all CWE's
-```
-cd src
-python3 run_juliet.py all
-```
 
 To train OWASP model:
 ```
 cd src
 python3 run_owasp.py 89
 ```
-or to run all CWE's
-```
-cd src
-python3 run_owasp.py all
-```
+
+Note that you can also specify 'all' as the CWE to run if you want to train a model for every weakness.
+
 ### Screenshots
+
 
 ### Features
 
