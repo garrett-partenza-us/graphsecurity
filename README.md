@@ -32,8 +32,8 @@ python3 run_owasp.py 89
 
 ## Author
 Garrett A. Partenza\
-Funded by the Towson University Software Engineering Laboratory\
 gparte1@students.towson.edu\
+Funded by the Towson University Software Engineering Laboratory\
 
 ## License
 [![License: LGPL v3](https://img.shields.io/badge/License-LGPL%20v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)
