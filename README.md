@@ -3,11 +3,10 @@
 
 This project represents a geometric deep learning approach to automated classification of common weakness enumerations in Java source code. The approach uses pytorch geometric and graph convelutional neural networks to achieve near-perfect accuracy across the Juliet Test Suite and the OWASP Benchmark. 
 
-See real examples:
+See Juliet and OWASP:
 
-* <https://github.com/nuxeo/nuxeo/blob/master/README.md>
-* <https://github.com/nuxeo/nuxeo-drive/blob/master/README.md>
-* <https://github.com/nuxeo/nuxeo-sdk-ios/blob/master/README.md>
+* <https://samate.nist.gov/SRD/testsuite.php>
+* <https://owasp.org/www-project-benchmark/>
 
 ## Table of contents
 
