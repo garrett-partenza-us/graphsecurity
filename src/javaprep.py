@@ -1,3 +1,14 @@
+# **********
+# THESE FUNCTIONS WERE BORROWED FROM JACOB WENG
+# As a result, these functions are not commented since it is not my code
+
+# However, what is important to understand is these functions are
+# responsible for actually generating the FAASTs from inputed java code
+
+# Repository -> https://github.com/jacobwwh/graphmatch_clone
+# Paper -> Detecting Code Clones with Graph Neural Network and Flow-Augmented Abstract Syntax Tree
+# **********
+
 import javalang
 import javalang.tree
 import javalang.ast
@@ -12,19 +23,15 @@ import string
 
 def get_token(node):
     token = ''
-    #print(isinstance(node, Node))
-    #print(type(node))
     if isinstance(node, str):
         token = node
     elif isinstance(node, set):
         token = 'Modifier'
     elif isinstance(node, Node):
         token = node.__class__.__name__
-    #print(node.__class__.__name__,str(node))
-    #print(node.__class__.__name__, node)
     return token
+
 def get_child(root):
-    #print(root)
     if isinstance(root, Node):
         children = root.children
     elif isinstance(root, set):
@@ -36,16 +43,13 @@ def get_child(root):
         for item in nested_list:
             if isinstance(item, list):
                 for sub_item in expand(item):
-                    #print(sub_item)
                     yield sub_item
             elif item:
-                #print(item)
                 yield item
     return list(expand(children))
 def get_sequence(node, sequence):
     token, children = get_token(node), get_child(node)
     sequence.append(token)
-    #print(len(sequence), token)
     for child in children:
         get_sequence(child, sequence)
 
@@ -79,13 +83,11 @@ def traverse(node,index):
         result.append(index)
         index+=1
         for (child_name, child) in node.children():
-            #print(get_token(child),index)
             queue.push(child)
     return result
 
 def createtree(root,node,nodelist,parent=None):
     id = len(nodelist)
-    #print(id)
     token, children = get_token(node), get_child(node)
     if id==0:
         root.token=token
@@ -160,8 +162,6 @@ def getedge_flow(node,vocabdict,src,tgt,edgetype,ifedge=False,whileedge=False,fo
                 src.append(node.children[0].id)
                 tgt.append(node.children[1].children[-1].id)
                 edgetype.append(edges['For_loopend'])'''
-    #if token=='ForControl':
-        #print(token,len(node.children))
     if ifedge==True:
         if token=='IfStatement':
             src.append(node.children[0].id)
@@ -221,7 +221,6 @@ def getedge_nextuse(node,vocabdict,src,tgt,edgetype,variabledict):
         for child in node.children:
             getvariables(child,vocabdict,edgetype,variabledict)
     getvariables(node,vocabdict,edgetype,variabledict)
-    #print(variabledict)
     for v in variabledict.keys():
         for i in range(len(variabledict[v])-1):
                 src.append(variabledict[v][i])
@@ -233,19 +232,14 @@ def getedge_nextuse(node,vocabdict,src,tgt,edgetype,variabledict):
                 
 def get_token(node):
     token = ''
-    #print(isinstance(node, Node))
-    #print(type(node))
     if isinstance(node, str):
         token = node
     elif isinstance(node, set):
         token = 'Modifier'
     elif isinstance(node, Node):
         token = node.__class__.__name__
-    #print(node.__class__.__name__,str(node))
-    #print(node.__class__.__name__, node)
     return token
 def get_child(root):
-    #print(root)
     if isinstance(root, Node):
         children = root.children
     elif isinstance(root, set):
@@ -257,7 +251,6 @@ def get_child(root):
         for item in nested_list:
             if isinstance(item, list):
                 for sub_item in expand(item):
-                    #print(sub_item)
                     yield sub_item
             elif item:
                 #print(item)
@@ -266,7 +259,6 @@ def get_child(root):
 def get_sequence(node, sequence):
     token, children = get_token(node), get_child(node)
     sequence.append(token)
-    #print(len(sequence), token)
     for child in children:
         get_sequence(child, sequence)
 
@@ -278,7 +270,6 @@ def getnodes(node,nodelist):
 
 def createtree(root,node,nodelist,parent=None):
     id = len(nodelist)
-    #print(id)
     token, children = get_token(node), get_child(node)
     if id==0:
         root.token=token
@@ -341,7 +332,6 @@ def createast(dirname, mode):
                 asts.append(programast)
                 get_sequence(programast,alltokens)
                 programfile.close()
-
             elif mode == "juliet":
                 programfile=open(os.path.join(rt,file),encoding='utf-8')
                 programtext=programfile.read()
@@ -408,13 +398,9 @@ def createseparategraph(astdict,vocablen,vocabdict,device,mode='astonly',nextsib
             variabledict={}
             if nextuse==True:
                 getedge_nextuse(newtree,vocabdict,edgesrc,edgetgt,edge_attr,variabledict)
-        #x = torch.tensor(x, dtype=torch.long, device=device)
         edge_index=[edgesrc, edgetgt]
-        #edge_index = torch.tensor([edgesrc, edgetgt], dtype=torch.long, device=device)
         astlength=len(x)
         pathlist.append(path)
         treelist.append([[x,edge_index,edge_attr],astlength])
         astdict[path]=[[x,edge_index,edge_attr],astlength]
-    #treedict=dict(zip(pathlist,treelist))
-    #print(totalif,totalwhile,totalfor,totalblock)
     return astdict

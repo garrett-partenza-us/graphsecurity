@@ -6,6 +6,7 @@ import torch
 
 class GCN(torch.nn.Module):
     def __init__(self, seed):
+        # manual seed here for reproducability
         torch.manual_seed(seed)
         super(GCN, self).__init__()
         self.conv1 = GCNConv(50, 64)
@@ -18,14 +19,9 @@ class GCN(torch.nn.Module):
         x = x.relu()
         x = self.conv2(x, edge_index)
         x = x.relu()
-        x = self.conv3(x, edge_index)
-        # 2. Readout layer
-        x = global_mean_pool(x, batch)  # [batch_size, hidden_channels]
-
-        # 3. Apply a final classifier
+        x = self.conv3(x, edge_index)        
+        # global graph pooling layer
+        x = global_mean_pool(x, batch)
         x = F.dropout(x, p=0.5, training=self.training)
         x = self.lin(x)
-
-        
-        
         return x
