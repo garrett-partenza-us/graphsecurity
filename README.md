@@ -1,10 +1,7 @@
-# Title / Repository Name
+# Geometric Deep Learning for Security
+## About the Project
 
-## About / Synopsis
-
-* What is it, what does it do / Abstract
-* Project status: working/prototype
-* Nuxeo Support
+This project represents a geometric deep learning approach to classifying common weakness enumerations in Java source code. The approach uses pytorch geometric and graph convelutional neural networks to achieve extremely high accuracy across the Juliet Test Suite and the OWASP Benchmark. 
 
 See real examples:
 
