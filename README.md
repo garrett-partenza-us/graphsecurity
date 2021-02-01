@@ -32,7 +32,7 @@ python3 run_owasp.py 89
 
 ## Author
 Garrett A. Partenza\
-Towson University Software Engineering Laboratory\
+Funded by the Towson University Software Engineering Laboratory\
 gparte1@students.towson.edu\
 
 ## License
