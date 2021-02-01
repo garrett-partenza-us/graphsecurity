@@ -11,7 +11,7 @@ See Juliet and OWASP:
 ## Installation
 
 ```
-git clone https://github.com/garrett-partenza-us/faastGDL
+git clone https://github.com/garrett-partenza-us/graphcwe
 cd graphcwe
 pip3 install -r requirements.txt
 ```
