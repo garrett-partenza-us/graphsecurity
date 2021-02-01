@@ -1,7 +1,7 @@
 # Geometric Deep Learning for Security
 ## About the Project
 
-This project represents a geometric deep learning approach to classifying common weakness enumerations in Java source code. The approach uses pytorch geometric and graph convelutional neural networks to achieve extremely high accuracy across the Juliet Test Suite and the OWASP Benchmark. 
+This project represents a geometric deep learning approach to automated classification of common weakness enumerations in Java source code. The approach uses pytorch geometric and graph convelutional neural networks to achieve near-perfect accuracy across the Juliet Test Suite and the OWASP Benchmark. 
 
 See real examples:
 
